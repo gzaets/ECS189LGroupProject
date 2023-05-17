@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: Waterfall Left 7 (Forest)
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 544776229, guid: 41982c21c2d390641a617bb96bad7d13, type: 3}
+  - {fileID: 69930820, guid: 41982c21c2d390641a617bb96bad7d13, type: 3}
+  - {fileID: 1805809841, guid: 41982c21c2d390641a617bb96bad7d13, type: 3}
+  - {fileID: 29884732, guid: 41982c21c2d390641a617bb96bad7d13, type: 3}
+  - {fileID: 1179035605, guid: 41982c21c2d390641a617bb96bad7d13, type: 3}
+  - {fileID: -643188893, guid: 41982c21c2d390641a617bb96bad7d13, type: 3}
+  - {fileID: 1791786558, guid: 41982c21c2d390641a617bb96bad7d13, type: 3}
+  - {fileID: -287754866, guid: 41982c21c2d390641a617bb96bad7d13, type: 3}
+  - {fileID: 515986010, guid: 41982c21c2d390641a617bb96bad7d13, type: 3}
+  m_MinSpeed: 4
+  m_MaxSpeed: 4
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0

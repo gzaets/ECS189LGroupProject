@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: Waterfall Front 12 (Forest)
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -912081494, guid: b2154eb8a5173bc4889eb217c4c3c9b5, type: 3}
+  - {fileID: 1404707027, guid: b2154eb8a5173bc4889eb217c4c3c9b5, type: 3}
+  - {fileID: -611358619, guid: b2154eb8a5173bc4889eb217c4c3c9b5, type: 3}
+  - {fileID: -1966697, guid: b2154eb8a5173bc4889eb217c4c3c9b5, type: 3}
+  - {fileID: -925868605, guid: b2154eb8a5173bc4889eb217c4c3c9b5, type: 3}
+  - {fileID: -1391387448, guid: b2154eb8a5173bc4889eb217c4c3c9b5, type: 3}
+  - {fileID: 1869187592, guid: b2154eb8a5173bc4889eb217c4c3c9b5, type: 3}
+  - {fileID: 1734996499, guid: b2154eb8a5173bc4889eb217c4c3c9b5, type: 3}
+  - {fileID: 855940737, guid: b2154eb8a5173bc4889eb217c4c3c9b5, type: 3}
+  m_MinSpeed: 4
+  m_MaxSpeed: 4
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
