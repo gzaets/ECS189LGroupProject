@@ -1,0 +1,41 @@
+# Unity generated files
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Auto-generated Visual Studio/Visual Studio Code solution and project files
+/*.sln
+/*.csproj
+/*.suo
+/*.user
+/*.unityproj
+/*.booproj
+/.vs/
+/.vscode/
+
+# Miscellaneous
+/.idea/
+/.vscode/
+/*.pidb.meta
+/*.pidb
+/*.svd
+/*.userprefs
+/*.dll
+/*.pdb
+/*.mdb
+/*.mp4
+/*.mp4.meta
+/*.egg.meta
+/*.egg
+/*.pdf.meta
+/*.pdf
+/*.ppt.meta
+/*.ppt
+/*.xlsx.meta
+/*.xlsx
+/*.docx.meta
+/*.docx
