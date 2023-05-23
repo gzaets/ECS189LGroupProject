@@ -3,7 +3,7 @@ guid: d8c5702d683b841428afcf74caad24d5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -618,33 +621,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Grass Herbs_6: -1987001042
+      Grass Herbs_0: 1677467210
       Grass Herbs_1: 1853675107
-      Grass Herbs_5: 874387334
-      Grass Herbs_13: -704038212
-      Grass Herbs_9: 208523586
-      Grass Herbs_18: 176670344
+      Grass Herbs_10: -585920985
       Grass Herbs_11: -136575567
-      Grass Herbs_21: 1205349176
+      Grass Herbs_12: 422186258
+      Grass Herbs_13: -704038212
+      Grass Herbs_14: -1413441819
       Grass Herbs_15: -959171753
       Grass Herbs_16: -1397409655
-      Grass Herbs_0: 1677467210
-      Grass Herbs_7: -1192299527
-      Grass Herbs_19: -1301220337
-      Grass Herbs_20: -318311458
-      Grass Herbs_12: 422186258
-      Grass Herbs_3: 850667688
-      Grass Herbs_8: 1009113931
-      Grass Herbs_14: -1413441819
-      Grass Herbs_2: 1541198799
-      Grass Herbs_4: -122659863
-      Grass Herbs_22: -2033502144
-      Grass Herbs_10: -585920985
       Grass Herbs_17: -1611428083
+      Grass Herbs_18: 176670344
+      Grass Herbs_19: -1301220337
+      Grass Herbs_2: 1541198799
+      Grass Herbs_20: -318311458
+      Grass Herbs_21: 1205349176
+      Grass Herbs_22: -2033502144
       Grass Herbs_23: -748735029
-  spritePackingTag: 
+      Grass Herbs_3: 850667688
+      Grass Herbs_4: -122659863
+      Grass Herbs_5: 874387334
+      Grass Herbs_6: -1987001042
+      Grass Herbs_7: -1192299527
+      Grass Herbs_8: 1009113931
+      Grass Herbs_9: 208523586
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

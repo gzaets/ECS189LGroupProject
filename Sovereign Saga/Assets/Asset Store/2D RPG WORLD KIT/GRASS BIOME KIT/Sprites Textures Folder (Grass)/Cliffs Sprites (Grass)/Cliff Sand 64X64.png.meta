@@ -3,7 +3,7 @@ guid: ff7f99f5a00bd054b8072ecd5478e9c9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -429,24 +432,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cliff Sand 64X64_12: -276576239
-      Cliff Sand 64X64_9: 1923487707
-      Cliff Sand 64X64_10: -1277262543
-      Cliff Sand 64X64_5: -925163493
-      Cliff Sand 64X64_8: 2109186278
       Cliff Sand 64X64_0: 2114652512
-      Cliff Sand 64X64_7: -1725652259
-      Cliff Sand 64X64_2: 264581418
-      Cliff Sand 64X64_4: -2002342367
       Cliff Sand 64X64_1: -129388729
-      Cliff Sand 64X64_3: -207335072
+      Cliff Sand 64X64_10: -1277262543
       Cliff Sand 64X64_11: -1526224998
-      Cliff Sand 64X64_6: -590254553
+      Cliff Sand 64X64_12: -276576239
       Cliff Sand 64X64_13: 1305837979
       Cliff Sand 64X64_14: -781169994
-  spritePackingTag: 
+      Cliff Sand 64X64_2: 264581418
+      Cliff Sand 64X64_3: -207335072
+      Cliff Sand 64X64_4: -2002342367
+      Cliff Sand 64X64_5: -925163493
+      Cliff Sand 64X64_6: -590254553
+      Cliff Sand 64X64_7: -1725652259
+      Cliff Sand 64X64_8: 2109186278
+      Cliff Sand 64X64_9: 1923487707
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -3,7 +3,7 @@ guid: 5833b1960a1e0584595c11e4c5c1fd1a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -429,24 +432,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cliff Rock 64X64_9: 49430358
+      Cliff Rock 64X64_0: -1336408775
+      Cliff Rock 64X64_1: -2075794000
+      Cliff Rock 64X64_10: 1577748829
       Cliff Rock 64X64_11: 630698042
       Cliff Rock 64X64_12: -1279111915
-      Cliff Rock 64X64_14: -32717096
-      Cliff Rock 64X64_3: 1212066671
-      Cliff Rock 64X64_5: 2020232332
-      Cliff Rock 64X64_0: -1336408775
-      Cliff Rock 64X64_2: 370859033
-      Cliff Rock 64X64_6: -1720285858
-      Cliff Rock 64X64_8: 1950931857
-      Cliff Rock 64X64_10: 1577748829
-      Cliff Rock 64X64_1: -2075794000
       Cliff Rock 64X64_13: 695547668
+      Cliff Rock 64X64_14: -32717096
+      Cliff Rock 64X64_2: 370859033
+      Cliff Rock 64X64_3: 1212066671
       Cliff Rock 64X64_4: 1840524607
+      Cliff Rock 64X64_5: 2020232332
+      Cliff Rock 64X64_6: -1720285858
       Cliff Rock 64X64_7: 1158450847
-  spritePackingTag: 
+      Cliff Rock 64X64_8: 1950931857
+      Cliff Rock 64X64_9: 49430358
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

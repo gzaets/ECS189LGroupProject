@@ -3,7 +3,7 @@ guid: 902d7d255bc4d4c47915edfcb4dc2b54
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2004,99 +2007,98 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Forest Waterfall right_3: -638755995
-      Forest Waterfall right_49: -309326465
-      Forest Waterfall right_9: -451676174
-      Forest Waterfall right_55: 908777916
-      Forest Waterfall right_89: -699028151
-      Forest Waterfall right_23: 945615553
-      Forest Waterfall right_16: -1303128195
-      Forest Waterfall right_35: -1528349529
-      Forest Waterfall right_45: -1940612824
-      Forest Waterfall right_26: -1934177730
-      Forest Waterfall right_62: 494417848
-      Forest Waterfall right_1: -1771406708
-      Forest Waterfall right_6: -1108559615
-      Forest Waterfall right_20: -1550927376
-      Forest Waterfall right_85: -1501626522
-      Forest Waterfall right_78: 249648970
-      Forest Waterfall right_76: 134094645
-      Forest Waterfall right_74: -2141304812
-      Forest Waterfall right_81: -707460831
-      Forest Waterfall right_61: -510214660
-      Forest Waterfall right_69: 1735882640
-      Forest Waterfall right_38: 1265071753
-      Forest Waterfall right_47: 765718870
-      Forest Waterfall right_73: -864804269
-      Forest Waterfall right_51: -1482658468
-      Forest Waterfall right_5: -120746207
-      Forest Waterfall right_80: 1768291778
-      Forest Waterfall right_83: -508217723
-      Forest Waterfall right_52: -59902246
-      Forest Waterfall right_27: -1265903356
-      Forest Waterfall right_17: -1473993883
-      Forest Waterfall right_72: 1169467578
-      Forest Waterfall right_68: 974494490
-      Forest Waterfall right_65: 442274666
-      Forest Waterfall right_13: 51511264
-      Forest Waterfall right_66: -1949052957
-      Forest Waterfall right_75: -1165159628
-      Forest Waterfall right_8: -1919998116
-      Forest Waterfall right_39: 1437776847
-      Forest Waterfall right_60: 195450397
-      Forest Waterfall right_19: -1381420307
-      Forest Waterfall right_11: 1003286190
-      Forest Waterfall right_10: 144690719
-      Forest Waterfall right_22: 1446892784
-      Forest Waterfall right_87: -86415630
-      Forest Waterfall right_70: -290851250
-      Forest Waterfall right_40: -1056789399
-      Forest Waterfall right_37: -658388321
-      Forest Waterfall right_30: -1063927072
-      Forest Waterfall right_28: -908070392
-      Forest Waterfall right_32: 1636062899
-      Forest Waterfall right_31: 1391683804
-      Forest Waterfall right_25: 280842346
-      Forest Waterfall right_15: -1529071903
-      Forest Waterfall right_86: 1321349326
       Forest Waterfall right_0: -1996423885
-      Forest Waterfall right_7: 1987158826
-      Forest Waterfall right_71: 1578279278
-      Forest Waterfall right_56: 1898999795
-      Forest Waterfall right_59: 36728296
-      Forest Waterfall right_18: -1943992989
-      Forest Waterfall right_41: -1326882098
-      Forest Waterfall right_63: 490619909
-      Forest Waterfall right_44: -1680707663
-      Forest Waterfall right_4: 1956000411
-      Forest Waterfall right_77: -2112853638
-      Forest Waterfall right_64: 1501316225
-      Forest Waterfall right_57: 1787933699
-      Forest Waterfall right_29: 1952647199
-      Forest Waterfall right_36: -695179666
-      Forest Waterfall right_34: -76861638
+      Forest Waterfall right_1: -1771406708
+      Forest Waterfall right_10: 144690719
+      Forest Waterfall right_11: 1003286190
       Forest Waterfall right_12: -92372207
-      Forest Waterfall right_67: -906247530
-      Forest Waterfall right_58: 869647716
-      Forest Waterfall right_79: 1731745540
-      Forest Waterfall right_24: -1544943664
-      Forest Waterfall right_2: -2014675543
-      Forest Waterfall right_33: 1418452959
-      Forest Waterfall right_82: 1018743207
-      Forest Waterfall right_50: -127555365
-      Forest Waterfall right_46: 95029008
-      Forest Waterfall right_88: -1275473163
-      Forest Waterfall right_21: 797748586
-      Forest Waterfall right_43: 28018177
+      Forest Waterfall right_13: 51511264
       Forest Waterfall right_14: -358596846
-      Forest Waterfall right_84: 1407821173
-      Forest Waterfall right_54: -835841434
+      Forest Waterfall right_15: -1529071903
+      Forest Waterfall right_16: -1303128195
+      Forest Waterfall right_17: -1473993883
+      Forest Waterfall right_18: -1943992989
+      Forest Waterfall right_19: -1381420307
+      Forest Waterfall right_2: -2014675543
+      Forest Waterfall right_20: -1550927376
+      Forest Waterfall right_21: 797748586
+      Forest Waterfall right_22: 1446892784
+      Forest Waterfall right_23: 945615553
+      Forest Waterfall right_24: -1544943664
+      Forest Waterfall right_25: 280842346
+      Forest Waterfall right_26: -1934177730
+      Forest Waterfall right_27: -1265903356
+      Forest Waterfall right_28: -908070392
+      Forest Waterfall right_29: 1952647199
+      Forest Waterfall right_3: -638755995
+      Forest Waterfall right_30: -1063927072
+      Forest Waterfall right_31: 1391683804
+      Forest Waterfall right_32: 1636062899
+      Forest Waterfall right_33: 1418452959
+      Forest Waterfall right_34: -76861638
+      Forest Waterfall right_35: -1528349529
+      Forest Waterfall right_36: -695179666
+      Forest Waterfall right_37: -658388321
+      Forest Waterfall right_38: 1265071753
+      Forest Waterfall right_39: 1437776847
+      Forest Waterfall right_4: 1956000411
+      Forest Waterfall right_40: -1056789399
+      Forest Waterfall right_41: -1326882098
       Forest Waterfall right_42: -1678486109
+      Forest Waterfall right_43: 28018177
+      Forest Waterfall right_44: -1680707663
+      Forest Waterfall right_45: -1940612824
+      Forest Waterfall right_46: 95029008
+      Forest Waterfall right_47: 765718870
       Forest Waterfall right_48: 1614466236
+      Forest Waterfall right_49: -309326465
+      Forest Waterfall right_5: -120746207
+      Forest Waterfall right_50: -127555365
+      Forest Waterfall right_51: -1482658468
+      Forest Waterfall right_52: -59902246
       Forest Waterfall right_53: -1928963584
-  spritePackingTag: 
+      Forest Waterfall right_54: -835841434
+      Forest Waterfall right_55: 908777916
+      Forest Waterfall right_56: 1898999795
+      Forest Waterfall right_57: 1787933699
+      Forest Waterfall right_58: 869647716
+      Forest Waterfall right_59: 36728296
+      Forest Waterfall right_6: -1108559615
+      Forest Waterfall right_60: 195450397
+      Forest Waterfall right_61: -510214660
+      Forest Waterfall right_62: 494417848
+      Forest Waterfall right_63: 490619909
+      Forest Waterfall right_64: 1501316225
+      Forest Waterfall right_65: 442274666
+      Forest Waterfall right_66: -1949052957
+      Forest Waterfall right_67: -906247530
+      Forest Waterfall right_68: 974494490
+      Forest Waterfall right_69: 1735882640
+      Forest Waterfall right_7: 1987158826
+      Forest Waterfall right_70: -290851250
+      Forest Waterfall right_71: 1578279278
+      Forest Waterfall right_72: 1169467578
+      Forest Waterfall right_73: -864804269
+      Forest Waterfall right_74: -2141304812
+      Forest Waterfall right_75: -1165159628
+      Forest Waterfall right_76: 134094645
+      Forest Waterfall right_77: -2112853638
+      Forest Waterfall right_78: 249648970
+      Forest Waterfall right_79: 1731745540
+      Forest Waterfall right_8: -1919998116
+      Forest Waterfall right_80: 1768291778
+      Forest Waterfall right_81: -707460831
+      Forest Waterfall right_82: 1018743207
+      Forest Waterfall right_83: -508217723
+      Forest Waterfall right_84: 1407821173
+      Forest Waterfall right_85: -1501626522
+      Forest Waterfall right_86: 1321349326
+      Forest Waterfall right_87: -86415630
+      Forest Waterfall right_88: -1275473163
+      Forest Waterfall right_89: -699028151
+      Forest Waterfall right_9: -451676174
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

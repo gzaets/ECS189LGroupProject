@@ -3,7 +3,7 @@ guid: d9fe3423c3c89474a8aec9d3617bd279
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -429,24 +432,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Road II 32x32_3: -152969708
-      Road II 32x32_14: -1586346107
+      Road II 32x32_0: 2089894398
+      Road II 32x32_1: 435930276
+      Road II 32x32_10: -255693967
       Road II 32x32_11: -74393082
       Road II 32x32_12: -1047302189
-      Road II 32x32_2: 1997079763
-      Road II 32x32_4: 1383441362
-      Road II 32x32_9: 210535514
-      Road II 32x32_6: 1824551583
       Road II 32x32_13: 1648759218
-      Road II 32x32_7: 2013234838
-      Road II 32x32_0: 2089894398
-      Road II 32x32_10: -255693967
-      Road II 32x32_8: -1670290404
-      Road II 32x32_1: 435930276
+      Road II 32x32_14: -1586346107
+      Road II 32x32_2: 1997079763
+      Road II 32x32_3: -152969708
+      Road II 32x32_4: 1383441362
       Road II 32x32_5: 1513528487
-  spritePackingTag: 
+      Road II 32x32_6: 1824551583
+      Road II 32x32_7: 2013234838
+      Road II 32x32_8: -1670290404
+      Road II 32x32_9: 210535514
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

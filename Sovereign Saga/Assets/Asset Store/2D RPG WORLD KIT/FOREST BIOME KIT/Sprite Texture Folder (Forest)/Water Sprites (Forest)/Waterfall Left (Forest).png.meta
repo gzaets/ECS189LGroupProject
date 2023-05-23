@@ -3,7 +3,7 @@ guid: 41982c21c2d390641a617bb96bad7d13
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2004,99 +2007,98 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Forest Waterfall left_6: 1899387619
-      Forest Waterfall left_88: -259843660
-      Forest Waterfall left_73: 134740308
-      Forest Waterfall left_84: -2134649970
-      Forest Waterfall left_37: -902273421
-      Forest Waterfall left_48: 1324999837
-      Forest Waterfall left_72: 546999005
-      Forest Waterfall left_14: -53918638
-      Forest Waterfall left_83: 1824412517
-      Forest Waterfall left_42: 1118619726
-      Forest Waterfall left_8: 1810830484
-      Forest Waterfall left_76: 1127900664
-      Forest Waterfall left_70: 2121329165
-      Forest Waterfall left_68: 690702163
-      Forest Waterfall left_85: 345937858
-      Forest Waterfall left_31: 2032421179
-      Forest Waterfall left_13: 1025183359
-      Forest Waterfall left_12: -1007253423
-      Forest Waterfall left_39: 690572560
-      Forest Waterfall left_56: 1805809841
-      Forest Waterfall left_19: 765249731
-      Forest Waterfall left_23: 780147872
-      Forest Waterfall left_69: -727116007
-      Forest Waterfall left_74: -611551394
-      Forest Waterfall left_18: 2001499864
       Forest Waterfall left_0: 1282121952
-      Forest Waterfall left_33: 1705534483
-      Forest Waterfall left_29: -1929299955
-      Forest Waterfall left_58: 1179035605
-      Forest Waterfall left_71: 1339728875
-      Forest Waterfall left_17: 1245699394
-      Forest Waterfall left_52: 1518326348
-      Forest Waterfall left_77: -2063008171
-      Forest Waterfall left_44: 290749976
+      Forest Waterfall left_1: 262234698
+      Forest Waterfall left_10: -591266487
+      Forest Waterfall left_11: -1888460510
+      Forest Waterfall left_12: -1007253423
+      Forest Waterfall left_13: 1025183359
+      Forest Waterfall left_14: -53918638
+      Forest Waterfall left_15: 1540903451
       Forest Waterfall left_16: -602602300
+      Forest Waterfall left_17: 1245699394
+      Forest Waterfall left_18: 2001499864
+      Forest Waterfall left_19: 765249731
+      Forest Waterfall left_2: -1756483751
+      Forest Waterfall left_20: 733038062
+      Forest Waterfall left_21: -626158751
+      Forest Waterfall left_22: 1828555190
+      Forest Waterfall left_23: 780147872
+      Forest Waterfall left_24: -572806308
+      Forest Waterfall left_25: 1479210881
+      Forest Waterfall left_26: 1965149762
       Forest Waterfall left_27: 1563301274
+      Forest Waterfall left_28: -1351389589
+      Forest Waterfall left_29: -1929299955
       Forest Waterfall left_3: 1539301442
-      Forest Waterfall left_50: -635792893
+      Forest Waterfall left_30: 1855511651
+      Forest Waterfall left_31: 2032421179
+      Forest Waterfall left_32: -1406720547
+      Forest Waterfall left_33: 1705534483
+      Forest Waterfall left_34: 1455326958
       Forest Waterfall left_35: 196090416
-      Forest Waterfall left_64: 1870216162
+      Forest Waterfall left_36: -731807721
+      Forest Waterfall left_37: -902273421
+      Forest Waterfall left_38: 755396595
+      Forest Waterfall left_39: 690572560
+      Forest Waterfall left_4: -503116204
+      Forest Waterfall left_40: -2082511781
+      Forest Waterfall left_41: 1603359814
+      Forest Waterfall left_42: 1118619726
+      Forest Waterfall left_43: 1936425149
+      Forest Waterfall left_44: 290749976
       Forest Waterfall left_45: 132798930
+      Forest Waterfall left_46: -55619465
+      Forest Waterfall left_47: 1385346117
+      Forest Waterfall left_48: 1324999837
+      Forest Waterfall left_49: 799428435
       Forest Waterfall left_5: -962166249
-      Forest Waterfall left_65: 1748708668
-      Forest Waterfall left_62: 515986010
-      Forest Waterfall left_89: 845984310
-      Forest Waterfall left_87: -999153674
+      Forest Waterfall left_50: -635792893
+      Forest Waterfall left_51: 841224864
+      Forest Waterfall left_52: 1518326348
       Forest Waterfall left_53: 1765780395
       Forest Waterfall left_54: 544776229
-      Forest Waterfall left_78: 112582948
       Forest Waterfall left_55: 69930820
-      Forest Waterfall left_7: -1685350791
-      Forest Waterfall left_43: 1936425149
-      Forest Waterfall left_22: 1828555190
-      Forest Waterfall left_51: 841224864
-      Forest Waterfall left_21: -626158751
-      Forest Waterfall left_38: 755396595
+      Forest Waterfall left_56: 1805809841
       Forest Waterfall left_57: 29884732
-      Forest Waterfall left_60: 1791786558
-      Forest Waterfall left_36: -731807721
-      Forest Waterfall left_80: -910885966
-      Forest Waterfall left_1: 262234698
-      Forest Waterfall left_25: 1479210881
-      Forest Waterfall left_40: -2082511781
-      Forest Waterfall left_9: 1958379817
-      Forest Waterfall left_46: -55619465
-      Forest Waterfall left_81: 1873891274
-      Forest Waterfall left_75: 695207153
-      Forest Waterfall left_2: -1756483751
-      Forest Waterfall left_67: 1778085076
-      Forest Waterfall left_15: 1540903451
-      Forest Waterfall left_41: 1603359814
-      Forest Waterfall left_82: -1312186863
+      Forest Waterfall left_58: 1179035605
       Forest Waterfall left_59: -643188893
-      Forest Waterfall left_66: 884708431
-      Forest Waterfall left_26: 1965149762
-      Forest Waterfall left_20: 733038062
-      Forest Waterfall left_47: 1385346117
-      Forest Waterfall left_4: -503116204
-      Forest Waterfall left_10: -591266487
-      Forest Waterfall left_79: 1544817394
-      Forest Waterfall left_24: -572806308
-      Forest Waterfall left_32: -1406720547
-      Forest Waterfall left_49: 799428435
-      Forest Waterfall left_34: 1455326958
+      Forest Waterfall left_6: 1899387619
+      Forest Waterfall left_60: 1791786558
       Forest Waterfall left_61: -287754866
-      Forest Waterfall left_86: -1892647125
-      Forest Waterfall left_11: -1888460510
+      Forest Waterfall left_62: 515986010
       Forest Waterfall left_63: 416212282
-      Forest Waterfall left_28: -1351389589
-      Forest Waterfall left_30: 1855511651
-  spritePackingTag: 
+      Forest Waterfall left_64: 1870216162
+      Forest Waterfall left_65: 1748708668
+      Forest Waterfall left_66: 884708431
+      Forest Waterfall left_67: 1778085076
+      Forest Waterfall left_68: 690702163
+      Forest Waterfall left_69: -727116007
+      Forest Waterfall left_7: -1685350791
+      Forest Waterfall left_70: 2121329165
+      Forest Waterfall left_71: 1339728875
+      Forest Waterfall left_72: 546999005
+      Forest Waterfall left_73: 134740308
+      Forest Waterfall left_74: -611551394
+      Forest Waterfall left_75: 695207153
+      Forest Waterfall left_76: 1127900664
+      Forest Waterfall left_77: -2063008171
+      Forest Waterfall left_78: 112582948
+      Forest Waterfall left_79: 1544817394
+      Forest Waterfall left_8: 1810830484
+      Forest Waterfall left_80: -910885966
+      Forest Waterfall left_81: 1873891274
+      Forest Waterfall left_82: -1312186863
+      Forest Waterfall left_83: 1824412517
+      Forest Waterfall left_84: -2134649970
+      Forest Waterfall left_85: 345937858
+      Forest Waterfall left_86: -1892647125
+      Forest Waterfall left_87: -999153674
+      Forest Waterfall left_88: -259843660
+      Forest Waterfall left_89: 845984310
+      Forest Waterfall left_9: 1958379817
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

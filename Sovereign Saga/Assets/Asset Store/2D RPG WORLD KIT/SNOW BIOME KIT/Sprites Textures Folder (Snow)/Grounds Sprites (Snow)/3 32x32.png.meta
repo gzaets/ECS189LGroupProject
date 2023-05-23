@@ -3,7 +3,7 @@ guid: 3439d23397fd3d04d9c321189bd5081b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -429,24 +432,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ice Grass 32x32_10: 301141352
-      Ice Grass 32x32_9: 31539663
-      Ice Grass 32x32_3: 1910903052
-      Ice Grass 32x32_5: -1525861642
       Ice Grass 32x32_0: 1271185692
-      Ice Grass 32x32_14: 2033693491
-      Ice Grass 32x32_11: -374749284
-      Ice Grass 32x32_8: -2142495926
-      Ice Grass 32x32_7: -1591010001
-      Ice Grass 32x32_2: -1605627978
-      Ice Grass 32x32_4: 285451532
-      Ice Grass 32x32_6: -168761264
-      Ice Grass 32x32_13: -1884066068
       Ice Grass 32x32_1: -1643223284
+      Ice Grass 32x32_10: 301141352
+      Ice Grass 32x32_11: -374749284
       Ice Grass 32x32_12: 917179961
-  spritePackingTag: 
+      Ice Grass 32x32_13: -1884066068
+      Ice Grass 32x32_14: 2033693491
+      Ice Grass 32x32_2: -1605627978
+      Ice Grass 32x32_3: 1910903052
+      Ice Grass 32x32_4: 285451532
+      Ice Grass 32x32_5: -1525861642
+      Ice Grass 32x32_6: -168761264
+      Ice Grass 32x32_7: -1591010001
+      Ice Grass 32x32_8: -2142495926
+      Ice Grass 32x32_9: 31539663
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

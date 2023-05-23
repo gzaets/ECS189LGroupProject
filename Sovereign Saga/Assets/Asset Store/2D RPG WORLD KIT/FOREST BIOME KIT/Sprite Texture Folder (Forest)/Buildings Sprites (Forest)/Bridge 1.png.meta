@@ -3,7 +3,7 @@ guid: 736414b04a62fa1478b8753ead74debb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -933,54 +936,53 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bridge 1_8: -399806427
-      Bridge 1_1: -1577523796
-      Bridge 1_39: -1414567173
-      Bridge 1_43: 1059670490
-      Bridge 1_35: 616801805
-      Bridge 1_7: 771531648
-      Bridge 1_23: -1349116228
-      Bridge 1_42: -255010232
-      Bridge 1_40: -1530804813
-      Bridge 1_41: 171752744
-      Bridge 1_24: 84090445
-      Bridge 1_9: -1946341922
-      Bridge 1_10: -590310813
-      Bridge 1_38: 418880172
       Bridge 1_0: -439357513
-      Bridge 1_33: 875809569
-      Bridge 1_36: -1804357556
-      Bridge 1_44: 245467318
-      Bridge 1_14: -1983469427
-      Bridge 1_22: 633916570
-      Bridge 1_16: -520733277
-      Bridge 1_29: -359004004
-      Bridge 1_18: 578897888
-      Bridge 1_17: 1937095490
-      Bridge 1_31: 1321392330
-      Bridge 1_6: -1776570281
+      Bridge 1_1: -1577523796
+      Bridge 1_10: -590310813
+      Bridge 1_11: 857022783
       Bridge 1_12: -1057112189
-      Bridge 1_25: -32113866
       Bridge 1_13: -871420493
+      Bridge 1_14: -1983469427
       Bridge 1_15: 1565584658
-      Bridge 1_37: 603054208
-      Bridge 1_4: -1224218851
-      Bridge 1_34: -1646923506
+      Bridge 1_16: -520733277
+      Bridge 1_17: 1937095490
+      Bridge 1_18: 578897888
+      Bridge 1_19: -1436104273
+      Bridge 1_2: -553621995
+      Bridge 1_20: -785048146
+      Bridge 1_21: 926087839
+      Bridge 1_22: 633916570
+      Bridge 1_23: -1349116228
+      Bridge 1_24: 84090445
+      Bridge 1_25: -32113866
       Bridge 1_26: -1779255396
       Bridge 1_27: -117281810
-      Bridge 1_20: -785048146
-      Bridge 1_5: 314287050
       Bridge 1_28: 1596175492
-      Bridge 1_30: -1114703617
+      Bridge 1_29: -359004004
       Bridge 1_3: -1801029761
+      Bridge 1_30: -1114703617
+      Bridge 1_31: 1321392330
       Bridge 1_32: -1339387694
-      Bridge 1_2: -553621995
-      Bridge 1_19: -1436104273
-      Bridge 1_21: 926087839
-      Bridge 1_11: 857022783
-  spritePackingTag: 
+      Bridge 1_33: 875809569
+      Bridge 1_34: -1646923506
+      Bridge 1_35: 616801805
+      Bridge 1_36: -1804357556
+      Bridge 1_37: 603054208
+      Bridge 1_38: 418880172
+      Bridge 1_39: -1414567173
+      Bridge 1_4: -1224218851
+      Bridge 1_40: -1530804813
+      Bridge 1_41: 171752744
+      Bridge 1_42: -255010232
+      Bridge 1_43: 1059670490
+      Bridge 1_44: 245467318
+      Bridge 1_5: 314287050
+      Bridge 1_6: -1776570281
+      Bridge 1_7: 771531648
+      Bridge 1_8: -399806427
+      Bridge 1_9: -1946341922
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

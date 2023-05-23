@@ -3,7 +3,7 @@ guid: ce2410b266b03cb4b9aaff6bcea2a265
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1122,57 +1125,56 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Decoration_34: 1089882186
-      Decoration_31: 436705567
-      Decoration_38: 263927240
-      Decoration_15: 1882366598
-      Decoration_11: 989248323
-      Decoration_28: -934977225
-      Decoration_6: -1870113314
-      Decoration_30: 1684224453
-      Decoration_43: -51331478
-      Decoration_13: -1470488924
-      Decoration_44: -1255733591
-      Decoration_36: -1542770645
-      Decoration_42: -1732885881
-      Decoration_24: 893651396
-      Decoration_4: -675030161
-      Decoration_3: -1970856881
-      Decoration_45: -1141706670
-      Decoration_37: -1247020504
-      Decoration_46: 607795630
       Decoration_0: -1411398803
       Decoration_1: -1593486934
-      Decoration_5: 1332468327
-      Decoration_17: -282827784
-      Decoration_32: 1758789614
-      Decoration_23: -358227233
-      Decoration_7: -107249796
-      Decoration_14: -342229120
-      Decoration_21: 1779892805
-      Decoration_40: -465131472
-      Decoration_8: -2058413117
-      Decoration_29: -1421098577
-      Decoration_2: 1560965591
-      Decoration_41: -415368074
-      Decoration_26: -1804055266
-      Decoration_25: 30468449
-      Decoration_12: -1264535601
-      Decoration_33: -806367757
-      Decoration_22: 615725180
-      Decoration_39: -647133485
-      Decoration_47: 1948104345
-      Decoration_19: 1054502755
-      Decoration_20: -424685359
       Decoration_10: 1746198868
-      Decoration_9: 807046330
-      Decoration_27: 1602532986
+      Decoration_11: 989248323
+      Decoration_12: -1264535601
+      Decoration_13: -1470488924
+      Decoration_14: -342229120
+      Decoration_15: 1882366598
       Decoration_16: 1830998987
+      Decoration_17: -282827784
       Decoration_18: -1492961463
+      Decoration_19: 1054502755
+      Decoration_2: 1560965591
+      Decoration_20: -424685359
+      Decoration_21: 1779892805
+      Decoration_22: 615725180
+      Decoration_23: -358227233
+      Decoration_24: 893651396
+      Decoration_25: 30468449
+      Decoration_26: -1804055266
+      Decoration_27: 1602532986
+      Decoration_28: -934977225
+      Decoration_29: -1421098577
+      Decoration_3: -1970856881
+      Decoration_30: 1684224453
+      Decoration_31: 436705567
+      Decoration_32: 1758789614
+      Decoration_33: -806367757
+      Decoration_34: 1089882186
       Decoration_35: 328735457
-  spritePackingTag: 
+      Decoration_36: -1542770645
+      Decoration_37: -1247020504
+      Decoration_38: 263927240
+      Decoration_39: -647133485
+      Decoration_4: -675030161
+      Decoration_40: -465131472
+      Decoration_41: -415368074
+      Decoration_42: -1732885881
+      Decoration_43: -51331478
+      Decoration_44: -1255733591
+      Decoration_45: -1141706670
+      Decoration_46: 607795630
+      Decoration_47: 1948104345
+      Decoration_5: 1332468327
+      Decoration_6: -1870113314
+      Decoration_7: -107249796
+      Decoration_8: -2058413117
+      Decoration_9: 807046330
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

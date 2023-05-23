@@ -3,7 +3,7 @@ guid: a669f960c93458f47858ebfe7d0b10da
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1710,91 +1713,90 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Interior_28: -902846386
-      Interior_75: -249514330
-      Interior_24: -1998055300
-      Interior_3: -1391903475
-      Interior_62: 1595129367
-      Interior_4: -603296753
-      Interior_26: 441966823
-      Interior_73: 1018395045
-      Interior_50: 523335473
-      Interior_40: 461890144
-      Interior_10: 618034310
-      Interior_79: -1283844740
-      Interior_70: -229790400
-      Interior_29: -466128543
-      Interior_35: -1262502306
-      Interior_77: 2128220432
-      Interior_14: 19130567
-      Interior_21: -229030565
-      Interior_9: -821308868
-      Interior_30: -223840714
-      Interior_13: -223660109
-      Interior_12: -1387120122
-      Interior_52: -932067051
-      Interior_34: -519945833
-      Interior_23: -2111377764
-      Interior_33: -504506767
-      Interior_64: -775798570
-      Interior_53: 1561043
-      Interior_65: 2116055195
-      Interior_80: -224093210
-      Interior_6: -210455375
-      Interior_36: -2078385988
-      Interior_78: -564454013
-      Interior_49: -1120228228
-      Interior_7: -277307456
-      Interior_44: 660654274
-      Interior_57: 1521350158
-      Interior_25: -408558323
-      Interior_1: -1389615676
-      Interior_2: 726210030
-      Interior_58: 47078052
-      Interior_37: 1734842592
-      Interior_45: 1621212615
-      Interior_76: -575354426
-      Interior_47: 890473467
-      Interior_72: -598472345
-      Interior_71: -1185424359
-      Interior_69: -1327079861
-      Interior_55: 1907222179
-      Interior_66: 277065378
-      Interior_19: -279346684
-      Interior_81: -576522442
-      Interior_27: 1759734976
       Interior_0: 748581625
-      Interior_32: 1964283766
-      Interior_39: -1540051327
-      Interior_17: -1658962578
-      Interior_8: 849526114
-      Interior_16: 1792161648
-      Interior_54: -478221902
-      Interior_31: 460283371
-      Interior_38: 1064513590
-      Interior_42: 877355335
-      Interior_41: -1159989147
-      Interior_63: 157758244
-      Interior_48: 950450585
-      Interior_22: 633156904
-      Interior_20: 324066753
-      Interior_46: 1815637227
+      Interior_1: -1389615676
+      Interior_10: 618034310
       Interior_11: 1399607287
-      Interior_51: 1307572636
-      Interior_59: 591054780
-      Interior_18: -41573173
-      Interior_60: 940731418
-      Interior_74: -1142729860
+      Interior_12: -1387120122
+      Interior_13: -223660109
+      Interior_14: 19130567
       Interior_15: -131863548
-      Interior_61: -242840652
+      Interior_16: 1792161648
+      Interior_17: -1658962578
+      Interior_18: -41573173
+      Interior_19: -279346684
+      Interior_2: 726210030
+      Interior_20: 324066753
+      Interior_21: -229030565
+      Interior_22: 633156904
+      Interior_23: -2111377764
+      Interior_24: -1998055300
+      Interior_25: -408558323
+      Interior_26: 441966823
+      Interior_27: 1759734976
+      Interior_28: -902846386
+      Interior_29: -466128543
+      Interior_3: -1391903475
+      Interior_30: -223840714
+      Interior_31: 460283371
+      Interior_32: 1964283766
+      Interior_33: -504506767
+      Interior_34: -519945833
+      Interior_35: -1262502306
+      Interior_36: -2078385988
+      Interior_37: 1734842592
+      Interior_38: 1064513590
+      Interior_39: -1540051327
+      Interior_4: -603296753
+      Interior_40: 461890144
+      Interior_41: -1159989147
+      Interior_42: 877355335
       Interior_43: 453394918
+      Interior_44: 660654274
+      Interior_45: 1621212615
+      Interior_46: 1815637227
+      Interior_47: 890473467
+      Interior_48: 950450585
+      Interior_49: -1120228228
       Interior_5: 1292750486
-      Interior_67: 568543583
+      Interior_50: 523335473
+      Interior_51: 1307572636
+      Interior_52: -932067051
+      Interior_53: 1561043
+      Interior_54: -478221902
+      Interior_55: 1907222179
       Interior_56: 1536910266
+      Interior_57: 1521350158
+      Interior_58: 47078052
+      Interior_59: 591054780
+      Interior_6: -210455375
+      Interior_60: 940731418
+      Interior_61: -242840652
+      Interior_62: 1595129367
+      Interior_63: 157758244
+      Interior_64: -775798570
+      Interior_65: 2116055195
+      Interior_66: 277065378
+      Interior_67: 568543583
       Interior_68: -142966469
-  spritePackingTag: 
+      Interior_69: -1327079861
+      Interior_7: -277307456
+      Interior_70: -229790400
+      Interior_71: -1185424359
+      Interior_72: -598472345
+      Interior_73: 1018395045
+      Interior_74: -1142729860
+      Interior_75: -249514330
+      Interior_76: -575354426
+      Interior_77: 2128220432
+      Interior_78: -564454013
+      Interior_79: -1283844740
+      Interior_8: 849526114
+      Interior_80: -224093210
+      Interior_81: -576522442
+      Interior_9: -821308868
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

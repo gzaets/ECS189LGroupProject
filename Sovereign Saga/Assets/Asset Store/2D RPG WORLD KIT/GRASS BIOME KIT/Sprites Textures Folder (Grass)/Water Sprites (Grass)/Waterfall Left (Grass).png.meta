@@ -3,7 +3,7 @@ guid: 7ee8df40b2b2cee4ebc93b96b97648e6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2004,99 +2007,98 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Waterfall left_71: -478905054
-      Waterfall left_20: 810601160
-      Waterfall left_12: 1257586139
-      Waterfall left_9: -1067397271
-      Waterfall left_63: -1611713167
-      Waterfall left_61: -1940676438
-      Waterfall left_5: 892638345
-      Waterfall left_40: -1747847172
-      Waterfall left_28: -773573024
-      Waterfall left_44: 914928004
-      Waterfall left_82: 1309182795
-      Waterfall left_8: -539937520
-      Waterfall left_87: -1706563586
       Waterfall left_0: 795584971
-      Waterfall left_7: -2125722819
-      Waterfall left_14: 1611382782
-      Waterfall left_29: 1807655449
-      Waterfall left_13: -350706449
-      Waterfall left_23: 365982901
-      Waterfall left_10: -1628721371
-      Waterfall left_73: 1085985684
-      Waterfall left_16: -2013648486
-      Waterfall left_38: 1421449890
-      Waterfall left_72: 1003508339
-      Waterfall left_6: -1164979005
-      Waterfall left_31: 1683116799
-      Waterfall left_3: 866612601
-      Waterfall left_36: 1090375159
-      Waterfall left_21: -226778773
-      Waterfall left_27: -769647972
-      Waterfall left_83: -257796957
-      Waterfall left_62: -1729999231
-      Waterfall left_33: 98477592
-      Waterfall left_59: -626509014
-      Waterfall left_26: 2061694463
-      Waterfall left_32: 1677335237
-      Waterfall left_84: 1390310278
-      Waterfall left_30: -1663160157
-      Waterfall left_53: 653265360
-      Waterfall left_78: 992573935
-      Waterfall left_81: -1570317690
-      Waterfall left_25: -487805154
-      Waterfall left_37: -655229724
-      Waterfall left_67: 1854751090
-      Waterfall left_79: -1463141262
-      Waterfall left_41: 1609614234
-      Waterfall left_77: -2110166862
-      Waterfall left_2: -1520362130
-      Waterfall left_46: -753627822
-      Waterfall left_11: 1424947609
-      Waterfall left_74: -1853609469
-      Waterfall left_35: -1264322237
-      Waterfall left_43: -446543762
-      Waterfall left_64: 1713935716
-      Waterfall left_24: -1611807116
-      Waterfall left_51: 394435050
-      Waterfall left_42: 1692610548
-      Waterfall left_45: -204816867
-      Waterfall left_4: -844790024
-      Waterfall left_55: -1170832200
-      Waterfall left_57: 1638523072
-      Waterfall left_89: 504673311
-      Waterfall left_66: -1481244946
-      Waterfall left_49: 541195165
-      Waterfall left_85: -873175298
-      Waterfall left_19: -512538831
-      Waterfall left_17: 77414230
-      Waterfall left_80: 649351190
-      Waterfall left_50: -65363154
-      Waterfall left_76: -1821732370
-      Waterfall left_52: -677710208
-      Waterfall left_18: -723534577
-      Waterfall left_56: -1571310260
-      Waterfall left_15: -406568612
-      Waterfall left_88: 1515414239
-      Waterfall left_48: -102972257
-      Waterfall left_70: 295607544
-      Waterfall left_54: 717100305
       Waterfall left_1: -2054653002
-      Waterfall left_47: 19231869
-      Waterfall left_65: 1378256393
+      Waterfall left_10: -1628721371
+      Waterfall left_11: 1424947609
+      Waterfall left_12: 1257586139
+      Waterfall left_13: -350706449
+      Waterfall left_14: 1611382782
+      Waterfall left_15: -406568612
+      Waterfall left_16: -2013648486
+      Waterfall left_17: 77414230
+      Waterfall left_18: -723534577
+      Waterfall left_19: -512538831
+      Waterfall left_2: -1520362130
+      Waterfall left_20: 810601160
+      Waterfall left_21: -226778773
       Waterfall left_22: 340566354
-      Waterfall left_68: -1948536918
-      Waterfall left_58: -1353512757
-      Waterfall left_60: -817647549
-      Waterfall left_86: -1263767014
-      Waterfall left_39: -1963849282
-      Waterfall left_75: -2015537617
+      Waterfall left_23: 365982901
+      Waterfall left_24: -1611807116
+      Waterfall left_25: -487805154
+      Waterfall left_26: 2061694463
+      Waterfall left_27: -769647972
+      Waterfall left_28: -773573024
+      Waterfall left_29: 1807655449
+      Waterfall left_3: 866612601
+      Waterfall left_30: -1663160157
+      Waterfall left_31: 1683116799
+      Waterfall left_32: 1677335237
+      Waterfall left_33: 98477592
       Waterfall left_34: -1424900787
+      Waterfall left_35: -1264322237
+      Waterfall left_36: 1090375159
+      Waterfall left_37: -655229724
+      Waterfall left_38: 1421449890
+      Waterfall left_39: -1963849282
+      Waterfall left_4: -844790024
+      Waterfall left_40: -1747847172
+      Waterfall left_41: 1609614234
+      Waterfall left_42: 1692610548
+      Waterfall left_43: -446543762
+      Waterfall left_44: 914928004
+      Waterfall left_45: -204816867
+      Waterfall left_46: -753627822
+      Waterfall left_47: 19231869
+      Waterfall left_48: -102972257
+      Waterfall left_49: 541195165
+      Waterfall left_5: 892638345
+      Waterfall left_50: -65363154
+      Waterfall left_51: 394435050
+      Waterfall left_52: -677710208
+      Waterfall left_53: 653265360
+      Waterfall left_54: 717100305
+      Waterfall left_55: -1170832200
+      Waterfall left_56: -1571310260
+      Waterfall left_57: 1638523072
+      Waterfall left_58: -1353512757
+      Waterfall left_59: -626509014
+      Waterfall left_6: -1164979005
+      Waterfall left_60: -817647549
+      Waterfall left_61: -1940676438
+      Waterfall left_62: -1729999231
+      Waterfall left_63: -1611713167
+      Waterfall left_64: 1713935716
+      Waterfall left_65: 1378256393
+      Waterfall left_66: -1481244946
+      Waterfall left_67: 1854751090
+      Waterfall left_68: -1948536918
       Waterfall left_69: -1334560108
-  spritePackingTag: 
+      Waterfall left_7: -2125722819
+      Waterfall left_70: 295607544
+      Waterfall left_71: -478905054
+      Waterfall left_72: 1003508339
+      Waterfall left_73: 1085985684
+      Waterfall left_74: -1853609469
+      Waterfall left_75: -2015537617
+      Waterfall left_76: -1821732370
+      Waterfall left_77: -2110166862
+      Waterfall left_78: 992573935
+      Waterfall left_79: -1463141262
+      Waterfall left_8: -539937520
+      Waterfall left_80: 649351190
+      Waterfall left_81: -1570317690
+      Waterfall left_82: 1309182795
+      Waterfall left_83: -257796957
+      Waterfall left_84: 1390310278
+      Waterfall left_85: -873175298
+      Waterfall left_86: -1263767014
+      Waterfall left_87: -1706563586
+      Waterfall left_88: 1515414239
+      Waterfall left_89: 504673311
+      Waterfall left_9: -1067397271
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -3,7 +3,7 @@ guid: 7ba5b944307b85448bd14252eeebd35d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2949,144 +2952,143 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Water tile_39: -707559733
-      Water tile_58: 2135880270
-      Water tile_11: 273042682
-      Water tile_36: 2055284972
-      Water tile_83: 1215447131
-      Water tile_65: -754131851
-      Water tile_101: -225406399
-      Water tile_43: -1949215487
-      Water tile_17: 740247120
-      Water tile_108: 966418644
-      Water tile_44: -1074309937
-      Water tile_111: -1708828845
-      Water tile_57: -1303220787
-      Water tile_119: -1251168736
-      Water tile_71: 1810689826
-      Water tile_37: -1834351631
-      Water tile_62: -1488339703
-      Water tile_31: -2145349504
-      Water tile_52: 1833638927
-      Water tile_122: -230087220
-      Water tile_33: -750040614
-      Water tile_95: 156178613
-      Water tile_125: 1006942272
-      Water tile_94: 838953846
-      Water tile_50: -1072874077
-      Water tile_130: 126268945
-      Water tile_118: 1635539615
-      Water tile_56: -2055750768
-      Water tile_40: 11754444
-      Water tile_128: -1303577052
-      Water tile_9: 1270656290
-      Water tile_42: 1086692123
-      Water tile_64: 634698816
-      Water tile_121: 67309080
-      Water tile_68: -665737981
-      Water tile_3: 864465808
-      Water tile_14: 544115855
-      Water tile_112: 966280427
+      Water tile_0: -1186921881
       Water tile_1: 971667121
-      Water tile_73: -1419670875
-      Water tile_27: -362966224
-      Water tile_114: -975055678
-      Water tile_84: -40744623
-      Water tile_98: -874976209
-      Water tile_45: 1131855141
-      Water tile_113: 582560688
-      Water tile_21: 84238840
-      Water tile_76: 2124273195
-      Water tile_127: 703243912
-      Water tile_82: -174318765
-      Water tile_60: 811944753
-      Water tile_91: 1133288424
-      Water tile_30: 346158272
       Water tile_10: 1477933496
+      Water tile_100: -20365419
+      Water tile_101: -225406399
+      Water tile_102: 1348213389
+      Water tile_103: -2032116489
+      Water tile_104: -2052683528
+      Water tile_105: 1848757027
+      Water tile_106: 592309446
+      Water tile_107: 2046669148
+      Water tile_108: 966418644
+      Water tile_109: 2109287034
+      Water tile_11: 273042682
+      Water tile_110: -1091600733
+      Water tile_111: -1708828845
+      Water tile_112: 966280427
+      Water tile_113: 582560688
+      Water tile_114: -975055678
       Water tile_115: 1386176687
-      Water tile_19: -1486581230
-      Water tile_97: 585269652
-      Water tile_96: 1433954954
+      Water tile_116: -2023083269
+      Water tile_117: 358972698
+      Water tile_118: 1635539615
+      Water tile_119: -1251168736
+      Water tile_12: 1210707494
+      Water tile_120: 1789862874
+      Water tile_121: 67309080
+      Water tile_122: -230087220
+      Water tile_123: 1800270169
+      Water tile_124: -1333680235
+      Water tile_125: 1006942272
       Water tile_126: 428742481
+      Water tile_127: 703243912
+      Water tile_128: -1303577052
+      Water tile_129: -634222486
+      Water tile_13: 86660578
+      Water tile_130: 126268945
+      Water tile_131: 91375123
+      Water tile_132: -732472685
+      Water tile_133: 1208669491
+      Water tile_134: -766173188
+      Water tile_14: 544115855
+      Water tile_15: -53559491
+      Water tile_16: -529143323
+      Water tile_17: 740247120
+      Water tile_18: -285672689
+      Water tile_19: -1486581230
+      Water tile_2: -710921751
+      Water tile_20: 406262879
+      Water tile_21: 84238840
+      Water tile_22: -1076842784
+      Water tile_23: -1901196462
+      Water tile_24: 1065985837
+      Water tile_25: 368305304
+      Water tile_26: 1058833322
+      Water tile_27: -362966224
+      Water tile_28: 1734482662
+      Water tile_29: -1986356886
+      Water tile_3: 864465808
+      Water tile_30: 346158272
+      Water tile_31: -2145349504
+      Water tile_32: 1544881605
+      Water tile_33: -750040614
+      Water tile_34: -820379311
+      Water tile_35: -185407476
+      Water tile_36: 2055284972
+      Water tile_37: -1834351631
       Water tile_38: 627964626
-      Water tile_78: 1457850574
-      Water tile_89: -169757288
-      Water tile_79: -208162445
-      Water tile_69: -1626249340
+      Water tile_39: -707559733
+      Water tile_4: 2016590814
+      Water tile_40: 11754444
+      Water tile_41: 2081293143
+      Water tile_42: 1086692123
+      Water tile_43: -1949215487
+      Water tile_44: -1074309937
+      Water tile_45: 1131855141
+      Water tile_46: 1867923375
+      Water tile_47: 1535648412
+      Water tile_48: -790062241
       Water tile_49: 484544745
       Water tile_5: -1432591378
-      Water tile_24: 1065985837
-      Water tile_109: 2109287034
-      Water tile_133: 1208669491
-      Water tile_20: 406262879
-      Water tile_120: 1789862874
-      Water tile_23: -1901196462
-      Water tile_13: 86660578
-      Water tile_12: 1210707494
-      Water tile_74: 12038897
-      Water tile_124: -1333680235
-      Water tile_123: 1800270169
-      Water tile_6: -612164745
-      Water tile_8: -872921605
+      Water tile_50: -1072874077
       Water tile_51: 442393883
-      Water tile_77: -1920787911
-      Water tile_100: -20365419
-      Water tile_35: -185407476
-      Water tile_63: 1964053665
-      Water tile_7: 2088025973
-      Water tile_131: 91375123
-      Water tile_107: 2046669148
-      Water tile_67: -232842735
-      Water tile_22: -1076842784
-      Water tile_104: -2052683528
-      Water tile_117: 358972698
-      Water tile_129: -634222486
-      Water tile_46: 1867923375
-      Water tile_105: 1848757027
-      Water tile_48: -790062241
-      Water tile_103: -2032116489
-      Water tile_80: -578289134
-      Water tile_47: 1535648412
-      Water tile_28: 1734482662
-      Water tile_85: 2109826380
-      Water tile_26: 1058833322
-      Water tile_75: -1765558840
-      Water tile_86: -448673077
-      Water tile_93: 1318269831
-      Water tile_55: -561292711
-      Water tile_134: -766173188
-      Water tile_110: -1091600733
-      Water tile_34: -820379311
-      Water tile_72: -381834528
-      Water tile_87: 69535611
-      Water tile_0: -1186921881
-      Water tile_99: 1476942679
-      Water tile_4: 2016590814
-      Water tile_41: 2081293143
-      Water tile_88: 652645928
-      Water tile_132: -732472685
-      Water tile_54: 1450816036
-      Water tile_61: -1059921236
-      Water tile_70: 912435338
-      Water tile_15: -53559491
-      Water tile_2: -710921751
-      Water tile_18: -285672689
-      Water tile_66: 1407003056
-      Water tile_102: 1348213389
-      Water tile_25: 368305304
-      Water tile_29: -1986356886
-      Water tile_32: 1544881605
-      Water tile_90: 1113100927
-      Water tile_16: -529143323
-      Water tile_116: -2023083269
-      Water tile_92: -2036547133
-      Water tile_106: 592309446
+      Water tile_52: 1833638927
       Water tile_53: -173767569
-      Water tile_81: -709078491
+      Water tile_54: 1450816036
+      Water tile_55: -561292711
+      Water tile_56: -2055750768
+      Water tile_57: -1303220787
+      Water tile_58: 2135880270
       Water tile_59: 155651606
-  spritePackingTag: 
+      Water tile_6: -612164745
+      Water tile_60: 811944753
+      Water tile_61: -1059921236
+      Water tile_62: -1488339703
+      Water tile_63: 1964053665
+      Water tile_64: 634698816
+      Water tile_65: -754131851
+      Water tile_66: 1407003056
+      Water tile_67: -232842735
+      Water tile_68: -665737981
+      Water tile_69: -1626249340
+      Water tile_7: 2088025973
+      Water tile_70: 912435338
+      Water tile_71: 1810689826
+      Water tile_72: -381834528
+      Water tile_73: -1419670875
+      Water tile_74: 12038897
+      Water tile_75: -1765558840
+      Water tile_76: 2124273195
+      Water tile_77: -1920787911
+      Water tile_78: 1457850574
+      Water tile_79: -208162445
+      Water tile_8: -872921605
+      Water tile_80: -578289134
+      Water tile_81: -709078491
+      Water tile_82: -174318765
+      Water tile_83: 1215447131
+      Water tile_84: -40744623
+      Water tile_85: 2109826380
+      Water tile_86: -448673077
+      Water tile_87: 69535611
+      Water tile_88: 652645928
+      Water tile_89: -169757288
+      Water tile_9: 1270656290
+      Water tile_90: 1113100927
+      Water tile_91: 1133288424
+      Water tile_92: -2036547133
+      Water tile_93: 1318269831
+      Water tile_94: 838953846
+      Water tile_95: 156178613
+      Water tile_96: 1433954954
+      Water tile_97: 585269652
+      Water tile_98: -874976209
+      Water tile_99: 1476942679
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

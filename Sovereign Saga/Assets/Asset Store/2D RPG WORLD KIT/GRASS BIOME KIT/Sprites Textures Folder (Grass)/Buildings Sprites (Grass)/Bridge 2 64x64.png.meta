@@ -3,7 +3,7 @@ guid: e9b7a2c4afba4714fb06a48e96925712
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -870,64 +873,63 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bridge 3_33: -1660891963
-      Bridge 3_35: -1356501146
-      Bridge 2 64x64_8: 518354038
-      Bridge 3_11: -2074946919
-      Bridge 2 64x64_9: 1765764111
-      Bridge 3_14: 661682325
-      Bridge 3_10: -1699707976
-      Bridge 3_21: -713988985
-      Bridge 3_34: -1052922745
-      Bridge 3_2: 981636628
-      Bridge 3_9: -2031796617
-      Bridge 3_30: 283502666
-      Bridge 3_3: 2066602582
-      Bridge 3_7: -295968044
-      Bridge 3_5: -1920537136
-      Bridge 2 64x64_6: -1466680109
-      Bridge 3_18: -1370161307
-      Bridge 3_27: 668499922
-      Bridge 3_29: 320580713
-      Bridge 3_31: 1356727781
-      Bridge 3_6: -1374579119
-      Bridge 3_32: -404744488
-      Bridge 3_40: -856342875
-      Bridge 3_1: -1666858107
-      Bridge 3_25: 1045212644
-      Bridge 3_4: -1880131719
-      Bridge 2 64x64_4: -2093251514
       Bridge 2 64x64_0: -924279571
-      Bridge 3_37: -1166019260
-      Bridge 3_16: -1366920127
-      Bridge 3_8: 580164592
-      Bridge 3_22: -1720140940
-      Bridge 3_12: -1584328461
-      Bridge 3_28: 1639528770
-      Bridge 3_19: 421057427
-      Bridge 2 64x64_2: -280481696
-      Bridge 3_13: -446003541
-      Bridge 3_0: -2142325838
       Bridge 2 64x64_1: -1477391828
-      Bridge 3_15: -75454438
-      Bridge 3_24: -789048645
-      Bridge 2 64x64_5: -752419759
-      Bridge 3_38: 788683193
-      Bridge 3_26: -1598036412
-      Bridge 3_39: 991817064
-      Bridge 3_44: 1648223560
-      Bridge 3_17: -762075409
-      Bridge 3_23: -1348267580
-      Bridge 3_42: -844458246
-      Bridge 2 64x64_7: -1626554238
-      Bridge 3_36: -1874498572
+      Bridge 2 64x64_2: -280481696
       Bridge 2 64x64_3: 1452679354
-      Bridge 3_43: -1179420278
+      Bridge 2 64x64_4: -2093251514
+      Bridge 2 64x64_5: -752419759
+      Bridge 2 64x64_6: -1466680109
+      Bridge 2 64x64_7: -1626554238
+      Bridge 2 64x64_8: 518354038
+      Bridge 2 64x64_9: 1765764111
+      Bridge 3_0: -2142325838
+      Bridge 3_1: -1666858107
+      Bridge 3_10: -1699707976
+      Bridge 3_11: -2074946919
+      Bridge 3_12: -1584328461
+      Bridge 3_13: -446003541
+      Bridge 3_14: 661682325
+      Bridge 3_15: -75454438
+      Bridge 3_16: -1366920127
+      Bridge 3_17: -762075409
+      Bridge 3_18: -1370161307
+      Bridge 3_19: 421057427
+      Bridge 3_2: 981636628
       Bridge 3_20: 955643585
+      Bridge 3_21: -713988985
+      Bridge 3_22: -1720140940
+      Bridge 3_23: -1348267580
+      Bridge 3_24: -789048645
+      Bridge 3_25: 1045212644
+      Bridge 3_26: -1598036412
+      Bridge 3_27: 668499922
+      Bridge 3_28: 1639528770
+      Bridge 3_29: 320580713
+      Bridge 3_3: 2066602582
+      Bridge 3_30: 283502666
+      Bridge 3_31: 1356727781
+      Bridge 3_32: -404744488
+      Bridge 3_33: -1660891963
+      Bridge 3_34: -1052922745
+      Bridge 3_35: -1356501146
+      Bridge 3_36: -1874498572
+      Bridge 3_37: -1166019260
+      Bridge 3_38: 788683193
+      Bridge 3_39: 991817064
+      Bridge 3_4: -1880131719
+      Bridge 3_40: -856342875
       Bridge 3_41: 1065781079
-  spritePackingTag: 
+      Bridge 3_42: -844458246
+      Bridge 3_43: -1179420278
+      Bridge 3_44: 1648223560
+      Bridge 3_5: -1920537136
+      Bridge 3_6: -1374579119
+      Bridge 3_7: -295968044
+      Bridge 3_8: 580164592
+      Bridge 3_9: -2031796617
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

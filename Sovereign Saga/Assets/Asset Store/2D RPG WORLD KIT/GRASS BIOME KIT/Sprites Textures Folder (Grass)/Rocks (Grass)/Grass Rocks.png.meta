@@ -3,7 +3,7 @@ guid: 555ed25c844030c448268d2105931f9f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -786,41 +789,40 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Grass Rocks_26: 774219472
-      Grass Rocks_30: 739312736
-      Grass Rocks_12: -576861320
       Grass Rocks_0: -1245230424
-      Grass Rocks_17: 632307711
-      Grass Rocks_8: -1153095481
-      Grass Rocks_25: -1947100610
-      Grass Rocks_5: 1648160267
-      Grass Rocks_16: 927379644
-      Grass Rocks_31: 1363072542
-      Grass Rocks_2: 884308910
-      Grass Rocks_15: 1102313323
-      Grass Rocks_4: 1871930306
-      Grass Rocks_22: 14362527
-      Grass Rocks_6: -755475656
-      Grass Rocks_3: 2126549226
-      Grass Rocks_29: -190084122
-      Grass Rocks_24: 566427452
-      Grass Rocks_7: 1932940464
-      Grass Rocks_9: 647512451
-      Grass Rocks_11: 1691536399
       Grass Rocks_1: 527848735
-      Grass Rocks_23: -1242271856
       Grass Rocks_10: 929246775
-      Grass Rocks_20: 592355838
-      Grass Rocks_18: -489033282
-      Grass Rocks_27: -400776329
-      Grass Rocks_19: -944415685
-      Grass Rocks_28: -657330462
+      Grass Rocks_11: 1691536399
+      Grass Rocks_12: -576861320
       Grass Rocks_13: 773640949
       Grass Rocks_14: 1235867644
+      Grass Rocks_15: 1102313323
+      Grass Rocks_16: 927379644
+      Grass Rocks_17: 632307711
+      Grass Rocks_18: -489033282
+      Grass Rocks_19: -944415685
+      Grass Rocks_2: 884308910
+      Grass Rocks_20: 592355838
       Grass Rocks_21: -2068964413
-  spritePackingTag: 
+      Grass Rocks_22: 14362527
+      Grass Rocks_23: -1242271856
+      Grass Rocks_24: 566427452
+      Grass Rocks_25: -1947100610
+      Grass Rocks_26: 774219472
+      Grass Rocks_27: -400776329
+      Grass Rocks_28: -657330462
+      Grass Rocks_29: -190084122
+      Grass Rocks_3: 2126549226
+      Grass Rocks_30: 739312736
+      Grass Rocks_31: 1363072542
+      Grass Rocks_4: 1871930306
+      Grass Rocks_5: 1648160267
+      Grass Rocks_6: -755475656
+      Grass Rocks_7: 1932940464
+      Grass Rocks_8: -1153095481
+      Grass Rocks_9: 647512451
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -3,7 +3,7 @@ guid: b8e9c41f86adfd4448856c4465b7f45a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2004,99 +2007,98 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Waterfall Ice left_39: 1787319418
-      Waterfall Ice left_45: -1514797466
-      Waterfall Ice left_84: 588372086
-      Waterfall Ice left_17: -1129925561
-      Waterfall Ice left_33: -1614654282
-      Waterfall Ice left_23: 290301200
-      Waterfall Ice left_85: -1816278515
-      Waterfall Ice left_27: 1933756368
-      Waterfall Ice left_3: 547986306
-      Waterfall Ice left_56: 1271573038
-      Waterfall Ice left_31: 1177935480
-      Waterfall Ice left_36: 88358159
-      Waterfall Ice left_59: -1859327611
-      Waterfall Ice left_8: 136291312
-      Waterfall Ice left_60: -230755043
-      Waterfall Ice left_46: -484397485
       Waterfall Ice left_0: -1546542248
-      Waterfall Ice left_16: -760076982
-      Waterfall Ice left_30: 799657668
-      Waterfall Ice left_75: 2126303021
-      Waterfall Ice left_18: -100711247
-      Waterfall Ice left_66: -2009684558
-      Waterfall Ice left_9: 1994423346
-      Waterfall Ice left_29: 1808869496
-      Waterfall Ice left_42: -1219494118
-      Waterfall Ice left_62: 562721844
-      Waterfall Ice left_28: -1231868465
-      Waterfall Ice left_74: 885286093
-      Waterfall Ice left_19: -1868562916
-      Waterfall Ice left_32: 102134857
-      Waterfall Ice left_51: 94666836
-      Waterfall Ice left_61: 222770489
-      Waterfall Ice left_11: 2084095871
-      Waterfall Ice left_49: 252593045
-      Waterfall Ice left_63: 996689240
-      Waterfall Ice left_21: 803136653
-      Waterfall Ice left_81: 1598439179
-      Waterfall Ice left_41: 719814798
-      Waterfall Ice left_70: -2014324021
-      Waterfall Ice left_52: 397857309
-      Waterfall Ice left_88: 1017929701
-      Waterfall Ice left_10: -1330272574
-      Waterfall Ice left_77: 1581051649
-      Waterfall Ice left_48: -377943408
-      Waterfall Ice left_22: -1484120986
-      Waterfall Ice left_80: -1799476977
-      Waterfall Ice left_54: -123613003
-      Waterfall Ice left_71: 1691804328
-      Waterfall Ice left_58: -1676760308
-      Waterfall Ice left_4: 1624952540
-      Waterfall Ice left_72: 1595587543
-      Waterfall Ice left_25: 511277564
-      Waterfall Ice left_86: -1416997291
-      Waterfall Ice left_13: -1445159672
-      Waterfall Ice left_38: -1195177770
-      Waterfall Ice left_73: 1337335210
-      Waterfall Ice left_24: 1817777601
-      Waterfall Ice left_7: 1237470217
-      Waterfall Ice left_69: 450279710
-      Waterfall Ice left_50: 725159770
-      Waterfall Ice left_26: -1486722633
-      Waterfall Ice left_57: 1771763315
-      Waterfall Ice left_6: 2113625202
-      Waterfall Ice left_83: -2044438019
-      Waterfall Ice left_82: -1083921132
-      Waterfall Ice left_15: -135231205
-      Waterfall Ice left_79: 1931045518
-      Waterfall Ice left_20: -1686835905
-      Waterfall Ice left_87: 512584536
-      Waterfall Ice left_35: -632515472
-      Waterfall Ice left_64: 1697750254
-      Waterfall Ice left_89: -1252518496
-      Waterfall Ice left_68: -1178828491
-      Waterfall Ice left_53: -2060020018
       Waterfall Ice left_1: 178055612
-      Waterfall Ice left_2: -741663331
-      Waterfall Ice left_14: -267574266
-      Waterfall Ice left_40: -860528882
-      Waterfall Ice left_34: 388068065
+      Waterfall Ice left_10: -1330272574
+      Waterfall Ice left_11: 2084095871
       Waterfall Ice left_12: -199504880
-      Waterfall Ice left_44: -1599782022
-      Waterfall Ice left_67: -864785396
-      Waterfall Ice left_47: -1242392587
-      Waterfall Ice left_65: 288927015
-      Waterfall Ice left_43: -192788517
-      Waterfall Ice left_78: -1610557152
-      Waterfall Ice left_5: -824797230
-      Waterfall Ice left_55: -1370307691
-      Waterfall Ice left_76: 1058918536
+      Waterfall Ice left_13: -1445159672
+      Waterfall Ice left_14: -267574266
+      Waterfall Ice left_15: -135231205
+      Waterfall Ice left_16: -760076982
+      Waterfall Ice left_17: -1129925561
+      Waterfall Ice left_18: -100711247
+      Waterfall Ice left_19: -1868562916
+      Waterfall Ice left_2: -741663331
+      Waterfall Ice left_20: -1686835905
+      Waterfall Ice left_21: 803136653
+      Waterfall Ice left_22: -1484120986
+      Waterfall Ice left_23: 290301200
+      Waterfall Ice left_24: 1817777601
+      Waterfall Ice left_25: 511277564
+      Waterfall Ice left_26: -1486722633
+      Waterfall Ice left_27: 1933756368
+      Waterfall Ice left_28: -1231868465
+      Waterfall Ice left_29: 1808869496
+      Waterfall Ice left_3: 547986306
+      Waterfall Ice left_30: 799657668
+      Waterfall Ice left_31: 1177935480
+      Waterfall Ice left_32: 102134857
+      Waterfall Ice left_33: -1614654282
+      Waterfall Ice left_34: 388068065
+      Waterfall Ice left_35: -632515472
+      Waterfall Ice left_36: 88358159
       Waterfall Ice left_37: 528549819
-  spritePackingTag: 
+      Waterfall Ice left_38: -1195177770
+      Waterfall Ice left_39: 1787319418
+      Waterfall Ice left_4: 1624952540
+      Waterfall Ice left_40: -860528882
+      Waterfall Ice left_41: 719814798
+      Waterfall Ice left_42: -1219494118
+      Waterfall Ice left_43: -192788517
+      Waterfall Ice left_44: -1599782022
+      Waterfall Ice left_45: -1514797466
+      Waterfall Ice left_46: -484397485
+      Waterfall Ice left_47: -1242392587
+      Waterfall Ice left_48: -377943408
+      Waterfall Ice left_49: 252593045
+      Waterfall Ice left_5: -824797230
+      Waterfall Ice left_50: 725159770
+      Waterfall Ice left_51: 94666836
+      Waterfall Ice left_52: 397857309
+      Waterfall Ice left_53: -2060020018
+      Waterfall Ice left_54: -123613003
+      Waterfall Ice left_55: -1370307691
+      Waterfall Ice left_56: 1271573038
+      Waterfall Ice left_57: 1771763315
+      Waterfall Ice left_58: -1676760308
+      Waterfall Ice left_59: -1859327611
+      Waterfall Ice left_6: 2113625202
+      Waterfall Ice left_60: -230755043
+      Waterfall Ice left_61: 222770489
+      Waterfall Ice left_62: 562721844
+      Waterfall Ice left_63: 996689240
+      Waterfall Ice left_64: 1697750254
+      Waterfall Ice left_65: 288927015
+      Waterfall Ice left_66: -2009684558
+      Waterfall Ice left_67: -864785396
+      Waterfall Ice left_68: -1178828491
+      Waterfall Ice left_69: 450279710
+      Waterfall Ice left_7: 1237470217
+      Waterfall Ice left_70: -2014324021
+      Waterfall Ice left_71: 1691804328
+      Waterfall Ice left_72: 1595587543
+      Waterfall Ice left_73: 1337335210
+      Waterfall Ice left_74: 885286093
+      Waterfall Ice left_75: 2126303021
+      Waterfall Ice left_76: 1058918536
+      Waterfall Ice left_77: 1581051649
+      Waterfall Ice left_78: -1610557152
+      Waterfall Ice left_79: 1931045518
+      Waterfall Ice left_8: 136291312
+      Waterfall Ice left_80: -1799476977
+      Waterfall Ice left_81: 1598439179
+      Waterfall Ice left_82: -1083921132
+      Waterfall Ice left_83: -2044438019
+      Waterfall Ice left_84: 588372086
+      Waterfall Ice left_85: -1816278515
+      Waterfall Ice left_86: -1416997291
+      Waterfall Ice left_87: 512584536
+      Waterfall Ice left_88: 1017929701
+      Waterfall Ice left_89: -1252518496
+      Waterfall Ice left_9: 1994423346
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

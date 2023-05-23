@@ -3,7 +3,7 @@ guid: f08c9dd1f19bfab49a2e753917db20c0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -429,24 +432,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Grass II 32x32_14: -1558106969
-      Grass II 32x32_12: 1140528995
-      Grass II 32x32_9: 416072612
-      Grass II 32x32_7: 1213202784
-      Grass II 32x32_1: -184820955
-      Grass II 32x32_5: -2022047870
       Grass II 32x32_0: -1015314178
-      Grass II 32x32_8: -1452391320
-      Grass II 32x32_2: 1286592865
-      Grass II 32x32_6: -1534415486
+      Grass II 32x32_1: -184820955
       Grass II 32x32_10: -497280576
-      Grass II 32x32_4: 118096794
-      Grass II 32x32_3: -1687603196
       Grass II 32x32_11: -15456705
+      Grass II 32x32_12: 1140528995
       Grass II 32x32_13: -946182060
-  spritePackingTag: 
+      Grass II 32x32_14: -1558106969
+      Grass II 32x32_2: 1286592865
+      Grass II 32x32_3: -1687603196
+      Grass II 32x32_4: 118096794
+      Grass II 32x32_5: -2022047870
+      Grass II 32x32_6: -1534415486
+      Grass II 32x32_7: 1213202784
+      Grass II 32x32_8: -1452391320
+      Grass II 32x32_9: 416072612
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

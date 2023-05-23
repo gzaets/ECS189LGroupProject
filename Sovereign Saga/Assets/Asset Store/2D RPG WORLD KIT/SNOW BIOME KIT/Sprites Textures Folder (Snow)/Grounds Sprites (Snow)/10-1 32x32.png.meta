@@ -3,7 +3,7 @@ guid: 0b05f3bbfa0389d4fa12675a159793f1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -429,24 +432,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Mud-IceGrass 32x32_0: 270152088
       Mud-IceGrass 32x32_1: -261158329
-      Mud-IceGrass 32x32_6: 2025401094
-      Mud-IceGrass 32x32_9: -1316059446
-      Mud-IceGrass 32x32_4: 289133271
-      Mud-IceGrass 32x32_3: 13580061
-      Mud-IceGrass 32x32_7: -303945481
-      Mud-IceGrass 32x32_11: 987465093
-      Mud-IceGrass 32x32_13: -1869845608
-      Mud-IceGrass 32x32_12: -1824972850
-      Mud-IceGrass 32x32_8: 407930470
-      Mud-IceGrass 32x32_5: 2027629526
       Mud-IceGrass 32x32_10: -704602318
+      Mud-IceGrass 32x32_11: 987465093
+      Mud-IceGrass 32x32_12: -1824972850
+      Mud-IceGrass 32x32_13: -1869845608
       Mud-IceGrass 32x32_14: -667293931
       Mud-IceGrass 32x32_2: 576258472
-      Mud-IceGrass 32x32_0: 270152088
-  spritePackingTag: 
+      Mud-IceGrass 32x32_3: 13580061
+      Mud-IceGrass 32x32_4: 289133271
+      Mud-IceGrass 32x32_5: 2027629526
+      Mud-IceGrass 32x32_6: 2025401094
+      Mud-IceGrass 32x32_7: -303945481
+      Mud-IceGrass 32x32_8: 407930470
+      Mud-IceGrass 32x32_9: -1316059446
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -3,7 +3,7 @@ guid: 92489428a7e4d7346a37f6db12f4fcd7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1962,97 +1965,96 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Furnitues_40: -1728365962
-      Furnitues_36: 1891381915
-      Furnitues_65: 516138662
       Furnitues_0: -1957286220
-      Furnitues_4: 1885465892
-      Furnitues_21: 1015288252
-      Furnitues_2: 991190027
-      Furnitues_18: -1355503182
-      Furnitues_49: -1561028755
-      Furnitues_44: 312063229
-      Furnitues_74: -1742369983
-      Furnitues_52: -872468255
-      Furnitues_37: 1669078393
-      Furnitues_66: -2051307194
-      Furnitues_13: -663036284
-      Furnitues_39: 2069527318
-      Furnitues_16: -1385112840
-      Furnitues_72: -27141437
-      Furnitues_50: -372187323
-      Furnitues_42: -1490312653
-      Furnitues_47: 1635213597
-      Furnitues_28: -1398377315
-      Furnitues_17: 835096366
-      Furnitues_32: 213695611
-      Furnitues_31: -1815948287
-      Furnitues_60: 1869498026
-      Furnitues_83: 1925354986
-      Furnitues_75: -8581487
-      Furnitues_82: 1232254113
-      Furnitues_81: 1052639924
-      Furnitues_57: 141094163
-      Furnitues_80: -815478990
-      Furnitues_25: 134294744
-      Furnitues_78: 1126534283
+      Furnitues_1: 1200510951
+      Furnitues_10: -2116727720
       Furnitues_11: 1917591035
-      Furnitues_26: -660582398
+      Furnitues_12: -1145395010
+      Furnitues_13: -663036284
+      Furnitues_14: 328175441
+      Furnitues_15: -1474837669
+      Furnitues_16: -1385112840
+      Furnitues_17: 835096366
+      Furnitues_18: -1355503182
+      Furnitues_19: 362065786
+      Furnitues_2: 991190027
       Furnitues_20: -1807545890
-      Furnitues_7: 1982380392
-      Furnitues_86: 668614610
-      Furnitues_79: -1965092158
+      Furnitues_21: 1015288252
+      Furnitues_22: -1553043363
+      Furnitues_23: 866059569
+      Furnitues_24: -396835707
+      Furnitues_25: 134294744
+      Furnitues_26: -660582398
+      Furnitues_27: 922707002
+      Furnitues_28: -1398377315
+      Furnitues_29: -816902800
+      Furnitues_3: -1128461574
+      Furnitues_30: -451458572
+      Furnitues_31: -1815948287
+      Furnitues_32: 213695611
+      Furnitues_33: -1614458753
+      Furnitues_34: -1791445821
+      Furnitues_35: 1720937263
+      Furnitues_36: 1891381915
+      Furnitues_37: 1669078393
+      Furnitues_38: 326330534
+      Furnitues_39: 2069527318
+      Furnitues_4: 1885465892
+      Furnitues_40: -1728365962
+      Furnitues_41: 789896897
+      Furnitues_42: -1490312653
+      Furnitues_43: 636872941
+      Furnitues_44: 312063229
+      Furnitues_45: -925000677
+      Furnitues_46: 524006126
+      Furnitues_47: 1635213597
+      Furnitues_48: -2078735229
+      Furnitues_49: -1561028755
+      Furnitues_5: 944900104
+      Furnitues_50: -372187323
+      Furnitues_51: 244850199
+      Furnitues_52: -872468255
+      Furnitues_53: 1925905837
+      Furnitues_54: -2018061827
+      Furnitues_55: 2119753128
+      Furnitues_56: 1516537559
+      Furnitues_57: 141094163
+      Furnitues_58: -1835132387
       Furnitues_59: 1833686576
       Furnitues_6: 695151497
-      Furnitues_34: -1791445821
-      Furnitues_54: -2018061827
-      Furnitues_62: -567186125
-      Furnitues_58: -1835132387
-      Furnitues_43: 636872941
-      Furnitues_38: 326330534
-      Furnitues_87: 958399051
-      Furnitues_51: 244850199
-      Furnitues_68: -1603616890
-      Furnitues_19: 362065786
-      Furnitues_48: -2078735229
-      Furnitues_8: 1677327939
-      Furnitues_9: -1098823758
-      Furnitues_41: 789896897
-      Furnitues_84: -1238012925
-      Furnitues_35: 1720937263
-      Furnitues_46: 524006126
-      Furnitues_30: -451458572
-      Furnitues_5: 944900104
-      Furnitues_70: -1273294750
-      Furnitues_33: -1614458753
-      Furnitues_22: -1553043363
-      Furnitues_71: -118885518
-      Furnitues_3: -1128461574
-      Furnitues_64: -1053139373
-      Furnitues_29: -816902800
-      Furnitues_53: 1925905837
-      Furnitues_23: 866059569
-      Furnitues_45: -925000677
-      Furnitues_10: -2116727720
-      Furnitues_55: 2119753128
-      Furnitues_69: 594000317
-      Furnitues_73: -425947371
-      Furnitues_15: -1474837669
-      Furnitues_12: -1145395010
-      Furnitues_1: 1200510951
-      Furnitues_24: -396835707
-      Furnitues_67: 436144458
-      Furnitues_76: 523526696
-      Furnitues_56: 1516537559
+      Furnitues_60: 1869498026
       Furnitues_61: -833456066
-      Furnitues_14: 328175441
-      Furnitues_27: 922707002
-      Furnitues_77: -1626294180
+      Furnitues_62: -567186125
       Furnitues_63: 1271160481
+      Furnitues_64: -1053139373
+      Furnitues_65: 516138662
+      Furnitues_66: -2051307194
+      Furnitues_67: 436144458
+      Furnitues_68: -1603616890
+      Furnitues_69: 594000317
+      Furnitues_7: 1982380392
+      Furnitues_70: -1273294750
+      Furnitues_71: -118885518
+      Furnitues_72: -27141437
+      Furnitues_73: -425947371
+      Furnitues_74: -1742369983
+      Furnitues_75: -8581487
+      Furnitues_76: 523526696
+      Furnitues_77: -1626294180
+      Furnitues_78: 1126534283
+      Furnitues_79: -1965092158
+      Furnitues_8: 1677327939
+      Furnitues_80: -815478990
+      Furnitues_81: 1052639924
+      Furnitues_82: 1232254113
+      Furnitues_83: 1925354986
+      Furnitues_84: -1238012925
       Furnitues_85: -1685768587
-  spritePackingTag: 
+      Furnitues_86: 668614610
+      Furnitues_87: 958399051
+      Furnitues_9: -1098823758
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

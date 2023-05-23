@@ -3,7 +3,7 @@ guid: 7b17600e3bee91e40aecf59d4af872d5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1878,93 +1881,92 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      InteriorV2_7: -396386315
-      InteriorV2_42: -174561326
-      InteriorV2_31: -300059691
-      InteriorV2_35: 1366198814
-      InteriorV2_64: 545009488
-      InteriorV2_20: 1615184825
-      InteriorV2_30: 1863695966
-      InteriorV2_5: 1733358090
-      InteriorV2_1: 2068391328
-      InteriorV2_36: 1353763644
-      InteriorV2_53: -1601132536
-      InteriorV2_76: -939767901
-      InteriorV2_17: -1957033083
-      InteriorV2_63: 2116300920
-      InteriorV2_54: 9398518
-      InteriorV2_49: 1397059302
-      InteriorV2_72: 609861953
-      InteriorV2_59: 693920032
-      InteriorV2_74: -1332215639
-      InteriorV2_6: 168172225
-      InteriorV2_67: -1586585106
-      InteriorV2_23: -1410712746
-      InteriorV2_81: -121192635
-      InteriorV2_12: -1410868992
-      InteriorV2_19: 1316204184
       InteriorV2_0: -1121704034
-      InteriorV2_11: 1223381428
-      InteriorV2_16: 111661483
-      InteriorV2_71: -816747253
-      InteriorV2_46: -2113969765
-      InteriorV2_57: -1773141946
-      InteriorV2_24: 203683679
-      InteriorV2_45: 1417923723
-      InteriorV2_51: 536121598
-      InteriorV2_33: -556169184
-      InteriorV2_55: -1560090084
-      InteriorV2_41: 217870669
-      InteriorV2_80: 285627397
-      InteriorV2_65: -1723398808
-      InteriorV2_56: -1361605484
-      InteriorV2_18: -220761991
-      InteriorV2_43: -2037763034
-      InteriorV2_77: 1441839771
-      InteriorV2_4: 1517250533
-      InteriorV2_3: 1011887073
-      InteriorV2_62: 1876997850
-      InteriorV2_2: -1554573395
-      InteriorV2_26: 345002955
-      InteriorV2_75: -1871108964
-      InteriorV2_9: 287448008
-      InteriorV2_29: -916816908
-      InteriorV2_40: 1049646363
-      InteriorV2_47: 554337112
-      InteriorV2_28: 1794324517
-      InteriorV2_58: -1640395934
-      InteriorV2_39: -139820255
-      InteriorV2_38: 465110919
-      InteriorV2_14: 47525254
-      InteriorV2_61: -1988369828
-      InteriorV2_52: 768741343
-      InteriorV2_8: 693892675
-      InteriorV2_15: 567769726
-      InteriorV2_34: 2035195004
-      InteriorV2_27: 1227198525
-      InteriorV2_50: 658765162
-      InteriorV2_37: -1997213280
-      InteriorV2_48: 355653311
-      InteriorV2_69: -1086736529
-      InteriorV2_66: -525701521
-      InteriorV2_68: 400383110
-      InteriorV2_78: 1574472945
-      InteriorV2_44: -209505927
-      InteriorV2_22: 2122906882
-      InteriorV2_13: 67062418
-      InteriorV2_25: -155721140
-      InteriorV2_70: -1381037937
-      InteriorV2_83: -872212855
-      InteriorV2_79: -997629138
+      InteriorV2_1: 2068391328
       InteriorV2_10: 1871597628
+      InteriorV2_11: 1223381428
+      InteriorV2_12: -1410868992
+      InteriorV2_13: 67062418
+      InteriorV2_14: 47525254
+      InteriorV2_15: 567769726
+      InteriorV2_16: 111661483
+      InteriorV2_17: -1957033083
+      InteriorV2_18: -220761991
+      InteriorV2_19: 1316204184
+      InteriorV2_2: -1554573395
+      InteriorV2_20: 1615184825
       InteriorV2_21: -131512794
-      InteriorV2_60: 1367746795
+      InteriorV2_22: 2122906882
+      InteriorV2_23: -1410712746
+      InteriorV2_24: 203683679
+      InteriorV2_25: -155721140
+      InteriorV2_26: 345002955
+      InteriorV2_27: 1227198525
+      InteriorV2_28: 1794324517
+      InteriorV2_29: -916816908
+      InteriorV2_3: 1011887073
+      InteriorV2_30: 1863695966
+      InteriorV2_31: -300059691
       InteriorV2_32: -2084474201
-      InteriorV2_82: 2032495098
+      InteriorV2_33: -556169184
+      InteriorV2_34: 2035195004
+      InteriorV2_35: 1366198814
+      InteriorV2_36: 1353763644
+      InteriorV2_37: -1997213280
+      InteriorV2_38: 465110919
+      InteriorV2_39: -139820255
+      InteriorV2_4: 1517250533
+      InteriorV2_40: 1049646363
+      InteriorV2_41: 217870669
+      InteriorV2_42: -174561326
+      InteriorV2_43: -2037763034
+      InteriorV2_44: -209505927
+      InteriorV2_45: 1417923723
+      InteriorV2_46: -2113969765
+      InteriorV2_47: 554337112
+      InteriorV2_48: 355653311
+      InteriorV2_49: 1397059302
+      InteriorV2_5: 1733358090
+      InteriorV2_50: 658765162
+      InteriorV2_51: 536121598
+      InteriorV2_52: 768741343
+      InteriorV2_53: -1601132536
+      InteriorV2_54: 9398518
+      InteriorV2_55: -1560090084
+      InteriorV2_56: -1361605484
+      InteriorV2_57: -1773141946
+      InteriorV2_58: -1640395934
+      InteriorV2_59: 693920032
+      InteriorV2_6: 168172225
+      InteriorV2_60: 1367746795
+      InteriorV2_61: -1988369828
+      InteriorV2_62: 1876997850
+      InteriorV2_63: 2116300920
+      InteriorV2_64: 545009488
+      InteriorV2_65: -1723398808
+      InteriorV2_66: -525701521
+      InteriorV2_67: -1586585106
+      InteriorV2_68: 400383110
+      InteriorV2_69: -1086736529
+      InteriorV2_7: -396386315
+      InteriorV2_70: -1381037937
+      InteriorV2_71: -816747253
+      InteriorV2_72: 609861953
       InteriorV2_73: -500654872
-  spritePackingTag: 
+      InteriorV2_74: -1332215639
+      InteriorV2_75: -1871108964
+      InteriorV2_76: -939767901
+      InteriorV2_77: 1441839771
+      InteriorV2_78: 1574472945
+      InteriorV2_79: -997629138
+      InteriorV2_8: 693892675
+      InteriorV2_80: 285627397
+      InteriorV2_81: -121192635
+      InteriorV2_82: 2032495098
+      InteriorV2_83: -872212855
+      InteriorV2_9: 287448008
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

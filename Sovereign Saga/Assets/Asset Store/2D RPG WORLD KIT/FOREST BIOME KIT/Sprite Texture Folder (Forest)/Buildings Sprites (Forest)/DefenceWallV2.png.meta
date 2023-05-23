@@ -3,7 +3,7 @@ guid: 3a7f4413726edaf4e9d620f06b22fbf9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -492,27 +495,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DefenceWallV2_2: 1948777195
+      DefenceWallV2_0: -528522265
+      DefenceWallV2_1: 507925315
+      DefenceWallV2_10: -55905144
+      DefenceWallV2_11: 41259538
+      DefenceWallV2_12: 236604478
+      DefenceWallV2_13: -495642721
+      DefenceWallV2_14: 245919500
       DefenceWallV2_15: -957897756
+      DefenceWallV2_16: -1233835421
+      DefenceWallV2_17: -170542828
+      DefenceWallV2_2: 1948777195
       DefenceWallV2_3: -598579363
+      DefenceWallV2_4: 1662866624
+      DefenceWallV2_5: 1327445793
+      DefenceWallV2_6: 222320481
       DefenceWallV2_7: 1027633739
       DefenceWallV2_8: 1772617260
-      DefenceWallV2_11: 41259538
-      DefenceWallV2_0: -528522265
-      DefenceWallV2_10: -55905144
-      DefenceWallV2_5: 1327445793
-      DefenceWallV2_1: 507925315
-      DefenceWallV2_4: 1662866624
-      DefenceWallV2_13: -495642721
       DefenceWallV2_9: 884407182
-      DefenceWallV2_16: -1233835421
-      DefenceWallV2_12: 236604478
-      DefenceWallV2_6: 222320481
-      DefenceWallV2_17: -170542828
-      DefenceWallV2_14: 245919500
-  spritePackingTag: 
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

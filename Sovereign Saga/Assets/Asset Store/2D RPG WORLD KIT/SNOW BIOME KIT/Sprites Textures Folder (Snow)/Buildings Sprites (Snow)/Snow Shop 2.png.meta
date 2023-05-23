@@ -3,7 +3,7 @@ guid: 1ce016ed915068a468f89017d91dd408
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -618,33 +621,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Snow Shop 2_10: 960828687
-      Snow Shop 2_2: -586572834
-      Snow Shop 2_13: -1104282835
-      Snow Shop 2_23: -1041403652
-      Snow Shop 2_1: -815705281
-      Snow Shop 2_12: -1220159110
-      Snow Shop 2_22: 1188877206
-      Snow Shop 2_21: 1383321694
-      Snow Shop 2_20: 607356779
-      Snow Shop 2_14: 1959858000
-      Snow Shop 2_4: 204989201
-      Snow Shop 2_5: 833131592
-      Snow Shop 2_6: -1367422775
-      Snow Shop 2_8: -1375504071
-      Snow Shop 2_3: -2087356206
-      Snow Shop 2_9: -1350084582
       Snow Shop 2_0: 139962751
-      Snow Shop 2_18: -1217354455
-      Snow Shop 2_19: -1945996279
-      Snow Shop 2_7: 173972902
+      Snow Shop 2_1: -815705281
+      Snow Shop 2_10: 960828687
       Snow Shop 2_11: 1311358179
+      Snow Shop 2_12: -1220159110
+      Snow Shop 2_13: -1104282835
+      Snow Shop 2_14: 1959858000
       Snow Shop 2_15: -538358784
       Snow Shop 2_16: 137306908
       Snow Shop 2_17: 2010464655
-  spritePackingTag: 
+      Snow Shop 2_18: -1217354455
+      Snow Shop 2_19: -1945996279
+      Snow Shop 2_2: -586572834
+      Snow Shop 2_20: 607356779
+      Snow Shop 2_21: 1383321694
+      Snow Shop 2_22: 1188877206
+      Snow Shop 2_23: -1041403652
+      Snow Shop 2_3: -2087356206
+      Snow Shop 2_4: 204989201
+      Snow Shop 2_5: 833131592
+      Snow Shop 2_6: -1367422775
+      Snow Shop 2_7: 173972902
+      Snow Shop 2_8: -1375504071
+      Snow Shop 2_9: -1350084582
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

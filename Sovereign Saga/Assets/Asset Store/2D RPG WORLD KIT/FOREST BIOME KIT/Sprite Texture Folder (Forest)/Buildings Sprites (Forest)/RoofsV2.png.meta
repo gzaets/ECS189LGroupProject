@@ -3,7 +3,7 @@ guid: 9fa8eaaa9f887854d87cb69ef1e31070
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -639,34 +642,33 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RoofsV2_15: 209674556
-      RoofsV2_18: 1340822738
-      RoofsV2_7: 1267299842
-      RoofsV2_20: 1262483484
-      RoofsV2_9: -452553666
-      RoofsV2_3: 1566468620
+      RoofsV2_0: 1052180957
+      RoofsV2_1: -380846323
       RoofsV2_10: -173747615
+      RoofsV2_11: 1931397300
+      RoofsV2_12: 138161388
+      RoofsV2_13: 1467846633
+      RoofsV2_14: -1107690817
+      RoofsV2_15: 209674556
+      RoofsV2_16: 148833025
+      RoofsV2_17: 1648558010
+      RoofsV2_18: 1340822738
+      RoofsV2_19: 2089504975
       RoofsV2_2: -731513228
-      RoofsV2_23: 430513576
+      RoofsV2_20: 1262483484
       RoofsV2_21: 2068294155
       RoofsV2_22: -1136318081
-      RoofsV2_16: 148833025
-      RoofsV2_8: 962989008
-      RoofsV2_17: 1648558010
-      RoofsV2_4: -536684502
-      RoofsV2_13: 1467846633
-      RoofsV2_11: 1931397300
-      RoofsV2_0: 1052180957
-      RoofsV2_5: 831793962
-      RoofsV2_14: -1107690817
-      RoofsV2_19: 2089504975
+      RoofsV2_23: 430513576
       RoofsV2_24: -2125984792
-      RoofsV2_12: 138161388
-      RoofsV2_1: -380846323
+      RoofsV2_3: 1566468620
+      RoofsV2_4: -536684502
+      RoofsV2_5: 831793962
       RoofsV2_6: 955906509
-  spritePackingTag: 
+      RoofsV2_7: 1267299842
+      RoofsV2_8: 962989008
+      RoofsV2_9: -452553666
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

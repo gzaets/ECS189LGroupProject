@@ -3,7 +3,7 @@ guid: 95c97c322bebe5c42bc8ec80a4f7232b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -429,24 +432,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tile Marble 32x32_6: 688768491
-      Tile Marble 32x32_8: 571318154
-      Tile Marble 32x32_4: 137251190
-      Tile Marble 32x32_13: -1218386314
-      Tile Marble 32x32_1: 828714764
-      Tile Marble 32x32_11: -1437461159
-      Tile Marble 32x32_3: -1961794029
-      Tile Marble 32x32_12: 815565066
-      Tile Marble 32x32_9: -2094671050
-      Tile Marble 32x32_5: -1219349537
-      Tile Marble 32x32_14: 544386021
-      Tile Marble 32x32_10: 1823665457
-      Tile Marble 32x32_2: -819712922
-      Tile Marble 32x32_7: 1730139842
       Tile Marble 32x32_0: -1750596024
-  spritePackingTag: 
+      Tile Marble 32x32_1: 828714764
+      Tile Marble 32x32_10: 1823665457
+      Tile Marble 32x32_11: -1437461159
+      Tile Marble 32x32_12: 815565066
+      Tile Marble 32x32_13: -1218386314
+      Tile Marble 32x32_14: 544386021
+      Tile Marble 32x32_2: -819712922
+      Tile Marble 32x32_3: -1961794029
+      Tile Marble 32x32_4: 137251190
+      Tile Marble 32x32_5: -1219349537
+      Tile Marble 32x32_6: 688768491
+      Tile Marble 32x32_7: 1730139842
+      Tile Marble 32x32_8: 571318154
+      Tile Marble 32x32_9: -2094671050
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

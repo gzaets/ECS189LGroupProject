@@ -3,7 +3,7 @@ guid: 84328b0502d8e7345b1b9ec433313e71
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1458,73 +1461,72 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Plants 64x64_22: -1913006270
-      Plants 64x64_17: 856873580
-      Plants 64x64_5: 524659762
-      Plants 64x64_41: 1150411361
-      Plants 64x64_39: 1573013777
-      Plants 64x64_11: -576263110
-      Plants 64x64_20: 1525276192
-      Plants 64x64_24: 1052404135
-      Plants 64x64_55: -76834029
-      Plants 64x64_31: 280563913
-      Plants 64x64_58: 636653935
-      Plants 64x64_46: 1004487597
-      Plants 64x64_10: 406936764
-      Plants 64x64_7: -859405579
-      Plants 64x64_45: -2093311393
-      Plants 64x64_8: -485971703
-      Plants 64x64_43: 72218006
       Plants 64x64_0: 186443149
-      Plants 64x64_49: -1029140445
-      Plants 64x64_34: 1945272337
-      Plants 64x64_2: -1814593206
-      Plants 64x64_27: 2007467934
-      Plants 64x64_62: 1055466451
-      Plants 64x64_28: -573755689
-      Plants 64x64_56: -160758958
-      Plants 64x64_61: -1912405294
-      Plants 64x64_54: -1860463677
-      Plants 64x64_12: -2125542421
-      Plants 64x64_36: -732176982
-      Plants 64x64_44: 2054625949
-      Plants 64x64_26: 637616536
-      Plants 64x64_40: -74869151
-      Plants 64x64_37: -1155839389
-      Plants 64x64_59: 470832237
-      Plants 64x64_50: 100706282
-      Plants 64x64_15: -173691915
-      Plants 64x64_9: -1946572739
-      Plants 64x64_33: -604227349
       Plants 64x64_1: -1676415227
-      Plants 64x64_19: 1802155955
-      Plants 64x64_51: -854106774
-      Plants 64x64_30: -1886488683
-      Plants 64x64_29: -1896104735
-      Plants 64x64_53: 87728398
-      Plants 64x64_4: -661724834
-      Plants 64x64_25: 1454600699
-      Plants 64x64_42: 221771565
-      Plants 64x64_21: 7884762
+      Plants 64x64_10: 406936764
+      Plants 64x64_11: -576263110
+      Plants 64x64_12: -2125542421
       Plants 64x64_13: 2083304829
-      Plants 64x64_63: 144305761
-      Plants 64x64_60: 1717879726
-      Plants 64x64_3: -901829320
-      Plants 64x64_35: -309468558
-      Plants 64x64_57: -1173668467
-      Plants 64x64_47: 1562701749
-      Plants 64x64_38: 80309995
-      Plants 64x64_16: -1174601095
-      Plants 64x64_48: 598461346
-      Plants 64x64_32: 108829718
-      Plants 64x64_52: 1303567774
       Plants 64x64_14: 799205798
-      Plants 64x64_23: 594627161
-      Plants 64x64_6: -1357386803
+      Plants 64x64_15: -173691915
+      Plants 64x64_16: -1174601095
+      Plants 64x64_17: 856873580
       Plants 64x64_18: -400640965
-  spritePackingTag: 
+      Plants 64x64_19: 1802155955
+      Plants 64x64_2: -1814593206
+      Plants 64x64_20: 1525276192
+      Plants 64x64_21: 7884762
+      Plants 64x64_22: -1913006270
+      Plants 64x64_23: 594627161
+      Plants 64x64_24: 1052404135
+      Plants 64x64_25: 1454600699
+      Plants 64x64_26: 637616536
+      Plants 64x64_27: 2007467934
+      Plants 64x64_28: -573755689
+      Plants 64x64_29: -1896104735
+      Plants 64x64_3: -901829320
+      Plants 64x64_30: -1886488683
+      Plants 64x64_31: 280563913
+      Plants 64x64_32: 108829718
+      Plants 64x64_33: -604227349
+      Plants 64x64_34: 1945272337
+      Plants 64x64_35: -309468558
+      Plants 64x64_36: -732176982
+      Plants 64x64_37: -1155839389
+      Plants 64x64_38: 80309995
+      Plants 64x64_39: 1573013777
+      Plants 64x64_4: -661724834
+      Plants 64x64_40: -74869151
+      Plants 64x64_41: 1150411361
+      Plants 64x64_42: 221771565
+      Plants 64x64_43: 72218006
+      Plants 64x64_44: 2054625949
+      Plants 64x64_45: -2093311393
+      Plants 64x64_46: 1004487597
+      Plants 64x64_47: 1562701749
+      Plants 64x64_48: 598461346
+      Plants 64x64_49: -1029140445
+      Plants 64x64_5: 524659762
+      Plants 64x64_50: 100706282
+      Plants 64x64_51: -854106774
+      Plants 64x64_52: 1303567774
+      Plants 64x64_53: 87728398
+      Plants 64x64_54: -1860463677
+      Plants 64x64_55: -76834029
+      Plants 64x64_56: -160758958
+      Plants 64x64_57: -1173668467
+      Plants 64x64_58: 636653935
+      Plants 64x64_59: 470832237
+      Plants 64x64_6: -1357386803
+      Plants 64x64_60: 1717879726
+      Plants 64x64_61: -1912405294
+      Plants 64x64_62: 1055466451
+      Plants 64x64_63: 144305761
+      Plants 64x64_7: -859405579
+      Plants 64x64_8: -485971703
+      Plants 64x64_9: -1946572739
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

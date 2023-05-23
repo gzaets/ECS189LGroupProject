@@ -3,7 +3,7 @@ guid: e82b63cb7e79826469043754b709649f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -786,41 +789,40 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Rocks Forest_2: -1220352254
-      Rocks Forest_5: -1273254874
-      Rocks Forest_12: 1651425981
-      Rocks Forest_30: -709097999
-      Rocks Forest_19: 587770917
-      Rocks Forest_17: -100385472
-      Rocks Forest_31: -789952883
-      Rocks Forest_13: -166813815
-      Rocks Forest_4: -1039862105
+      Rocks Forest_0: -1182666680
       Rocks Forest_1: 183185705
-      Rocks Forest_29: 1931076252
-      Rocks Forest_7: -1611966210
+      Rocks Forest_10: 610892812
       Rocks Forest_11: 1023183631
-      Rocks Forest_26: 2113494153
-      Rocks Forest_15: -870821546
-      Rocks Forest_8: 1957574076
-      Rocks Forest_24: 1905118180
-      Rocks Forest_25: -160483434
-      Rocks Forest_27: -872112791
+      Rocks Forest_12: 1651425981
+      Rocks Forest_13: -166813815
       Rocks Forest_14: 1041589880
+      Rocks Forest_15: -870821546
       Rocks Forest_16: -359538257
+      Rocks Forest_17: -100385472
+      Rocks Forest_18: -766753413
+      Rocks Forest_19: 587770917
+      Rocks Forest_2: -1220352254
+      Rocks Forest_20: -138420606
       Rocks Forest_21: -2044467621
       Rocks Forest_22: -470679645
-      Rocks Forest_20: -138420606
       Rocks Forest_23: -990322986
+      Rocks Forest_24: 1905118180
+      Rocks Forest_25: -160483434
+      Rocks Forest_26: 2113494153
+      Rocks Forest_27: -872112791
       Rocks Forest_28: -120028417
-      Rocks Forest_10: 610892812
-      Rocks Forest_6: 1177053897
-      Rocks Forest_18: -766753413
+      Rocks Forest_29: 1931076252
       Rocks Forest_3: 1943967410
-      Rocks Forest_0: -1182666680
+      Rocks Forest_30: -709097999
+      Rocks Forest_31: -789952883
+      Rocks Forest_4: -1039862105
+      Rocks Forest_5: -1273254874
+      Rocks Forest_6: 1177053897
+      Rocks Forest_7: -1611966210
+      Rocks Forest_8: 1957574076
       Rocks Forest_9: 1010593865
-  spritePackingTag: 
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

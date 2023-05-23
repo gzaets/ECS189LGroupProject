@@ -3,7 +3,7 @@ guid: eba4a32b18886554aa0c5a17308c00a5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -429,24 +432,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Wood 32x32_3: -527459386
-      Wood 32x32_6: -1152347230
+      Wood 32x32_0: 618417295
       Wood 32x32_1: -333668859
-      Wood 32x32_5: -1247949760
-      Wood 32x32_9: -1486853287
-      Wood 32x32_7: -354547948
       Wood 32x32_10: -1142487625
-      Wood 32x32_4: 856719081
-      Wood 32x32_2: -439225609
+      Wood 32x32_11: -1333302050
+      Wood 32x32_12: 675648949
       Wood 32x32_13: 1695730438
       Wood 32x32_14: 223494126
-      Wood 32x32_12: 675648949
+      Wood 32x32_2: -439225609
+      Wood 32x32_3: -527459386
+      Wood 32x32_4: 856719081
+      Wood 32x32_5: -1247949760
+      Wood 32x32_6: -1152347230
+      Wood 32x32_7: -354547948
       Wood 32x32_8: 1165023115
-      Wood 32x32_0: 618417295
-      Wood 32x32_11: -1333302050
-  spritePackingTag: 
+      Wood 32x32_9: -1486853287
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

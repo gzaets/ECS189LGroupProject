@@ -3,7 +3,7 @@ guid: 4dcc9e91fa42eec4cab01b96b224bce3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -618,33 +621,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Forest Herbs_20: 800119341
-      Forest Herbs_13: 202211454
-      Forest Herbs_12: -172114023
-      Forest Herbs_2: 1190745739
+      Forest Herbs_0: 1362523033
+      Forest Herbs_1: 2035467688
       Forest Herbs_10: 155084490
-      Forest Herbs_21: 1995957395
-      Forest Herbs_7: 1687723389
-      Forest Herbs_3: 1944489263
-      Forest Herbs_6: -703915042
-      Forest Herbs_9: -922102765
-      Forest Herbs_17: -421225766
-      Forest Herbs_23: -1628839155
+      Forest Herbs_11: 1293868479
+      Forest Herbs_12: -172114023
+      Forest Herbs_13: 202211454
+      Forest Herbs_14: -540943661
       Forest Herbs_15: -113662141
       Forest Herbs_16: 1192569099
-      Forest Herbs_1: 2035467688
-      Forest Herbs_5: -778566950
-      Forest Herbs_4: 2112201963
-      Forest Herbs_11: 1293868479
-      Forest Herbs_14: -540943661
-      Forest Herbs_8: -297362558
+      Forest Herbs_17: -421225766
       Forest Herbs_18: -19148390
-      Forest Herbs_0: 1362523033
       Forest Herbs_19: 1832974453
+      Forest Herbs_2: 1190745739
+      Forest Herbs_20: 800119341
+      Forest Herbs_21: 1995957395
       Forest Herbs_22: -1214418418
-  spritePackingTag: 
+      Forest Herbs_23: -1628839155
+      Forest Herbs_3: 1944489263
+      Forest Herbs_4: 2112201963
+      Forest Herbs_5: -778566950
+      Forest Herbs_6: -703915042
+      Forest Herbs_7: 1687723389
+      Forest Herbs_8: -297362558
+      Forest Herbs_9: -922102765
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

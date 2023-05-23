@@ -3,7 +3,7 @@ guid: 151836e23fb43b54891444d1fcc6ffef
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2949,144 +2952,143 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Forest water_114: 219697460
-      Forest water_71: -1847886198
-      Forest water_18: 912220342
-      Forest water_21: -43603138
-      Forest water_126: -106877970
-      Forest water_93: -1640328270
-      Forest water_2: 891871564
-      Forest water_130: 494062270
-      Forest water_48: 182850469
-      Forest water_80: -542375106
-      Forest water_94: -261950749
-      Forest water_92: -481630254
-      Forest water_91: 1386493835
-      Forest water_22: -2117135171
-      Forest water_86: -1831323808
-      Forest water_133: 868367726
-      Forest water_131: 286862214
-      Forest water_8: 1538313569
-      Forest water_23: -135659575
-      Forest water_14: 235902256
-      Forest water_27: -112834267
-      Forest water_106: -1335326281
-      Forest water_99: 120720714
-      Forest water_30: 1095889059
-      Forest water_54: -1110529187
-      Forest water_66: 516217552
-      Forest water_20: 1167788308
-      Forest water_79: -690166528
-      Forest water_77: 1899721648
-      Forest water_88: 655635213
-      Forest water_96: -1623242183
-      Forest water_108: 1778048838
-      Forest water_15: -1567818978
-      Forest water_37: -1080075168
-      Forest water_59: -981191399
-      Forest water_55: 1599310300
-      Forest water_32: 1210437568
-      Forest water_16: -1444686706
-      Forest water_63: 246584829
-      Forest water_117: 1706121732
-      Forest water_56: -1519618432
-      Forest water_31: -770308488
-      Forest water_128: -600355455
-      Forest water_121: 442656681
-      Forest water_28: 616322008
-      Forest water_58: -352396918
-      Forest water_124: 1647033021
-      Forest water_38: -1000377662
-      Forest water_82: -966523726
-      Forest water_52: -470682645
-      Forest water_116: 73866998
-      Forest water_67: 1200837426
-      Forest water_101: 1413349063
-      Forest water_123: 715943789
-      Forest water_35: -571584083
-      Forest water_103: -1066732013
-      Forest water_111: 278353803
-      Forest water_119: -1398709788
-      Forest water_95: -1749819069
-      Forest water_3: -731230918
-      Forest water_62: 1984939558
-      Forest water_49: -65433560
-      Forest water_41: -1942740640
-      Forest water_7: 268340910
-      Forest water_115: -545425884
-      Forest water_90: 1598003680
-      Forest water_110: -354292709
-      Forest water_118: -1739107971
-      Forest water_1: 1154902107
-      Forest water_12: 2100261115
-      Forest water_75: -597827039
-      Forest water_87: 415479534
-      Forest water_13: -404247764
-      Forest water_53: 386070908
-      Forest water_107: 1044371934
-      Forest water_76: 1719873096
-      Forest water_26: 846470584
-      Forest water_34: 1649546277
-      Forest water_43: -374887094
-      Forest water_61: 564490656
-      Forest water_33: -1950980891
-      Forest water_40: -1723699968
-      Forest water_105: 586711096
-      Forest water_25: 832571040
-      Forest water_45: -565053048
-      Forest water_104: 222475418
-      Forest water_83: 57670957
-      Forest water_47: 1113440507
       Forest water_0: 1438233446
-      Forest water_51: 1351958297
-      Forest water_125: 410928870
-      Forest water_17: 1141098462
-      Forest water_64: -1739741356
-      Forest water_81: -304716369
-      Forest water_134: -129701114
-      Forest water_113: 473728064
-      Forest water_24: -917275765
-      Forest water_84: 363396374
-      Forest water_70: 1522406219
-      Forest water_73: 1812422945
-      Forest water_100: 466565019
-      Forest water_69: 1994091996
-      Forest water_6: 819483365
-      Forest water_44: 1338130385
-      Forest water_50: -1811611955
-      Forest water_78: 569002907
-      Forest water_127: 1339863664
-      Forest water_5: -21316273
-      Forest water_36: -230951375
-      Forest water_46: 161562360
-      Forest water_72: 596656651
-      Forest water_129: -907537707
-      Forest water_65: -247635007
-      Forest water_98: -1349141147
-      Forest water_11: -1340022762
-      Forest water_68: -654820389
-      Forest water_39: -880244875
-      Forest water_29: -62685452
-      Forest water_97: -368443228
-      Forest water_85: 1279752026
-      Forest water_89: -262073444
+      Forest water_1: 1154902107
       Forest water_10: 421569069
-      Forest water_60: -1910658396
-      Forest water_19: -341685651
-      Forest water_112: 1464624167
-      Forest water_109: 2101602194
-      Forest water_120: 718029335
-      Forest water_74: -453543515
-      Forest water_9: 969704899
-      Forest water_57: 340196289
-      Forest water_42: 1449243217
-      Forest water_4: -1433567036
-      Forest water_122: 404716017
+      Forest water_100: 466565019
+      Forest water_101: 1413349063
       Forest water_102: 1878467140
+      Forest water_103: -1066732013
+      Forest water_104: 222475418
+      Forest water_105: 586711096
+      Forest water_106: -1335326281
+      Forest water_107: 1044371934
+      Forest water_108: 1778048838
+      Forest water_109: 2101602194
+      Forest water_11: -1340022762
+      Forest water_110: -354292709
+      Forest water_111: 278353803
+      Forest water_112: 1464624167
+      Forest water_113: 473728064
+      Forest water_114: 219697460
+      Forest water_115: -545425884
+      Forest water_116: 73866998
+      Forest water_117: 1706121732
+      Forest water_118: -1739107971
+      Forest water_119: -1398709788
+      Forest water_12: 2100261115
+      Forest water_120: 718029335
+      Forest water_121: 442656681
+      Forest water_122: 404716017
+      Forest water_123: 715943789
+      Forest water_124: 1647033021
+      Forest water_125: 410928870
+      Forest water_126: -106877970
+      Forest water_127: 1339863664
+      Forest water_128: -600355455
+      Forest water_129: -907537707
+      Forest water_13: -404247764
+      Forest water_130: 494062270
+      Forest water_131: 286862214
       Forest water_132: -1711716123
-  spritePackingTag: 
+      Forest water_133: 868367726
+      Forest water_134: -129701114
+      Forest water_14: 235902256
+      Forest water_15: -1567818978
+      Forest water_16: -1444686706
+      Forest water_17: 1141098462
+      Forest water_18: 912220342
+      Forest water_19: -341685651
+      Forest water_2: 891871564
+      Forest water_20: 1167788308
+      Forest water_21: -43603138
+      Forest water_22: -2117135171
+      Forest water_23: -135659575
+      Forest water_24: -917275765
+      Forest water_25: 832571040
+      Forest water_26: 846470584
+      Forest water_27: -112834267
+      Forest water_28: 616322008
+      Forest water_29: -62685452
+      Forest water_3: -731230918
+      Forest water_30: 1095889059
+      Forest water_31: -770308488
+      Forest water_32: 1210437568
+      Forest water_33: -1950980891
+      Forest water_34: 1649546277
+      Forest water_35: -571584083
+      Forest water_36: -230951375
+      Forest water_37: -1080075168
+      Forest water_38: -1000377662
+      Forest water_39: -880244875
+      Forest water_4: -1433567036
+      Forest water_40: -1723699968
+      Forest water_41: -1942740640
+      Forest water_42: 1449243217
+      Forest water_43: -374887094
+      Forest water_44: 1338130385
+      Forest water_45: -565053048
+      Forest water_46: 161562360
+      Forest water_47: 1113440507
+      Forest water_48: 182850469
+      Forest water_49: -65433560
+      Forest water_5: -21316273
+      Forest water_50: -1811611955
+      Forest water_51: 1351958297
+      Forest water_52: -470682645
+      Forest water_53: 386070908
+      Forest water_54: -1110529187
+      Forest water_55: 1599310300
+      Forest water_56: -1519618432
+      Forest water_57: 340196289
+      Forest water_58: -352396918
+      Forest water_59: -981191399
+      Forest water_6: 819483365
+      Forest water_60: -1910658396
+      Forest water_61: 564490656
+      Forest water_62: 1984939558
+      Forest water_63: 246584829
+      Forest water_64: -1739741356
+      Forest water_65: -247635007
+      Forest water_66: 516217552
+      Forest water_67: 1200837426
+      Forest water_68: -654820389
+      Forest water_69: 1994091996
+      Forest water_7: 268340910
+      Forest water_70: 1522406219
+      Forest water_71: -1847886198
+      Forest water_72: 596656651
+      Forest water_73: 1812422945
+      Forest water_74: -453543515
+      Forest water_75: -597827039
+      Forest water_76: 1719873096
+      Forest water_77: 1899721648
+      Forest water_78: 569002907
+      Forest water_79: -690166528
+      Forest water_8: 1538313569
+      Forest water_80: -542375106
+      Forest water_81: -304716369
+      Forest water_82: -966523726
+      Forest water_83: 57670957
+      Forest water_84: 363396374
+      Forest water_85: 1279752026
+      Forest water_86: -1831323808
+      Forest water_87: 415479534
+      Forest water_88: 655635213
+      Forest water_89: -262073444
+      Forest water_9: 969704899
+      Forest water_90: 1598003680
+      Forest water_91: 1386493835
+      Forest water_92: -481630254
+      Forest water_93: -1640328270
+      Forest water_94: -261950749
+      Forest water_95: -1749819069
+      Forest water_96: -1623242183
+      Forest water_97: -368443228
+      Forest water_98: -1349141147
+      Forest water_99: 120720714
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

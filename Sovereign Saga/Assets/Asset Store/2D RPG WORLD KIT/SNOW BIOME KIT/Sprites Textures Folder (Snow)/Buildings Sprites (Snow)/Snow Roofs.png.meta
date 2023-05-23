@@ -3,7 +3,7 @@ guid: fc1dd4b9188f0e0428f0021375c02d4a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -618,33 +621,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Snow Roofs_11: -1285467097
-      Snow Roofs_21: -2127097201
-      Snow Roofs_14: 1509853957
-      Snow Roofs_9: 358795984
-      Snow Roofs_20: -1018095834
-      Snow Roofs_3: -676742039
-      Snow Roofs_10: -816735722
       Snow Roofs_0: 1813678039
-      Snow Roofs_8: -2115119794
+      Snow Roofs_1: 1817258931
+      Snow Roofs_10: -816735722
+      Snow Roofs_11: -1285467097
+      Snow Roofs_12: -121534557
+      Snow Roofs_13: 1282541669
+      Snow Roofs_14: 1509853957
+      Snow Roofs_15: 174648788
       Snow Roofs_16: -539723958
-      Snow Roofs_7: -531909505
+      Snow Roofs_17: -1285544045
+      Snow Roofs_18: 2015732702
       Snow Roofs_19: 1834177987
       Snow Roofs_2: 102223376
-      Snow Roofs_18: 2015732702
-      Snow Roofs_6: 2086398930
-      Snow Roofs_13: 1282541669
-      Snow Roofs_17: -1285544045
-      Snow Roofs_12: -121534557
-      Snow Roofs_4: 407835951
-      Snow Roofs_5: -536893543
-      Snow Roofs_1: 1817258931
-      Snow Roofs_15: 174648788
+      Snow Roofs_20: -1018095834
+      Snow Roofs_21: -2127097201
       Snow Roofs_22: -368064659
       Snow Roofs_23: -1874211408
-  spritePackingTag: 
+      Snow Roofs_3: -676742039
+      Snow Roofs_4: 407835951
+      Snow Roofs_5: -536893543
+      Snow Roofs_6: 2086398930
+      Snow Roofs_7: -531909505
+      Snow Roofs_8: -2115119794
+      Snow Roofs_9: 358795984
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

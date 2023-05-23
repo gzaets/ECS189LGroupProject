@@ -3,7 +3,7 @@ guid: fedce2e65d3ef7f42b50812c983c631d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -618,33 +621,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Snow Herbs_6: -730479369
-      Snow Herbs_1: -1765638545
-      Snow Herbs_17: -919698900
-      Snow Herbs_11: 1692629287
-      Snow Herbs_18: 1114058587
-      Snow Herbs_20: -1489106051
-      Snow Herbs_7: 1169776644
-      Snow Herbs_23: -39750922
-      Snow Herbs_22: 1835487982
-      Snow Herbs_9: -296716928
-      Snow Herbs_3: -1602089515
-      Snow Herbs_5: 1505080875
       Snow Herbs_0: -330488830
-      Snow Herbs_19: -1367724943
-      Snow Herbs_14: 1473344252
-      Snow Herbs_12: -1701060879
+      Snow Herbs_1: -1765638545
       Snow Herbs_10: -943670824
-      Snow Herbs_8: 645439768
-      Snow Herbs_16: -1381948894
-      Snow Herbs_21: 1519218500
-      Snow Herbs_4: 489302907
-      Snow Herbs_2: -832747536
+      Snow Herbs_11: 1692629287
+      Snow Herbs_12: -1701060879
       Snow Herbs_13: 203639251
+      Snow Herbs_14: 1473344252
       Snow Herbs_15: 275961638
-  spritePackingTag: 
+      Snow Herbs_16: -1381948894
+      Snow Herbs_17: -919698900
+      Snow Herbs_18: 1114058587
+      Snow Herbs_19: -1367724943
+      Snow Herbs_2: -832747536
+      Snow Herbs_20: -1489106051
+      Snow Herbs_21: 1519218500
+      Snow Herbs_22: 1835487982
+      Snow Herbs_23: -39750922
+      Snow Herbs_3: -1602089515
+      Snow Herbs_4: 489302907
+      Snow Herbs_5: 1505080875
+      Snow Herbs_6: -730479369
+      Snow Herbs_7: 1169776644
+      Snow Herbs_8: 645439768
+      Snow Herbs_9: -296716928
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

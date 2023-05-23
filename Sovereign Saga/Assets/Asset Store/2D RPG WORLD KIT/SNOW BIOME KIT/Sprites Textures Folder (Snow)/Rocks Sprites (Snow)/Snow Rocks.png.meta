@@ -3,7 +3,7 @@ guid: 5dab309104226cd4f8a9e045050cbf3a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -786,41 +789,40 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Snow Rocks_4: 1739588285
-      Snow Rocks_8: -1892791510
-      Snow Rocks_3: 2128327492
-      Snow Rocks_12: -808237404
-      Snow Rocks_28: -1488518947
-      Snow Rocks_27: -1003846450
-      Snow Rocks_22: 1211167816
+      Snow Rocks_0: -1904002128
       Snow Rocks_1: 662639775
-      Snow Rocks_19: -1572129526
-      Snow Rocks_23: -78557858
-      Snow Rocks_26: 408579581
-      Snow Rocks_14: 1024526886
+      Snow Rocks_10: -649158956
       Snow Rocks_11: 1290054667
+      Snow Rocks_12: -808237404
+      Snow Rocks_13: -1799439892
+      Snow Rocks_14: 1024526886
+      Snow Rocks_15: -1098566030
+      Snow Rocks_16: -97722474
+      Snow Rocks_17: -1876297610
+      Snow Rocks_18: -523426961
+      Snow Rocks_19: -1572129526
+      Snow Rocks_2: -949585053
+      Snow Rocks_20: -293971272
+      Snow Rocks_21: -913748052
+      Snow Rocks_22: 1211167816
+      Snow Rocks_23: -78557858
+      Snow Rocks_24: 1852160618
+      Snow Rocks_25: 595048650
+      Snow Rocks_26: 408579581
+      Snow Rocks_27: -1003846450
+      Snow Rocks_28: -1488518947
+      Snow Rocks_29: 1727445770
+      Snow Rocks_3: 2128327492
+      Snow Rocks_30: 163411799
+      Snow Rocks_31: 363440933
+      Snow Rocks_4: 1739588285
       Snow Rocks_5: 1502234982
       Snow Rocks_6: -266171827
-      Snow Rocks_31: 363440933
-      Snow Rocks_30: 163411799
-      Snow Rocks_9: 753532649
-      Snow Rocks_20: -293971272
-      Snow Rocks_18: -523426961
-      Snow Rocks_13: -1799439892
-      Snow Rocks_0: -1904002128
-      Snow Rocks_17: -1876297610
-      Snow Rocks_21: -913748052
-      Snow Rocks_25: 595048650
       Snow Rocks_7: -1403621697
-      Snow Rocks_15: -1098566030
-      Snow Rocks_24: 1852160618
-      Snow Rocks_16: -97722474
-      Snow Rocks_2: -949585053
-      Snow Rocks_29: 1727445770
-      Snow Rocks_10: -649158956
-  spritePackingTag: 
+      Snow Rocks_8: -1892791510
+      Snow Rocks_9: 753532649
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

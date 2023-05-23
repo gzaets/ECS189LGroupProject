@@ -3,7 +3,7 @@ guid: da395c98ce308a145823ae8bc943f302
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -429,24 +432,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Rocks 32x32_0: -281340402
+      Rocks 32x32_1: -278280534
+      Rocks 32x32_10: -1459433366
+      Rocks 32x32_11: -772729054
       Rocks 32x32_12: 698344790
       Rocks 32x32_13: -1195475309
-      Rocks 32x32_7: -432053919
-      Rocks 32x32_3: 406249872
-      Rocks 32x32_10: -1459433366
-      Rocks 32x32_1: -278280534
-      Rocks 32x32_4: 54848016
-      Rocks 32x32_2: 2018346602
-      Rocks 32x32_0: -281340402
-      Rocks 32x32_11: -772729054
-      Rocks 32x32_5: 46561753
-      Rocks 32x32_9: -443405732
       Rocks 32x32_14: 1458636735
-      Rocks 32x32_8: -1447961925
+      Rocks 32x32_2: 2018346602
+      Rocks 32x32_3: 406249872
+      Rocks 32x32_4: 54848016
+      Rocks 32x32_5: 46561753
       Rocks 32x32_6: 31731664
-  spritePackingTag: 
+      Rocks 32x32_7: -432053919
+      Rocks 32x32_8: -1447961925
+      Rocks 32x32_9: -443405732
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -3,7 +3,7 @@ guid: 11e3ed0ad8ba564489b924aa25dc4c8a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -366,21 +369,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Purple3_9: -1472698288
-      Purple3_7: 1710571686
-      Purple3_5: 1334555678
-      Purple3_10: 1322105335
-      Purple3_4: 112522831
       Purple3_0: -355215596
-      Purple3_6: 671538650
       Purple3_1: 1848696632
-      Purple3_8: 1034573605
+      Purple3_10: 1322105335
+      Purple3_11: -322500808
       Purple3_2: -692661816
       Purple3_3: -1252747367
-      Purple3_11: -322500808
-  spritePackingTag: 
+      Purple3_4: 112522831
+      Purple3_5: 1334555678
+      Purple3_6: 671538650
+      Purple3_7: 1710571686
+      Purple3_8: 1034573605
+      Purple3_9: -1472698288
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

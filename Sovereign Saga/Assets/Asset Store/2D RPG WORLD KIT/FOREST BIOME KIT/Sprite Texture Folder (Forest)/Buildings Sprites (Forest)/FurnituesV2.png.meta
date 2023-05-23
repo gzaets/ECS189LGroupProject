@@ -3,7 +3,7 @@ guid: ade1df7bdce94d6448e8ee4821a3b0aa
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2970,145 +2973,144 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FurnituesV2_75: 976937059
-      FurnituesV2_32: -657459671
-      FurnituesV2_69: -1664412075
-      FurnituesV2_26: 922853604
-      FurnituesV2_91: -569360629
-      FurnituesV2_2: -930270764
-      FurnituesV2_53: -600698118
-      FurnituesV2_66: 412677872
-      FurnituesV2_48: 1280226235
-      FurnituesV2_133: 461144189
-      FurnituesV2_54: 1047796504
-      FurnituesV2_64: 1889715654
-      FurnituesV2_39: 750809740
-      FurnituesV2_105: -1177911144
-      FurnituesV2_5: -1330823284
-      FurnituesV2_76: 929581240
-      FurnituesV2_49: 1216532026
-      FurnituesV2_44: 443020010
-      FurnituesV2_71: -1905381842
-      FurnituesV2_89: 1000100013
-      FurnituesV2_83: 738859941
-      FurnituesV2_67: -1325346319
-      FurnituesV2_125: -803850435
-      FurnituesV2_128: -1378277490
-      FurnituesV2_95: -683222434
-      FurnituesV2_119: -1708491774
-      FurnituesV2_121: -1888532140
-      FurnituesV2_25: -386584710
-      FurnituesV2_124: -190346550
-      FurnituesV2_134: 117728366
-      FurnituesV2_132: -252592340
-      FurnituesV2_107: -22882035
-      FurnituesV2_29: -1670704270
-      FurnituesV2_47: -175046313
-      FurnituesV2_13: -1182369518
-      FurnituesV2_118: 1980184904
-      FurnituesV2_52: 70058754
-      FurnituesV2_8: -1319912549
-      FurnituesV2_14: 1803378615
-      FurnituesV2_46: -1040351877
-      FurnituesV2_31: 1835311326
-      FurnituesV2_45: 1427263184
-      FurnituesV2_122: 1749795451
-      FurnituesV2_15: 149759651
-      FurnituesV2_41: 1760932053
-      FurnituesV2_92: 1271485065
-      FurnituesV2_94: 996534407
       FurnituesV2_0: -1771819739
-      FurnituesV2_78: -1251244238
-      FurnituesV2_100: 1301103123
-      FurnituesV2_130: 1427636442
-      FurnituesV2_85: 1556420614
-      FurnituesV2_81: -1922705967
-      FurnituesV2_127: 1681850052
-      FurnituesV2_24: 15298754
-      FurnituesV2_113: 1380548279
-      FurnituesV2_50: -2088468180
-      FurnituesV2_17: -1166987325
-      FurnituesV2_38: 336154411
-      FurnituesV2_80: -796335970
-      FurnituesV2_86: 171274076
-      FurnituesV2_30: 1300831064
-      FurnituesV2_34: 1960397865
-      FurnituesV2_43: -1217911268
-      FurnituesV2_68: -1677321471
-      FurnituesV2_23: 1027670441
-      FurnituesV2_110: -2146500918
-      FurnituesV2_90: -2130435341
-      FurnituesV2_101: -1839255009
-      FurnituesV2_106: -45293370
-      FurnituesV2_112: 1274190549
+      FurnituesV2_1: 1751015594
       FurnituesV2_10: 1694422073
-      FurnituesV2_120: -630333585
-      FurnituesV2_55: 1578781523
+      FurnituesV2_100: 1301103123
+      FurnituesV2_101: -1839255009
+      FurnituesV2_102: 1569130900
+      FurnituesV2_103: 1806409268
+      FurnituesV2_104: -1318396299
+      FurnituesV2_105: -1177911144
+      FurnituesV2_106: -45293370
+      FurnituesV2_107: -22882035
+      FurnituesV2_108: -1071909444
+      FurnituesV2_109: -143871749
+      FurnituesV2_11: 594808165
+      FurnituesV2_110: -2146500918
+      FurnituesV2_111: 485362816
+      FurnituesV2_112: 1274190549
+      FurnituesV2_113: 1380548279
       FurnituesV2_114: 248019008
+      FurnituesV2_115: 326500518
+      FurnituesV2_116: -885237930
+      FurnituesV2_117: 832090422
+      FurnituesV2_118: 1980184904
+      FurnituesV2_119: -1708491774
+      FurnituesV2_12: -1094214193
+      FurnituesV2_120: -630333585
+      FurnituesV2_121: -1888532140
+      FurnituesV2_122: 1749795451
+      FurnituesV2_123: -1722551643
+      FurnituesV2_124: -190346550
+      FurnituesV2_125: -803850435
+      FurnituesV2_126: -2119131217
+      FurnituesV2_127: 1681850052
+      FurnituesV2_128: -1378277490
+      FurnituesV2_129: -234024784
+      FurnituesV2_13: -1182369518
+      FurnituesV2_130: 1427636442
+      FurnituesV2_131: 47915698
+      FurnituesV2_132: -252592340
+      FurnituesV2_133: 461144189
+      FurnituesV2_134: 117728366
+      FurnituesV2_135: -100636872
+      FurnituesV2_14: 1803378615
+      FurnituesV2_15: 149759651
       FurnituesV2_16: 1063330301
-      FurnituesV2_58: -2053449832
+      FurnituesV2_17: -1166987325
+      FurnituesV2_18: 36424600
+      FurnituesV2_19: 1475485249
+      FurnituesV2_2: -930270764
       FurnituesV2_20: -426153824
       FurnituesV2_21: -13711977
-      FurnituesV2_1: 1751015594
-      FurnituesV2_63: -77523459
-      FurnituesV2_123: -1722551643
-      FurnituesV2_109: -143871749
-      FurnituesV2_6: -319290490
-      FurnituesV2_51: 186543304
-      FurnituesV2_33: 361324840
-      FurnituesV2_4: 1318193643
-      FurnituesV2_56: -859507531
-      FurnituesV2_98: 1114226645
-      FurnituesV2_116: -885237930
-      FurnituesV2_126: -2119131217
-      FurnituesV2_12: -1094214193
-      FurnituesV2_42: 1518561576
-      FurnituesV2_37: -239701478
-      FurnituesV2_7: 1376131216
-      FurnituesV2_131: 47915698
-      FurnituesV2_57: -2004930310
-      FurnituesV2_3: -698074305
-      FurnituesV2_82: 2102965571
-      FurnituesV2_103: 1806409268
-      FurnituesV2_108: -1071909444
-      FurnituesV2_135: -100636872
-      FurnituesV2_62: 1521057689
-      FurnituesV2_88: -233438852
-      FurnituesV2_93: -1373291155
-      FurnituesV2_11: 594808165
-      FurnituesV2_36: 462698285
-      FurnituesV2_84: 825170719
       FurnituesV2_22: 2133733288
-      FurnituesV2_73: 397034266
-      FurnituesV2_96: -2096911593
-      FurnituesV2_61: -171912550
-      FurnituesV2_70: 1594092982
-      FurnituesV2_111: 485362816
-      FurnituesV2_28: 839881970
-      FurnituesV2_129: -234024784
-      FurnituesV2_19: 1475485249
-      FurnituesV2_115: 326500518
-      FurnituesV2_72: -1501669806
-      FurnituesV2_59: 2026228381
-      FurnituesV2_35: -2055606688
+      FurnituesV2_23: 1027670441
+      FurnituesV2_24: 15298754
+      FurnituesV2_25: -386584710
+      FurnituesV2_26: 922853604
       FurnituesV2_27: -772527904
-      FurnituesV2_102: 1569130900
-      FurnituesV2_104: -1318396299
-      FurnituesV2_9: 155316431
-      FurnituesV2_87: 23382006
-      FurnituesV2_65: 742350779
-      FurnituesV2_97: 2021966349
-      FurnituesV2_77: 1459122399
-      FurnituesV2_117: 832090422
+      FurnituesV2_28: 839881970
+      FurnituesV2_29: -1670704270
+      FurnituesV2_3: -698074305
+      FurnituesV2_30: 1300831064
+      FurnituesV2_31: 1835311326
+      FurnituesV2_32: -657459671
+      FurnituesV2_33: 361324840
+      FurnituesV2_34: 1960397865
+      FurnituesV2_35: -2055606688
+      FurnituesV2_36: 462698285
+      FurnituesV2_37: -239701478
+      FurnituesV2_38: 336154411
+      FurnituesV2_39: 750809740
+      FurnituesV2_4: 1318193643
       FurnituesV2_40: 1668460886
-      FurnituesV2_18: 36424600
-      FurnituesV2_99: 25715384
-      FurnituesV2_74: -1590589781
+      FurnituesV2_41: 1760932053
+      FurnituesV2_42: 1518561576
+      FurnituesV2_43: -1217911268
+      FurnituesV2_44: 443020010
+      FurnituesV2_45: 1427263184
+      FurnituesV2_46: -1040351877
+      FurnituesV2_47: -175046313
+      FurnituesV2_48: 1280226235
+      FurnituesV2_49: 1216532026
+      FurnituesV2_5: -1330823284
+      FurnituesV2_50: -2088468180
+      FurnituesV2_51: 186543304
+      FurnituesV2_52: 70058754
+      FurnituesV2_53: -600698118
+      FurnituesV2_54: 1047796504
+      FurnituesV2_55: 1578781523
+      FurnituesV2_56: -859507531
+      FurnituesV2_57: -2004930310
+      FurnituesV2_58: -2053449832
+      FurnituesV2_59: 2026228381
+      FurnituesV2_6: -319290490
       FurnituesV2_60: 1306445860
+      FurnituesV2_61: -171912550
+      FurnituesV2_62: 1521057689
+      FurnituesV2_63: -77523459
+      FurnituesV2_64: 1889715654
+      FurnituesV2_65: 742350779
+      FurnituesV2_66: 412677872
+      FurnituesV2_67: -1325346319
+      FurnituesV2_68: -1677321471
+      FurnituesV2_69: -1664412075
+      FurnituesV2_7: 1376131216
+      FurnituesV2_70: 1594092982
+      FurnituesV2_71: -1905381842
+      FurnituesV2_72: -1501669806
+      FurnituesV2_73: 397034266
+      FurnituesV2_74: -1590589781
+      FurnituesV2_75: 976937059
+      FurnituesV2_76: 929581240
+      FurnituesV2_77: 1459122399
+      FurnituesV2_78: -1251244238
       FurnituesV2_79: -1619599848
-  spritePackingTag: 
+      FurnituesV2_8: -1319912549
+      FurnituesV2_80: -796335970
+      FurnituesV2_81: -1922705967
+      FurnituesV2_82: 2102965571
+      FurnituesV2_83: 738859941
+      FurnituesV2_84: 825170719
+      FurnituesV2_85: 1556420614
+      FurnituesV2_86: 171274076
+      FurnituesV2_87: 23382006
+      FurnituesV2_88: -233438852
+      FurnituesV2_89: 1000100013
+      FurnituesV2_9: 155316431
+      FurnituesV2_90: -2130435341
+      FurnituesV2_91: -569360629
+      FurnituesV2_92: 1271485065
+      FurnituesV2_93: -1373291155
+      FurnituesV2_94: 996534407
+      FurnituesV2_95: -683222434
+      FurnituesV2_96: -2096911593
+      FurnituesV2_97: 2021966349
+      FurnituesV2_98: 1114226645
+      FurnituesV2_99: 25715384
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

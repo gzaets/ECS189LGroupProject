@@ -3,7 +3,7 @@ guid: 969680c886bf0bb4394130ea89d1b935
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2214,109 +2217,108 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Exterior_12: 1585762009
-      Exterior_15: 2000469522
-      Exterior_39: -1124617066
-      Exterior_76: 104839384
-      Exterior_51: 136765845
-      Exterior_80: 1649015889
-      Exterior_57: 1699536369
-      Exterior_74: 954689437
-      Exterior_99: -567109223
-      Exterior_30: -245701967
-      Exterior_43: -923939907
-      Exterior_65: 1412703866
-      Exterior_2: -2075485869
-      Exterior_22: 1162516619
-      Exterior_62: 159870110
-      Exterior_32: 266692727
-      Exterior_93: -505464282
-      Exterior_34: 1435440898
       Exterior_0: -2075732097
-      Exterior_29: 1708290943
-      Exterior_84: -793430921
-      Exterior_78: -305580641
-      Exterior_38: 737732703
-      Exterior_6: 1628187433
-      Exterior_9: 1719876172
-      Exterior_47: -170474242
       Exterior_1: 1281999042
-      Exterior_49: 1019108240
-      Exterior_92: 802213560
-      Exterior_72: 1652586752
-      Exterior_23: -1305451456
-      Exterior_54: -734790072
-      Exterior_14: 27948900
-      Exterior_21: 272535395
-      Exterior_81: 1632603318
-      Exterior_56: -1992442443
-      Exterior_68: -978784457
-      Exterior_4: -728093560
-      Exterior_73: 867703130
-      Exterior_16: 753085082
-      Exterior_27: -463736013
-      Exterior_3: -1825066876
-      Exterior_53: -1636329916
-      Exterior_66: 802048148
-      Exterior_24: 601420662
-      Exterior_97: 254923284
-      Exterior_33: -1495282745
-      Exterior_87: 971338100
-      Exterior_13: 1172904815
-      Exterior_41: 526670443
-      Exterior_25: -1919633302
-      Exterior_82: 409629809
-      Exterior_46: -2102941247
-      Exterior_83: -2032583783
-      Exterior_86: -253931791
-      Exterior_90: -1391234028
-      Exterior_7: 2141415222
-      Exterior_69: 301978231
-      Exterior_18: 226492455
-      Exterior_36: 1689840957
-      Exterior_96: -1450128653
-      Exterior_42: 1213311023
-      Exterior_98: -483691342
-      Exterior_77: 749734184
-      Exterior_88: -356120717
-      Exterior_85: 1289789284
-      Exterior_50: 1047441249
-      Exterior_52: 2049351832
-      Exterior_44: -818994243
-      Exterior_48: 624963832
-      Exterior_75: 2032959055
-      Exterior_67: -411958079
-      Exterior_5: -986815362
-      Exterior_35: 1878758856
-      Exterior_64: 438361104
-      Exterior_37: -268565599
-      Exterior_11: 899009980
-      Exterior_71: 1822036167
-      Exterior_19: 1337718301
-      Exterior_26: -699537079
-      Exterior_55: 37181197
       Exterior_10: 1358531881
-      Exterior_89: -1661777634
-      Exterior_20: 880075662
-      Exterior_94: 1376828494
-      Exterior_8: -398394724
-      Exterior_59: -1226442276
-      Exterior_45: 512904175
-      Exterior_95: -189399613
-      Exterior_58: 248664694
-      Exterior_70: -835642106
-      Exterior_31: 1948833658
+      Exterior_11: 899009980
+      Exterior_12: 1585762009
+      Exterior_13: 1172904815
+      Exterior_14: 27948900
+      Exterior_15: 2000469522
+      Exterior_16: 753085082
       Exterior_17: 1411227291
+      Exterior_18: 226492455
+      Exterior_19: 1337718301
+      Exterior_2: -2075485869
+      Exterior_20: 880075662
+      Exterior_21: 272535395
+      Exterior_22: 1162516619
+      Exterior_23: -1305451456
+      Exterior_24: 601420662
+      Exterior_25: -1919633302
+      Exterior_26: -699537079
+      Exterior_27: -463736013
+      Exterior_28: 1448225994
+      Exterior_29: 1708290943
+      Exterior_3: -1825066876
+      Exterior_30: -245701967
+      Exterior_31: 1948833658
+      Exterior_32: 266692727
+      Exterior_33: -1495282745
+      Exterior_34: 1435440898
+      Exterior_35: 1878758856
+      Exterior_36: 1689840957
+      Exterior_37: -268565599
+      Exterior_38: 737732703
+      Exterior_39: -1124617066
+      Exterior_4: -728093560
+      Exterior_40: 1594484611
+      Exterior_41: 526670443
+      Exterior_42: 1213311023
+      Exterior_43: -923939907
+      Exterior_44: -818994243
+      Exterior_45: 512904175
+      Exterior_46: -2102941247
+      Exterior_47: -170474242
+      Exterior_48: 624963832
+      Exterior_49: 1019108240
+      Exterior_5: -986815362
+      Exterior_50: 1047441249
+      Exterior_51: 136765845
+      Exterior_52: 2049351832
+      Exterior_53: -1636329916
+      Exterior_54: -734790072
+      Exterior_55: 37181197
+      Exterior_56: -1992442443
+      Exterior_57: 1699536369
+      Exterior_58: 248664694
+      Exterior_59: -1226442276
+      Exterior_6: 1628187433
       Exterior_60: 33804770
       Exterior_61: 1920289218
-      Exterior_40: 1594484611
-      Exterior_91: 1304465275
-      Exterior_28: 1448225994
+      Exterior_62: 159870110
       Exterior_63: -1237263089
+      Exterior_64: 438361104
+      Exterior_65: 1412703866
+      Exterior_66: 802048148
+      Exterior_67: -411958079
+      Exterior_68: -978784457
+      Exterior_69: 301978231
+      Exterior_7: 2141415222
+      Exterior_70: -835642106
+      Exterior_71: 1822036167
+      Exterior_72: 1652586752
+      Exterior_73: 867703130
+      Exterior_74: 954689437
+      Exterior_75: 2032959055
+      Exterior_76: 104839384
+      Exterior_77: 749734184
+      Exterior_78: -305580641
       Exterior_79: 1221452219
-  spritePackingTag: 
+      Exterior_8: -398394724
+      Exterior_80: 1649015889
+      Exterior_81: 1632603318
+      Exterior_82: 409629809
+      Exterior_83: -2032583783
+      Exterior_84: -793430921
+      Exterior_85: 1289789284
+      Exterior_86: -253931791
+      Exterior_87: 971338100
+      Exterior_88: -356120717
+      Exterior_89: -1661777634
+      Exterior_9: 1719876172
+      Exterior_90: -1391234028
+      Exterior_91: 1304465275
+      Exterior_92: 802213560
+      Exterior_93: -505464282
+      Exterior_94: 1376828494
+      Exterior_95: -189399613
+      Exterior_96: -1450128653
+      Exterior_97: 254923284
+      Exterior_98: -483691342
+      Exterior_99: -567109223
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

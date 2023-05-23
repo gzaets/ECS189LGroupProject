@@ -3,7 +3,7 @@ guid: d20aeaeb85d83fb4fa6b57b9c3ccc428
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2949,144 +2952,143 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ice water_83: -1940475686
-      Ice water_108: -982011872
-      Ice water_122: 1296419208
-      Ice water_43: -1882614738
-      Ice water_36: -1551925658
-      Ice water_69: -313509039
-      Ice water_29: 1593296984
-      Ice water_94: 2106532000
-      Ice water_3: 1811305344
-      Ice water_11: 1229331173
-      Ice water_20: 792977048
-      Ice water_57: -1952212928
-      Ice water_15: 342910641
-      Ice water_2: 840677263
-      Ice water_41: -602843614
-      Ice water_65: -1226190238
-      Ice water_37: -1314044261
-      Ice water_84: 313426828
-      Ice water_125: 932908971
       Ice water_0: -1123917478
-      Ice water_86: 1781394411
-      Ice water_21: 883635909
-      Ice water_54: 210856809
-      Ice water_134: -1646790753
-      Ice water_56: -1471096850
-      Ice water_8: 1044311826
-      Ice water_55: -826315698
-      Ice water_79: 2071332103
-      Ice water_52: 1351775564
-      Ice water_72: -1081041059
-      Ice water_120: -905571355
-      Ice water_68: 196727396
-      Ice water_62: 84146976
-      Ice water_112: -988508978
-      Ice water_18: -858337239
-      Ice water_99: -1454182767
-      Ice water_58: 2100916990
       Ice water_1: -1927886021
-      Ice water_88: 1429888932
-      Ice water_33: 1511552458
-      Ice water_73: 1635810548
-      Ice water_89: -2085866629
-      Ice water_24: -2037760986
+      Ice water_10: 1071096815
       Ice water_100: -1371086161
       Ice water_101: 1015873180
-      Ice water_109: -285309860
-      Ice water_61: 1493693596
-      Ice water_80: -1766685608
-      Ice water_95: -1940926759
-      Ice water_13: 1897498013
-      Ice water_133: -1057227403
-      Ice water_123: 542432831
-      Ice water_76: 2104992939
-      Ice water_107: -1319556087
-      Ice water_87: 557310346
-      Ice water_132: -285161098
-      Ice water_22: -1334639282
-      Ice water_31: 1743993102
-      Ice water_34: -805087654
-      Ice water_118: 2100627183
-      Ice water_121: 702490426
-      Ice water_14: 410571997
-      Ice water_7: -2088051517
-      Ice water_9: 2049649255
-      Ice water_50: -893397020
-      Ice water_74: 1117950645
-      Ice water_103: 1228503881
-      Ice water_4: 436464777
-      Ice water_47: -2083517044
-      Ice water_28: -1360925990
-      Ice water_81: 1173189000
-      Ice water_96: 1459051120
-      Ice water_127: -1833659332
-      Ice water_91: 528389844
-      Ice water_27: -796543283
-      Ice water_49: -1054635049
-      Ice water_66: -869275012
-      Ice water_97: -511984854
-      Ice water_6: -1249516826
-      Ice water_104: -1486592636
-      Ice water_17: 478916137
-      Ice water_25: 885630085
-      Ice water_128: 112792199
-      Ice water_16: 660458587
-      Ice water_126: 598920662
-      Ice water_10: 1071096815
       Ice water_102: 1459869425
-      Ice water_51: -1967690194
-      Ice water_115: -2077771882
-      Ice water_111: -933914543
-      Ice water_63: -2020082951
-      Ice water_59: -2126463098
-      Ice water_19: -1036982031
-      Ice water_26: 913434788
-      Ice water_35: -1018270939
-      Ice water_44: 39365064
-      Ice water_5: 1708715054
-      Ice water_93: 495277902
-      Ice water_75: 2042781510
-      Ice water_130: -585544190
-      Ice water_85: -1156378544
-      Ice water_129: 1584621595
-      Ice water_70: -312984137
-      Ice water_106: -1538026191
-      Ice water_53: 611611153
+      Ice water_103: 1228503881
+      Ice water_104: -1486592636
       Ice water_105: -1119376081
-      Ice water_92: 398602650
-      Ice water_60: -1186852552
-      Ice water_77: 1320930663
-      Ice water_98: 2028811806
-      Ice water_131: 1180442054
-      Ice water_38: -710406459
-      Ice water_42: -365515908
-      Ice water_45: 479905968
-      Ice water_71: 30910178
-      Ice water_113: 1535168154
-      Ice water_23: -419867451
-      Ice water_30: 638722016
-      Ice water_64: 1263399539
+      Ice water_106: -1538026191
+      Ice water_107: -1319556087
+      Ice water_108: -982011872
+      Ice water_109: -285309860
+      Ice water_11: 1229331173
       Ice water_110: -972674200
-      Ice water_90: -582118836
-      Ice water_78: -1660569640
-      Ice water_124: -454895909
-      Ice water_48: 1107074512
-      Ice water_116: -1030125184
-      Ice water_119: -1316874786
-      Ice water_40: 372489833
-      Ice water_82: 69524079
+      Ice water_111: -933914543
+      Ice water_112: -988508978
+      Ice water_113: 1535168154
       Ice water_114: -1840219216
-      Ice water_12: -753350484
-      Ice water_46: 915167889
+      Ice water_115: -2077771882
+      Ice water_116: -1030125184
       Ice water_117: -2120704823
+      Ice water_118: 2100627183
+      Ice water_119: -1316874786
+      Ice water_12: -753350484
+      Ice water_120: -905571355
+      Ice water_121: 702490426
+      Ice water_122: 1296419208
+      Ice water_123: 542432831
+      Ice water_124: -454895909
+      Ice water_125: 932908971
+      Ice water_126: 598920662
+      Ice water_127: -1833659332
+      Ice water_128: 112792199
+      Ice water_129: 1584621595
+      Ice water_13: 1897498013
+      Ice water_130: -585544190
+      Ice water_131: 1180442054
+      Ice water_132: -285161098
+      Ice water_133: -1057227403
+      Ice water_134: -1646790753
+      Ice water_14: 410571997
+      Ice water_15: 342910641
+      Ice water_16: 660458587
+      Ice water_17: 478916137
+      Ice water_18: -858337239
+      Ice water_19: -1036982031
+      Ice water_2: 840677263
+      Ice water_20: 792977048
+      Ice water_21: 883635909
+      Ice water_22: -1334639282
+      Ice water_23: -419867451
+      Ice water_24: -2037760986
+      Ice water_25: 885630085
+      Ice water_26: 913434788
+      Ice water_27: -796543283
+      Ice water_28: -1360925990
+      Ice water_29: 1593296984
+      Ice water_3: 1811305344
+      Ice water_30: 638722016
+      Ice water_31: 1743993102
       Ice water_32: -1078596040
-      Ice water_67: 442486304
+      Ice water_33: 1511552458
+      Ice water_34: -805087654
+      Ice water_35: -1018270939
+      Ice water_36: -1551925658
+      Ice water_37: -1314044261
+      Ice water_38: -710406459
       Ice water_39: -1331247336
-  spritePackingTag: 
+      Ice water_4: 436464777
+      Ice water_40: 372489833
+      Ice water_41: -602843614
+      Ice water_42: -365515908
+      Ice water_43: -1882614738
+      Ice water_44: 39365064
+      Ice water_45: 479905968
+      Ice water_46: 915167889
+      Ice water_47: -2083517044
+      Ice water_48: 1107074512
+      Ice water_49: -1054635049
+      Ice water_5: 1708715054
+      Ice water_50: -893397020
+      Ice water_51: -1967690194
+      Ice water_52: 1351775564
+      Ice water_53: 611611153
+      Ice water_54: 210856809
+      Ice water_55: -826315698
+      Ice water_56: -1471096850
+      Ice water_57: -1952212928
+      Ice water_58: 2100916990
+      Ice water_59: -2126463098
+      Ice water_6: -1249516826
+      Ice water_60: -1186852552
+      Ice water_61: 1493693596
+      Ice water_62: 84146976
+      Ice water_63: -2020082951
+      Ice water_64: 1263399539
+      Ice water_65: -1226190238
+      Ice water_66: -869275012
+      Ice water_67: 442486304
+      Ice water_68: 196727396
+      Ice water_69: -313509039
+      Ice water_7: -2088051517
+      Ice water_70: -312984137
+      Ice water_71: 30910178
+      Ice water_72: -1081041059
+      Ice water_73: 1635810548
+      Ice water_74: 1117950645
+      Ice water_75: 2042781510
+      Ice water_76: 2104992939
+      Ice water_77: 1320930663
+      Ice water_78: -1660569640
+      Ice water_79: 2071332103
+      Ice water_8: 1044311826
+      Ice water_80: -1766685608
+      Ice water_81: 1173189000
+      Ice water_82: 69524079
+      Ice water_83: -1940475686
+      Ice water_84: 313426828
+      Ice water_85: -1156378544
+      Ice water_86: 1781394411
+      Ice water_87: 557310346
+      Ice water_88: 1429888932
+      Ice water_89: -2085866629
+      Ice water_9: 2049649255
+      Ice water_90: -582118836
+      Ice water_91: 528389844
+      Ice water_92: 398602650
+      Ice water_93: 495277902
+      Ice water_94: 2106532000
+      Ice water_95: -1940926759
+      Ice water_96: 1459051120
+      Ice water_97: -511984854
+      Ice water_98: 2028811806
+      Ice water_99: -1454182767
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

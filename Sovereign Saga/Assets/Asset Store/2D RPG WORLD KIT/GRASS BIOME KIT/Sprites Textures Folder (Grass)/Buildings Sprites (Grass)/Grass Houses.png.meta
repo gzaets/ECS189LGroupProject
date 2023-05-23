@@ -3,7 +3,7 @@ guid: d4ed3e6fd5d3f094cb675482e262db5c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -870,45 +873,44 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Houses_9: -2090275778
-      Houses_10: 393957166
-      Houses_13: 939707164
-      Houses_17: 344953494
-      Houses_6: -1283410161
       Houses_0: 896853866
-      Houses_2: 415716730
-      Houses_18: -1255632536
-      Houses_31: 11606450
-      Houses_27: 1018028573
-      Houses_29: 485188006
-      Houses_21: -2059013626
-      Houses_16: 1094334957
-      Houses_23: 946942281
-      Houses_30: -2055357008
-      Houses_12: -1429804939
-      Houses_8: 1601777516
-      Houses_14: 285153251
-      Houses_22: 1869942655
-      Houses_7: -2130222936
-      Houses_5: 1835874126
       Houses_1: -1732656025
-      Houses_34: 528835824
-      Houses_4: -1447337653
-      Houses_15: 1293213641
-      Houses_20: 1562658278
+      Houses_10: 393957166
       Houses_11: 204028971
+      Houses_12: -1429804939
+      Houses_13: 939707164
+      Houses_14: 285153251
+      Houses_15: 1293213641
+      Houses_16: 1094334957
+      Houses_17: 344953494
+      Houses_18: -1255632536
+      Houses_19: -437212563
+      Houses_2: 415716730
+      Houses_20: 1562658278
+      Houses_21: -2059013626
+      Houses_22: 1869942655
+      Houses_23: 946942281
+      Houses_24: 475679771
       Houses_25: 1285035540
       Houses_26: 363692240
-      Houses_32: -2103691568
-      Houses_35: 591123148
-      Houses_19: -437212563
+      Houses_27: 1018028573
       Houses_28: -1040272188
-      Houses_33: -1017576341
-      Houses_24: 475679771
+      Houses_29: 485188006
       Houses_3: -294262056
-  spritePackingTag: 
+      Houses_30: -2055357008
+      Houses_31: 11606450
+      Houses_32: -2103691568
+      Houses_33: -1017576341
+      Houses_34: 528835824
+      Houses_35: 591123148
+      Houses_4: -1447337653
+      Houses_5: 1835874126
+      Houses_6: -1283410161
+      Houses_7: -2130222936
+      Houses_8: 1601777516
+      Houses_9: -2090275778
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

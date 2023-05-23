@@ -3,7 +3,7 @@ guid: 24f2ecfaf197eb44f8c58eb095068222
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -429,24 +432,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tile 32x32_8: -1563737140
-      Tile 32x32_2: -1411943873
-      Tile 32x32_3: -171640729
-      Tile 32x32_7: 1425791689
-      Tile 32x32_6: -1565830347
-      Tile 32x32_12: -1655582281
-      Tile 32x32_4: -106131785
-      Tile 32x32_1: -1148174027
       Tile 32x32_0: -1704947710
+      Tile 32x32_1: -1148174027
       Tile 32x32_10: 27114185
       Tile 32x32_11: -186818691
-      Tile 32x32_9: 831415836
-      Tile 32x32_14: 2063005524
+      Tile 32x32_12: -1655582281
       Tile 32x32_13: 1799151684
+      Tile 32x32_14: 2063005524
+      Tile 32x32_2: -1411943873
+      Tile 32x32_3: -171640729
+      Tile 32x32_4: -106131785
       Tile 32x32_5: -241742140
-  spritePackingTag: 
+      Tile 32x32_6: -1565830347
+      Tile 32x32_7: 1425791689
+      Tile 32x32_8: -1563737140
+      Tile 32x32_9: 831415836
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

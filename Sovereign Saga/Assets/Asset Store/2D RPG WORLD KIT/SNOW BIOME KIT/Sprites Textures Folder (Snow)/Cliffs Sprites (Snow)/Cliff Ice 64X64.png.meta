@@ -3,7 +3,7 @@ guid: a7258d8df0d414e499501a011c40344a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -429,24 +432,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cliff Ice 64X64_7: -1247788681
-      Cliff Ice 64X64_13: -970420686
-      Cliff Ice 64X64_1: -1120482302
-      Cliff Ice 64X64_9: 126842859
-      Cliff Ice 64X64_12: -94308961
-      Cliff Ice 64X64_5: 1072566899
-      Cliff Ice 64X64_10: -1996123419
-      Cliff Ice 64X64_2: -1322386672
       Cliff Ice 64X64_0: 1309151242
-      Cliff Ice 64X64_6: -829627507
-      Cliff Ice 64X64_14: -676969724
-      Cliff Ice 64X64_8: 142420280
-      Cliff Ice 64X64_3: -783518237
+      Cliff Ice 64X64_1: -1120482302
+      Cliff Ice 64X64_10: -1996123419
       Cliff Ice 64X64_11: -1925224503
+      Cliff Ice 64X64_12: -94308961
+      Cliff Ice 64X64_13: -970420686
+      Cliff Ice 64X64_14: -676969724
+      Cliff Ice 64X64_2: -1322386672
+      Cliff Ice 64X64_3: -783518237
       Cliff Ice 64X64_4: 1875413673
-  spritePackingTag: 
+      Cliff Ice 64X64_5: 1072566899
+      Cliff Ice 64X64_6: -829627507
+      Cliff Ice 64X64_7: -1247788681
+      Cliff Ice 64X64_8: 142420280
+      Cliff Ice 64X64_9: 126842859
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

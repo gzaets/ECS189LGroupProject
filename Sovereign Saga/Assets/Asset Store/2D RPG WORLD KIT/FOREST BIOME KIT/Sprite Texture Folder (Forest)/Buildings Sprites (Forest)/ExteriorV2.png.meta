@@ -3,7 +3,7 @@ guid: 8d99ebfe15ca92444bb7544318c38687
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2214,109 +2217,108 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ExteriorV2_3: -1257005790
-      ExteriorV2_9: 1796791625
-      ExteriorV2_64: -1621440874
-      ExteriorV2_68: 221890649
-      ExteriorV2_87: -1344086241
-      ExteriorV2_77: -851211724
-      ExteriorV2_86: 414480002
-      ExteriorV2_21: -2081309662
-      ExteriorV2_34: 599813325
-      ExteriorV2_48: -1618682456
-      ExteriorV2_76: 1364287608
-      ExteriorV2_70: -1718551641
-      ExteriorV2_89: -929708164
-      ExteriorV2_79: 1720145759
-      ExteriorV2_45: -2118163879
-      ExteriorV2_26: -1438186881
-      ExteriorV2_93: 632931094
-      ExteriorV2_40: 108619311
-      ExteriorV2_95: 1554981558
-      ExteriorV2_82: -1435251325
-      ExteriorV2_50: -700006231
-      ExteriorV2_74: 2060806997
-      ExteriorV2_5: -1808477160
-      ExteriorV2_11: -433941844
-      ExteriorV2_59: -923037849
-      ExteriorV2_52: -796914185
-      ExteriorV2_42: 930702582
-      ExteriorV2_27: 2121929429
-      ExteriorV2_16: 1991192712
-      ExteriorV2_6: 441563820
-      ExteriorV2_69: 1335166465
-      ExteriorV2_51: 773076563
-      ExteriorV2_1: 639767369
-      ExteriorV2_35: -1831580602
-      ExteriorV2_60: -1797344715
-      ExteriorV2_25: 534069553
-      ExteriorV2_47: 1915673344
-      ExteriorV2_96: 1366384421
-      ExteriorV2_99: 1395804966
-      ExteriorV2_85: 15256143
-      ExteriorV2_62: 1736898909
-      ExteriorV2_41: 769783608
-      ExteriorV2_54: 793456575
-      ExteriorV2_18: -557588380
-      ExteriorV2_46: 1643449174
-      ExteriorV2_39: 426213699
-      ExteriorV2_71: -1793689172
-      ExteriorV2_75: 1781158436
-      ExteriorV2_28: -364685749
-      ExteriorV2_55: -112480694
-      ExteriorV2_90: -1836319864
-      ExteriorV2_10: -487478073
-      ExteriorV2_29: 1882073587
-      ExteriorV2_4: 228630361
-      ExteriorV2_80: -899841358
-      ExteriorV2_20: -672087819
-      ExteriorV2_38: 1031037952
-      ExteriorV2_32: 938291264
-      ExteriorV2_17: -1899889615
-      ExteriorV2_14: -1701208118
-      ExteriorV2_31: 1153218305
-      ExteriorV2_65: 482923667
-      ExteriorV2_81: -311877813
-      ExteriorV2_83: -1116197655
-      ExteriorV2_15: 436880114
-      ExteriorV2_24: -1364315669
-      ExteriorV2_13: -1152810020
-      ExteriorV2_12: 1345734053
-      ExteriorV2_43: -2115645575
-      ExteriorV2_33: -285718147
-      ExteriorV2_78: 675504610
-      ExteriorV2_2: -1291437725
-      ExteriorV2_61: -1175668595
-      ExteriorV2_53: 598419379
-      ExteriorV2_67: -279394919
-      ExteriorV2_22: 1248146893
-      ExteriorV2_66: -1130404802
-      ExteriorV2_36: 880504055
-      ExteriorV2_92: 518330001
-      ExteriorV2_97: -448278496
-      ExteriorV2_7: 1909688516
-      ExteriorV2_58: 945118454
-      ExteriorV2_57: -2076198875
-      ExteriorV2_23: -1357621452
-      ExteriorV2_72: -2055246707
-      ExteriorV2_98: 1741546235
-      ExteriorV2_8: -776949493
-      ExteriorV2_63: 149006076
-      ExteriorV2_19: -975773202
-      ExteriorV2_91: 1301170856
-      ExteriorV2_84: 1860482281
-      ExteriorV2_73: -1796160648
-      ExteriorV2_37: 427707685
-      ExteriorV2_56: 150153885
-      ExteriorV2_49: 1183888042
-      ExteriorV2_44: 646527773
       ExteriorV2_0: -1371388741
+      ExteriorV2_1: 639767369
+      ExteriorV2_10: -487478073
+      ExteriorV2_11: -433941844
+      ExteriorV2_12: 1345734053
+      ExteriorV2_13: -1152810020
+      ExteriorV2_14: -1701208118
+      ExteriorV2_15: 436880114
+      ExteriorV2_16: 1991192712
+      ExteriorV2_17: -1899889615
+      ExteriorV2_18: -557588380
+      ExteriorV2_19: -975773202
+      ExteriorV2_2: -1291437725
+      ExteriorV2_20: -672087819
+      ExteriorV2_21: -2081309662
+      ExteriorV2_22: 1248146893
+      ExteriorV2_23: -1357621452
+      ExteriorV2_24: -1364315669
+      ExteriorV2_25: 534069553
+      ExteriorV2_26: -1438186881
+      ExteriorV2_27: 2121929429
+      ExteriorV2_28: -364685749
+      ExteriorV2_29: 1882073587
+      ExteriorV2_3: -1257005790
       ExteriorV2_30: 734778476
-      ExteriorV2_94: 71619426
+      ExteriorV2_31: 1153218305
+      ExteriorV2_32: 938291264
+      ExteriorV2_33: -285718147
+      ExteriorV2_34: 599813325
+      ExteriorV2_35: -1831580602
+      ExteriorV2_36: 880504055
+      ExteriorV2_37: 427707685
+      ExteriorV2_38: 1031037952
+      ExteriorV2_39: 426213699
+      ExteriorV2_4: 228630361
+      ExteriorV2_40: 108619311
+      ExteriorV2_41: 769783608
+      ExteriorV2_42: 930702582
+      ExteriorV2_43: -2115645575
+      ExteriorV2_44: 646527773
+      ExteriorV2_45: -2118163879
+      ExteriorV2_46: 1643449174
+      ExteriorV2_47: 1915673344
+      ExteriorV2_48: -1618682456
+      ExteriorV2_49: 1183888042
+      ExteriorV2_5: -1808477160
+      ExteriorV2_50: -700006231
+      ExteriorV2_51: 773076563
+      ExteriorV2_52: -796914185
+      ExteriorV2_53: 598419379
+      ExteriorV2_54: 793456575
+      ExteriorV2_55: -112480694
+      ExteriorV2_56: 150153885
+      ExteriorV2_57: -2076198875
+      ExteriorV2_58: 945118454
+      ExteriorV2_59: -923037849
+      ExteriorV2_6: 441563820
+      ExteriorV2_60: -1797344715
+      ExteriorV2_61: -1175668595
+      ExteriorV2_62: 1736898909
+      ExteriorV2_63: 149006076
+      ExteriorV2_64: -1621440874
+      ExteriorV2_65: 482923667
+      ExteriorV2_66: -1130404802
+      ExteriorV2_67: -279394919
+      ExteriorV2_68: 221890649
+      ExteriorV2_69: 1335166465
+      ExteriorV2_7: 1909688516
+      ExteriorV2_70: -1718551641
+      ExteriorV2_71: -1793689172
+      ExteriorV2_72: -2055246707
+      ExteriorV2_73: -1796160648
+      ExteriorV2_74: 2060806997
+      ExteriorV2_75: 1781158436
+      ExteriorV2_76: 1364287608
+      ExteriorV2_77: -851211724
+      ExteriorV2_78: 675504610
+      ExteriorV2_79: 1720145759
+      ExteriorV2_8: -776949493
+      ExteriorV2_80: -899841358
+      ExteriorV2_81: -311877813
+      ExteriorV2_82: -1435251325
+      ExteriorV2_83: -1116197655
+      ExteriorV2_84: 1860482281
+      ExteriorV2_85: 15256143
+      ExteriorV2_86: 414480002
+      ExteriorV2_87: -1344086241
       ExteriorV2_88: -2125763629
-  spritePackingTag: 
+      ExteriorV2_89: -929708164
+      ExteriorV2_9: 1796791625
+      ExteriorV2_90: -1836319864
+      ExteriorV2_91: 1301170856
+      ExteriorV2_92: 518330001
+      ExteriorV2_93: 632931094
+      ExteriorV2_94: 71619426
+      ExteriorV2_95: 1554981558
+      ExteriorV2_96: 1366384421
+      ExteriorV2_97: -448278496
+      ExteriorV2_98: 1741546235
+      ExteriorV2_99: 1395804966
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

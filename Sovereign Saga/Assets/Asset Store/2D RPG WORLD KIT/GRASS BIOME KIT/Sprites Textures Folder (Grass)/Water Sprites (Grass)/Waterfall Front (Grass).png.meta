@@ -3,7 +3,7 @@ guid: fc5dd6ae6f126824cb2d4f45bc4300ba
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2949,144 +2952,143 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Waterfall 1_42: 856535926
-      Waterfall 1_117: 564705110
-      Waterfall 1_62: -103253438
-      Waterfall 1_20: -1867042386
-      Waterfall 1_59: 1121060098
-      Waterfall 1_125: 2054655882
-      Waterfall 1_17: -325878485
-      Waterfall 1_27: -1582621750
-      Waterfall 1_109: 491167168
-      Waterfall 1_15: -96456241
-      Waterfall 1_73: 1066084095
-      Waterfall 1_132: -182811639
-      Waterfall 1_37: -2054492494
-      Waterfall 1_133: -994636090
-      Waterfall 1_70: -808221712
-      Waterfall 1_85: 523349906
-      Waterfall 1_10: -1651988683
-      Waterfall 1_55: -259397700
-      Waterfall 1_115: 899132403
-      Waterfall 1_38: 1773097287
-      Waterfall 1_92: 1579762358
-      Waterfall 1_60: 1221978456
-      Waterfall 1_66: -2083727993
-      Waterfall 1_12: -1560085720
-      Waterfall 1_26: -42049313
-      Waterfall 1_69: 728368368
-      Waterfall 1_127: 1819516731
-      Waterfall 1_9: -1208876850
-      Waterfall 1_29: 476715595
-      Waterfall 1_40: -1335927815
-      Waterfall 1_21: 1552237494
-      Waterfall 1_64: -1091378704
-      Waterfall 1_16: -954726393
-      Waterfall 1_65: 12122447
-      Waterfall 1_93: -1339542951
-      Waterfall 1_106: -1791762922
-      Waterfall 1_11: 1520164653
-      Waterfall 1_107: -722247530
-      Waterfall 1_100: 1565071499
-      Waterfall 1_120: 43249306
-      Waterfall 1_35: 233880235
-      Waterfall 1_47: 1165802
-      Waterfall 1_45: 18710426
-      Waterfall 1_122: 731467174
-      Waterfall 1_43: 411213597
-      Waterfall 1_46: -6238184
-      Waterfall 1_90: -17522941
-      Waterfall 1_18: 1722524383
-      Waterfall 1_80: 691617500
-      Waterfall 1_7: -2000834549
-      Waterfall 1_81: -1818701053
-      Waterfall 1_121: -296283638
-      Waterfall 1_58: 1585340012
-      Waterfall 1_130: 1656125993
-      Waterfall 1_50: -1954378111
-      Waterfall 1_6: -22916151
-      Waterfall 1_71: -243945342
       Waterfall 1_0: 1655031485
-      Waterfall 1_94: 1809636582
-      Waterfall 1_57: 461097762
-      Waterfall 1_77: 920574766
-      Waterfall 1_126: -2139131904
-      Waterfall 1_97: -1220561907
-      Waterfall 1_36: -1478585555
-      Waterfall 1_52: 1957818060
-      Waterfall 1_33: -504087031
-      Waterfall 1_53: 1479248101
-      Waterfall 1_128: -1739390060
-      Waterfall 1_39: -722559174
-      Waterfall 1_32: -943375764
-      Waterfall 1_103: 1767743150
-      Waterfall 1_4: -1142146470
-      Waterfall 1_44: 2024389059
-      Waterfall 1_68: 1069757676
-      Waterfall 1_56: -277056425
-      Waterfall 1_112: 372015968
-      Waterfall 1_116: 1503521038
-      Waterfall 1_63: 1938359518
-      Waterfall 1_129: 1115975234
-      Waterfall 1_114: -805616543
-      Waterfall 1_118: -1748357840
-      Waterfall 1_89: -21697118
-      Waterfall 1_102: 2000275400
-      Waterfall 1_3: 643107049
-      Waterfall 1_25: 539285010
-      Waterfall 1_30: -1736514637
-      Waterfall 1_48: 378403550
-      Waterfall 1_124: 235277508
-      Waterfall 1_101: -2034922453
-      Waterfall 1_49: 487499024
-      Waterfall 1_67: 699803583
-      Waterfall 1_51: -1021194899
-      Waterfall 1_22: 1012152826
-      Waterfall 1_72: -1423730383
-      Waterfall 1_2: -1986465441
-      Waterfall 1_61: 927633727
-      Waterfall 1_98: -1295791817
-      Waterfall 1_96: -217303770
-      Waterfall 1_108: -2060183377
-      Waterfall 1_5: 122322569
-      Waterfall 1_82: -1532018368
       Waterfall 1_1: -1827360590
-      Waterfall 1_34: 1154102322
+      Waterfall 1_10: -1651988683
+      Waterfall 1_100: 1565071499
+      Waterfall 1_101: -2034922453
+      Waterfall 1_102: 2000275400
+      Waterfall 1_103: 1767743150
+      Waterfall 1_104: -454828853
+      Waterfall 1_105: 987989490
+      Waterfall 1_106: -1791762922
+      Waterfall 1_107: -722247530
+      Waterfall 1_108: -2060183377
+      Waterfall 1_109: 491167168
+      Waterfall 1_11: 1520164653
       Waterfall 1_110: 1112966296
-      Waterfall 1_76: 210454975
+      Waterfall 1_111: 1116478043
+      Waterfall 1_112: 372015968
+      Waterfall 1_113: -2146960511
+      Waterfall 1_114: -805616543
+      Waterfall 1_115: 899132403
+      Waterfall 1_116: 1503521038
+      Waterfall 1_117: 564705110
+      Waterfall 1_118: -1748357840
+      Waterfall 1_119: 606941415
+      Waterfall 1_12: -1560085720
+      Waterfall 1_120: 43249306
+      Waterfall 1_121: -296283638
+      Waterfall 1_122: 731467174
+      Waterfall 1_123: 609528895
+      Waterfall 1_124: 235277508
+      Waterfall 1_125: 2054655882
+      Waterfall 1_126: -2139131904
+      Waterfall 1_127: 1819516731
+      Waterfall 1_128: -1739390060
+      Waterfall 1_129: 1115975234
+      Waterfall 1_13: -1188020357
+      Waterfall 1_130: 1656125993
       Waterfall 1_131: 1156809676
+      Waterfall 1_132: -182811639
+      Waterfall 1_133: -994636090
+      Waterfall 1_134: 1132504713
+      Waterfall 1_14: 1227542681
+      Waterfall 1_15: -96456241
+      Waterfall 1_16: -954726393
+      Waterfall 1_17: -325878485
+      Waterfall 1_18: 1722524383
+      Waterfall 1_19: -2102238051
+      Waterfall 1_2: -1986465441
+      Waterfall 1_20: -1867042386
+      Waterfall 1_21: 1552237494
+      Waterfall 1_22: 1012152826
       Waterfall 1_23: -1895585024
-      Waterfall 1_88: -1787870262
+      Waterfall 1_24: 1216300866
+      Waterfall 1_25: 539285010
+      Waterfall 1_26: -42049313
+      Waterfall 1_27: -1582621750
+      Waterfall 1_28: 1908618284
+      Waterfall 1_29: 476715595
+      Waterfall 1_3: 643107049
+      Waterfall 1_30: -1736514637
+      Waterfall 1_31: 943962993
+      Waterfall 1_32: -943375764
+      Waterfall 1_33: -504087031
+      Waterfall 1_34: 1154102322
+      Waterfall 1_35: 233880235
+      Waterfall 1_36: -1478585555
+      Waterfall 1_37: -2054492494
+      Waterfall 1_38: 1773097287
+      Waterfall 1_39: -722559174
+      Waterfall 1_4: -1142146470
+      Waterfall 1_40: -1335927815
+      Waterfall 1_41: -1833535067
+      Waterfall 1_42: 856535926
+      Waterfall 1_43: 411213597
+      Waterfall 1_44: 2024389059
+      Waterfall 1_45: 18710426
+      Waterfall 1_46: -6238184
+      Waterfall 1_47: 1165802
+      Waterfall 1_48: 378403550
+      Waterfall 1_49: 487499024
+      Waterfall 1_5: 122322569
+      Waterfall 1_50: -1954378111
+      Waterfall 1_51: -1021194899
+      Waterfall 1_52: 1957818060
+      Waterfall 1_53: 1479248101
+      Waterfall 1_54: 1742939417
+      Waterfall 1_55: -259397700
+      Waterfall 1_56: -277056425
+      Waterfall 1_57: 461097762
+      Waterfall 1_58: 1585340012
+      Waterfall 1_59: 1121060098
+      Waterfall 1_6: -22916151
+      Waterfall 1_60: 1221978456
+      Waterfall 1_61: 927633727
+      Waterfall 1_62: -103253438
+      Waterfall 1_63: 1938359518
+      Waterfall 1_64: -1091378704
+      Waterfall 1_65: 12122447
+      Waterfall 1_66: -2083727993
+      Waterfall 1_67: 699803583
+      Waterfall 1_68: 1069757676
+      Waterfall 1_69: 728368368
+      Waterfall 1_7: -2000834549
+      Waterfall 1_70: -808221712
+      Waterfall 1_71: -243945342
+      Waterfall 1_72: -1423730383
+      Waterfall 1_73: 1066084095
+      Waterfall 1_74: 367367605
+      Waterfall 1_75: 1240674459
+      Waterfall 1_76: 210454975
+      Waterfall 1_77: 920574766
+      Waterfall 1_78: -2103855425
+      Waterfall 1_79: 498535793
+      Waterfall 1_8: 1678320177
+      Waterfall 1_80: 691617500
+      Waterfall 1_81: -1818701053
+      Waterfall 1_82: -1532018368
       Waterfall 1_83: 1160647337
       Waterfall 1_84: -440561046
-      Waterfall 1_87: -250216347
-      Waterfall 1_104: -454828853
-      Waterfall 1_24: 1216300866
-      Waterfall 1_91: -228247039
-      Waterfall 1_105: 987989490
-      Waterfall 1_123: 609528895
-      Waterfall 1_31: 943962993
-      Waterfall 1_134: 1132504713
-      Waterfall 1_79: 498535793
-      Waterfall 1_54: 1742939417
-      Waterfall 1_75: 1240674459
-      Waterfall 1_111: 1116478043
-      Waterfall 1_119: 606941415
-      Waterfall 1_28: 1908618284
-      Waterfall 1_8: 1678320177
-      Waterfall 1_78: -2103855425
-      Waterfall 1_41: -1833535067
-      Waterfall 1_13: -1188020357
-      Waterfall 1_19: -2102238051
-      Waterfall 1_113: -2146960511
-      Waterfall 1_95: 1873267853
-      Waterfall 1_74: 367367605
+      Waterfall 1_85: 523349906
       Waterfall 1_86: -1248743406
-      Waterfall 1_14: 1227542681
+      Waterfall 1_87: -250216347
+      Waterfall 1_88: -1787870262
+      Waterfall 1_89: -21697118
+      Waterfall 1_9: -1208876850
+      Waterfall 1_90: -17522941
+      Waterfall 1_91: -228247039
+      Waterfall 1_92: 1579762358
+      Waterfall 1_93: -1339542951
+      Waterfall 1_94: 1809636582
+      Waterfall 1_95: 1873267853
+      Waterfall 1_96: -217303770
+      Waterfall 1_97: -1220561907
+      Waterfall 1_98: -1295791817
       Waterfall 1_99: 1686098248
-  spritePackingTag: 
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

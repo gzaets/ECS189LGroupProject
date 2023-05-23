@@ -3,7 +3,7 @@ guid: 4b66ba4d0d809ee418db3e08e2476801
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -618,33 +621,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Roofs_2: 1514216799
-      Roofs_10: -1979911879
-      Roofs_7: 512183418
-      Roofs_21: -472027574
-      Roofs_17: -1763234544
-      Roofs_12: 727787000
-      Roofs_8: 1714146532
-      Roofs_4: -1900789717
-      Roofs_9: 1360805869
-      Roofs_15: 2106217797
-      Roofs_22: -998494939
-      Roofs_14: 1288045091
-      Roofs_3: 645898112
-      Roofs_6: -1664846168
-      Roofs_16: 1457552292
-      Roofs_1: 902825411
-      Roofs_5: 765798215
-      Roofs_13: -1112395366
-      Roofs_11: 654243414
-      Roofs_23: -90009225
       Roofs_0: 1801890432
-      Roofs_19: 1574340607
-      Roofs_20: 898526432
+      Roofs_1: 902825411
+      Roofs_10: -1979911879
+      Roofs_11: 654243414
+      Roofs_12: 727787000
+      Roofs_13: -1112395366
+      Roofs_14: 1288045091
+      Roofs_15: 2106217797
+      Roofs_16: 1457552292
+      Roofs_17: -1763234544
       Roofs_18: -1183886704
-  spritePackingTag: 
+      Roofs_19: 1574340607
+      Roofs_2: 1514216799
+      Roofs_20: 898526432
+      Roofs_21: -472027574
+      Roofs_22: -998494939
+      Roofs_23: -90009225
+      Roofs_3: 645898112
+      Roofs_4: -1900789717
+      Roofs_5: 765798215
+      Roofs_6: -1664846168
+      Roofs_7: 512183418
+      Roofs_8: 1714146532
+      Roofs_9: 1360805869
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

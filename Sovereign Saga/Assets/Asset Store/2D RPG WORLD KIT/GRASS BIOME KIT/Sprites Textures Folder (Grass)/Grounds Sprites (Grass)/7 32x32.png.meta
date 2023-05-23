@@ -3,7 +3,7 @@ guid: 19ec72ba22031344790839fce3038f8c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -429,24 +432,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dirt 32x32_9: -2063312382
-      Dirt 32x32_13: 81955531
-      Dirt 32x32_7: 500787342
-      Dirt 32x32_6: 829495484
-      Dirt 32x32_2: -1573472891
-      Dirt 32x32_14: -638385925
-      Dirt 32x32_3: -1336554788
-      Dirt 32x32_1: -1846206393
-      Dirt 32x32_5: -1556794756
-      Dirt 32x32_12: -62457572
-      Dirt 32x32_10: -184774213
-      Dirt 32x32_4: -1414903548
-      Dirt 32x32_8: 737384885
       Dirt 32x32_0: 1463108257
+      Dirt 32x32_1: -1846206393
+      Dirt 32x32_10: -184774213
       Dirt 32x32_11: -881857078
-  spritePackingTag: 
+      Dirt 32x32_12: -62457572
+      Dirt 32x32_13: 81955531
+      Dirt 32x32_14: -638385925
+      Dirt 32x32_2: -1573472891
+      Dirt 32x32_3: -1336554788
+      Dirt 32x32_4: -1414903548
+      Dirt 32x32_5: -1556794756
+      Dirt 32x32_6: 829495484
+      Dirt 32x32_7: 500787342
+      Dirt 32x32_8: 737384885
+      Dirt 32x32_9: -2063312382
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

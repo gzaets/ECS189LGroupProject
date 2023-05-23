@@ -3,7 +3,7 @@ guid: deaeca5c283b70c4885a63d538febfdd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2004,99 +2007,98 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Waterfall Ice right_23: -1533424990
-      Waterfall Ice right_68: -1997616860
-      Waterfall Ice right_13: 302441913
-      Waterfall Ice right_16: -1613668695
-      Waterfall Ice right_37: 2089696353
-      Waterfall Ice right_65: -1765767107
-      Waterfall Ice right_86: -18031618
-      Waterfall Ice right_85: -556032813
-      Waterfall Ice right_57: 900370774
-      Waterfall Ice right_61: -621023192
-      Waterfall Ice right_66: -2139135733
-      Waterfall Ice right_46: 1914111338
-      Waterfall Ice right_12: -1441442023
-      Waterfall Ice right_67: 560585421
-      Waterfall Ice right_84: 777536280
-      Waterfall Ice right_4: 86850906
-      Waterfall Ice right_63: -1877276717
-      Waterfall Ice right_27: -1193727980
-      Waterfall Ice right_2: 1921734999
-      Waterfall Ice right_78: 1244736125
-      Waterfall Ice right_83: -590627441
-      Waterfall Ice right_77: 1705163421
-      Waterfall Ice right_76: -2130131675
-      Waterfall Ice right_45: 247984060
       Waterfall Ice right_0: 1855232243
-      Waterfall Ice right_18: 2033067559
-      Waterfall Ice right_60: -1380903875
-      Waterfall Ice right_5: 2044598170
-      Waterfall Ice right_14: -1142228041
-      Waterfall Ice right_32: -1903859481
-      Waterfall Ice right_21: -1379739887
-      Waterfall Ice right_56: -2019934588
-      Waterfall Ice right_36: -484769951
       Waterfall Ice right_1: 1626390339
-      Waterfall Ice right_22: -2027893202
       Waterfall Ice right_10: -430544028
-      Waterfall Ice right_79: -33677108
-      Waterfall Ice right_75: 483204977
-      Waterfall Ice right_25: -203559510
-      Waterfall Ice right_87: 1596853059
-      Waterfall Ice right_19: -241475176
-      Waterfall Ice right_74: 1569078686
-      Waterfall Ice right_31: -695950597
-      Waterfall Ice right_88: 30294487
-      Waterfall Ice right_62: 677733068
-      Waterfall Ice right_39: -344960452
       Waterfall Ice right_11: 1039952781
-      Waterfall Ice right_58: 1449012377
+      Waterfall Ice right_12: -1441442023
+      Waterfall Ice right_13: 302441913
+      Waterfall Ice right_14: -1142228041
+      Waterfall Ice right_15: -380249305
+      Waterfall Ice right_16: -1613668695
+      Waterfall Ice right_17: 1229376747
+      Waterfall Ice right_18: 2033067559
+      Waterfall Ice right_19: -241475176
+      Waterfall Ice right_2: 1921734999
+      Waterfall Ice right_20: 1813188048
+      Waterfall Ice right_21: -1379739887
+      Waterfall Ice right_22: -2027893202
+      Waterfall Ice right_23: -1533424990
+      Waterfall Ice right_24: -1285978296
+      Waterfall Ice right_25: -203559510
+      Waterfall Ice right_26: -1619588432
+      Waterfall Ice right_27: -1193727980
+      Waterfall Ice right_28: 1334247164
+      Waterfall Ice right_29: 476678046
+      Waterfall Ice right_3: 1573430172
       Waterfall Ice right_30: 1852179900
-      Waterfall Ice right_55: -400469134
-      Waterfall Ice right_48: -687837928
-      Waterfall Ice right_9: 988660980
-      Waterfall Ice right_71: -1133209784
+      Waterfall Ice right_31: -695950597
+      Waterfall Ice right_32: -1903859481
       Waterfall Ice right_33: 496536675
       Waterfall Ice right_34: 235408860
-      Waterfall Ice right_41: -1725361520
-      Waterfall Ice right_29: 476678046
-      Waterfall Ice right_7: -1922098065
-      Waterfall Ice right_28: 1334247164
-      Waterfall Ice right_38: 1860554331
-      Waterfall Ice right_3: 1573430172
-      Waterfall Ice right_43: -954530084
-      Waterfall Ice right_15: -380249305
-      Waterfall Ice right_8: -998320622
-      Waterfall Ice right_51: -2141115775
-      Waterfall Ice right_64: -766473423
-      Waterfall Ice right_44: -1454991497
-      Waterfall Ice right_72: -943794530
-      Waterfall Ice right_50: 890449841
-      Waterfall Ice right_73: -333785861
-      Waterfall Ice right_6: -1803108045
-      Waterfall Ice right_59: -2002997016
-      Waterfall Ice right_40: -1673375651
-      Waterfall Ice right_24: -1285978296
-      Waterfall Ice right_70: -1425171886
-      Waterfall Ice right_89: 1157342210
-      Waterfall Ice right_20: 1813188048
-      Waterfall Ice right_82: 1309676368
-      Waterfall Ice right_54: -1829504390
-      Waterfall Ice right_42: -1727082414
-      Waterfall Ice right_69: 312136438
-      Waterfall Ice right_26: -1619588432
-      Waterfall Ice right_80: 1216693010
-      Waterfall Ice right_47: 1428221190
-      Waterfall Ice right_81: -1075256967
-      Waterfall Ice right_17: 1229376747
-      Waterfall Ice right_49: 1409503056
-      Waterfall Ice right_52: -1023939140
       Waterfall Ice right_35: -1012672454
+      Waterfall Ice right_36: -484769951
+      Waterfall Ice right_37: 2089696353
+      Waterfall Ice right_38: 1860554331
+      Waterfall Ice right_39: -344960452
+      Waterfall Ice right_4: 86850906
+      Waterfall Ice right_40: -1673375651
+      Waterfall Ice right_41: -1725361520
+      Waterfall Ice right_42: -1727082414
+      Waterfall Ice right_43: -954530084
+      Waterfall Ice right_44: -1454991497
+      Waterfall Ice right_45: 247984060
+      Waterfall Ice right_46: 1914111338
+      Waterfall Ice right_47: 1428221190
+      Waterfall Ice right_48: -687837928
+      Waterfall Ice right_49: 1409503056
+      Waterfall Ice right_5: 2044598170
+      Waterfall Ice right_50: 890449841
+      Waterfall Ice right_51: -2141115775
+      Waterfall Ice right_52: -1023939140
       Waterfall Ice right_53: 1247918463
-  spritePackingTag: 
+      Waterfall Ice right_54: -1829504390
+      Waterfall Ice right_55: -400469134
+      Waterfall Ice right_56: -2019934588
+      Waterfall Ice right_57: 900370774
+      Waterfall Ice right_58: 1449012377
+      Waterfall Ice right_59: -2002997016
+      Waterfall Ice right_6: -1803108045
+      Waterfall Ice right_60: -1380903875
+      Waterfall Ice right_61: -621023192
+      Waterfall Ice right_62: 677733068
+      Waterfall Ice right_63: -1877276717
+      Waterfall Ice right_64: -766473423
+      Waterfall Ice right_65: -1765767107
+      Waterfall Ice right_66: -2139135733
+      Waterfall Ice right_67: 560585421
+      Waterfall Ice right_68: -1997616860
+      Waterfall Ice right_69: 312136438
+      Waterfall Ice right_7: -1922098065
+      Waterfall Ice right_70: -1425171886
+      Waterfall Ice right_71: -1133209784
+      Waterfall Ice right_72: -943794530
+      Waterfall Ice right_73: -333785861
+      Waterfall Ice right_74: 1569078686
+      Waterfall Ice right_75: 483204977
+      Waterfall Ice right_76: -2130131675
+      Waterfall Ice right_77: 1705163421
+      Waterfall Ice right_78: 1244736125
+      Waterfall Ice right_79: -33677108
+      Waterfall Ice right_8: -998320622
+      Waterfall Ice right_80: 1216693010
+      Waterfall Ice right_81: -1075256967
+      Waterfall Ice right_82: 1309676368
+      Waterfall Ice right_83: -590627441
+      Waterfall Ice right_84: 777536280
+      Waterfall Ice right_85: -556032813
+      Waterfall Ice right_86: -18031618
+      Waterfall Ice right_87: 1596853059
+      Waterfall Ice right_88: 30294487
+      Waterfall Ice right_89: 1157342210
+      Waterfall Ice right_9: 988660980
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

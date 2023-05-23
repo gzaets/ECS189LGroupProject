@@ -3,7 +3,7 @@ guid: 2cfd68779bf512b45a2032e3fed25cbc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -429,24 +432,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Rock-IceGrass 32x32_3: 1673521473
-      Rock-IceGrass 32x32_13: 14935899
       Rock-IceGrass 32x32_0: 820749828
-      Rock-IceGrass 32x32_2: 992980785
-      Rock-IceGrass 32x32_9: 2146648926
-      Rock-IceGrass 32x32_14: 169283174
-      Rock-IceGrass 32x32_11: 1752290076
-      Rock-IceGrass 32x32_8: 1878202384
-      Rock-IceGrass 32x32_10: -1109794077
-      Rock-IceGrass 32x32_5: -1538293647
-      Rock-IceGrass 32x32_4: -1013017793
       Rock-IceGrass 32x32_1: 1264419413
-      Rock-IceGrass 32x32_7: 197816965
+      Rock-IceGrass 32x32_10: -1109794077
+      Rock-IceGrass 32x32_11: 1752290076
       Rock-IceGrass 32x32_12: 2140791779
+      Rock-IceGrass 32x32_13: 14935899
+      Rock-IceGrass 32x32_14: 169283174
+      Rock-IceGrass 32x32_2: 992980785
+      Rock-IceGrass 32x32_3: 1673521473
+      Rock-IceGrass 32x32_4: -1013017793
+      Rock-IceGrass 32x32_5: -1538293647
       Rock-IceGrass 32x32_6: 1743471186
-  spritePackingTag: 
+      Rock-IceGrass 32x32_7: 197816965
+      Rock-IceGrass 32x32_8: 1878202384
+      Rock-IceGrass 32x32_9: 2146648926
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

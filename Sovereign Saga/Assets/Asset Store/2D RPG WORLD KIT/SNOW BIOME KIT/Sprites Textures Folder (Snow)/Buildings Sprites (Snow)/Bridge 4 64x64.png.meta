@@ -3,7 +3,7 @@ guid: 3865dbc6e36d4104eb52ff0dd8c0b3f6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1122,73 +1125,72 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bridge 4_12: -582361780
-      Bridge 4 64x64_12: -972607544
-      Bridge 4_28: 1479826107
-      Bridge 4 64x64_14: -1265598950
-      Bridge 4_35: -1072374333
-      Bridge 4 64x64_6: -1517133043
-      Bridge 4 64x64_16: -1725331336
-      Bridge 4_17: 1612621
-      Bridge 4_15: -537387781
-      Bridge 4_19: -646795497
-      Bridge 4_27: 134298932
-      Bridge 4_29: 429419906
-      Bridge 4 64x64_13: -706099930
-      Bridge 4 64x64_7: 130576570
-      Bridge 4_2: 1933939848
-      Bridge 4_36: 809064703
-      Bridge 4_24: 989858039
-      Bridge 4_1: -1987790373
-      Bridge 4_43: -1102815523
-      Bridge 4_13: -208013927
-      Bridge 4_38: -1310396197
-      Bridge 4 64x64_4: -1263491228
-      Bridge 4_30: -1931454924
-      Bridge 4_14: -588474003
-      Bridge 4_23: 875524797
-      Bridge 4 64x64_5: 1857767423
-      Bridge 4 64x64_10: 744318669
-      Bridge 4_16: -1775517993
-      Bridge 4_34: -1061317720
-      Bridge 4 64x64_11: -992316974
-      Bridge 4 64x64_8: -1414891486
-      Bridge 4_7: 1842306718
-      Bridge 4 64x64_17: 1682305819
       Bridge 4 64x64_0: -1922391032
+      Bridge 4 64x64_1: -369407100
+      Bridge 4 64x64_10: 744318669
+      Bridge 4 64x64_11: -992316974
+      Bridge 4 64x64_12: -972607544
+      Bridge 4 64x64_13: -706099930
+      Bridge 4 64x64_14: -1265598950
+      Bridge 4 64x64_15: -1581606251
+      Bridge 4 64x64_16: -1725331336
+      Bridge 4 64x64_17: 1682305819
+      Bridge 4 64x64_18: 1342787532
+      Bridge 4 64x64_2: -150656874
+      Bridge 4 64x64_3: 498349134
+      Bridge 4 64x64_4: -1263491228
+      Bridge 4 64x64_5: 1857767423
+      Bridge 4 64x64_6: -1517133043
+      Bridge 4 64x64_7: 130576570
+      Bridge 4 64x64_8: -1414891486
+      Bridge 4 64x64_9: -1632761860
+      Bridge 4_0: -1769703514
+      Bridge 4_1: -1987790373
       Bridge 4_10: -66005241
       Bridge 4_11: -1018295006
-      Bridge 4_21: 133064205
-      Bridge 4 64x64_3: 498349134
-      Bridge 4_31: 1550109535
-      Bridge 4_20: 1099597459
-      Bridge 4_6: 1196179658
-      Bridge 4 64x64_18: 1342787532
-      Bridge 4_22: -896581614
+      Bridge 4_12: -582361780
+      Bridge 4_13: -208013927
+      Bridge 4_14: -588474003
+      Bridge 4_15: -537387781
+      Bridge 4_16: -1775517993
+      Bridge 4_17: 1612621
       Bridge 4_18: 151997928
-      Bridge 4_44: 1251672407
-      Bridge 4_0: -1769703514
-      Bridge 4 64x64_15: -1581606251
-      Bridge 4 64x64_9: -1632761860
-      Bridge 4 64x64_2: -150656874
-      Bridge 4_5: -1830264538
-      Bridge 4 64x64_1: -369407100
+      Bridge 4_19: -646795497
+      Bridge 4_2: 1933939848
+      Bridge 4_20: 1099597459
+      Bridge 4_21: 133064205
+      Bridge 4_22: -896581614
+      Bridge 4_23: 875524797
+      Bridge 4_24: 989858039
+      Bridge 4_25: -2114647100
+      Bridge 4_26: 1103615901
+      Bridge 4_27: 134298932
+      Bridge 4_28: 1479826107
+      Bridge 4_29: 429419906
+      Bridge 4_3: 260406066
+      Bridge 4_30: -1931454924
+      Bridge 4_31: 1550109535
+      Bridge 4_32: -1504637133
+      Bridge 4_33: 193349899
+      Bridge 4_34: -1061317720
+      Bridge 4_35: -1072374333
+      Bridge 4_36: 809064703
+      Bridge 4_37: 1836429700
+      Bridge 4_38: -1310396197
+      Bridge 4_39: -153718577
+      Bridge 4_4: 1679664758
+      Bridge 4_40: 1402787132
       Bridge 4_41: 1946761512
       Bridge 4_42: 141536393
-      Bridge 4_33: 193349899
+      Bridge 4_43: -1102815523
+      Bridge 4_44: 1251672407
+      Bridge 4_5: -1830264538
+      Bridge 4_6: 1196179658
+      Bridge 4_7: 1842306718
       Bridge 4_8: 1391953343
-      Bridge 4_3: 260406066
       Bridge 4_9: -244652720
-      Bridge 4_25: -2114647100
-      Bridge 4_4: 1679664758
-      Bridge 4_37: 1836429700
-      Bridge 4_32: -1504637133
-      Bridge 4_26: 1103615901
-      Bridge 4_40: 1402787132
-      Bridge 4_39: -153718577
-  spritePackingTag: 
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

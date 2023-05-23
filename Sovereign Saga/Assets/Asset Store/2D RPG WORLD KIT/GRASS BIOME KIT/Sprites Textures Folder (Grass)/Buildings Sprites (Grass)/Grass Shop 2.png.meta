@@ -3,7 +3,7 @@ guid: f2ed3e09b937c2b46b11421cf8f7f8c2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -618,33 +621,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Shop 2_8: -1646850422
-      Shop 2_14: 2122515138
       Shop 2_0: 1814489623
+      Shop 2_1: -1766546008
+      Shop 2_10: -1991293455
+      Shop 2_11: 1288639701
+      Shop 2_12: 554121495
+      Shop 2_13: 866175535
+      Shop 2_14: 2122515138
+      Shop 2_15: 1202067152
+      Shop 2_16: -973032269
+      Shop 2_17: 1293010325
+      Shop 2_18: 1272678944
+      Shop 2_19: 794470362
+      Shop 2_2: -1129041122
+      Shop 2_20: -923903251
+      Shop 2_21: 875123153
+      Shop 2_22: -95656658
+      Shop 2_23: -1703611078
+      Shop 2_3: 1991551193
+      Shop 2_4: -905229898
       Shop 2_5: -1565422725
       Shop 2_6: 1370079923
-      Shop 2_11: 1288639701
-      Shop 2_10: -1991293455
-      Shop 2_20: -923903251
-      Shop 2_15: 1202067152
-      Shop 2_13: 866175535
-      Shop 2_2: -1129041122
-      Shop 2_18: 1272678944
-      Shop 2_21: 875123153
-      Shop 2_3: 1991551193
-      Shop 2_23: -1703611078
-      Shop 2_12: 554121495
-      Shop 2_17: 1293010325
-      Shop 2_9: -1076743241
-      Shop 2_22: -95656658
-      Shop 2_19: 794470362
-      Shop 2_1: -1766546008
-      Shop 2_4: -905229898
-      Shop 2_16: -973032269
       Shop 2_7: 928596265
-  spritePackingTag: 
+      Shop 2_8: -1646850422
+      Shop 2_9: -1076743241
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

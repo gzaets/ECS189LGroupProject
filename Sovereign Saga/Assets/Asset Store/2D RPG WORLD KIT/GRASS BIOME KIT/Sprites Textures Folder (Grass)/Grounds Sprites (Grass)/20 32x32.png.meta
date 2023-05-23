@@ -3,7 +3,7 @@ guid: 331a95bd146440f42afac1378265659b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -429,24 +432,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tile Granite 32x32_2: -1058250866
-      Tile Granite 32x32_8: -1903247954
-      Tile Granite 32x32_14: -96161612
+      Tile Granite 32x32_0: 1169762368
+      Tile Granite 32x32_1: -1932183889
+      Tile Granite 32x32_10: 1974577281
+      Tile Granite 32x32_11: -1486879150
+      Tile Granite 32x32_12: 277644473
       Tile Granite 32x32_13: 277011576
+      Tile Granite 32x32_14: -96161612
+      Tile Granite 32x32_2: -1058250866
       Tile Granite 32x32_3: 102866994
       Tile Granite 32x32_4: 337872699
-      Tile Granite 32x32_12: 277644473
-      Tile Granite 32x32_9: -232114122
-      Tile Granite 32x32_1: -1932183889
       Tile Granite 32x32_5: 1377696142
-      Tile Granite 32x32_7: 1094939516
       Tile Granite 32x32_6: 1039342274
-      Tile Granite 32x32_10: 1974577281
-      Tile Granite 32x32_0: 1169762368
-      Tile Granite 32x32_11: -1486879150
-  spritePackingTag: 
+      Tile Granite 32x32_7: 1094939516
+      Tile Granite 32x32_8: -1903247954
+      Tile Granite 32x32_9: -232114122
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

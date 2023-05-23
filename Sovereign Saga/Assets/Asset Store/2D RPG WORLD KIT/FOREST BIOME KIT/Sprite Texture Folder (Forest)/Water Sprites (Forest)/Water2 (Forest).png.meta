@@ -3,7 +3,7 @@ guid: 63b3e443f0676d24da87d7b1d326aece
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -3516,171 +3519,170 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Water V2 2_118: -1961790088
-      Water V2 2_125: -1979641032
-      Water V2 2_73: -1330650172
-      Water V2 2_14: -860135716
-      Water V2 2_13: -1916104729
-      Water V2 2_27: -1328599390
-      Water V2 2_62: 397461675
-      Water V2 2_64: -282633376
-      Water V2 2_92: -134250534
-      Water V2 2_65: -249105138
-      Water V2 2_148: -1626460201
-      Water V2 2_48: -1216803896
-      Water V2 2_50: 55827630
-      Water V2 2_79: -1056938282
-      Water V2 2_110: -1016746942
-      Water V2 2_37: 945660645
-      Water V2 2_103: 1589785784
-      Water V2 2_113: 904416133
-      Water V2 2_150: 1745516859
-      Water V2 2_38: 1958686667
-      Water V2 2_72: 583523142
-      Water V2 2_143: -1602513815
-      Water V2 2_96: 2037568754
-      Water V2 2_106: 324002036
-      Water V2 2_28: 1141836829
-      Water V2 2_133: -1617544165
       Water V2 2_0: -43243138
-      Water V2 2_33: 827588581
-      Water V2 2_84: -1997232438
-      Water V2 2_77: -418732803
-      Water V2 2_95: -850946280
-      Water V2 2_56: -650389577
-      Water V2 2_22: 2143778062
-      Water V2 2_144: -1423133409
-      Water V2 2_152: -1592566742
-      Water V2 2_99: 852429237
-      Water V2 2_131: -1031625540
       Water V2 2_1: 138628375
-      Water V2 2_101: 1465575985
-      Water V2 2_51: 1247724950
-      Water V2 2_128: -480385291
-      Water V2 2_8: -2021602415
-      Water V2 2_154: -361333019
-      Water V2 2_32: 939864534
-      Water V2 2_40: -2120993632
-      Water V2 2_23: -727827618
-      Water V2 2_76: -766220935
-      Water V2 2_47: -920371879
-      Water V2 2_102: 1272204405
-      Water V2 2_135: -963176311
-      Water V2 2_157: 1461104235
-      Water V2 2_19: 932262957
-      Water V2 2_139: 924906839
-      Water V2 2_130: 1417194768
-      Water V2 2_17: 974428612
-      Water V2 2_34: -1762814437
-      Water V2 2_41: -851081312
-      Water V2 2_57: -1456702721
-      Water V2 2_71: -855368216
-      Water V2 2_60: 1887425720
-      Water V2 2_49: 2082397167
-      Water V2 2_44: 1427092503
-      Water V2 2_12: 1439847631
-      Water V2 2_122: -93789543
-      Water V2 2_114: 1760951160
-      Water V2 2_24: 543542132
-      Water V2 2_116: 387915814
-      Water V2 2_6: 26600789
-      Water V2 2_88: -565901750
-      Water V2 2_124: 916060164
-      Water V2 2_117: -2096328702
-      Water V2 2_136: -1371788611
-      Water V2 2_149: 2144304212
-      Water V2 2_141: -1669377147
-      Water V2 2_31: -2065038452
-      Water V2 2_11: -1134607353
-      Water V2 2_115: 879611936
-      Water V2 2_18: -551485243
-      Water V2 2_111: 1982265760
-      Water V2 2_158: 785251677
-      Water V2 2_45: 1402315121
-      Water V2 2_35: -592093769
-      Water V2 2_9: 727178757
-      Water V2 2_94: -777844460
-      Water V2 2_121: 1764296944
-      Water V2 2_140: -717701157
-      Water V2 2_53: -413999239
-      Water V2 2_85: 1073032680
-      Water V2 2_67: 2048714527
-      Water V2 2_82: -1519787102
-      Water V2 2_142: -1704835288
-      Water V2 2_21: 2030522554
-      Water V2 2_74: -679908587
-      Water V2 2_52: -1903960117
-      Water V2 2_120: -1951233329
-      Water V2 2_86: -315545231
-      Water V2 2_55: 2131420531
-      Water V2 2_151: -654495773
-      Water V2 2_159: -1640600341
-      Water V2 2_89: 484637554
-      Water V2 2_78: 112234248
-      Water V2 2_20: -52143097
-      Water V2 2_54: 2105715941
-      Water V2 2_29: -1114373451
-      Water V2 2_108: -714269026
-      Water V2 2_123: -135877466
-      Water V2 2_91: -2120264633
-      Water V2 2_132: -47878367
-      Water V2 2_112: 988427397
-      Water V2 2_75: 1997823641
-      Water V2 2_39: 243232901
-      Water V2 2_66: -1770371683
-      Water V2 2_30: -1733002670
-      Water V2 2_146: 2144750882
-      Water V2 2_15: 1681308360
-      Water V2 2_5: -147559898
-      Water V2 2_16: -2127687098
-      Water V2 2_97: 1891749720
-      Water V2 2_70: 133558656
-      Water V2 2_104: 1431909624
-      Water V2 2_119: -410171779
-      Water V2 2_80: -29913270
-      Water V2 2_155: 486151801
-      Water V2 2_63: -573641233
-      Water V2 2_81: 700170955
-      Water V2 2_7: -11870980
-      Water V2 2_160: -1595947753
-      Water V2 2_90: -387117530
-      Water V2 2_93: -721995750
-      Water V2 2_26: -585083981
       Water V2 2_10: 1306582549
-      Water V2 2_98: -303748858
-      Water V2 2_145: 211550705
-      Water V2 2_105: -1328285125
-      Water V2 2_69: -156631714
-      Water V2 2_58: 525528110
-      Water V2 2_129: -154452857
-      Water V2 2_138: 205114718
-      Water V2 2_36: -2141865339
-      Water V2 2_153: -1743489581
-      Water V2 2_3: 772581680
-      Water V2 2_25: -1006497206
-      Water V2 2_126: 833594424
-      Water V2 2_46: 138339903
-      Water V2 2_127: -1510453545
-      Water V2 2_68: 627701027
-      Water V2 2_4: 188274548
-      Water V2 2_107: 1596688806
-      Water V2 2_134: -344764898
-      Water V2 2_87: -1229127488
-      Water V2 2_59: 1726758306
-      Water V2 2_61: -1965769510
-      Water V2 2_43: 171983098
-      Water V2 2_42: -788133750
-      Water V2 2_2: 1978326039
-      Water V2 2_137: 608258062
-      Water V2 2_83: -1540228461
-      Water V2 2_109: -865418517
       Water V2 2_100: -268431054
-      Water V2 2_156: 2006684113
-      Water V2 2_161: 874075492
+      Water V2 2_101: 1465575985
+      Water V2 2_102: 1272204405
+      Water V2 2_103: 1589785784
+      Water V2 2_104: 1431909624
+      Water V2 2_105: -1328285125
+      Water V2 2_106: 324002036
+      Water V2 2_107: 1596688806
+      Water V2 2_108: -714269026
+      Water V2 2_109: -865418517
+      Water V2 2_11: -1134607353
+      Water V2 2_110: -1016746942
+      Water V2 2_111: 1982265760
+      Water V2 2_112: 988427397
+      Water V2 2_113: 904416133
+      Water V2 2_114: 1760951160
+      Water V2 2_115: 879611936
+      Water V2 2_116: 387915814
+      Water V2 2_117: -2096328702
+      Water V2 2_118: -1961790088
+      Water V2 2_119: -410171779
+      Water V2 2_12: 1439847631
+      Water V2 2_120: -1951233329
+      Water V2 2_121: 1764296944
+      Water V2 2_122: -93789543
+      Water V2 2_123: -135877466
+      Water V2 2_124: 916060164
+      Water V2 2_125: -1979641032
+      Water V2 2_126: 833594424
+      Water V2 2_127: -1510453545
+      Water V2 2_128: -480385291
+      Water V2 2_129: -154452857
+      Water V2 2_13: -1916104729
+      Water V2 2_130: 1417194768
+      Water V2 2_131: -1031625540
+      Water V2 2_132: -47878367
+      Water V2 2_133: -1617544165
+      Water V2 2_134: -344764898
+      Water V2 2_135: -963176311
+      Water V2 2_136: -1371788611
+      Water V2 2_137: 608258062
+      Water V2 2_138: 205114718
+      Water V2 2_139: 924906839
+      Water V2 2_14: -860135716
+      Water V2 2_140: -717701157
+      Water V2 2_141: -1669377147
+      Water V2 2_142: -1704835288
+      Water V2 2_143: -1602513815
+      Water V2 2_144: -1423133409
+      Water V2 2_145: 211550705
+      Water V2 2_146: 2144750882
       Water V2 2_147: 1169416732
-  spritePackingTag: 
+      Water V2 2_148: -1626460201
+      Water V2 2_149: 2144304212
+      Water V2 2_15: 1681308360
+      Water V2 2_150: 1745516859
+      Water V2 2_151: -654495773
+      Water V2 2_152: -1592566742
+      Water V2 2_153: -1743489581
+      Water V2 2_154: -361333019
+      Water V2 2_155: 486151801
+      Water V2 2_156: 2006684113
+      Water V2 2_157: 1461104235
+      Water V2 2_158: 785251677
+      Water V2 2_159: -1640600341
+      Water V2 2_16: -2127687098
+      Water V2 2_160: -1595947753
+      Water V2 2_161: 874075492
+      Water V2 2_17: 974428612
+      Water V2 2_18: -551485243
+      Water V2 2_19: 932262957
+      Water V2 2_2: 1978326039
+      Water V2 2_20: -52143097
+      Water V2 2_21: 2030522554
+      Water V2 2_22: 2143778062
+      Water V2 2_23: -727827618
+      Water V2 2_24: 543542132
+      Water V2 2_25: -1006497206
+      Water V2 2_26: -585083981
+      Water V2 2_27: -1328599390
+      Water V2 2_28: 1141836829
+      Water V2 2_29: -1114373451
+      Water V2 2_3: 772581680
+      Water V2 2_30: -1733002670
+      Water V2 2_31: -2065038452
+      Water V2 2_32: 939864534
+      Water V2 2_33: 827588581
+      Water V2 2_34: -1762814437
+      Water V2 2_35: -592093769
+      Water V2 2_36: -2141865339
+      Water V2 2_37: 945660645
+      Water V2 2_38: 1958686667
+      Water V2 2_39: 243232901
+      Water V2 2_4: 188274548
+      Water V2 2_40: -2120993632
+      Water V2 2_41: -851081312
+      Water V2 2_42: -788133750
+      Water V2 2_43: 171983098
+      Water V2 2_44: 1427092503
+      Water V2 2_45: 1402315121
+      Water V2 2_46: 138339903
+      Water V2 2_47: -920371879
+      Water V2 2_48: -1216803896
+      Water V2 2_49: 2082397167
+      Water V2 2_5: -147559898
+      Water V2 2_50: 55827630
+      Water V2 2_51: 1247724950
+      Water V2 2_52: -1903960117
+      Water V2 2_53: -413999239
+      Water V2 2_54: 2105715941
+      Water V2 2_55: 2131420531
+      Water V2 2_56: -650389577
+      Water V2 2_57: -1456702721
+      Water V2 2_58: 525528110
+      Water V2 2_59: 1726758306
+      Water V2 2_6: 26600789
+      Water V2 2_60: 1887425720
+      Water V2 2_61: -1965769510
+      Water V2 2_62: 397461675
+      Water V2 2_63: -573641233
+      Water V2 2_64: -282633376
+      Water V2 2_65: -249105138
+      Water V2 2_66: -1770371683
+      Water V2 2_67: 2048714527
+      Water V2 2_68: 627701027
+      Water V2 2_69: -156631714
+      Water V2 2_7: -11870980
+      Water V2 2_70: 133558656
+      Water V2 2_71: -855368216
+      Water V2 2_72: 583523142
+      Water V2 2_73: -1330650172
+      Water V2 2_74: -679908587
+      Water V2 2_75: 1997823641
+      Water V2 2_76: -766220935
+      Water V2 2_77: -418732803
+      Water V2 2_78: 112234248
+      Water V2 2_79: -1056938282
+      Water V2 2_8: -2021602415
+      Water V2 2_80: -29913270
+      Water V2 2_81: 700170955
+      Water V2 2_82: -1519787102
+      Water V2 2_83: -1540228461
+      Water V2 2_84: -1997232438
+      Water V2 2_85: 1073032680
+      Water V2 2_86: -315545231
+      Water V2 2_87: -1229127488
+      Water V2 2_88: -565901750
+      Water V2 2_89: 484637554
+      Water V2 2_9: 727178757
+      Water V2 2_90: -387117530
+      Water V2 2_91: -2120264633
+      Water V2 2_92: -134250534
+      Water V2 2_93: -721995750
+      Water V2 2_94: -777844460
+      Water V2 2_95: -850946280
+      Water V2 2_96: 2037568754
+      Water V2 2_97: 1891749720
+      Water V2 2_98: -303748858
+      Water V2 2_99: 852429237
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

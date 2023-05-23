@@ -3,7 +3,7 @@ guid: 28caa94e8b8782d4ea3bd6872f70d3bd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -429,24 +432,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cliff Mud 64X64_11: -1793909390
-      Cliff Mud 64X64_3: 308349075
-      Cliff Mud 64X64_14: -1180545938
-      Cliff Mud 64X64_7: -1920039686
-      Cliff Mud 64X64_4: 1493431972
       Cliff Mud 64X64_0: -1091804824
-      Cliff Mud 64X64_13: 214905660
-      Cliff Mud 64X64_2: 1221851314
-      Cliff Mud 64X64_9: 2000790741
-      Cliff Mud 64X64_8: -1484688122
-      Cliff Mud 64X64_12: 1211906138
       Cliff Mud 64X64_1: 1565362688
-      Cliff Mud 64X64_6: 1678851620
       Cliff Mud 64X64_10: 134097954
+      Cliff Mud 64X64_11: -1793909390
+      Cliff Mud 64X64_12: 1211906138
+      Cliff Mud 64X64_13: 214905660
+      Cliff Mud 64X64_14: -1180545938
+      Cliff Mud 64X64_2: 1221851314
+      Cliff Mud 64X64_3: 308349075
+      Cliff Mud 64X64_4: 1493431972
       Cliff Mud 64X64_5: 494494710
-  spritePackingTag: 
+      Cliff Mud 64X64_6: 1678851620
+      Cliff Mud 64X64_7: -1920039686
+      Cliff Mud 64X64_8: -1484688122
+      Cliff Mud 64X64_9: 2000790741
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
