@@ -25,8 +25,17 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);
         }
-
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+        /*
+        if(transform.position.x > 14.69f)
+        {
+            speed = 0f;
+        }
+        else
+        {
+            speed = 5f;
+        }
+        */
+        //animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     void FixedUpdate()
@@ -38,8 +47,30 @@ public class PlayerController : MonoBehaviour
         rb.velocity = movement * speed;
     }
 
+    void LateUpdate()
+    {
+        rb.velocity = movement * speed;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
+
+        if(System.Math.Abs(moveHorizontal) > 0.0f)
+        {
+            movement = new Vector2(0f, moveVertical);
+        }
+        if(System.Math.Abs(moveVertical) > 0.0f)
+        {
+            movement = new Vector2(moveHorizontal, 0f);
+        }
+        if(System.Math.Abs(moveVertical) > 0.0f && System.Math.Abs(moveHorizontal) > 0.0f)
+        {
+            movement = new Vector2(0f, 0f);
+        }
+        rb.velocity = movement * speed;
+        Debug.Log("seeing");
         
     }
 }
