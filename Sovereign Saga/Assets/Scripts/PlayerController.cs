@@ -10,13 +10,20 @@ public class PlayerController : MonoBehaviour
 
     Vector2 movement;
 
+    private float prevXPos;
+    private float prevYPos;
+    private bool collided = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        prevXPos = transform.position.x;
+        prevYPos = transform.position.y;
     }
 
     void Update()
     {
+        collided = false;
         movement.x = Input.GetAxisRaw("Horizontal") * 0.75f;
         movement.y = Input.GetAxisRaw("Vertical") * 0.75f;
 
@@ -49,28 +56,69 @@ public class PlayerController : MonoBehaviour
 
     void LateUpdate()
     {
-        rb.velocity = movement * speed;
+        if(collided)
+        {
+            Debug.Log("are we here");
+            if(prevXPos - transform.position.x > 0)
+            {
+                transform.position = new Vector2(prevXPos + 0.1f, prevYPos);
+            }
+            if(prevXPos - transform.position.x < 0)
+            {
+                transform.position = new Vector2(prevXPos - 0.1f, prevYPos);
+            }
+            if(prevYPos - transform.position.y > 0)
+            {
+                transform.position = new Vector2(prevXPos, prevYPos + 0.1f);
+            }
+            if(prevYPos - transform.position.y < 0)
+            {
+                transform.position = new Vector2(prevXPos, prevYPos - 0.1f);
+            }
+            if(prevXPos - transform.position.x > 0 && prevYPos - transform.position.y > 0)
+            {
+                transform.position = new Vector2(prevXPos + 0.1f, prevYPos + 0.1f);
+            }
+            if(prevXPos - transform.position.x > 0 && prevYPos - transform.position.y < 0)
+            {
+                transform.position = new Vector2(prevXPos + 0.1f, prevYPos - 0.1f);
+            }
+            if(prevXPos - transform.position.x < 0 && prevYPos - transform.position.y > 0)
+            {
+                transform.position = new Vector2(prevXPos - 0.1f, prevYPos + 0.1f);
+            }
+            if(prevXPos - transform.position.x < 0 && prevYPos - transform.position.y < 0)
+            {
+                transform.position = new Vector2(prevXPos - 0.1f, prevYPos - 0.1f);
+            }
+            if(prevXPos - transform.position.x == 0 && prevYPos - transform.position.y > 0)
+            {
+                transform.position = new Vector2(prevXPos, prevYPos + 0.1f);
+            }
+            if(prevXPos - transform.position.x == 0 && prevYPos - transform.position.y < 0)
+            {
+                transform.position = new Vector2(prevXPos, prevYPos - 0.1f);
+            }
+            if(prevXPos - transform.position.x > 0 && prevYPos - transform.position.y == 0)
+            {
+                Debug.Log("here");
+                transform.position = new Vector2(prevXPos + 0.1f, prevYPos);
+            }
+            if(prevXPos - transform.position.x < 0 && prevYPos - transform.position.y == 0)
+            {
+                transform.position = new Vector2(prevXPos - 0.1f, prevYPos);
+            }
+        }
+        prevXPos = transform.position.x;
+        prevYPos = transform.position.y;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-
-        if(System.Math.Abs(moveHorizontal) > 0.0f)
-        {
-            movement = new Vector2(0f, moveVertical);
-        }
-        if(System.Math.Abs(moveVertical) > 0.0f)
-        {
-            movement = new Vector2(moveHorizontal, 0f);
-        }
-        if(System.Math.Abs(moveVertical) > 0.0f && System.Math.Abs(moveHorizontal) > 0.0f)
-        {
-            movement = new Vector2(0f, 0f);
-        }
-        rb.velocity = movement * speed;
-        Debug.Log("seeing");
-        
+        collided = true;
+        Debug.Log("yes");
+        LateUpdate();
+        //movement = new Vector2(prevXPos - transform.position.x, prevYPos - transform.position.y);
+        //rb.velocity = movement * speed;
     }
 }
