@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
         if(collided)
         {
             Debug.Log("are we here");
+            /*
             if(prevXPos - transform.position.x > 0)
             {
                 transform.position = new Vector2(prevXPos + 0.1f, prevYPos);
@@ -75,38 +76,45 @@ public class PlayerController : MonoBehaviour
             {
                 transform.position = new Vector2(prevXPos, prevYPos - 0.1f);
             }
+            */
             if(prevXPos - transform.position.x > 0 && prevYPos - transform.position.y > 0)
             {
                 transform.position = new Vector2(prevXPos + 0.1f, prevYPos + 0.1f);
             }
-            if(prevXPos - transform.position.x > 0 && prevYPos - transform.position.y < 0)
+            else if(prevXPos - transform.position.x > 0 && prevYPos - transform.position.y < 0)
             {
                 transform.position = new Vector2(prevXPos + 0.1f, prevYPos - 0.1f);
             }
-            if(prevXPos - transform.position.x < 0 && prevYPos - transform.position.y > 0)
+            else if(prevXPos - transform.position.x < 0 && prevYPos - transform.position.y > 0)
             {
                 transform.position = new Vector2(prevXPos - 0.1f, prevYPos + 0.1f);
             }
-            if(prevXPos - transform.position.x < 0 && prevYPos - transform.position.y < 0)
+            else if(prevXPos - transform.position.x < 0 && prevYPos - transform.position.y < 0)
             {
                 transform.position = new Vector2(prevXPos - 0.1f, prevYPos - 0.1f);
             }
-            if(prevXPos - transform.position.x == 0 && prevYPos - transform.position.y > 0)
+            else if(prevXPos - transform.position.x == 0 && prevYPos - transform.position.y > 0)
             {
+                Debug.Log("here???");
                 transform.position = new Vector2(prevXPos, prevYPos + 0.1f);
             }
-            if(prevXPos - transform.position.x == 0 && prevYPos - transform.position.y < 0)
+            else if(prevXPos - transform.position.x == 0 && prevYPos - transform.position.y < 0)
             {
+                Debug.Log("here???");
                 transform.position = new Vector2(prevXPos, prevYPos - 0.1f);
             }
-            if(prevXPos - transform.position.x > 0 && prevYPos - transform.position.y == 0)
+            else if(prevXPos - transform.position.x > 0 && prevYPos - transform.position.y == 0)
             {
                 Debug.Log("here");
                 transform.position = new Vector2(prevXPos + 0.1f, prevYPos);
             }
-            if(prevXPos - transform.position.x < 0 && prevYPos - transform.position.y == 0)
+            else if(prevXPos - transform.position.x < 0 && prevYPos - transform.position.y == 0)
             {
                 transform.position = new Vector2(prevXPos - 0.1f, prevYPos);
+            }
+            else
+            {
+                //whatever
             }
         }
         prevXPos = transform.position.x;
