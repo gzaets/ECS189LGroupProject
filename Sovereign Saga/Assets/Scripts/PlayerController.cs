@@ -14,6 +14,16 @@ public class PlayerController : MonoBehaviour
     private float prevYPos;
     private bool collided = false;
 
+    private bool rightDisabled = false;
+    private bool leftDisabled = false;
+    private bool upDisabled = false;
+    private bool downDisabled = false;
+
+    private float xEdgeLeft;
+    private float xEdgeRight;
+    private float yEdgeTop;
+    private float yEdgeBottom;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -49,6 +59,42 @@ public class PlayerController : MonoBehaviour
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
+
+        if(rightDisabled && moveHorizontal < 0.0f) 
+        {
+            moveHorizontal = Input.GetAxis("Horizontal");
+            rightDisabled = false;
+            Debug.Log("here?");
+        }
+        if(leftDisabled && moveHorizontal > 0.0f) 
+        {
+            moveHorizontal = Input.GetAxis("Horizontal");
+            leftDisabled = false;
+        }
+        if(upDisabled && moveVertical < 0.0f) 
+        {
+            moveVertical = Input.GetAxis("Vertical");
+            upDisabled = false;
+        }
+        if(downDisabled && moveVertical > 0.0f) 
+        {
+            moveVertical = Input.GetAxis("Vertical");
+            downDisabled = false;
+        }
+
+        if(rightDisabled && transform.position.y > yEdgeTop) rightDisabled = false;
+        if(rightDisabled && transform.position.y < yEdgeBottom) rightDisabled = false;
+        if(leftDisabled && transform.position.y > yEdgeTop) leftDisabled = false;
+        if(leftDisabled && transform.position.y < yEdgeBottom) leftDisabled = false;
+        if(upDisabled && transform.position.x < xEdgeLeft) upDisabled = false;
+        if(upDisabled && transform.position.x > xEdgeRight) upDisabled = false;
+        if(downDisabled && transform.position.x < xEdgeLeft) downDisabled = false;
+        if(downDisabled && transform.position.x > xEdgeRight) downDisabled = false;
+
+        if(rightDisabled) moveHorizontal = 0.0f;
+        if(leftDisabled) moveHorizontal = 0.0f;
+        if(upDisabled) moveVertical = 0.0f;
+        if(downDisabled) moveVertical = 0.0f;
 
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
         rb.velocity = movement * speed;
@@ -114,7 +160,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                //whatever
+                transform.position = new Vector2(prevXPos, prevYPos);
             }
         }
         prevXPos = transform.position.x;
@@ -124,6 +170,16 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         collided = true;
+        Debug.Log(collision.collider.bounds);
+        Debug.Log(collision.contacts[0].point);
+        xEdgeLeft = collision.collider.bounds.center.x - collision.collider.bounds.extents.x - 0.01f;
+        xEdgeRight = collision.collider.bounds.center.x + collision.collider.bounds.extents.x + 0.01f;
+        yEdgeTop = collision.collider.bounds.center.y + collision.collider.bounds.extents.y + 0.01f;
+        yEdgeBottom = collision.collider.bounds.center.y - collision.collider.bounds.extents.y - 0.01f;
+        if(collision.contacts[0].point.x >= xEdgeLeft && transform.position.x > prevXPos && prevXPos < xEdgeLeft) rightDisabled = true;
+        if(collision.contacts[0].point.x <= xEdgeRight && transform.position.x < prevXPos && prevXPos > xEdgeRight) leftDisabled = true;
+        if(collision.contacts[0].point.y >= yEdgeBottom && transform.position.y > prevYPos && prevYPos < yEdgeBottom) upDisabled = true;
+        if(collision.contacts[0].point.y <= yEdgeTop && transform.position.y < prevYPos && prevYPos > yEdgeTop) downDisabled = true;
         Debug.Log("yes");
         LateUpdate();
         //movement = new Vector2(prevXPos - transform.position.x, prevYPos - transform.position.y);
