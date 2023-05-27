@@ -82,14 +82,14 @@ public class PlayerController : MonoBehaviour
             downDisabled = false;
         }
 
-        if(rightDisabled && transform.position.y > yEdgeTop) rightDisabled = false;
-        if(rightDisabled && transform.position.y < yEdgeBottom) rightDisabled = false;
-        if(leftDisabled && transform.position.y > yEdgeTop) leftDisabled = false;
-        if(leftDisabled && transform.position.y < yEdgeBottom) leftDisabled = false;
-        if(upDisabled && transform.position.x < xEdgeLeft) upDisabled = false;
-        if(upDisabled && transform.position.x > xEdgeRight) upDisabled = false;
-        if(downDisabled && transform.position.x < xEdgeLeft) downDisabled = false;
-        if(downDisabled && transform.position.x > xEdgeRight) downDisabled = false;
+        if(rightDisabled && transform.position.y > yEdgeTop + 0.5f) rightDisabled = false;
+        if(rightDisabled && transform.position.y < yEdgeBottom - 0.5f) rightDisabled = false;
+        if(leftDisabled && transform.position.y > yEdgeTop + 0.5f) leftDisabled = false;
+        if(leftDisabled && transform.position.y < yEdgeBottom - 0.5f) leftDisabled = false;
+        if(upDisabled && transform.position.x < xEdgeLeft - 0.5f) upDisabled = false;
+        if(upDisabled && transform.position.x > xEdgeRight + 0.5f) upDisabled = false;
+        if(downDisabled && transform.position.x < xEdgeLeft - 0.5f) downDisabled = false;
+        if(downDisabled && transform.position.x > xEdgeRight + 0.5f) downDisabled = false;
 
         if(rightDisabled) moveHorizontal = 0.0f;
         if(leftDisabled) moveHorizontal = 0.0f;
