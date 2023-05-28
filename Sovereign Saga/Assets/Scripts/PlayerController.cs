@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
     private float yEdgeTop;
     private float yEdgeBottom;
 
+    private int state = 2;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -42,17 +44,9 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);
         }
-        /*
-        if(transform.position.x > 14.69f)
-        {
-            speed = 0f;
-        }
-        else
-        {
-            speed = 5f;
-        }
-        */
-        //animator.SetFloat("Speed", movement.sqrMagnitude);
+        if(state == 0) speed = 5f;
+        if(state == 1) speed = 7f;
+        if(state == 2) speed = 8f;
     }
 
     void FixedUpdate()
@@ -181,6 +175,9 @@ public class PlayerController : MonoBehaviour
         if(collision.contacts[0].point.y >= yEdgeBottom && transform.position.y > prevYPos && prevYPos < yEdgeBottom) upDisabled = true;
         if(collision.contacts[0].point.y <= yEdgeTop && transform.position.y < prevYPos && prevYPos > yEdgeTop) downDisabled = true;
         Debug.Log("yes");
+        if(state == 0) state = state + 3 - 1;
+        else state = state - 1;
+        Debug.Log(state);
         LateUpdate();
         //movement = new Vector2(prevXPos - transform.position.x, prevYPos - transform.position.y);
         //rb.velocity = movement * speed;
