@@ -24192,6 +24192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   animator: {fileID: 832857803}
+  currentPassiveIncome: 1980
 --- !u!50 &832857802
 Rigidbody2D:
   serializedVersion: 4
@@ -32948,6 +32949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingCost: 1000
+  playerController: {fileID: 832857801}
 --- !u!1 &1187247928
 GameObject:
   m_ObjectHideFlags: 0
@@ -46470,6 +46472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingCost: 1000
+  playerController: {fileID: 832857801}
 --- !u!1 &1696411096
 GameObject:
   m_ObjectHideFlags: 0

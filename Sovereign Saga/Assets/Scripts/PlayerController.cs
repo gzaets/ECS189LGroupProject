@@ -12,7 +12,10 @@ public class PlayerController : MonoBehaviour
 
     // Current passive income of player
     public static int incomeGenerationRate = 0;
+
+    [SerializeField]
     private int currentPassiveIncome = 0;
+
     private float timeElapsed = 0f;
 
     private void Awake()
@@ -55,5 +58,15 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
+    }
+
+    public int GetCurrentIncome()
+    {
+        return currentPassiveIncome;
+    }
+
+    public void SetCurrentIncome(int newIncome)
+    {
+        currentPassiveIncome = newIncome;
     }
 }

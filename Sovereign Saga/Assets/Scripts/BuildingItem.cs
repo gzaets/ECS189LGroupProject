@@ -5,6 +5,7 @@ using UnityEngine;
 public class BuildingItem : MonoBehaviour
 {
     // Stats of building, including cost and how much it is producing per second
+    //private int buildingLvl = 0;
 
     [SerializeField]
     private int buildingCost;
@@ -16,6 +17,9 @@ public class BuildingItem : MonoBehaviour
     private bool isPurchased = true;
 
     private bool incomeUpdated = false;
+
+    [SerializeField]
+    public PlayerController playerController;
 
     void Start()
     {
@@ -29,8 +33,15 @@ public class BuildingItem : MonoBehaviour
         // TODO: Produce passive income IF building is bought
         if (isPurchased && !incomeUpdated)
         {
-            PlayerController.incomeGenerationRate = PlayerController.incomeGenerationRate + buildingProductionRate;
-            incomeUpdated = true;
+            // If we have enough to buy
+            if (playerController.GetCurrentIncome() >= buildingCost)
+            {
+                // Subtract cost of building from player income
+                playerController.SetCurrentIncome(playerController.GetCurrentIncome() - buildingCost);
+
+                PlayerController.incomeGenerationRate = PlayerController.incomeGenerationRate + buildingProductionRate;
+                incomeUpdated = true;
+            }
         }
     }
 
