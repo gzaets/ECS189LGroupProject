@@ -24190,8 +24190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a73f777558c334c9ae7812c91f7c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  rb: {fileID: 832857802}
+  speed: 5
   animator: {fileID: 832857803}
 --- !u!50 &832857802
 Rigidbody2D:
@@ -32861,6 +32860,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1181833248}
   - component: {fileID: 1181833247}
+  - component: {fileID: 1181833249}
   m_Layer: 0
   m_Name: building-thin
   m_TagString: Untagged
@@ -32935,6 +32935,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1181833249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181833246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63d28b67043e4186ab39ca6347bdd6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 1000
 --- !u!1 &1187247928
 GameObject:
   m_ObjectHideFlags: 0
@@ -46369,6 +46382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1692916600}
   - component: {fileID: 1692916599}
+  - component: {fileID: 1692916601}
   m_Layer: 0
   m_Name: building
   m_TagString: Untagged
@@ -46443,6 +46457,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1692916601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692916598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63d28b67043e4186ab39ca6347bdd6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 1000
 --- !u!1 &1696411096
 GameObject:
   m_ObjectHideFlags: 0

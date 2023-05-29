@@ -10,6 +10,11 @@ public class PlayerController : MonoBehaviour
 
     Vector2 movement;
 
+    // Current passive income of player
+    public static int incomeGenerationRate = 0;
+    private int currentPassiveIncome = 0;
+    private float timeElapsed = 0f;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -27,6 +32,15 @@ public class PlayerController : MonoBehaviour
         }
 
         animator.SetFloat("Speed", movement.sqrMagnitude);
+
+        timeElapsed += Time.deltaTime;
+
+        if (timeElapsed > 1f)
+        {
+            currentPassiveIncome = currentPassiveIncome + incomeGenerationRate;
+            Debug.Log("Current Income: " + currentPassiveIncome);
+            timeElapsed = 0f;
+        }
     }
 
     void FixedUpdate()
@@ -40,6 +54,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+
     }
 }
