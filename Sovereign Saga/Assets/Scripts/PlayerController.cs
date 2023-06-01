@@ -10,15 +10,20 @@ public class PlayerController : MonoBehaviour
 
     Vector2 movement;
 
+    private Vector2 mouseLocation;
+
+    private WeaponController weaponController;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        weaponController = GetComponentInChildren<WeaponController>();
     }
 
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal") * 0.75f;
-        movement.y = Input.GetAxisRaw("Vertical") * 0.75f;
+        movement.x = Input.GetAxisRaw("Horizontal") * 1f;
+        movement.y = Input.GetAxisRaw("Vertical") * 1f;
 
         if (movement != Vector2.zero)
         {
@@ -27,6 +32,15 @@ public class PlayerController : MonoBehaviour
         }
 
         animator.SetFloat("Speed", movement.sqrMagnitude);
+
+        mouseLocation = GetMousePosition();
+        weaponController.setPointerPosition(mouseLocation);
+        
+        if (Input.GetButton("Fire1"))
+        {
+            weaponController.Attack();
+        }
+
     }
 
     void FixedUpdate()
@@ -34,12 +48,21 @@ public class PlayerController : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
+        Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized;
         rb.velocity = movement * speed;
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         
+    }
+
+
+    private Vector2 GetMousePosition()
+    {
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z += Camera.main.nearClipPlane;
+        return Camera.main.ScreenToWorldPoint(mousePos);
     }
 }
