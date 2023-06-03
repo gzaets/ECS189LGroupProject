@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
 
     private int state = 2;
 
+    private bool lastCollisionBuilding = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -44,9 +46,11 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);
         }
+        /*
         if(state == 0) speed = 5f;
         if(state == 1) speed = 7f;
         if(state == 2) speed = 8f;
+        */
     }
 
     void FixedUpdate()
@@ -75,7 +79,7 @@ public class PlayerController : MonoBehaviour
             moveVertical = Input.GetAxis("Vertical");
             downDisabled = false;
         }
-
+        if(lastCollisionBuilding) {
         if(rightDisabled && transform.position.y > yEdgeTop + 0.5f) rightDisabled = false;
         if(rightDisabled && transform.position.y < yEdgeBottom - 0.5f) rightDisabled = false;
         if(leftDisabled && transform.position.y > yEdgeTop + 0.5f) leftDisabled = false;
@@ -84,14 +88,15 @@ public class PlayerController : MonoBehaviour
         if(upDisabled && transform.position.x > xEdgeRight + 0.5f) upDisabled = false;
         if(downDisabled && transform.position.x < xEdgeLeft - 0.5f) downDisabled = false;
         if(downDisabled && transform.position.x > xEdgeRight + 0.5f) downDisabled = false;
-
+        }
         if(rightDisabled) moveHorizontal = 0.0f;
         if(leftDisabled) moveHorizontal = 0.0f;
         if(upDisabled) moveVertical = 0.0f;
         if(downDisabled) moveVertical = 0.0f;
-
-        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-        rb.velocity = movement * speed;
+    
+        Vector3 movement = new Vector3(moveHorizontal, moveVertical,0);
+        //rb.velocity = movement * speed;
+        rb.MovePosition(transform.position + movement * speed * Time.deltaTime);
     }
 
     void LateUpdate()
@@ -163,6 +168,28 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if(collision.collider.name == "Water_Right")
+        {
+            Debug.Log("hdfgjdfg");
+            /*
+            lastCollisionBuilding = false;
+            Debug.Log("ok");
+            collided = true;
+            Debug.Log(collision.collider.bounds);
+            Debug.Log(collision.contacts[0].point);
+            if(transform.position.x > prevXPos) rightDisabled = true;
+            if(transform.position.x < prevXPos) leftDisabled = true;
+            if(transform.position.y > prevYPos) upDisabled = true;
+            if(transform.position.y < prevYPos) downDisabled = true;
+            Debug.Log("yes");
+            if(state == 0) state = state + 3 - 1;
+            else state = state - 1;
+            Debug.Log(state);
+            LateUpdate();
+            */
+        }
+        else {
+            lastCollisionBuilding = true;
         collided = true;
         Debug.Log(collision.collider.bounds);
         Debug.Log(collision.contacts[0].point);
@@ -181,5 +208,6 @@ public class PlayerController : MonoBehaviour
         LateUpdate();
         //movement = new Vector2(prevXPos - transform.position.x, prevYPos - transform.position.y);
         //rb.velocity = movement * speed;
+        }
     }
 }
