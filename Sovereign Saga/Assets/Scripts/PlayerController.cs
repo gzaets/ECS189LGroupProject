@@ -44,9 +44,17 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);
         }
+<<<<<<< Updated upstream
         if(state == 0) speed = 5f;
         if(state == 1) speed = 7f;
         if(state == 2) speed = 8f;
+=======
+        /*
+        if(state == 0) speed = 5f;
+        if(state == 1) speed = 7f;
+        if(state == 2) speed = 8f;
+        */
+>>>>>>> Stashed changes
     }
 
     void FixedUpdate()
