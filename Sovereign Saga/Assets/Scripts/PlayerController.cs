@@ -188,7 +188,7 @@ public class PlayerController : MonoBehaviour
             LateUpdate();
             */
         }
-        else {
+        else if(collision.collider.tag == "building") {
             lastCollisionBuilding = true;
         collided = true;
         Debug.Log(collision.collider.bounds);
