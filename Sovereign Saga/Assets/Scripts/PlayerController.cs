@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     Vector2 movement;
 
     private Vector2 mouseLocation;
+    private int lastMovement;
 
     private WeaponController weaponController;
 
@@ -18,20 +19,29 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         weaponController = GetComponentInChildren<WeaponController>();
+
+
+        // Set it so the player faces down at the beginning of the game. 
+        animator.SetFloat("Horizontal", 0);
+        animator.SetFloat("Vertical", -1);
     }
 
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal") * 1f;
-        movement.y = Input.GetAxisRaw("Vertical") * 1f;
-
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+        
         if (movement != Vector2.zero)
         {
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+        }
+        else
+        {
+            animator.SetFloat("Speed", rb.velocity.magnitude);
         }
 
-        animator.SetFloat("Speed", movement.sqrMagnitude);
 
         mouseLocation = GetMousePosition();
         weaponController.setPointerPosition(mouseLocation);
@@ -58,7 +68,7 @@ public class PlayerController : MonoBehaviour
         
     }
 
-
+    // Borrowed logic, need to put citation here later. 
     private Vector2 GetMousePosition()
     {
         Vector3 mousePos = Input.mousePosition;
