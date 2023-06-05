@@ -5,7 +5,8 @@ using UnityEngine;
 public class BuildingItem : MonoBehaviour
 {
     // Stats of building, including cost and how much it is producing per second
-    //private int buildingLvl = 0;
+    private int buildingLvl = 10;
+    private bool upgradedBuilding = true;
 
     [SerializeField]
     private int buildingCost;
@@ -41,8 +42,27 @@ public class BuildingItem : MonoBehaviour
 
                 PlayerController.incomeGenerationRate = PlayerController.incomeGenerationRate + buildingProductionRate;
                 incomeUpdated = true;
+
+                
+               // buildingCost += buildingCost;
+               // buildingProductionRate += buildingProductionRate;
+
+                //buildingLvl += 1;
             }
         }
+
+        if (isPurchased && upgradedBuilding){
+                // Subtract cost of building from player income
+                //playerController.SetCurrentIncome(playerController.GetCurrentIncome() - buildingCost);
+
+                PlayerController.incomeGenerationRate = PlayerController.incomeGenerationRate + (buildingProductionRate * buildingLvl);
+                //incomeUpdated = true;
+                upgradedBuilding = false;
+                //buildingLvl += 1;
+        }
+
+
+
     }
 
 }
