@@ -168,6 +168,11 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Cave cave = collision.collider.GetComponent<Cave>();
+        if(cave != null)
+        {
+            transform.position = cave.exitPoint;
+        }
         if(collision.collider.name == "Water_Right")
         {
             Debug.Log("hdfgjdfg");
@@ -190,24 +195,24 @@ public class PlayerController : MonoBehaviour
         }
         else if(collision.collider.tag == "building") {
             lastCollisionBuilding = true;
-        collided = true;
-        Debug.Log(collision.collider.bounds);
-        Debug.Log(collision.contacts[0].point);
-        xEdgeLeft = collision.collider.bounds.center.x - collision.collider.bounds.extents.x - 0.01f;
-        xEdgeRight = collision.collider.bounds.center.x + collision.collider.bounds.extents.x + 0.01f;
-        yEdgeTop = collision.collider.bounds.center.y + collision.collider.bounds.extents.y + 0.01f;
-        yEdgeBottom = collision.collider.bounds.center.y - collision.collider.bounds.extents.y - 0.01f;
-        if(collision.contacts[0].point.x >= xEdgeLeft && transform.position.x > prevXPos && prevXPos < xEdgeLeft) rightDisabled = true;
-        if(collision.contacts[0].point.x <= xEdgeRight && transform.position.x < prevXPos && prevXPos > xEdgeRight) leftDisabled = true;
-        if(collision.contacts[0].point.y >= yEdgeBottom && transform.position.y > prevYPos && prevYPos < yEdgeBottom) upDisabled = true;
-        if(collision.contacts[0].point.y <= yEdgeTop && transform.position.y < prevYPos && prevYPos > yEdgeTop) downDisabled = true;
-        Debug.Log("yes");
-        if(state == 0) state = state + 3 - 1;
-        else state = state - 1;
-        Debug.Log(state);
-        LateUpdate();
-        //movement = new Vector2(prevXPos - transform.position.x, prevYPos - transform.position.y);
-        //rb.velocity = movement * speed;
+            collided = true;
+            Debug.Log(collision.collider.bounds);
+            Debug.Log(collision.contacts[0].point);
+            xEdgeLeft = collision.collider.bounds.center.x - collision.collider.bounds.extents.x - 0.01f;
+            xEdgeRight = collision.collider.bounds.center.x + collision.collider.bounds.extents.x + 0.01f;
+            yEdgeTop = collision.collider.bounds.center.y + collision.collider.bounds.extents.y + 0.01f;
+            yEdgeBottom = collision.collider.bounds.center.y - collision.collider.bounds.extents.y - 0.01f;
+            if(collision.contacts[0].point.x >= xEdgeLeft && transform.position.x > prevXPos && prevXPos < xEdgeLeft) rightDisabled = true;
+            if(collision.contacts[0].point.x <= xEdgeRight && transform.position.x < prevXPos && prevXPos > xEdgeRight) leftDisabled = true;
+            if(collision.contacts[0].point.y >= yEdgeBottom && transform.position.y > prevYPos && prevYPos < yEdgeBottom) upDisabled = true;
+            if(collision.contacts[0].point.y <= yEdgeTop && transform.position.y < prevYPos && prevYPos > yEdgeTop) downDisabled = true;
+            Debug.Log("yes");
+            if(state == 0) state = state + 3 - 1;
+            else state = state - 1;
+            Debug.Log(state);
+            LateUpdate();
+            //movement = new Vector2(prevXPos - transform.position.x, prevYPos - transform.position.y);
+            //rb.velocity = movement * speed;
         }
     }
 }
