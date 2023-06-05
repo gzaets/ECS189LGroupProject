@@ -6,6 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     private float currentMovementSpeed = 4.0f;
     private float defaultMovementSpeed = 4.0f;
+
+    // Combat variable
+    public bool inCombat { get; set; }
     
     // Dashing Variables
     private float dashSpeed = 8.0f;
@@ -19,12 +22,15 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement;
     private Vector2 mouseLocation;
     private WeaponController weaponController;
+    private Ghost ghostFX; 
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         weaponController = GetComponentInChildren<WeaponController>();
         animator = GetComponentInChildren<Animator>();
+        ghostFX = GetComponent<Ghost>();
+        inCombat = false;
 
         // Set it so the player faces down at the beginning of the game. 
         animator.SetFloat("Horizontal", 0);
@@ -57,9 +63,10 @@ public class PlayerController : MonoBehaviour
         }
 
         // Dashing
-        if (Input.GetKeyDown(KeyCode.Space) && canDash)
+        if (Input.GetKeyDown(KeyCode.Space) && canDash && movement != Vector2.zero)
         {
             canDash = false;
+            ghostFX.setGhost(true);
             currentMovementSpeed = dashSpeed;
         }
 
@@ -68,6 +75,7 @@ public class PlayerController : MonoBehaviour
             dashCounter += Time.deltaTime;
             if (dashCounter >= dashLength)
             {
+                ghostFX.setGhost(false);
                 currentMovementSpeed = defaultMovementSpeed;
             }
 
