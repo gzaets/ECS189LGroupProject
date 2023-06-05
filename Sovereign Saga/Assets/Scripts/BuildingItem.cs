@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BuildingItem : MonoBehaviour
 {
@@ -15,12 +16,21 @@ public class BuildingItem : MonoBehaviour
     // TODO: For UI NOTES -
     // Chek if isPurchased is false. If so, give option to buy.
     // When buy button is clicked, just change isPurchased to true.
-    private bool isPurchased = true;
+    private bool isPurchased = false;
 
     private bool incomeUpdated = false;
 
     [SerializeField]
     public PlayerController playerController;
+
+    [SerializeField]
+    private GameObject buildingPurchaseUI;
+
+    [SerializeField]
+    private Button purchaseYesButton;
+
+    [SerializeField]
+    private Button purchaseNoButton;
 
     void Start()
     {
@@ -65,4 +75,21 @@ public class BuildingItem : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            if (this.isPurchased == false)
+            {
+                buildingPurchaseUI.SetActive(true);
+                purchaseYesButton.onClick.AddListener(() => {
+                    this.isPurchased = true;
+                    buildingPurchaseUI.SetActive(false);
+                });
+                purchaseNoButton.onClick.AddListener(() => {
+                    buildingPurchaseUI.SetActive(false);
+                });
+            }
+        }
+    }
 }
