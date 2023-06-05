@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5f;
+    public float health = 100f;
     private Rigidbody2D rb;
     public Animator animator;
 
@@ -164,6 +165,11 @@ public class PlayerController : MonoBehaviour
         }
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
