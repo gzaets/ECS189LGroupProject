@@ -22,8 +22,6 @@ public class PlayerController : MonoBehaviour
     private float dashCounter = 0.0f;
     private bool canDash = true;
 
-    private Rigidbody2D rb;
-    private Animator animator;
     private Vector2 movement;
     private Vector2 mouseLocation;
     private WeaponController weaponController;
