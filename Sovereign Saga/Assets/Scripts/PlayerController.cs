@@ -45,6 +45,11 @@ public class PlayerController : MonoBehaviour
 
     private bool lastCollisionBuilding = false;
 
+  public static int incomeGenerationRate = 0;
+
+    [SerializeField]
+    private int currentPassiveIncome = 0;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -288,4 +293,15 @@ public class PlayerController : MonoBehaviour
         mousePos.z += Camera.main.nearClipPlane;
         return Camera.main.ScreenToWorldPoint(mousePos);
     }
+
+        public int GetCurrentIncome()
+    {
+        return currentPassiveIncome;
+    }
+
+    public void SetCurrentIncome(int newIncome)
+    {
+        currentPassiveIncome = newIncome;
+    }
+
 }
