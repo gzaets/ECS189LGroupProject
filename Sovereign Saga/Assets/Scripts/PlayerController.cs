@@ -45,6 +45,14 @@ public class PlayerController : MonoBehaviour
 
     private bool lastCollisionBuilding = false;
 
+    // Current passive income of player
+    public static int incomeGenerationRate = 0;
+
+    [SerializeField]
+    private int currentPassiveIncome = 0;
+
+    private float timeElapsed = 0f;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -106,6 +114,15 @@ public class PlayerController : MonoBehaviour
             {
                 canDash = true;
                 dashCounter = 0.0f;
+            }
+
+            timeElapsed += Time.deltaTime;
+
+            if (timeElapsed > 1f)
+            {
+                currentPassiveIncome = currentPassiveIncome + incomeGenerationRate;
+                Debug.Log("Current Income: " + currentPassiveIncome);
+                timeElapsed = 0f;
             }
         }
     }
@@ -232,6 +249,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
         Cave cave = collision.collider.GetComponent<Cave>();
         if(cave != null)
         {
@@ -286,5 +304,15 @@ public class PlayerController : MonoBehaviour
         Vector3 mousePos = Input.mousePosition;
         mousePos.z += Camera.main.nearClipPlane;
         return Camera.main.ScreenToWorldPoint(mousePos);
+    }
+
+    public int GetCurrentIncome()
+    {
+        return currentPassiveIncome;
+    }
+
+    public void SetCurrentIncome(int newIncome)
+    {
+        currentPassiveIncome = newIncome;
     }
 }
