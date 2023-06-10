@@ -9,7 +9,25 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     public Animator animator;
 
-    Vector2 movement;
+    private float currentMovementSpeed = 4.0f;
+    private float defaultMovementSpeed = 4.0f;
+
+    // Combat variable
+    public bool inCombat { get; set; }
+    
+    // Dashing Variables
+    private float dashSpeed = 8.0f;
+    private float dashLength = 0.5f;
+    private float dashCooldown = 10.0f;
+    private float dashCounter = 0.0f;
+    private bool canDash = true;
+
+    private Rigidbody2D rb;
+    private Animator animator;
+    private Vector2 movement;
+    private Vector2 mouseLocation;
+    private WeaponController weaponController;
+    private Ghost ghostFX; 
 
     private float prevXPos;
     private float prevYPos;
@@ -34,6 +52,14 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
+        weaponController = GetComponentInChildren<WeaponController>();
+        animator = GetComponentInChildren<Animator>();
+        ghostFX = GetComponent<Ghost>();
+        inCombat = false;
+
+        // Set it so the player faces down at the beginning of the game. 
+        animator.SetFloat("Horizontal", 0);
+        animator.SetFloat("Vertical", -1);
     }
 
     void Update()
@@ -41,23 +67,57 @@ public class PlayerController : MonoBehaviour
         collided = false;
         movement.x = Input.GetAxisRaw("Horizontal") * 0.75f;
         movement.y = Input.GetAxisRaw("Vertical") * 0.75f;
-
         if (movement != Vector2.zero)
         {
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
         }
-        /*
-        if(state == 0) speed = 5f;
-        if(state == 1) speed = 7f;
-        if(state == 2) speed = 8f;
-        */
+        else
+        {
+            animator.SetFloat("Speed", rb.velocity.magnitude);
+        }
+
+        mouseLocation = GetMousePosition();
+        weaponController.setPointerPosition(mouseLocation);
+        
+        // Attacking
+        if (Input.GetButton("Fire1"))
+        {
+            weaponController.Attack();
+        }
+
+        // Dashing
+        if (Input.GetKeyDown(KeyCode.Space) && canDash && movement != Vector2.zero)
+        {
+            canDash = false;
+            ghostFX.setGhost(true);
+            currentMovementSpeed = dashSpeed;
+        }
+
+        if (!canDash)
+        {   
+            dashCounter += Time.deltaTime;
+            if (dashCounter >= dashLength)
+            {
+                ghostFX.setGhost(false);
+                currentMovementSpeed = defaultMovementSpeed;
+            }
+
+            if (dashCounter >= dashCooldown)
+            {
+                canDash = true;
+                dashCounter = 0.0f;
+            }
+        }
     }
 
     void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
+        Vector2 direction = new Vector2(moveHorizontal, moveVertical).normalized;
+        rb.velocity = direction * currentMovementSpeed;
 
         if(rightDisabled && moveHorizontal < 0.0f) 
         {
@@ -220,5 +280,13 @@ public class PlayerController : MonoBehaviour
             //movement = new Vector2(prevXPos - transform.position.x, prevYPos - transform.position.y);
             //rb.velocity = movement * speed;
         }
+    }
+
+    // Borrowed logic, need to put citation here later. 
+    private Vector2 GetMousePosition()
+    {
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z += Camera.main.nearClipPlane;
+        return Camera.main.ScreenToWorldPoint(mousePos);
     }
 }
