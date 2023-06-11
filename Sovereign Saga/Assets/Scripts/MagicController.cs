@@ -120,7 +120,7 @@ public class MagicController : MonoBehaviour
         GameObject fireball = Instantiate(fireballPrefab, transform.position, transform.rotation);
         fireball.transform.right = aimDirection;
         Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(aimDirection.x, aimDirection.y) * 2.5f;
+        rb.velocity = new Vector2(aimDirection.x, aimDirection.y) * 5f;
     }
 
     private void Tornado()
@@ -153,9 +153,20 @@ public class MagicController : MonoBehaviour
         }
         canRock = false;
         
-        GameObject rock = Instantiate(rockPrefab, transform.position, transform.rotation);
-        rock.transform.position = aimDirection;
+        StartCoroutine(SpawnRocks());
 
+    }
+
+    private IEnumerator SpawnRocks()
+    {
+        for (int i = 0; i < 3; i++) 
+        {
+            GameObject rock = Instantiate(rockPrefab, transform.position, transform.rotation);
+            rock.transform.right = aimDirection;
+            Rigidbody2D rb = rock.GetComponent<Rigidbody2D>();
+            rb.velocity = new Vector2(aimDirection.x, aimDirection.y) * 2.5f;
+            yield return new WaitForSeconds(0.5f);
+        }
     }
 
 

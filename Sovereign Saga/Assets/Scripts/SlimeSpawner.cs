@@ -26,9 +26,6 @@ public class SlimeSpawner : MonoBehaviour
             // Assuming that the slime prefab has a SlimeController component attached to it
             SlimeController slimeController = newSlime.GetComponent<SlimeController>();
 
-            // Set the target of the new slime to the player (assuming the player has the "Player" tag)
-            slimeController.target = GameObject.FindGameObjectWithTag("Player").transform;
-
             // Wait for 10 seconds before the next iteration
             yield return new WaitForSeconds(10);
         }

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - building
+  - Rock
+  - Fireball
+  - Suck
   layers:
   - Default
   - TransparentFX

@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 3669769169265365814}
   - component: {fileID: 2095714539114416228}
   - component: {fileID: 5521906025778269648}
+  - component: {fileID: 1379023853596768062}
   m_Layer: 0
   m_Name: Fireball_Prefab
-  m_TagString: Untagged
+  m_TagString: Fireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,12 +29,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904501821886947858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.776349, y: -8.907576, z: 0}
+  m_LocalPosition: {x: -118.41, y: 6.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3579619957553862000
 SpriteRenderer:
@@ -164,7 +165,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -180,3 +181,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.74, y: 0.74}
   m_EdgeRadius: 0
+--- !u!114 &1379023853596768062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904501821886947858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c1fb2c814bea454abe6776e4a83c2f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
