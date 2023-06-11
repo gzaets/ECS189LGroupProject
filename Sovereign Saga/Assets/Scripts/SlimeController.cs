@@ -94,8 +94,8 @@ public class SlimeController : MonoBehaviour
         knockBackTime = 0.3f;
         collideSpeedX = transform.position.x - prevXPos;
         collideSpeedY = transform.position.y - prevYPos;
-        Debug.Log(collideSpeedX);
-        Debug.Log("okLetsMakeSureTheCallWasHere");
+        //Debug.Log(collideSpeedX);
+        //Debug.Log("okLetsMakeSureTheCallWasHere");
         // Check if the slime collided with the player
         PlayerController player = collision.collider.GetComponent<PlayerController>();
         if (player != null)
