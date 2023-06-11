@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 5f;
     public float health = 100f;
     private Rigidbody2D rb;
     public Animator animator;
@@ -46,7 +45,7 @@ public class PlayerController : MonoBehaviour
 
     private bool lastCollisionBuilding = false;
 
-  public static int incomeGenerationRate = 0;
+    public static int incomeGenerationRate = 0;
 
     [SerializeField]
     private int currentPassiveIncome = 0;
@@ -70,8 +69,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         collided = false;
-        movement.x = Input.GetAxisRaw("Horizontal") * 0.75f;
-        movement.y = Input.GetAxisRaw("Vertical") * 0.75f;
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+
         if (movement != Vector2.zero)
         {
             animator.SetFloat("Horizontal", movement.x);
@@ -84,7 +84,6 @@ public class PlayerController : MonoBehaviour
         }
 
         mouseLocation = GetMousePosition();
-        Debug.Log(mouseLocation);
         weaponController.setPointerPosition(mouseLocation);
         magicController.setPointerPosition(mouseLocation);
         
@@ -100,6 +99,12 @@ public class PlayerController : MonoBehaviour
             canDash = false;
             ghostFX.setGhost(true);
             currentMovementSpeed = dashSpeed;
+        }
+
+        // Magic Testing
+        if (Input.GetButton("Fire2"))
+        {
+            magicController.Execute("Fireball");
         }
 
         if (!canDash)
@@ -121,10 +126,12 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        // ============================= MOVEMENT =============================
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
         Vector2 direction = new Vector2(moveHorizontal, moveVertical).normalized;
         rb.velocity = direction * currentMovementSpeed;
+        // ====================================================================
 
         if(rightDisabled && moveHorizontal < 0.0f) 
         {
@@ -161,10 +168,6 @@ public class PlayerController : MonoBehaviour
         if(leftDisabled) moveHorizontal = 0.0f;
         if(upDisabled) moveVertical = 0.0f;
         if(downDisabled) moveVertical = 0.0f;
-    
-        Vector3 movement = new Vector3(moveHorizontal, moveVertical,0);
-        //rb.velocity = movement * speed;
-        rb.MovePosition(transform.position + movement * speed * Time.deltaTime);
     }
 
     void LateUpdate()
@@ -297,7 +300,7 @@ public class PlayerController : MonoBehaviour
         return Camera.main.ScreenToWorldPoint(mousePos);
     }
 
-        public int GetCurrentIncome()
+    public int GetCurrentIncome()
     {
         return currentPassiveIncome;
     }
@@ -305,6 +308,11 @@ public class PlayerController : MonoBehaviour
     public void SetCurrentIncome(int newIncome)
     {
         currentPassiveIncome = newIncome;
+    }
+
+    public void AddIncome(int reward)
+    {
+        // Need to add a variable that keeps track of current money. 
     }
 
 }
