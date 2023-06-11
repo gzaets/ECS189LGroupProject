@@ -5462,7 +5462,7 @@ GameObject:
   - component: {fileID: 182581579}
   - component: {fileID: 182581578}
   m_Layer: 5
-  m_Name: Strength Image
+  m_Name: Money Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26239,11 +26239,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a73f777558c334c9ae7812c91f7c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   health: 100
+  speed: 5
+  money: 0
   animator: {fileID: 832857803}
-  healthBar: {fileID: 1794443515}
-  staminaBar: {fileID: 736161182}
+  healthUI: {fileID: 0}
+  staminaUI: {fileID: 0}
+  moneyUI: {fileID: 0}
   currentPassiveIncome: 0
 --- !u!50 &832857802
 Rigidbody2D:
@@ -36452,7 +36454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1207997396
 RectTransform:
   m_ObjectHideFlags: 0
@@ -62323,7 +62325,7 @@ GameObject:
   - component: {fileID: 2071804894}
   - component: {fileID: 2071804893}
   m_Layer: 5
-  m_Name: Strength Value
+  m_Name: Money Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
