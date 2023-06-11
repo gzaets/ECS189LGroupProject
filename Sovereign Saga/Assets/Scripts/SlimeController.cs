@@ -4,23 +4,44 @@ using UnityEngine;
 
 public class SlimeController : MonoBehaviour
 {
-    [SerializeField]
-    public float speed = 2.0f;
-    [SerializeField]
-    public int damage = 10;
-    [SerializeField]
-    public int health = 100;
+    public float speed;
+    public int damage;
+    public int health;
+    public int coinReward;
     public Transform target;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;  // Used to flip the sprite
 
     void Start()
     {
-        // Assuming the player has a tag of "Player"
-        // target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-
         // Get the sprite renderer component
         spriteRenderer = GetComponent<SpriteRenderer>();
+        
+        // Depending on the slime type, set the damage, health and coinReward values
+        switch (gameObject.name)
+        {
+            case "Green Slime":
+                speed = 2f;
+                damage = 20;
+                health = 30;
+                coinReward = 30;
+                break;
+            case "Blue Slime":
+                speed = 4f;
+                damage = 10;
+                health = 20;
+                coinReward = 20;
+                break;
+            case "Red Slime":
+                speed = 1f;
+                damage = 20;
+                health = 15;
+                coinReward = 30;
+                break;
+            default:
+                Debug.LogError("Unknown slime type: " + gameObject.name);
+                break;
+        }
     }
 
     void Update()

@@ -3,9 +3,9 @@ using System.Collections;
 
 public class SlimeSpawner : MonoBehaviour
 {
-    // The slime prefab to spawn
+    // The slime prefabs to spawn
     [SerializeField]
-    public GameObject slimePrefab;
+    private GameObject[] slimePrefabs;
 
     private void Start()
     {
@@ -17,8 +17,11 @@ public class SlimeSpawner : MonoBehaviour
     {
         while (true)
         {
+            // Select a random prefab
+            GameObject selectedPrefab = slimePrefabs[Random.Range(0, slimePrefabs.Length)];
+            
             // Instantiate a new slime at the spawner's location
-            GameObject newSlime = Instantiate(slimePrefab, transform.position, Quaternion.identity);
+            GameObject newSlime = Instantiate(selectedPrefab, transform.position, Quaternion.identity);
 
             // Assuming that the slime prefab has a SlimeController component attached to it
             SlimeController slimeController = newSlime.GetComponent<SlimeController>();
