@@ -11,7 +11,14 @@ public class SlimeController : MonoBehaviour
     public Transform target;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;  // Used to flip the sprite
+    private float knockBackTime = 0.3f;
+    private bool collided = false;
 
+    private float prevXPos;
+    private float prevYPos;
+
+    private float collideSpeedX;
+    private float collideSpeedY;
     void Start()
     {
         // Get the sprite renderer component
@@ -42,11 +49,15 @@ public class SlimeController : MonoBehaviour
                 Debug.LogError("Unknown slime type: " + gameObject.name);
                 break;
         }
+        prevXPos = transform.position.x;
+        prevYPos = transform.position.y;
     }
 
     void Update()
     {
         // Move towards the player
+        if(collided == false)
+        {
         Vector2 targetPosition = target.position;
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         
@@ -61,10 +72,29 @@ public class SlimeController : MonoBehaviour
             // Target is to the left of the slime, so slime should face left
             spriteRenderer.flipX = true;
         }
+        }
+        if(collided)
+        {
+            //Debug.Log("Getting here???SDGFdfg");
+            knockBackTime -= Time.deltaTime;
+            if(knockBackTime <= 0.0f)
+            {
+                knockBackTime = 0.3f;
+                collided = false;
+            }
+            transform.position = new Vector2(transform.position.x + 2 * collideSpeedX, transform.position.y + 2 * collideSpeedY);
+        }
+        prevXPos = transform.position.x;
+        prevYPos = transform.position.y;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        collided = true;
+        knockBackTime = 0.3f;
+        collideSpeedX = transform.position.x - prevXPos;
+        collideSpeedY = transform.position.y - prevYPos;
+        Debug.Log(collideSpeedX);
         Debug.Log("okLetsMakeSureTheCallWasHere");
         // Check if the slime collided with the player
         PlayerController player = collision.collider.GetComponent<PlayerController>();
