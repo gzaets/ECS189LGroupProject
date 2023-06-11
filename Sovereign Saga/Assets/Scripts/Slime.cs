@@ -7,6 +7,7 @@ public class Slime : MonoBehaviour
     public float speed = 2.0f;
     public int damage = 10;
     public Transform target;
+    private Rigidbody2D rb;
 
     void Start()
     {
@@ -27,6 +28,8 @@ public class Slime : MonoBehaviour
         if (player != null)
         {
             player.TakeDamage(damage);
+
+            //Debug.Log("Player has taken damage");
         }
     }
 }
