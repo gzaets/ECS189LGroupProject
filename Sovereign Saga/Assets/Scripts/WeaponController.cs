@@ -22,7 +22,7 @@ public class WeaponController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 direction = (pointerPosition - (Vector2)transform.position).normalized;
+        Vector2 direction = (pointerPosition - (Vector2) transform.position).normalized;
         transform.right = direction;
 
         var currentScale = transform.localScale;

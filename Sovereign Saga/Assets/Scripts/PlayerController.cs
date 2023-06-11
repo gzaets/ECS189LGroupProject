@@ -22,12 +22,14 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement;
     private Vector2 mouseLocation;
     private WeaponController weaponController;
+    private MagicController magicController;
     private Ghost ghostFX; 
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         weaponController = GetComponentInChildren<WeaponController>();
+        magicController = GetComponentInChildren<MagicController>();
         animator = GetComponentInChildren<Animator>();
         ghostFX = GetComponent<Ghost>();
         inCombat = false;
@@ -55,6 +57,7 @@ public class PlayerController : MonoBehaviour
 
         mouseLocation = GetMousePosition();
         weaponController.setPointerPosition(mouseLocation);
+        magicController.setPointerPosition(mouseLocation);
         
         // Attacking
         if (Input.GetButton("Fire1"))
