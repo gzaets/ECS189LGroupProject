@@ -8,11 +8,18 @@ public class SlimeController : MonoBehaviour
     public int damage;
     public int health;
     public int coinReward;
-    public Transform target;
+    private bool stopMoving;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;  // Used to flip the sprite
+
     private float knockBackTime = 0.3f;
     private bool collided = false;
+
+    private GameObject suckTarget;
+
+    [SerializeField]
+    private GameObject Hero;
+
 
     private float prevXPos;
     private float prevYPos;
@@ -21,6 +28,9 @@ public class SlimeController : MonoBehaviour
     private float collideSpeedY;
     void Start()
     {
+        // No existing suck on spawn. 
+        suckTarget = null;
+
         // Get the sprite renderer component
         spriteRenderer = GetComponent<SpriteRenderer>();
         
@@ -58,7 +68,12 @@ public class SlimeController : MonoBehaviour
         // Move towards the player
         if(collided == false)
         {
-        Vector2 targetPosition = target.position;
+        //Vector2 targetPosition = target.position;
+        Vector2 targetPosition = Hero.transform.position;
+        if (suckTarget != null)
+        {
+            targetPosition = suckTarget.transform.position;
+        }
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         
         // Flip the sprite based on the direction of movement
@@ -97,13 +112,63 @@ public class SlimeController : MonoBehaviour
         //Debug.Log(collideSpeedX);
         //Debug.Log("okLetsMakeSureTheCallWasHere");
         // Check if the slime collided with the player
-        PlayerController player = collision.collider.GetComponent<PlayerController>();
-        if (player != null)
+        PlayerController pController = collision.collider.GetComponent<PlayerController>();
+        if (pController != null)
         {
+
             //Debug.Log("uhhh");
-            player.TakeDamage(damage);
+            pController.TakeDamage(damage);
 
             //Debug.Log("Player has taken damage");
         }
     }
+
+    
+    // This checks for collision with the collider but does not simulate the physics and pushback. 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        GameObject gb = collision.gameObject;
+        switch (gb.tag)
+        {
+            case "Suck":
+                ChangeTarget(collision.gameObject);
+                break;
+            case "Rock":
+                var damage = gb.GetComponent<Rock>().GetDamage();
+                TakeDamage(damage);
+                Destroy(gb);
+                break;
+            case "Fireball":
+                damage = gb.GetComponent<Fireball>().GetDamage();
+                TakeDamage(damage);
+                Destroy(gb);
+                break;
+            default:
+                // Do literally nothing.
+                break;
+        }
+
+    }
+    
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+
+        if (health <= 0)
+        {
+           // Reward player
+           Hero.GetComponent<PlayerController>().AddIncome(coinReward);
+           
+           // Destroy current GameObject
+           Destroy(gameObject);
+        }
+    }
+
+    // This is for the suck skill, it changes the current target to suck. 
+    public void ChangeTarget(GameObject suck)
+    {
+        suckTarget = suck;
+    }
+    
 }
