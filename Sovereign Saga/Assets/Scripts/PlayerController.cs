@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
     public float health = 100f;
     private Rigidbody2D rb;
     public Animator animator;
-
+    public float money = 0f;
+    
     public Slider healthBar;
     public Slider staminaBar;
+    public TextMeshProUGUI moneyUI;
 
     private float currentMovementSpeed = 4.0f;
     private float defaultMovementSpeed = 4.0f;
@@ -129,6 +132,8 @@ public class PlayerController : MonoBehaviour
                 dashCounter = 0.0f;
             }
         }
+
+        moneyUI.text = "$" + money;
 
     }
 
