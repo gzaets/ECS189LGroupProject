@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class SlimeController : MonoBehaviour
 {
+    [SerializeField]
     public float speed = 2.0f;
+    [SerializeField]
     public int damage = 10;
+    [SerializeField]
+    public int health = 100;
     public Transform target;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;  // Used to flip the sprite
