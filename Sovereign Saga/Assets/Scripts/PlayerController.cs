@@ -92,13 +92,13 @@ public class PlayerController : MonoBehaviour
         }
 
         mouseLocation = GetMousePosition();
-        //weaponController.setPointerPosition(mouseLocation);
-        //magicController.setPointerPosition(mouseLocation);
+        weaponController.setPointerPosition(mouseLocation);
+        magicController.setPointerPosition(mouseLocation);
         
         // Attacking
         if (Input.GetButton("Fire1"))
         {
-            //weaponController.Attack();
+            weaponController.Attack();
         }
 
         // Dashing
@@ -112,7 +112,7 @@ public class PlayerController : MonoBehaviour
         // Magic Testing
         if (Input.GetButton("Fire2"))
         {
-            //magicController.Execute("Fireball");
+            magicController.Execute("Fireball");
         }
 
         if (!canDash)
