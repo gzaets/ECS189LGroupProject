@@ -107,6 +107,10 @@ public class SlimeController : MonoBehaviour
                 TakeDamage(damage);
                 Destroy(gb);
                 break;
+            case "Sword":
+                Debug.Log("works");
+                TakeDamage(12);
+                break;
             default:
                 // Do literally nothing.
                 break;
