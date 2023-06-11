@@ -8,6 +8,7 @@ public class BuildingItem : MonoBehaviour
     // Stats of building, including cost and how much it is producing per second
     private int buildingLvl = 10;
     private bool upgradedBuilding = true;
+    private bool playerIncomeUpdated = false;
 
     [SerializeField]
     private int buildingCost;
@@ -70,7 +71,11 @@ public class BuildingItem : MonoBehaviour
                 upgradedBuilding = false;
                 //buildingLvl += 1;
         }
-
+        if(isPurchased && !playerIncomeUpdated)
+        {
+            playerController.money = playerController.money - buildingCost;
+            playerIncomeUpdated = true;
+        }
 
 
     }
