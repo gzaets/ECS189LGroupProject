@@ -26243,9 +26243,9 @@ MonoBehaviour:
   speed: 5
   money: 0
   animator: {fileID: 832857803}
-  healthUI: {fileID: 0}
-  staminaUI: {fileID: 0}
-  moneyUI: {fileID: 0}
+  healthUI: {fileID: 1794443515}
+  staminaUI: {fileID: 736161182}
+  moneyUI: {fileID: 2071804893}
   currentPassiveIncome: 0
 --- !u!50 &832857802
 Rigidbody2D:
