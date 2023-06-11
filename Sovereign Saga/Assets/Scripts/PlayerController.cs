@@ -7,13 +7,12 @@ using TMPro;
 public class PlayerController : MonoBehaviour
 {
     public float health = 100f;
-    public float speed = 5f;
-    public float money = 0f;
     private Rigidbody2D rb;
     public Animator animator;
-
-    public Slider healthUI;
-    public Slider staminaUI;
+    public float money = 0f;
+    
+    public Slider healthBar;
+    public Slider staminaBar;
     public TextMeshProUGUI moneyUI;
 
     private float currentMovementSpeed = 4.0f;
@@ -134,6 +133,8 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        moneyUI.text = "$" + money;
+
     }
 
     void FixedUpdate()
@@ -186,7 +187,7 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(transform.position + movement * currentMovementSpeed * Time.deltaTime);
 
         // Health Bar changes depending on HP.
-        healthUI.value = health;
+        healthBar.value = health;
 
         // Stamima Bar changes depending on HP.
         staminaBar.value = currentMovementSpeed;
@@ -273,7 +274,7 @@ public class PlayerController : MonoBehaviour
         Cave cave = collision.collider.GetComponent<Cave>();
         if(cave != null)
         {
-            //transform.position = cave.exitPoint;
+            transform.position = cave.exitPoint;
         }
         if(collision.collider.name == "Water_Right")
         {
