@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
         }
 
         mouseLocation = GetMousePosition();
-        Debug.Log(mouseLocation);
+        //Debug.Log(mouseLocation);
         weaponController.setPointerPosition(mouseLocation);
         magicController.setPointerPosition(mouseLocation);
         

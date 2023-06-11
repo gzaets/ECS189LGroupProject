@@ -65,10 +65,12 @@ public class SlimeController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("okLetsMakeSureTheCallWasHere");
         // Check if the slime collided with the player
         PlayerController player = collision.collider.GetComponent<PlayerController>();
         if (player != null)
         {
+            //Debug.Log("uhhh");
             player.TakeDamage(damage);
 
             //Debug.Log("Player has taken damage");
