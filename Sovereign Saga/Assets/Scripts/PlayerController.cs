@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public float money = 0f;
     
-    public Slider healthBar;
-    public Slider staminaBar;
+    public Slider healthUI;
+    public Slider staminaUI;
     public TextMeshProUGUI moneyUI;
 
     private float currentMovementSpeed = 4.0f;
@@ -206,12 +206,10 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(transform.position + movement * currentMovementSpeed * Time.deltaTime);
 
         // Health Bar changes depending on HP.
-        healthBar.value = health;
+        healthUI.value = health;
 
-        // Stamima Bar changes depending on HP.
-        staminaBar.value = currentMovementSpeed;
-
-        staminaUI.value = speed;
+        // Stamima Bar changes depending on currentMovementSpeed.
+        staminaUI.value = currentMovementSpeed;
 
         moneyUI.text = "$" + money;
     }
