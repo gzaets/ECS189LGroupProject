@@ -28,6 +28,9 @@ public class PlayerController : MonoBehaviour
     private float dashCounter = 0.0f;
     private bool canDash = true;
 
+    // Variable to indicate death and trigger death scene. 
+    private bool isDead = false;
+
     private Vector2 movement;
     private Vector2 mouseLocation;
     private WeaponController weaponController;
@@ -97,26 +100,32 @@ public class PlayerController : MonoBehaviour
         weaponController.setPointerPosition(mouseLocation);
         magicController.setPointerPosition(mouseLocation);
         
-        // Attacking
-        if (Input.GetButton("Fire1"))
+        // Only accept inputs if we are alive. 
+        if (!isDead)
         {
-            weaponController.Attack();
+            // Attacking
+            if (Input.GetButton("Fire1"))
+            {
+                weaponController.Attack();
+            }
+
+            // Dashing
+            if (Input.GetKeyDown(KeyCode.Space) && canDash && movement != Vector2.zero)
+            {
+                canDash = false;
+                ghostFX.setGhost(true);
+                currentMovementSpeed = dashSpeed;
+            }
+
+            // Magic Testing
+            if (Input.GetButton("Fire2"))
+            {
+                magicController.Execute("Fireball");
+            }
         }
 
-        // Dashing
-        if (Input.GetKeyDown(KeyCode.Space) && canDash && movement != Vector2.zero)
-        {
-            canDash = false;
-            ghostFX.setGhost(true);
-            currentMovementSpeed = dashSpeed;
-        }
 
-        // Magic Testing
-        if (Input.GetButton("Fire2"))
-        {
-            magicController.Execute("Fireball");
-        }
-
+        // Dash Cooldown
         if (!canDash)
         {   
             dashCounter += Time.deltaTime;
@@ -135,6 +144,12 @@ public class PlayerController : MonoBehaviour
 
         moneyUI.text = "$" + money;
 
+        if (health <= 0)
+        {
+            animator.SetBool("isDead", true);
+            isDead = true;
+        }
+
     }
 
     void FixedUpdate()
@@ -143,7 +158,12 @@ public class PlayerController : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
         Vector2 direction = new Vector2(moveHorizontal, moveVertical).normalized;
-        rb.velocity = direction * currentMovementSpeed;
+        
+        // We do not move if we are dead. 
+        if (!isDead)
+        {
+            rb.velocity = direction * currentMovementSpeed;
+        }
         // ====================================================================
 
         if(rightDisabled && moveHorizontal < 0.0f) 
@@ -264,6 +284,8 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
