@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Slime : MonoBehaviour
+public class SlimeController : MonoBehaviour
 {
     public float speed = 2.0f;
     public int damage = 10;
