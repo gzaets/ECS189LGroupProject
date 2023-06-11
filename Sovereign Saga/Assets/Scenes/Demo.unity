@@ -24256,6 +24256,7 @@ GameObject:
   - component: {fileID: 832857801}
   - component: {fileID: 832857803}
   - component: {fileID: 832857804}
+  - component: {fileID: 832857805}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -24407,6 +24408,22 @@ MonoBehaviour:
   canMakeGhost: 0
   ghostPrefab: {fileID: 5686112759124439885, guid: 283f6b014d4831c4295d38449b11ca95, type: 3}
   ghostDelay: 0.16
+--- !u!114 &832857805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832857798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a964f5c97235c045b65cd298b3f709a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireballPrefab: {fileID: 1904501821886947858, guid: 4a068499c5de737439c20b71fb32dec9, type: 3}
+  tornadoPrefab: {fileID: 1072137340399575174, guid: 6062cba51c7f81d4ebf6078ec97b42f3, type: 3}
+  rockPrefab: {fileID: 2521908426061654389, guid: 935807292486cd44ebaead63462bc898, type: 3}
+  suckPrefab: {fileID: 2008893435313450207, guid: df59d2ef1e9c3b245accf89a5952a23a, type: 3}
 --- !u!1 &835804994
 GameObject:
   m_ObjectHideFlags: 0
