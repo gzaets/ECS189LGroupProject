@@ -77,7 +77,6 @@ public class PlayerController : MonoBehaviour
         }
 
         mouseLocation = GetMousePosition();
-        Debug.Log(mouseLocation);
         weaponController.setPointerPosition(mouseLocation);
         
         // Attacking
