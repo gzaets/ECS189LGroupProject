@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class PlayerController : MonoBehaviour
     public float health = 100f;
     private Rigidbody2D rb;
     public Animator animator;
+
+    public Slider healthBar;
+    public Slider staminaBar;
 
     private float currentMovementSpeed = 4.0f;
     private float defaultMovementSpeed = 4.0f;
@@ -117,6 +121,7 @@ public class PlayerController : MonoBehaviour
                 dashCounter = 0.0f;
             }
         }
+
     }
 
     void FixedUpdate()
@@ -165,6 +170,12 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, moveVertical,0);
         //rb.velocity = movement * speed;
         rb.MovePosition(transform.position + movement * speed * Time.deltaTime);
+
+        // Health Bar changes depending on HP.
+        healthBar.value = health;
+
+        // Stamima Bar changes depending on HP.
+        staminaBar.value = speed;
     }
 
     void LateUpdate()
