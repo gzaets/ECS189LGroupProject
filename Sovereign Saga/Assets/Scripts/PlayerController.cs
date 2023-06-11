@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement;
     private Vector2 mouseLocation;
     private WeaponController weaponController;
+    private MagicController magicController;
     private Ghost ghostFX; 
 
     private float prevXPos;
@@ -56,6 +57,7 @@ public class PlayerController : MonoBehaviour
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
         weaponController = GetComponentInChildren<WeaponController>();
+        magicController = GetComponentInChildren<MagicController>();
         animator = GetComponentInChildren<Animator>();
         ghostFX = GetComponent<Ghost>();
         inCombat = false;
@@ -84,6 +86,7 @@ public class PlayerController : MonoBehaviour
         mouseLocation = GetMousePosition();
         Debug.Log(mouseLocation);
         weaponController.setPointerPosition(mouseLocation);
+        magicController.setPointerPosition(mouseLocation);
         
         // Attacking
         if (Input.GetButton("Fire1"))
