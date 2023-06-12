@@ -62,6 +62,8 @@ public class PlayerController : MonoBehaviour
 
     public static int incomeGenerationRate = 0;
 
+    private float updateMoney = 0.0f;
+
     [SerializeField]
     private int currentPassiveIncome = 0;
 
@@ -170,8 +172,13 @@ public class PlayerController : MonoBehaviour
                 dashCounter = 0.0f;
             }
         }
-
-        moneyUI.text = "$" + money;
+        updateMoney += Time.deltaTime;
+        if(updateMoney >= 1.0f)
+        {
+            money += incomeGenerationRate;
+            moneyUI.text = "$" + money;
+            updateMoney = 0.0f;
+        }
 
         if (health <= 0)
         {
@@ -240,7 +247,7 @@ public class PlayerController : MonoBehaviour
         // Stamima Bar changes depending on currentMovementSpeed.
         staminaUI.value = currentMovementSpeed;
 
-        moneyUI.text = "$" + money;
+        //moneyUI.text = "$" + money;
 
         if (isDead) gameOverUI.SetActive(true);
     }
