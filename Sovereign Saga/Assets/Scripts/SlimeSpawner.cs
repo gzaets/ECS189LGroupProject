@@ -3,13 +3,14 @@ using System.Collections;
 
 public class SlimeSpawner : MonoBehaviour
 {
-    // The slime prefabs to spawn
     [SerializeField]
     private GameObject[] slimePrefabs;
 
+    [SerializeField]
+    public PlayerController player; // Reference to the player status script
+
     private void Start()
     {
-        // Start the SpawnSlime coroutine
         StartCoroutine(SpawnSlime());
     }
 
@@ -17,17 +18,18 @@ public class SlimeSpawner : MonoBehaviour
     {
         while (true)
         {
-            // Select a random prefab
-            GameObject selectedPrefab = slimePrefabs[Random.Range(0, slimePrefabs.Length)];
-            
-            // Instantiate a new slime at the spawner's location
-            GameObject newSlime = Instantiate(selectedPrefab, transform.position, Quaternion.identity);
-
-            // Assuming that the slime prefab has a SlimeController component attached to it
-            SlimeController slimeController = newSlime.GetComponent<SlimeController>();
-
-            // Wait for 10 seconds before the next iteration
-            yield return new WaitForSeconds(5);
+            // Check if player is in cave or in combat
+            if (player.GetInCave())
+            {
+                GameObject selectedPrefab = slimePrefabs[Random.Range(0, slimePrefabs.Length)];
+                GameObject newSlime = Instantiate(selectedPrefab, transform.position, Quaternion.identity);
+                SlimeController slimeController = newSlime.GetComponent<SlimeController>();
+                yield return new WaitForSeconds(5);
+            }
+            else
+            {
+                yield return null;
+            }
         }
     }
 }

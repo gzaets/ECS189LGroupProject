@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
 
     // Combat variable
     private bool inCombat;
+    private bool inCave;
     private bool canFireball;
     private bool canTornado;
     private bool canSuck;
@@ -366,8 +367,31 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+    }
 
-        
+    public void Heal(int heal)
+    {
+        health += heal;
+    }
+
+    public void IncreaseStamina(int stamina)
+    {
+        currentMovementSpeed += stamina;
+    }
+
+    public void IncreaseStrength(int strength)
+    {
+        this.strength += strength;
+    }
+
+    public void IncreaseIntelligence(int intelligence)
+    {
+        this.intelligence += intelligence;
+    }
+
+    public bool GetInCave()
+    {
+        return inCave;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -376,7 +400,13 @@ public class PlayerController : MonoBehaviour
         if(cave != null)
         {
             inCombat = !inCombat;
+            inCave = !inCave;
             transform.position = cave.exitPoint;
+        }
+        else if(cave == null)
+        {
+            inCombat = false;
+            inCave = false;
         }
         if(collision.collider.name == "Water_Right")
         {
