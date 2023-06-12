@@ -55,9 +55,6 @@ public class SlimeController : MonoBehaviour
                 health = 15;
                 coinReward = 30;
                 break;
-            default:
-                Debug.LogError("Unknown slime type: " + gameObject.name);
-                break;
         }
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
