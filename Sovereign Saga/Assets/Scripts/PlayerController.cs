@@ -19,7 +19,11 @@ public class PlayerController : MonoBehaviour
     private float defaultMovementSpeed = 4.0f;
 
     // Combat variable
-    public bool inCombat { get; set; }
+    private bool inCombat;
+    private bool canFireball;
+    private bool canTornado;
+    private bool canSuck;
+    private bool canRock;
     
     // Dashing Variables
     private float dashSpeed = 8.0f;
@@ -70,7 +74,15 @@ public class PlayerController : MonoBehaviour
         magicController = GetComponentInChildren<MagicController>();
         animator = GetComponentInChildren<Animator>();
         ghostFX = GetComponent<Ghost>();
+        
+        // IMPORTANT NEED TO SET THIS WHEN IN DUNGEON!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! we do not have this yet
         inCombat = false;
+
+        // Player initially cannot use magic until learned so false.
+        canFireball = false;
+        canTornado = false;
+        canSuck = false;
+        canRock = false;
 
         // Set it so the player faces down at the beginning of the game. 
         animator.SetFloat("Horizontal", 0);
@@ -101,8 +113,8 @@ public class PlayerController : MonoBehaviour
         weaponController.setPointerPosition(mouseLocation);
         magicController.setPointerPosition(mouseLocation);
         
-        // Only accept inputs if we are alive. 
-        if (!isDead)
+        // Only accept inputs if we are alive AND in combat (George, please set this when you are done with dungeon).
+        if (!isDead && inCombat)
         {
             // Attacking
             if (Input.GetButton("Fire1"))
@@ -118,10 +130,25 @@ public class PlayerController : MonoBehaviour
                 currentMovementSpeed = dashSpeed;
             }
 
-            // Magic Testing
-            if (Input.GetButton("Fire2"))
+            // Magic
+            if (Input.GetKeyDown(KeyCode.Z) && canFireball)
             {
                 magicController.Execute("Fireball");
+            }
+
+            if (Input.GetKeyDown(KeyCode.X) && canRock)
+            {
+                magicController.Execute("Rock");
+            }
+
+            if (Input.GetKeyDown(KeyCode.C) && canTornado)
+            {
+                magicController.Execute("Tornado");
+            }
+
+            if (Input.GetKeyDown(KeyCode.Q) && canSuck)
+            {
+                magicController.Execute("Suck");
             }
         }
 
@@ -360,6 +387,25 @@ public class PlayerController : MonoBehaviour
     public void AddIncome(int reward)
     {
         // Need to add a variable that keeps track of current money. 
+    }
+
+    public void BoughtMagic(string magictyp)
+    {
+        switch (magictyp)
+        {
+            case "Fireball":
+                canFireball = true;
+                break;
+            case "Suck":
+                canSuck = true;
+                break;
+            case "Tornado":
+                canTornado = true;
+                break;
+            case "Rock":
+                canRock = true;
+                break;
+        }
     }
 
 }

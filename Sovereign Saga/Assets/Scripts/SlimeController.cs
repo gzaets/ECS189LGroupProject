@@ -143,6 +143,14 @@ public class SlimeController : MonoBehaviour
                 TakeDamage(damage);
                 Destroy(gb);
                 break;
+            case "Sword":
+                // Hardcoded damage for now not balanced?
+                TakeDamage(12);
+                break;
+            case "Tornado":
+                damage = gb.GetComponent<Tornado>().GetDamage();
+                TakeDamage(damage);
+                break;
             default:
                 // Do literally nothing.
                 break;
