@@ -126,6 +126,7 @@ public class SlimeController : MonoBehaviour
     {
         Debug.Log("here??dfgdfg");
         GameObject gb = collision.gameObject;
+        Debug.Log(gb.tag);
         switch (gb.tag)
         {
             case "Suck":
