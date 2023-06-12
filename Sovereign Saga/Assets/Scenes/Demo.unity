@@ -16831,7 +16831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &525141355
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26419,6 +26419,7 @@ MonoBehaviour:
   healthUI: {fileID: 1794443515}
   staminaUI: {fileID: 736161182}
   moneyUI: {fileID: 2071804893}
+  gameOverUI: {fileID: 0}
   currentPassiveIncome: 0
 --- !u!50 &832857802
 Rigidbody2D:
@@ -27722,7 +27723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &871078157
 RectTransform:
   m_ObjectHideFlags: 0

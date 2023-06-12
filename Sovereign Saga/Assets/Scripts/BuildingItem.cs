@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class BuildingItem : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class BuildingItem : MonoBehaviour
 
     [SerializeField]
     private GameObject buildingPurchaseUI;
+    //public TextMeshProUGUI buildingPurchaseText;
 
     [SerializeField]
     private Button purchaseYesButton;
@@ -36,6 +38,10 @@ public class BuildingItem : MonoBehaviour
     {
         // Formula to calculate how much building produces in correlation to cost of building (Can change later)
         buildingProductionRate = buildingCost / 1000;
+        
+
+        TextMeshProUGUI buildingPurchaseText = buildingPurchaseUI.GetComponentInChildren<TextMeshProUGUI>();
+        buildingPurchaseText.text = "Do you want to purchase this building for $" + buildingCost;
     }
 
     // Update is called once per frame
