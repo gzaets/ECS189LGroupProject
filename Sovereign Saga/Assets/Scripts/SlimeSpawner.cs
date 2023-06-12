@@ -7,19 +7,23 @@ public class SlimeSpawner : MonoBehaviour
     private GameObject[] slimePrefabs;
 
     [SerializeField]
-    public PlayerController player; // Reference to the player status script
+    private GameObject Hero;
 
+    private float playerX;
+    
     private void Start()
     {
         StartCoroutine(SpawnSlime());
+        playerX = Hero.transform.position.x;
     }
 
     private IEnumerator SpawnSlime()
     {
         while (true)
         {
+            playerX = Hero.transform.position.x;
             // Check if player is in cave or in combat
-            if (player.GetInCave())
+            if (playerX < -59f)
             {
                 GameObject selectedPrefab = slimePrefabs[Random.Range(0, slimePrefabs.Length)];
                 GameObject newSlime = Instantiate(selectedPrefab, transform.position, Quaternion.identity);
