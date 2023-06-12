@@ -331,6 +331,7 @@ public class PlayerController : MonoBehaviour
         Cave cave = collision.collider.GetComponent<Cave>();
         if(cave != null)
         {
+            inCombat = !inCombat;
             transform.position = cave.exitPoint;
         }
         if(collision.collider.name == "Water_Right")

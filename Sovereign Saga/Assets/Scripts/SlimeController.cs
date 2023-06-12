@@ -124,6 +124,7 @@ public class SlimeController : MonoBehaviour
     // This checks for collision with the collider but does not simulate the physics and pushback. 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("here??dfgdfg");
         GameObject gb = collision.gameObject;
         switch (gb.tag)
         {
@@ -137,6 +138,7 @@ public class SlimeController : MonoBehaviour
                 break;
             case "Fireball":
                 damage = gb.GetComponent<Fireball>().GetDamage();
+                Debug.Log(damage);
                 TakeDamage(damage);
                 Destroy(gb);
                 break;
