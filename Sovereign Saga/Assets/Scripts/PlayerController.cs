@@ -266,7 +266,8 @@ public class PlayerController : MonoBehaviour
 
         // Stamima Bar changes depending on currentMovementSpeed.
         staminaUI.value = currentMovementSpeed;
-
+        intelligence = numBuildingsPurchased <= 0 ? 0 : numBuildingsPurchased - 1;
+        strength = 1 + (canSuck ? 1 : 0) + (canTornado ? 1 : 0) + (canFireball ? 1 : 0) + (canRock ? 1 : 0);
         //moneyUI.text = "$" + money;
         // Strength value changes depending on strength variable.
         strengthUI.text = strength.ToString();
