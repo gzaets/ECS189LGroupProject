@@ -405,7 +405,7 @@ public class PlayerController : MonoBehaviour
         }
         else if(cave == null)
         {
-            inCombat = false;
+            //inCombat = false;
             inCave = false;
         }
         if(collision.collider.name == "Water_Right")
