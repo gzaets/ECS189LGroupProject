@@ -32,6 +32,9 @@ public class MagicNPC : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        purchaseNoButton.onClick.RemoveAllListeners();
+        purchaseYesButton.onClick.RemoveAllListeners();
+        
         if(gameObject.name == "Suck_Prefab") type = "Suck";
         else if(gameObject.name == "Tornado_Prefab") type = "Tornado";
         else if(gameObject.name == "Fireball_Prefab") type = "Fireball";

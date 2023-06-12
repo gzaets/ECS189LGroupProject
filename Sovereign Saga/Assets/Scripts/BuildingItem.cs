@@ -88,8 +88,12 @@ public class BuildingItem : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //buildingPurchaseUI = Object.Instantiate(buildingPurchaseUI, buildingPurchaseUI.transform.position, Quaternion.identity);
         TextMeshProUGUI buildingPurchaseText = buildingPurchaseUI.GetComponentInChildren<TextMeshProUGUI>();
         buildingPurchaseText.text = "Do you want to purchase this building for $" + buildingCost;
+
+        purchaseNoButton.onClick.RemoveAllListeners();
+        purchaseYesButton.onClick.RemoveAllListeners();
         //Debug.Log(gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
