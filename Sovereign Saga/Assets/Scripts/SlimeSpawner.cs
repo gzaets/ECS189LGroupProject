@@ -27,7 +27,7 @@ public class SlimeSpawner : MonoBehaviour
             SlimeController slimeController = newSlime.GetComponent<SlimeController>();
 
             // Wait for 10 seconds before the next iteration
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(10);
         }
     }
 }

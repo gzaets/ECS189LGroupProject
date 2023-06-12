@@ -18,8 +18,8 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI strengthUI;
     public TextMeshProUGUI intelligenceUI;
 
-    public float strength = 1f;
-    public float intelligence = 1f;
+    public float strength = 0f;
+    public float intelligence = 0f;
 
     private float currentMovementSpeed = 4.0f;
     private float defaultMovementSpeed = 4.0f;
