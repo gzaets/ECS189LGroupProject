@@ -9,15 +9,32 @@ public class BackgroundMusicManager : MonoBehaviour
     public AudioClip snowMusic;
     public AudioClip dungeonMusic;
 
-    private AudioSource audioSource;
+    public AudioClip forestFootSound;
+    public AudioClip hillsFootSound;
+    public AudioClip snowFootSound;
+    public AudioClip dungeonFootSound;
 
-    public float volume = 0.65f; // Adjust the volume level here
+    private AudioSource audioMusicSource;
+    private AudioSource audioStepSource;
+
+    public float volumeMusic = 1f; // Adjust the volume level here
+    public float volumeStep = 1f; // Adjust the volume level here
+
+    // Add a variable to track the player's last position
+    private Vector3 lastPosition;
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.volume = volume; // Set the initial volume
-        audioSource.loop = true; // Enable looping
+        audioMusicSource = gameObject.AddComponent<AudioSource>();
+        audioMusicSource.volume = volumeMusic; // Set the initial volume
+        audioMusicSource.loop = true; // Enable looping
+
+        audioStepSource = gameObject.AddComponent<AudioSource>();
+        audioStepSource.volume = volumeStep; // Set the initial volume
+        audioStepSource.loop = false; // Disable looping
+
+        // Initialize lastPosition at Start to the current player's position
+        lastPosition = transform.position;
     }
 
     private void Update()
@@ -25,29 +42,50 @@ public class BackgroundMusicManager : MonoBehaviour
         float playerX = transform.position.x;
         float playerY = transform.position.y;
 
-        if (playerX > 25f && playerY < 32.4f)
+        // Check if the player has moved since the last frame
+        if (transform.position != lastPosition)
         {
-            PlayBackgroundMusic(hillsMusic);
+            if (playerX > 25f && playerY < 32.4f)
+            {
+                PlayBackgroundMusic(hillsMusic);
+                PlayPlayerSound(hillsFootSound); 
+            }
+            else if (playerY > 32.4f && playerX > -59.2f)
+            {
+                PlayBackgroundMusic(snowMusic);
+                PlayPlayerSound(snowFootSound); 
+            }
+            else if (playerX > -59.2f && playerX < 25f)
+            {
+                PlayBackgroundMusic(forestMusic);
+                PlayPlayerSound(forestFootSound);
+            }
+            else
+            {
+                PlayBackgroundMusic(dungeonMusic);
+                PlayPlayerSound(dungeonFootSound);
+            }
         }
-        else if (playerY > 32.4f && playerX > -59.2f)
-        {
-            PlayBackgroundMusic(snowMusic);
-        }
-        else if (playerX > -59.2f && playerX< 25f)
-        {
-            PlayBackgroundMusic(forestMusic);
-        }
-        else
-        {
-            PlayBackgroundMusic(dungeonMusic);
-        }
+        
+        // Update lastPosition for the next frame
+        lastPosition = transform.position;
     }
 
     private void PlayBackgroundMusic(AudioClip clip)
     {
-        if (audioSource.clip == clip) return; // Don't play the same music again
+        if (audioMusicSource.clip == clip) return; // Don't play the same music again
 
-        audioSource.clip = clip;
-        audioSource.Play();
+        audioMusicSource.clip = clip;
+        audioMusicSource.Play();
+    }
+
+    private void PlayPlayerSound(AudioClip clip)
+    {
+        // The sound will play only if the clip is not null, and the AudioSource is not already playing another clip
+        if (clip != null && !audioStepSource.isPlaying)
+        {
+            audioStepSource.clip = clip;
+            audioStepSource.Play();
+        }
     }
 }
