@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 mouseLocation;
     private WeaponController weaponController;
     private MagicController magicController;
-    private Ghost ghostFX; 
+    public Ghost ghostFX; 
 
     private float prevXPos;
     private float prevYPos;
@@ -138,6 +138,7 @@ public class PlayerController : MonoBehaviour
                 canDash = false;
                 ghostFX.setGhost(true);
                 currentMovementSpeed = dashSpeed;
+                Debug.Log("hi");
             }
 
             // Magic
@@ -331,6 +332,22 @@ public class PlayerController : MonoBehaviour
                 transform.position = new Vector2(prevXPos, prevYPos);
             }
         }
+        /*
+        if (!canDash)
+        {   
+            dashCounter += Time.deltaTime;
+            if (dashCounter >= dashLength)
+            {
+                ghostFX.setGhost(false);
+                currentMovementSpeed = defaultMovementSpeed;
+            }
+
+            if (dashCounter >= dashCooldown)
+            {
+                canDash = true;
+                dashCounter = 0.0f;
+            }
+        }*/
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
     }
