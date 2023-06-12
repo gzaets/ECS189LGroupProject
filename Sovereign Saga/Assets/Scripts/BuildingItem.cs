@@ -103,6 +103,7 @@ public class BuildingItem : MonoBehaviour
                 buildingPurchaseUI.SetActive(true);
                 purchaseYesButton.onClick.AddListener(() => {
                     this.isPurchased = true;
+                    playerController.numBuildingsPurchased++;
                     buildingPurchaseUI.SetActive(false);
                 });
                 purchaseNoButton.onClick.AddListener(() => {

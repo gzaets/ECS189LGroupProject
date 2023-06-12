@@ -9,15 +9,22 @@ public class PlayerController : MonoBehaviour
     public float health = 100f;
     private Rigidbody2D rb;
     public Animator animator;
-    public float money = 1000000f;
-    
+    public float money = 1000000f;  
     public Slider healthUI;
     public Slider staminaUI;
     public TextMeshProUGUI moneyUI;
     public GameObject gameOverUI;
+    public GameObject winUI;
+    public TextMeshProUGUI strengthUI;
+    public TextMeshProUGUI intelligenceUI;
+
+    public float strength = 0f;
+    public float intelligence = 0f;
 
     private float currentMovementSpeed = 4.0f;
     private float defaultMovementSpeed = 4.0f;
+
+    public int numBuildingsPurchased = 0;
 
     // Combat variable
     private bool inCombat;
@@ -248,8 +255,17 @@ public class PlayerController : MonoBehaviour
         staminaUI.value = currentMovementSpeed;
 
         //moneyUI.text = "$" + money;
+        // Strength value changes depending on strength variable.
+        strengthUI.text = strength.ToString();
 
+        // Intelligence value changes depending on intelligence variable.
+        intelligenceUI.text = intelligence.ToString();
         if (isDead) gameOverUI.SetActive(true);
+
+        if(numBuildingsPurchased == 11)
+        {
+            winUI.SetActive(true);
+        }
     }
 
     void LateUpdate()
