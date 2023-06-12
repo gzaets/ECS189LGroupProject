@@ -39,7 +39,7 @@ public class BuildingItem : MonoBehaviour
     {
         // Formula to calculate how much building produces in correlation to cost of building (Can change later)
         buildingProductionRate = buildingCost / 1000;
-        
+        buildingCost = buildingCost;
 
         TextMeshProUGUI buildingPurchaseText = buildingPurchaseUI.GetComponentInChildren<TextMeshProUGUI>();
         buildingPurchaseText.text = "Do you want to purchase this building for $" + buildingCost;
@@ -88,6 +88,8 @@ public class BuildingItem : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        TextMeshProUGUI buildingPurchaseText = buildingPurchaseUI.GetComponentInChildren<TextMeshProUGUI>();
+        buildingPurchaseText.text = "Do you want to purchase this building for $" + buildingCost;
         //Debug.Log(gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
