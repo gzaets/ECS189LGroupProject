@@ -85,6 +85,7 @@ public class BuildingItem : MonoBehaviour
         //Debug.Log(gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
+            if(playerController.money - buildingCost >= 0) {
             if (this.isPurchased == false)
             {
                 buildingPurchaseUI.SetActive(true);
@@ -95,6 +96,7 @@ public class BuildingItem : MonoBehaviour
                 purchaseNoButton.onClick.AddListener(() => {
                     buildingPurchaseUI.SetActive(false);
                 });
+            }
             }
         }
     }
