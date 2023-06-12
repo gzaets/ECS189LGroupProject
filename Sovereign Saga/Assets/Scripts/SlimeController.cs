@@ -14,6 +14,7 @@ public class SlimeController : MonoBehaviour
 
     private float knockBackTime = 0.3f;
     private bool collided = false;
+    private bool weapon = false;
 
     private GameObject suckTarget;
 
@@ -93,8 +94,12 @@ public class SlimeController : MonoBehaviour
             {
                 knockBackTime = 0.3f;
                 collided = false;
+                weapon = false;
             }
-            transform.position = new Vector2(transform.position.x + 2 * collideSpeedX, transform.position.y + 2 * collideSpeedY);
+            else
+            {
+                transform.position = new Vector2(transform.position.x + 2 * collideSpeedX, transform.position.y + 2 * collideSpeedY);
+            }
         }
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
@@ -124,6 +129,8 @@ public class SlimeController : MonoBehaviour
     // This checks for collision with the collider but does not simulate the physics and pushback. 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        collided = true;
+        weapon = true;
         Debug.Log("here??dfgdfg");
         GameObject gb = collision.gameObject;
         Debug.Log(gb.tag);
