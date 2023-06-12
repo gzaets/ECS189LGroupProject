@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class BuildingItem : MonoBehaviour
 {
     // Stats of building, including cost and how much it is producing per second
-    private int buildingLvl = 10;
-    private bool upgradedBuilding = true;
+    private int buildingLvl = 0;
+    private bool upgradedBuilding = false;
 
     [SerializeField]
     private int buildingCost;
@@ -27,10 +28,22 @@ public class BuildingItem : MonoBehaviour
     private GameObject buildingPurchaseUI;
 
     [SerializeField]
+    private GameObject upgradeBuildingPurchaseUI;
+
+    [SerializeField]
     private Button purchaseYesButton;
 
     [SerializeField]
+    private Button purchaseUpgradeYesButton;
+
+    [SerializeField]
+    private Button purchaseUpgradeNoButton;
+
+    [SerializeField]
     private Button purchaseNoButton;
+
+    [SerializeField]
+    private TextMeshProUGUI text;
 
     void Start()
     {
@@ -65,7 +78,7 @@ public class BuildingItem : MonoBehaviour
                 // Subtract cost of building from player income
                 //playerController.SetCurrentIncome(playerController.GetCurrentIncome() - buildingCost);
 
-                PlayerController.incomeGenerationRate = PlayerController.incomeGenerationRate + (buildingProductionRate * buildingLvl);
+                PlayerController.incomeGenerationRate += buildingProductionRate;
                 //incomeUpdated = true;
                 upgradedBuilding = false;
                 //buildingLvl += 1;
@@ -84,11 +97,29 @@ public class BuildingItem : MonoBehaviour
                 buildingPurchaseUI.SetActive(true);
                 purchaseYesButton.onClick.AddListener(() => {
                     this.isPurchased = true;
+                    //upgradedBuilding = true;
                     buildingPurchaseUI.SetActive(false);
                 });
                 purchaseNoButton.onClick.AddListener(() => {
                     buildingPurchaseUI.SetActive(false);
                 });
+            }
+            else if (this.isPurchased == true)
+            {
+                if (buildingLvl >= 3)
+                {
+                   // text.text = "Building is Maxed Out\n";
+                }
+                upgradeBuildingPurchaseUI.SetActive(true);
+                purchaseUpgradeYesButton.onClick.AddListener(() => {
+                    buildingLvl++;
+                    upgradedBuilding = true;
+                    upgradeBuildingPurchaseUI.SetActive(false);
+                });
+                purchaseUpgradeNoButton.onClick.AddListener(() => {
+                    upgradeBuildingPurchaseUI.SetActive(false);
+                });
+
             }
         }
     }
