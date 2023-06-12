@@ -21,8 +21,8 @@ public class PlayerController : MonoBehaviour
     public float strength = 0f;
     public float intelligence = 0f;
 
-    private float currentMovementSpeed = 4.0f;
-    private float defaultMovementSpeed = 4.0f;
+    private float currentMovementSpeed = 6.0f;
+    private float defaultMovementSpeed = 6.0f;
 
     public int numBuildingsPurchased = 0;
 
@@ -192,6 +192,17 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isDead", true);
             isDead = true;
+        }
+
+        if(health < 70)
+        {
+            currentMovementSpeed = 5.0f;
+            defaultMovementSpeed = 5.0f;
+        }
+        if(health < 40)
+        {
+            currentMovementSpeed = 4.0f;
+            defaultMovementSpeed = 4.0f;
         }
     }
 
