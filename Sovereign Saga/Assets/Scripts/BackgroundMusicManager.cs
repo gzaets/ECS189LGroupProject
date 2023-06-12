@@ -11,7 +11,7 @@ public class BackgroundMusicManager : MonoBehaviour
 
     private AudioSource audioSource;
 
-    public float volume = 1f; // Adjust the volume level here
+    public float volume = 0.65f; // Adjust the volume level here
 
     private void Start()
     {
