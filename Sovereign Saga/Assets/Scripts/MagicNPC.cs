@@ -32,8 +32,10 @@ public class MagicNPC : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        purchaseNoButton.onClick.RemoveAllListeners();
-        purchaseYesButton.onClick.RemoveAllListeners();
+        Debug.Log("magic collision detected");
+
+        //purchaseNoButton.onClick.RemoveAllListeners();
+        //purchaseYesButton.onClick.RemoveAllListeners();
         
         if(gameObject.name == "Suck_Prefab") type = "Suck";
         else if(gameObject.name == "Tornado_Prefab") type = "Tornado";
@@ -43,8 +45,11 @@ public class MagicNPC : MonoBehaviour
         //Debug.Log(gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
+            Debug.Log("here");
             if (this.isPurchased == false)
             {
+                TextMeshProUGUI magicPurchaseText = magicPurchaseUI.GetComponentInChildren<TextMeshProUGUI>();
+                magicPurchaseText.text = "Do you want to purchase this magic for $100?";
                 magicPurchaseUI.SetActive(true);
                 purchaseYesButton.onClick.AddListener(() => {
                     // Needs to check if requirements met, if so then:
@@ -59,6 +64,8 @@ public class MagicNPC : MonoBehaviour
                 purchaseNoButton.onClick.AddListener(() => {
                     // Needs to be changed to magic purchase UI.
                     magicPurchaseUI.SetActive(false);
+                    purchaseYesButton.onClick.RemoveAllListeners();
+                    purchaseNoButton.onClick.RemoveAllListeners();
                 });
             }
         }
