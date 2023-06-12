@@ -133,6 +133,8 @@ public class MagicController : MonoBehaviour
 
         Vector3 offset = transform.position + new Vector3(0f, 0.25f, 0f);
         GameObject tornado = Instantiate(tornadoPrefab, offset, transform.rotation);
+        Rigidbody2D rb = tornado.GetComponent<Rigidbody2D>();
+        rb.velocity = new Vector2(aimDirection.x, aimDirection.y) * 7f;
     }
 
     private void Suck()
