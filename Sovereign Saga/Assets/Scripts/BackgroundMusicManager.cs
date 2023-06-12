@@ -20,6 +20,8 @@ public class BackgroundMusicManager : MonoBehaviour
     public float volumeMusic = 1f; // Adjust the volume level here
     public float volumeStep = 1f; // Adjust the volume level here
 
+    public float pitchStep = 2f;
+
     // Add a variable to track the player's last position
     private Vector3 lastPosition;
 
@@ -32,6 +34,7 @@ public class BackgroundMusicManager : MonoBehaviour
         audioStepSource = gameObject.AddComponent<AudioSource>();
         audioStepSource.volume = volumeStep; // Set the initial volume
         audioStepSource.loop = false; // Disable looping
+        audioStepSource.pitch = pitchStep; // Set the pitch to 2
 
         // Initialize lastPosition at Start to the current player's position
         lastPosition = transform.position;
