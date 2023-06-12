@@ -9,10 +9,14 @@ public class PlayerController : MonoBehaviour
     public float health = 100f;
     private Rigidbody2D rb;
     public Animator animator;
+    public float strength = 0f;
+    public float intelligence = 0f;
     public float money = 0f;
     
     public Slider healthUI;
     public Slider staminaUI;
+    public TextMeshProUGUI strengthUI;
+    public TextMeshProUGUI intelligenceUI;
     public TextMeshProUGUI moneyUI;
     public GameObject gameOverUI;
 
@@ -212,8 +216,16 @@ public class PlayerController : MonoBehaviour
         // Stamima Bar changes depending on currentMovementSpeed.
         staminaUI.value = currentMovementSpeed;
 
+        // Strength value changes depending on strength variable.
+        strengthUI.text = strength.ToString();
+
+        // Intelligence value changes depending on intelligence variable.
+        intelligenceUI.text = intelligence.ToString();
+
+        // Money value changes depending on money variable.
         moneyUI.text = "$" + money;
 
+        // If player is dead, the game over UI appears.
         if (isDead) gameOverUI.SetActive(true);
     }
 
