@@ -21,12 +21,14 @@ public class SlimeController : MonoBehaviour
     [SerializeField]
     private GameObject Hero;
 
-
     private float prevXPos;
     private float prevYPos;
 
+    private float playerX;
+
     private float collideSpeedX;
     private float collideSpeedY;
+
     void Start()
     {
         // No existing suck on spawn. 
@@ -59,50 +61,56 @@ public class SlimeController : MonoBehaviour
         }
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
+        playerX = Hero.transform.position.x;
     }
 
     void Update()
     {
-        // Move towards the player
-        if(collided == false)
+        playerX = Hero.transform.position.x;
+        // Only move the slime if the player is in the cave
+        if (playerX < -59f)
         {
-        //Vector2 targetPosition = target.position;
-        Vector2 targetPosition = Hero.transform.position;
-        if (suckTarget != null)
-        {
-            targetPosition = suckTarget.transform.position;
-        }
-        transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
-        
-        // Flip the sprite based on the direction of movement
-        if (targetPosition.x > transform.position.x)
-        {
-            // Target is to the right of the slime, so slime should face right
-            spriteRenderer.flipX = false;
-        }
-        else if (targetPosition.x < transform.position.x)
-        {
-            // Target is to the left of the slime, so slime should face left
-            spriteRenderer.flipX = true;
-        }
-        }
-        if(collided)
-        {
-            //Debug.Log("Getting here???SDGFdfg");
-            knockBackTime -= Time.deltaTime;
-            if(knockBackTime <= 0.0f)
+            // Move towards the player
+            if(collided == false)
             {
-                knockBackTime = 0.3f;
-                collided = false;
-                weapon = false;
-            }
-            else
+            //Vector2 targetPosition = target.position;
+            Vector2 targetPosition = Hero.transform.position;
+            if (suckTarget != null)
             {
-                transform.position = new Vector2(transform.position.x + 2 * collideSpeedX, transform.position.y + 2 * collideSpeedY);
+                targetPosition = suckTarget.transform.position;
             }
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+            
+            // Flip the sprite based on the direction of movement
+            if (targetPosition.x > transform.position.x)
+            {
+                // Target is to the right of the slime, so slime should face right
+                spriteRenderer.flipX = false;
+            }
+            else if (targetPosition.x < transform.position.x)
+            {
+                // Target is to the left of the slime, so slime should face left
+                spriteRenderer.flipX = true;
+            }
+            }
+            if(collided)
+            {
+                //Debug.Log("Getting here???SDGFdfg");
+                knockBackTime -= Time.deltaTime;
+                if(knockBackTime <= 0.0f)
+                {
+                    knockBackTime = 0.3f;
+                    collided = false;
+                    weapon = false;
+                }
+                else
+                {
+                    transform.position = new Vector2(transform.position.x + 2 * collideSpeedX, transform.position.y + 2 * collideSpeedY);
+                }
+            }
+            prevXPos = transform.position.x;
+            prevYPos = transform.position.y;
         }
-        prevXPos = transform.position.x;
-        prevYPos = transform.position.y;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
