@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public Slider healthUI;
     public Slider staminaUI;
     public TextMeshProUGUI moneyUI;
+    public GameObject gameOverUI;
 
     private float currentMovementSpeed = 4.0f;
     private float defaultMovementSpeed = 4.0f;
@@ -240,6 +241,8 @@ public class PlayerController : MonoBehaviour
         staminaUI.value = currentMovementSpeed;
 
         moneyUI.text = "$" + money;
+
+        if (isDead) gameOverUI.SetActive(true);
     }
 
     void LateUpdate()
