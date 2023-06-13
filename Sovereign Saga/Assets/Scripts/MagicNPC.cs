@@ -49,7 +49,7 @@ public class MagicNPC : MonoBehaviour
             if (this.isPurchased == false)
             {
                 TextMeshProUGUI magicPurchaseText = magicPurchaseUI.GetComponentInChildren<TextMeshProUGUI>();
-                magicPurchaseText.text = "Do you want to purchase this magic for $100?";
+                magicPurchaseText.text = "Do you want to purchase this magic for $10,000?";
                 magicPurchaseUI.SetActive(true);
                 purchaseYesButton.onClick.AddListener(() => {
                     // Needs to check if requirements met, if so then:
@@ -57,7 +57,7 @@ public class MagicNPC : MonoBehaviour
                     this.isPurchased = true;
                     // Needs to be changed to magic purchase UI.
                     magicPurchaseUI.SetActive(false);
-                    playerController.money = playerController.money - 100;
+                    playerController.money = playerController.money - 10000;
                     playerIncomeUpdated = true;
                     Destroy(gameObject);
                 });
