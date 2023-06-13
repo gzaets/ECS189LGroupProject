@@ -44,6 +44,9 @@ public class BuildingItem : MonoBehaviour
     [SerializeField]
     private Button purchaseUpgradeNoButton;
 
+    [SerializeField]
+    private AudioSource purchaseBuildingSoundEffect;
+
     void Start()
     {
         // Formula to calculate how much building produces in correlation to cost of building (Can change later)
@@ -114,6 +117,8 @@ public class BuildingItem : MonoBehaviour
                     this.isPurchased = true;
                     //Debug.Log("just pruchased\n");
                     playerController.numBuildingsPurchased++;
+                    StartCoroutine(playSound());
+                    //purchaseBuildingSoundEffect.Play();
                     buildingPurchaseUI.SetActive(false);
                 });
                 purchaseNoButton.onClick.AddListener(() => {
@@ -127,6 +132,7 @@ public class BuildingItem : MonoBehaviour
                 purchaseUpgradeYesButton.onClick.AddListener(() => {
                     buildingLvl++;
                     upgradedBuilding = true;
+                    StartCoroutine(playSound());
                     upgradeBuildingPurchaseUI.SetActive(false);
                 });
                 purchaseUpgradeNoButton.onClick.AddListener(() => {
@@ -136,4 +142,11 @@ public class BuildingItem : MonoBehaviour
             }
         }
     }
+
+    IEnumerator playSound()
+     {
+        purchaseBuildingSoundEffect.Play();
+        yield return new WaitForSeconds(purchaseBuildingSoundEffect.clip.length);
+        purchaseBuildingSoundEffect.Play();
+     }
 }
