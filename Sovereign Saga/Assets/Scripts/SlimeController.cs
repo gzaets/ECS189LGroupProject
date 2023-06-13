@@ -38,6 +38,38 @@ public class SlimeController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         
         // Depending on the slime type, set the damage, health and coinReward values
+        Debug.Log(gameObject.name);
+        if(gameObject.name == "Green Slime" || gameObject.name == "Green Slime(Clone)")
+        {
+            speed = 3f;
+            damage = 20;
+            health = 20;
+            coinReward = 50000;
+        }
+        if(gameObject.name == "Blue Slime" || gameObject.name == "Blue Slime(Clone)")
+        {
+            speed = 4f;
+            damage = 10;
+            health = 10;
+            coinReward = 40000;
+        }
+        if(gameObject.name == "Red Slime" || gameObject.name == "Red Slime(Clone)")
+        {
+            speed = 5f;
+            damage = 20;
+            health = 15;
+            coinReward = 60000;
+        }
+        /*
+        else
+        {
+            speed = 1f;
+            damage = 20;
+            health = 15;
+            coinReward = 30;
+        }
+        */
+        /*
         switch (gameObject.name)
         {
             case "Green Slime":
@@ -58,7 +90,7 @@ public class SlimeController : MonoBehaviour
                 health = 15;
                 coinReward = 30;
                 break;
-        }
+        }*/
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
         playerX = Hero.transform.position.x;
