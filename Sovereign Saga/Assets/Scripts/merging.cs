@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,7 +9,6 @@ public class BuildingItem : MonoBehaviour
     // Stats of building, including cost and how much it is producing per second
     private int buildingLvl = 0;
     private bool upgradedBuilding = false;
-    private bool playerIncomeUpdated = false;
 
     [SerializeField]
     private int buildingCost;
@@ -27,7 +26,6 @@ public class BuildingItem : MonoBehaviour
 
     [SerializeField]
     private GameObject buildingPurchaseUI;
-    //public TextMeshProUGUI buildingPurchaseText;
 
     [SerializeField]
     private GameObject upgradeBuildingPurchaseUI;
@@ -36,22 +34,21 @@ public class BuildingItem : MonoBehaviour
     private Button purchaseYesButton;
 
     [SerializeField]
-    private Button purchaseNoButton;
-
-    [SerializeField]
     private Button purchaseUpgradeYesButton;
 
     [SerializeField]
     private Button purchaseUpgradeNoButton;
 
+    [SerializeField]
+    private Button purchaseNoButton;
+
+    [SerializeField]
+    private TextMeshProUGUI text;
+
     void Start()
     {
         // Formula to calculate how much building produces in correlation to cost of building (Can change later)
         buildingProductionRate = buildingCost / 1000;
-        buildingCost = buildingCost;
-
-        TextMeshProUGUI buildingPurchaseText = buildingPurchaseUI.GetComponentInChildren<TextMeshProUGUI>();
-        buildingPurchaseText.text = "Do you want to purchase this building for $" + buildingCost;
     }
 
     // Update is called once per frame
@@ -86,34 +83,21 @@ public class BuildingItem : MonoBehaviour
                 upgradedBuilding = false;
                 //buildingLvl += 1;
         }
-        if(isPurchased && !playerIncomeUpdated)
-        {
-            playerController.money = playerController.money - buildingCost;
-            playerIncomeUpdated = true;
-        }
+
 
 
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //buildingPurchaseUI = Object.Instantiate(buildingPurchaseUI, buildingPurchaseUI.transform.position, Quaternion.identity);
-        TextMeshProUGUI buildingPurchaseText = buildingPurchaseUI.GetComponentInChildren<TextMeshProUGUI>();
-        buildingPurchaseText.text = "Do you want to purchase this building for $" + buildingCost;
-
-        purchaseNoButton.onClick.RemoveAllListeners();
-        purchaseYesButton.onClick.RemoveAllListeners();
-        //Debug.Log(gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
-            if(playerController.money - buildingCost >= 0) {
             if (this.isPurchased == false)
             {
                 buildingPurchaseUI.SetActive(true);
                 purchaseYesButton.onClick.AddListener(() => {
                     this.isPurchased = true;
-                    //Debug.Log("just pruchased\n");
-                    playerController.numBuildingsPurchased++;
+                    //upgradedBuilding = true;
                     buildingPurchaseUI.SetActive(false);
                 });
                 purchaseNoButton.onClick.AddListener(() => {
@@ -122,7 +106,10 @@ public class BuildingItem : MonoBehaviour
             }
             else if (this.isPurchased == true)
             {
-
+                if (buildingLvl >= 3)
+                {
+                   // text.text = "Building is Maxed Out\n";
+                }
                 upgradeBuildingPurchaseUI.SetActive(true);
                 purchaseUpgradeYesButton.onClick.AddListener(() => {
                     buildingLvl++;
@@ -132,8 +119,8 @@ public class BuildingItem : MonoBehaviour
                 purchaseUpgradeNoButton.onClick.AddListener(() => {
                     upgradeBuildingPurchaseUI.SetActive(false);
                 });
-            }
+
             }
         }
     }
-}
+}*/
