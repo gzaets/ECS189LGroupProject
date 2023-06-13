@@ -19,21 +19,18 @@ public class SlimeSpawner : MonoBehaviour
 
     private IEnumerator SpawnSlime()
     {
-        while (true)
+        playerX = Hero.transform.position.x;
+        // Check if player is in cave or in combat
+        if (playerX < -59f)
         {
-            playerX = Hero.transform.position.x;
-            // Check if player is in cave or in combat
-            if (playerX < -59f)
-            {
-                GameObject selectedPrefab = slimePrefabs[Random.Range(0, slimePrefabs.Length)];
-                GameObject newSlime = Instantiate(selectedPrefab, transform.position, Quaternion.identity);
-                SlimeController slimeController = newSlime.GetComponent<SlimeController>();
-                yield return new WaitForSeconds(5);
-            }
-            else
-            {
-                yield return null;
-            }
+            GameObject selectedPrefab = slimePrefabs[Random.Range(0, slimePrefabs.Length)];
+            GameObject newSlime = Instantiate(selectedPrefab, transform.position, Quaternion.identity);
+            SlimeController slimeController = newSlime.GetComponent<SlimeController>();
+            yield return new WaitForSeconds(5);
+        }
+        else
+        {
+            yield return null;
         }
     }
 }
