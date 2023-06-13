@@ -63,8 +63,10 @@ public class WeaponController : MonoBehaviour
         }
         animator.SetTrigger("Attack");
         swingSoundEffect.Play();
+
         //IF THE ATTACK MISSES
-        swingMissSoundEffect.Play();
+        //swingMissSoundEffect.Play();
+
         attackDebounce = true;
     }
 
