@@ -28,7 +28,7 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 **Describe the steps you took in your role as producer. Typical items include group scheduling mechanism, links to meeting notes, descriptions of team logistics problems with their resolution, project organization tools (e.g., timelines, depedency/task tracking, Gantt charts, etc.), and repository management methodology.**
 
-## User Interface (Mohamed Ali Boutaleb)
+## User Interface (Mohamed Ali Boutaleb @mohalibou)
 
 *Player Stat Display* - On the top left of the screen, I implemented a UI panel that shows the player's stats. This includes health, stamina, intelligence, strength, and money. This information is critical for players as they navigate the island, strategize their growth, and make decisions on resource allocation and skill upgrades. [Image of the UI element.](https://imgur.com/a/l4uHYS5) [Code for the implementation.](example.com)
 
