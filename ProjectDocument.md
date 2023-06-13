@@ -46,7 +46,13 @@ Physics were primarily implemented by attaching Collider and Rigidbody component
 
 Another aspect of physics which I incorporated was knockback with regards to collision with slime objects. My approach here basically involved setting a knockback animation time, which I calibrated to be about a third of a second. During that third of a second, if a collision occurred, and depending on how forceful the collision is, the slime would move back at some multiple of the collision speed. In our testing, it was a decent and smooth implementation. It may not be absolutely perfect by all standards, but I am decently satisfied with the result.
 
-Additionally, I utilized the base code that was used to implement building purchases (which was done by other teammates, including @payday2021) to implement magic combat ability purchases. This was a relatively trivial implementation that involved creating a script to display the appropriate purchasing UI upon colliding with an NPC in the overworld. After a purchase has occurred with the NPC, then I use the Destroy function to remove the object.
+Regarding collisions with cliffs, I had challenges figuring out how to implement this with Unity without defacing a beautiful map design. The strategy I decided to go with was duplicating the design with another attachment, then setting the layer to be a very low number so that the layer would not be seen during gameplay (i.e. layer -99). I then attached a tilemap collider to that component and removed the appropriate tiles from that layer as necessary. If this was not done, this would cause the player to be unable to traverse through significant portions of the map. I did investigate working with Edge Colliders, but I was unable to figure out how to get those working.
+
+The following are not directly related to physics but were implemented by @j-p-ecs:
+
+I utilized the base code that was used to implement building purchases (which was done by other teammates, including @payday2021) to implement magic combat ability purchases. This was a relatively trivial implementation that involved creating a script to display the appropriate purchasing UI upon colliding with an NPC in the overworld. After a purchase has occurred with the NPC, then I use the Destroy function to remove the object.
+
+I also created the game over screen, which uses the template created by @mohalibou for the title screen. The game over screen is equipped with the proper transitions. In addition, when a game over has occurred, I made sure to disable character movement. As a result, pressing up, down, left, or right will result in no changes to the player position.
 
 ## Animation and Visuals
 
@@ -86,13 +92,13 @@ During gameplay testing, I discovered many issues that needed improvement. When 
 
 During testing, I also noticed a flaw with hitboxes that prevented the player from crossing over a bridge that was one tile wide. I fixed this by adjusting the size of the player hitbox, which enabled the player to cross over all bridges effortlessly. Furthermore, testing also allowed me to discover some issues with relation to bush and tree placement which caused traversing the map in some areas to be more complicated than we intended. This was fixed by removing some items from the map with consultation from @gzaets.
 
-Regarding collisions with cliffs, I had challenges figuring out how to implement this with Unity without defacing a beautiful map design. The strategy I decided to go with was duplicating the design with another attachment, then setting the layer to be a very low number so that the layer would not be seen during gameplay (i.e. layer -99). I then attached a tilemap collider to that component and removed the appropriate tiles from that layer as necessary. If this was not done, this would cause the player to be unable to traverse through significant portions of the map. I did investigate working with Edge Colliders, but I was unable to figure out how to get those working.
-
 Part of my tasks also involved porting our logic from a Demo unity scene we were experimenting with to the actual game. Due to lack of availability from other team members, I had to figure out how they implemented the UI logic as well as their logic for purchasing buildings, and after that was figured out, I was able to port it to our actual game. This was an unfortunate event, which happened in part because of merging conflicts.
 
 Some glitches I also found during testing included being able to purchase buildings more than once. I fixed this by ensuring that building item scripts were not unnecessarily attached to certain objects. Furthermore, testing also allowed me to uncover a glitch where some parts of the map were unable to be traversed.
 
 Another less trivial bug that I discovered during testing was a glitch that enabled forgoing the purchase of one building, then walking to another building and choosing to purchase that, and both buildings would end up being purchased. I relayed the issue to other members of the team, who realized that by removing all event listeners before doing anything else when a collision occurs, the problem can be fixed.
+
+I also discovered a bug that was preventing damage from affecting certain slime objects. Upon further investigation, I realized that original slime objects and slime object clones have different gameObject names. One just has the ordinary name, while another has the name with Clone appended to the end. By checking for both of these, I was able to resolve a bug where players would otherwise be tediously trying to use a sword against slime enemies with no effect.
 
 
 ## Narrative Design
