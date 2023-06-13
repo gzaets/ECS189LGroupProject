@@ -478,7 +478,7 @@ public class PlayerController : MonoBehaviour
 
     public void AddIncome(int reward)
     {
-        // Need to add a variable that keeps track of current money. 
+        money += reward;
     }
 
     public void BoughtMagic(string magictyp)
