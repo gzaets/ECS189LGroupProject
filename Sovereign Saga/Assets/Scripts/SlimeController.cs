@@ -41,32 +41,34 @@ public class SlimeController : MonoBehaviour
         Debug.Log(gameObject.name);
         if(gameObject.name == "Green Slime" || gameObject.name == "Green Slime(Clone)")
         {
-            speed = 2f;
+            speed = 3f;
             damage = 20;
-            health = 30;
-            coinReward = 30;
+            health = 20;
+            coinReward = 50000;
         }
         if(gameObject.name == "Blue Slime" || gameObject.name == "Blue Slime(Clone)")
         {
             speed = 4f;
-                damage = 10;
-                health = 20;
-                coinReward = 20;
+            damage = 10;
+            health = 10;
+            coinReward = 40000;
         }
         if(gameObject.name == "Red Slime" || gameObject.name == "Red Slime(Clone)")
         {
-            speed = 2f;
+            speed = 5f;
             damage = 20;
-            health = 30;
-            coinReward = 30;
+            health = 15;
+            coinReward = 60000;
         }
+        /*
         else
         {
             speed = 1f;
-                damage = 20;
-                health = 15;
-                coinReward = 30;
+            damage = 20;
+            health = 15;
+            coinReward = 30;
         }
+        */
         /*
         switch (gameObject.name)
         {
