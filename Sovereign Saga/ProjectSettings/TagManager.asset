@@ -8,6 +8,8 @@ TagManager:
   - Rock
   - Fireball
   - Suck
+  - Sword
+  - Tornado
   layers:
   - Default
   - TransparentFX

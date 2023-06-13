@@ -9,22 +9,30 @@ public class PlayerController : MonoBehaviour
     public float health = 100f;
     private Rigidbody2D rb;
     public Animator animator;
-    public float strength = 0f;
-    public float intelligence = 0f;
-    public float money = 0f;
-    
+    public float money = 200000f;  
     public Slider healthUI;
     public Slider staminaUI;
-    public TextMeshProUGUI strengthUI;
-    public TextMeshProUGUI intelligenceUI;
     public TextMeshProUGUI moneyUI;
     public GameObject gameOverUI;
+    public GameObject winUI;
+    public TextMeshProUGUI strengthUI;
+    public TextMeshProUGUI intelligenceUI;
 
-    private float currentMovementSpeed = 4.0f;
-    private float defaultMovementSpeed = 4.0f;
+    public float strength = 0f;
+    public float intelligence = 0f;
+
+    private float currentMovementSpeed = 6.0f;
+    private float defaultMovementSpeed = 6.0f;
+
+    public int numBuildingsPurchased = 0;
 
     // Combat variable
-    public bool inCombat { get; set; }
+    private bool inCombat;
+    private bool inCave;
+    private bool canFireball;
+    private bool canTornado;
+    private bool canSuck;
+    private bool canRock;
     
     // Dashing Variables
     private float dashSpeed = 8.0f;
@@ -40,7 +48,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 mouseLocation;
     private WeaponController weaponController;
     private MagicController magicController;
-    private Ghost ghostFX; 
+    public Ghost ghostFX; 
 
     private float prevXPos;
     private float prevYPos;
@@ -62,11 +70,14 @@ public class PlayerController : MonoBehaviour
 
     public static int incomeGenerationRate = 0;
 
+    private float updateMoney = 0.0f;
+
     [SerializeField]
     private int currentPassiveIncome = 0;
 
     private void Awake()
     {
+        money = 200000f;
         rb = GetComponent<Rigidbody2D>();
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
@@ -74,7 +85,15 @@ public class PlayerController : MonoBehaviour
         magicController = GetComponentInChildren<MagicController>();
         animator = GetComponentInChildren<Animator>();
         ghostFX = GetComponent<Ghost>();
+        
+        // IMPORTANT NEED TO SET THIS WHEN IN DUNGEON!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! we do not have this yet
         inCombat = false;
+
+        // Player initially cannot use magic until learned so false.
+        canFireball = false;
+        canTornado = false;
+        canSuck = false;
+        canRock = false;
 
         // Set it so the player faces down at the beginning of the game. 
         animator.SetFloat("Horizontal", 0);
@@ -105,8 +124,8 @@ public class PlayerController : MonoBehaviour
         weaponController.setPointerPosition(mouseLocation);
         magicController.setPointerPosition(mouseLocation);
         
-        // Only accept inputs if we are alive. 
-        if (!isDead)
+        // Only accept inputs if we are alive AND in combat (George, please set this when you are done with dungeon).
+        if (!isDead && inCombat)
         {
             // Attacking
             if (Input.GetButton("Fire1"))
@@ -120,12 +139,28 @@ public class PlayerController : MonoBehaviour
                 canDash = false;
                 ghostFX.setGhost(true);
                 currentMovementSpeed = dashSpeed;
+                Debug.Log("hi");
             }
 
-            // Magic Testing
-            if (Input.GetButton("Fire2"))
+            // Magic
+            if (Input.GetKeyDown(KeyCode.Z) && canFireball)
             {
                 magicController.Execute("Fireball");
+            }
+
+            if (Input.GetKeyDown(KeyCode.X) && canRock)
+            {
+                magicController.Execute("Rock");
+            }
+
+            if (Input.GetKeyDown(KeyCode.C) && canTornado)
+            {
+                magicController.Execute("Tornado");
+            }
+
+            if (Input.GetKeyDown(KeyCode.Q) && canSuck)
+            {
+                magicController.Execute("Suck");
             }
         }
 
@@ -146,13 +181,29 @@ public class PlayerController : MonoBehaviour
                 dashCounter = 0.0f;
             }
         }
-
-        moneyUI.text = "$" + money;
+        updateMoney += Time.deltaTime;
+        if(updateMoney >= 1.0f)
+        {
+            money += incomeGenerationRate;
+            moneyUI.text = "$" + money;
+            updateMoney = 0.0f;
+        }
 
         if (health <= 0)
         {
             animator.SetBool("isDead", true);
             isDead = true;
+        }
+
+        if(health < 70)
+        {
+            currentMovementSpeed = 5.0f;
+            defaultMovementSpeed = 5.0f;
+        }
+        if(health < 40)
+        {
+            currentMovementSpeed = 4.0f;
+            defaultMovementSpeed = 4.0f;
         }
     }
 
@@ -215,18 +266,26 @@ public class PlayerController : MonoBehaviour
 
         // Stamima Bar changes depending on currentMovementSpeed.
         staminaUI.value = currentMovementSpeed;
-
+        strength = numBuildingsPurchased <= 0 ? 0 : numBuildingsPurchased - 1;
+        intelligence = 1 + (canSuck ? 1 : 0) + (canTornado ? 1 : 0) + (canFireball ? 1 : 0) + (canRock ? 1 : 0);
+        //moneyUI.text = "$" + money;
         // Strength value changes depending on strength variable.
         strengthUI.text = strength.ToString();
 
         // Intelligence value changes depending on intelligence variable.
         intelligenceUI.text = intelligence.ToString();
+        if (isDead) {
+            gameOverUI.SetActive(true);
+            leftDisabled = true;
+            downDisabled = true;
+            rightDisabled = true;
+            upDisabled = true;
+        }
 
-        // Money value changes depending on money variable.
-        moneyUI.text = "$" + money;
-
-        // If player is dead, the game over UI appears.
-        if (isDead) gameOverUI.SetActive(true);
+        if(numBuildingsPurchased == 11)
+        {
+            winUI.SetActive(true);
+        }
     }
 
     void LateUpdate()
@@ -292,6 +351,22 @@ public class PlayerController : MonoBehaviour
                 transform.position = new Vector2(prevXPos, prevYPos);
             }
         }
+        /*
+        if (!canDash)
+        {   
+            dashCounter += Time.deltaTime;
+            if (dashCounter >= dashLength)
+            {
+                ghostFX.setGhost(false);
+                currentMovementSpeed = defaultMovementSpeed;
+            }
+
+            if (dashCounter >= dashCooldown)
+            {
+                canDash = true;
+                dashCounter = 0.0f;
+            }
+        }*/
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
     }
@@ -299,8 +374,31 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+    }
 
-        
+    public void Heal(int heal)
+    {
+        health += heal;
+    }
+
+    public void IncreaseStamina(int stamina)
+    {
+        currentMovementSpeed += stamina;
+    }
+
+    public void IncreaseStrength(int strength)
+    {
+        this.strength += strength;
+    }
+
+    public void IncreaseIntelligence(int intelligence)
+    {
+        this.intelligence += intelligence;
+    }
+
+    public bool GetInCave()
+    {
+        return inCave;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -308,7 +406,14 @@ public class PlayerController : MonoBehaviour
         Cave cave = collision.collider.GetComponent<Cave>();
         if(cave != null)
         {
+            inCombat = !inCombat;
+            inCave = !inCave;
             transform.position = cave.exitPoint;
+        }
+        else if(cave == null)
+        {
+            //inCombat = false;
+            inCave = false;
         }
         if(collision.collider.name == "Water_Right")
         {
@@ -374,6 +479,25 @@ public class PlayerController : MonoBehaviour
     public void AddIncome(int reward)
     {
         // Need to add a variable that keeps track of current money. 
+    }
+
+    public void BoughtMagic(string magictyp)
+    {
+        switch (magictyp)
+        {
+            case "Fireball":
+                canFireball = true;
+                break;
+            case "Suck":
+                canSuck = true;
+                break;
+            case "Tornado":
+                canTornado = true;
+                break;
+            case "Rock":
+                canRock = true;
+                break;
+        }
     }
 
 }

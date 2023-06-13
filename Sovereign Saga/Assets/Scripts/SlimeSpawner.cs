@@ -3,31 +3,57 @@ using System.Collections;
 
 public class SlimeSpawner : MonoBehaviour
 {
-    // The slime prefabs to spawn
     [SerializeField]
     private GameObject[] slimePrefabs;
 
+    [SerializeField]
+    private GameObject Hero;
+
+    private float playerX;
+    
+    private float initialSpawnDelay = 5.0f;  // initial delay between spawns
+    private float spawnDelay;                // current delay between spawns
+    private float spawnDelayDecrement = 0.05f; // how much we decrease the delay each time
+
     private void Start()
     {
-        // Start the SpawnSlime coroutine
+        spawnDelay = initialSpawnDelay;
+
         StartCoroutine(SpawnSlime());
+        playerX = Hero.transform.position.x;
     }
 
     private IEnumerator SpawnSlime()
     {
-        while (true)
+        while (spawnDelay > 0.5f) // spawn slimes infinitely
         {
-            // Select a random prefab
-            GameObject selectedPrefab = slimePrefabs[Random.Range(0, slimePrefabs.Length)];
-            
-            // Instantiate a new slime at the spawner's location
-            GameObject newSlime = Instantiate(selectedPrefab, transform.position, Quaternion.identity);
+            playerX = Hero.transform.position.x;
 
-            // Assuming that the slime prefab has a SlimeController component attached to it
-            SlimeController slimeController = newSlime.GetComponent<SlimeController>();
+            // Check if player is in cave or in combat
+            if (playerX < -59f)
+            {
+                GameObject selectedPrefab = slimePrefabs[Random.Range(0, slimePrefabs.Length)];
+                GameObject newSlime = Instantiate(selectedPrefab, transform.position, Quaternion.identity);
+                
+                // Get the SlimeController component of the newly created slime
+                SlimeController slimeController = newSlime.GetComponent<SlimeController>();
 
-            // Wait for 10 seconds before the next iteration
-            yield return new WaitForSeconds(10);
+                // Assign the Hero instance to the slime
+                slimeController.Hero = this.Hero;
+
+                yield return new WaitForSeconds(spawnDelay);
+
+                // Decrease the delay between spawns (to a minimum of 1 second)
+                if (spawnDelay > 1f)
+                    spawnDelay = Mathf.Max(1f, spawnDelay - spawnDelayDecrement);
+                else
+                    spawnDelay = 1f;
+
+            }
+            else
+            {
+                yield return null;
+            }
         }
     }
 }

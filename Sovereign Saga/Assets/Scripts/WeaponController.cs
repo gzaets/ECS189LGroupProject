@@ -6,33 +6,45 @@ public class WeaponController : MonoBehaviour
 {
 
     private Vector2 pointerPosition;
-    private float attackDelay = 0.5f;
+    private float attackDelay = 1.0f;
     private float timer = 0.0f;
     private bool attackDebounce = false;
+    private bool stallSword = false;
     [SerializeField]
     private Animator animator;
-    [SerializeField]
 
-    // Start is called before the first frame update
+    [SerializeField]
+    private AudioClip swingSoundEffect;
+
+    [SerializeField]
+    private AudioClip swingMissSoundEffect;
+
+    private AudioSource audioMusicSource;
+
     void Start()
     {
-        
+        audioMusicSource = gameObject.AddComponent<AudioSource>();
+        audioMusicSource.volume = 1f; // Set the initial volume
     }
 
+    
     // Update is called once per frame
     void Update()
     {
-        Vector2 direction = (pointerPosition - (Vector2) transform.position).normalized;
-        transform.right = direction;
-
-        var currentScale = transform.localScale;
-        currentScale.y = 1;
-        if (direction.x < 0)
+        if (!stallSword)
         {
-            currentScale.y = -1;
-        }
+            Vector2 direction = (pointerPosition - (Vector2) transform.position).normalized;
+            transform.right = direction;
 
-        transform.localScale = currentScale;
+            var currentScale = transform.localScale;
+            currentScale.y = 1;
+            if (direction.x < 0)
+            {
+                currentScale.y = -1;
+            }
+
+            transform.localScale = currentScale;
+        }
 
         if (attackDebounce)
         {
@@ -40,6 +52,7 @@ public class WeaponController : MonoBehaviour
             if (timer >= attackDelay)
             {
                 attackDebounce = false;
+                stallSword = false;
                 timer = 0.0f;
             }
         }
@@ -57,6 +70,14 @@ public class WeaponController : MonoBehaviour
             return;
         }
         animator.SetTrigger("Attack");
+        audioMusicSource.clip = swingSoundEffect;
+        audioMusicSource.Play();
+        //IF THE ATTACK MISSES
         attackDebounce = true;
+    }
+
+    public void SetStall(bool cond)
+    {
+        stallSword = cond;
     }
 }

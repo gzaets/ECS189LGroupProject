@@ -26326,6 +26326,7 @@ GameObject:
   - component: {fileID: 832857802}
   - component: {fileID: 832857801}
   - component: {fileID: 832857803}
+  - component: {fileID: 832857804}
   m_Layer: 0
   m_Name: hero_0
   m_TagString: Untagged
@@ -26420,6 +26421,12 @@ MonoBehaviour:
   staminaUI: {fileID: 736161182}
   moneyUI: {fileID: 2071804893}
   gameOverUI: {fileID: 0}
+  winUI: {fileID: 0}
+  strengthUI: {fileID: 0}
+  intelligenceUI: {fileID: 0}
+  strength: 0
+  intelligence: 0
+  numBuildingsPurchased: 0
   currentPassiveIncome: 0
 --- !u!50 &832857802
 Rigidbody2D:
@@ -26469,6 +26476,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &832857804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832857798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010ea44e5f3e178488a481425b01bbcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!1 &835804994
 GameObject:
   m_ObjectHideFlags: 0

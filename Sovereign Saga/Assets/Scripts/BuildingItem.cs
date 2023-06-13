@@ -9,6 +9,7 @@ public class BuildingItem : MonoBehaviour
     // Stats of building, including cost and how much it is producing per second
     private int buildingLvl = 10;
     private bool upgradedBuilding = true;
+    private bool playerIncomeUpdated = false;
 
     [SerializeField]
     private int buildingCost;
@@ -34,11 +35,18 @@ public class BuildingItem : MonoBehaviour
     [SerializeField]
     private Button purchaseNoButton;
 
+    [SerializeField]
+    private AudioClip purchaseBuildingSoundEffect;
+
+    private AudioSource audioMusicSource;
+
     void Start()
     {
+        audioMusicSource = gameObject.AddComponent<AudioSource>();
+        audioMusicSource.volume = 1f;
         // Formula to calculate how much building produces in correlation to cost of building (Can change later)
         buildingProductionRate = buildingCost / 1000;
-        
+        buildingCost = buildingCost;
 
         TextMeshProUGUI buildingPurchaseText = buildingPurchaseUI.GetComponentInChildren<TextMeshProUGUI>();
         buildingPurchaseText.text = "Do you want to purchase this building for $" + buildingCost;
@@ -76,25 +84,41 @@ public class BuildingItem : MonoBehaviour
                 upgradedBuilding = false;
                 //buildingLvl += 1;
         }
-
+        if(isPurchased && !playerIncomeUpdated)
+        {
+            playerController.money = playerController.money - buildingCost;
+            playerIncomeUpdated = true;
+        }
 
 
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //buildingPurchaseUI = Object.Instantiate(buildingPurchaseUI, buildingPurchaseUI.transform.position, Quaternion.identity);
+        TextMeshProUGUI buildingPurchaseText = buildingPurchaseUI.GetComponentInChildren<TextMeshProUGUI>();
+        buildingPurchaseText.text = "Do you want to purchase this building for $" + buildingCost;
+
+        purchaseNoButton.onClick.RemoveAllListeners();
+        purchaseYesButton.onClick.RemoveAllListeners();
+        //Debug.Log(gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
+            if(playerController.money - buildingCost >= 0) {
             if (this.isPurchased == false)
             {
                 buildingPurchaseUI.SetActive(true);
                 purchaseYesButton.onClick.AddListener(() => {
                     this.isPurchased = true;
+                    playerController.numBuildingsPurchased++;
                     buildingPurchaseUI.SetActive(false);
+                    audioMusicSource.clip = purchaseBuildingSoundEffect;
+                    audioMusicSource.Play();
                 });
                 purchaseNoButton.onClick.AddListener(() => {
                     buildingPurchaseUI.SetActive(false);
                 });
+            }
             }
         }
     }
