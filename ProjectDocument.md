@@ -30,7 +30,7 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 ## User Interface (Mohamed Ali Boutaleb @mohalibou)
 
-*Player Stat Display* - On the top left of the screen, I implemented a UI panel that shows the player's stats. This includes health, stamina, intelligence, strength, and money. This information is critical for players as they navigate the island, strategize their growth, and make decisions on resource allocation and skill upgrades. [Image of the UI element.](https://imgur.com/a/l4uHYS5) [Code for the implementation.](https://github.com/gzaets/ECS189LGroupProject/blob/127c1085e9f14134a3a231ccaae2a65f347e3172/Sovereign%20Saga/Assets/Scripts/PlayerController.cs#L264-L273)
+*Player Stat Display* - On the top left of the screen, I implemented a UI panel that shows the player's stats. This includes health, stamina, intelligence, strength, and money. This information is critical for players as they navigate the island, strategize their growth, and make decisions on resource allocation and skill upgrades. [Image of the UI element.](https://imgur.com/a/l4uHYS5) [Code for the implementation.](https://github.com/gzaets/ECS189LGroupProject/blob/127c1085e9f14134a3a231ccaae2a65f347e3172/Sovereign%20Saga/Assets/Scripts/PlayerController.cs#L265-L276)
 
 *Building Purchases Popups* - Whenever a player wants to make building purchases, there will be a pop-up UI that provides only the necessary details related to purchasing the building. These pop-ups were designed to be informative yet unobtrusive, ensuring that players can easily continue their gameplay after making their decisions. [Image of the UI element.](https://imgur.com/a/QpFgE2e) [Code for the implementation.](example.com)
 
