@@ -19,7 +19,7 @@ public class SlimeController : MonoBehaviour
     private GameObject suckTarget;
 
     [SerializeField]
-    private GameObject Hero;
+    public GameObject Hero;
 
     private float prevXPos;
     private float prevYPos;
