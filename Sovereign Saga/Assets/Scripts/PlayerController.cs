@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
     public float health = 100f;
     private Rigidbody2D rb;
     public Animator animator;
-    public float money = 200000f;  
+   // public float money = 200000f;  
+    public float money = 0f;
     public Slider healthUI;
     public Slider staminaUI;
     public TextMeshProUGUI moneyUI;
@@ -77,7 +78,8 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        money = 200000f;
+        //money = 200000f;
+        money = 0f;
         rb = GetComponent<Rigidbody2D>();
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;

@@ -29,11 +29,21 @@ public class BuildingItem : MonoBehaviour
     private GameObject buildingPurchaseUI;
     //public TextMeshProUGUI buildingPurchaseText;
 
+    //UI for cant afford
+    [SerializeField]
+    private GameObject notBuildingPurchaseUI;
+
     [SerializeField]
     private Button purchaseYesButton;
 
     [SerializeField]
     private Button purchaseNoButton;
+
+
+
+
+    [SerializeField]
+    private Button closeButton;
 
     [SerializeField]
     private AudioClip purchaseBuildingSoundEffect;
@@ -105,20 +115,33 @@ public class BuildingItem : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             if(playerController.money - buildingCost >= 0) {
-            if (this.isPurchased == false)
-            {
-                buildingPurchaseUI.SetActive(true);
-                purchaseYesButton.onClick.AddListener(() => {
-                    this.isPurchased = true;
-                    playerController.numBuildingsPurchased++;
-                    buildingPurchaseUI.SetActive(false);
-                    audioMusicSource.clip = purchaseBuildingSoundEffect;
-                    audioMusicSource.Play();
-                });
-                purchaseNoButton.onClick.AddListener(() => {
-                    buildingPurchaseUI.SetActive(false);
-                });
+                if (this.isPurchased == false)
+                {
+                    buildingPurchaseUI.SetActive(true);
+                    purchaseYesButton.onClick.AddListener(() => {
+                        this.isPurchased = true;
+                        playerController.numBuildingsPurchased++;
+                        buildingPurchaseUI.SetActive(false);
+                        audioMusicSource.clip = purchaseBuildingSoundEffect;
+                        audioMusicSource.Play();
+                    });
+                    purchaseNoButton.onClick.AddListener(() => {
+                        buildingPurchaseUI.SetActive(false);
+                    });
+                }
             }
+            else if (playerController.money - buildingCost < 0){
+                //cant afford ui
+                if(this.isPurchased == false)
+                {
+                    notBuildingPurchaseUI.SetActive(true);
+                    closeButton.onClick.AddListener(() => {
+                        notBuildingPurchaseUI.SetActive(false);
+                    });
+                    closeButton.onClick.AddListener(() => {
+                        notBuildingPurchaseUI.SetActive(false);
+                    });
+                }
             }
         }
     }
