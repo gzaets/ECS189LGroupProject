@@ -30,6 +30,10 @@ public class SlimeSpawner : MonoBehaviour
                 SlimeController slimeController = newSlime.GetComponent<SlimeController>();
                 yield return new WaitForSeconds(5);
             }
+            else
+            {
+                yield return null;
+            }
         }
     }
 }
