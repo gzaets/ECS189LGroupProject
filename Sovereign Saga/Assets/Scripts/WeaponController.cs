@@ -14,10 +14,18 @@ public class WeaponController : MonoBehaviour
     private Animator animator;
 
     [SerializeField]
-    private AudioSource swingSoundEffect;
+    private AudioClip swingSoundEffect;
 
     [SerializeField]
-    private AudioSource swingMissSoundEffect;
+    private AudioClip swingMissSoundEffect;
+
+    private AudioSource audioMusicSource;
+
+    void Start()
+    {
+        audioMusicSource = gameObject.AddComponent<AudioSource>();
+        audioMusicSource.volume = 1f; // Set the initial volume
+    }
 
     
     // Update is called once per frame
@@ -62,9 +70,9 @@ public class WeaponController : MonoBehaviour
             return;
         }
         animator.SetTrigger("Attack");
-        swingSoundEffect.Play();
+        audioMusicSource.clip = swingSoundEffect;
+        audioMusicSource.Play();
         //IF THE ATTACK MISSES
-        swingMissSoundEffect.Play();
         attackDebounce = true;
     }
 

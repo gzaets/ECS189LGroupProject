@@ -39,14 +39,17 @@ public class MagicController : MonoBehaviour
     [SerializeField]
     private AudioSource fireballSoundEffect;*/
 
-    [SerializeField] private AudioSource rockSoundEffect;
-    [SerializeField] private AudioSource tornadoSoundEffect;
-    [SerializeField] private AudioSource fireballSoundEffect;
+    [SerializeField] private AudioClip rockSoundEffect;
+    [SerializeField] private AudioClip tornadoSoundEffect;
+    [SerializeField] private AudioClip fireballSoundEffect;
 
+    private AudioSource audioMusicSource;
 
     // Start is called before the first frame update
     void Start()
     {
+        audioMusicSource = gameObject.AddComponent<AudioSource>();
+        audioMusicSource.volume = 1f;
         fireballCounter = 0.0f;
         tornadoCounter = 0.0f;
         rockCounter = 0.0f;
@@ -132,7 +135,8 @@ public class MagicController : MonoBehaviour
         fireball.transform.right = aimDirection;
         Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(aimDirection.x, aimDirection.y) * 5f;
-        fireballSoundEffect.Play();
+        audioMusicSource.clip = fireballSoundEffect;
+        audioMusicSource.Play();
     }
 
     private void Tornado()
@@ -147,7 +151,8 @@ public class MagicController : MonoBehaviour
         GameObject tornado = Instantiate(tornadoPrefab, offset, transform.rotation);
         Rigidbody2D rb = tornado.GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(aimDirection.x, aimDirection.y) * 7f;
-        tornadoSoundEffect.Play();
+        audioMusicSource.clip = tornadoSoundEffect;
+        audioMusicSource.Play();
     }
 
     private void Suck()
@@ -169,7 +174,8 @@ public class MagicController : MonoBehaviour
         canRock = false;
         
         StartCoroutine(SpawnRocks());
-        rockSoundEffect.Play();
+        audioMusicSource.clip = rockSoundEffect;
+        audioMusicSource.Play();
 
     }
 

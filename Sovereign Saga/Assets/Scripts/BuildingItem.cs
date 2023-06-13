@@ -7,8 +7,8 @@ using TMPro;
 public class BuildingItem : MonoBehaviour
 {
     // Stats of building, including cost and how much it is producing per second
-    private int buildingLvl = 0;
-    private bool upgradedBuilding = false;
+    private int buildingLvl = 10;
+    private bool upgradedBuilding = true;
     private bool playerIncomeUpdated = false;
 
     [SerializeField]
@@ -30,19 +30,10 @@ public class BuildingItem : MonoBehaviour
     //public TextMeshProUGUI buildingPurchaseText;
 
     [SerializeField]
-    private GameObject upgradeBuildingPurchaseUI;
-
-    [SerializeField]
     private Button purchaseYesButton;
 
     [SerializeField]
     private Button purchaseNoButton;
-
-    [SerializeField]
-    private Button purchaseUpgradeYesButton;
-
-    [SerializeField]
-    private Button purchaseUpgradeNoButton;
 
     void Start()
     {
@@ -81,7 +72,7 @@ public class BuildingItem : MonoBehaviour
                 // Subtract cost of building from player income
                 //playerController.SetCurrentIncome(playerController.GetCurrentIncome() - buildingCost);
 
-                PlayerController.incomeGenerationRate += buildingProductionRate;
+                PlayerController.incomeGenerationRate = PlayerController.incomeGenerationRate + (buildingProductionRate * buildingLvl);
                 //incomeUpdated = true;
                 upgradedBuilding = false;
                 //buildingLvl += 1;
@@ -112,25 +103,11 @@ public class BuildingItem : MonoBehaviour
                 buildingPurchaseUI.SetActive(true);
                 purchaseYesButton.onClick.AddListener(() => {
                     this.isPurchased = true;
-                    //Debug.Log("just pruchased\n");
                     playerController.numBuildingsPurchased++;
                     buildingPurchaseUI.SetActive(false);
                 });
                 purchaseNoButton.onClick.AddListener(() => {
                     buildingPurchaseUI.SetActive(false);
-                });
-            }
-            else if (this.isPurchased == true)
-            {
-
-                upgradeBuildingPurchaseUI.SetActive(true);
-                purchaseUpgradeYesButton.onClick.AddListener(() => {
-                    buildingLvl++;
-                    upgradedBuilding = true;
-                    upgradeBuildingPurchaseUI.SetActive(false);
-                });
-                purchaseUpgradeNoButton.onClick.AddListener(() => {
-                    upgradeBuildingPurchaseUI.SetActive(false);
                 });
             }
             }
