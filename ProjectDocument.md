@@ -36,7 +36,7 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 *Game Over/Main Menu* - I also designed the game over menu, and main menu, providing players with options to exit or enter the game without disrupting the flow of the game. [Images of the UI elements.](https://imgur.com/a/8BAxONR) [Code for the implementation.](example.com)
 
-## Movement/Physics
+## Movement/Physics (@j-p-ecs, Personal Name Hidden for Privacy Reasons)
 
 The following has been written by @j-p-ecs (GitHub username):
 
@@ -88,7 +88,7 @@ I also created the game over screen, which uses the template created by @mohalib
 
 **Document the sound style.** 
 
-## Gameplay Testing
+## Gameplay Testing (@j-p-ecs)
 
 The following portion has been written by @j-p-ecs (GitHub username):
 
