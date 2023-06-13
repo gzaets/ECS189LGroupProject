@@ -30,6 +30,7 @@ public class BackgroundMusicManager : MonoBehaviour
         audioMusicSource = gameObject.AddComponent<AudioSource>();
         audioMusicSource.volume = volumeMusic; // Set the initial volume
         audioMusicSource.loop = true; // Enable looping
+        PlayBackgroundMusic(hillsMusic); // Play the background music
 
         audioStepSource = gameObject.AddComponent<AudioSource>();
         audioStepSource.volume = volumeStep; // Set the initial volume
