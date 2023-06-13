@@ -42,6 +42,7 @@ public class MagicController : MonoBehaviour
     [SerializeField] private AudioClip rockSoundEffect;
     [SerializeField] private AudioClip tornadoSoundEffect;
     [SerializeField] private AudioClip fireballSoundEffect;
+    [SerializeField] private AudioClip suckSoundEffect; 
 
     private AudioSource audioMusicSource;
 
@@ -163,6 +164,8 @@ public class MagicController : MonoBehaviour
         }
         canSuck = false;
         GameObject suck = Instantiate(suckPrefab, pointerPosition, transform.rotation);
+        audioMusicSource.clip = suckSoundEffect;
+        audioMusicSource.Play();
     }
 
     private void Rock()
