@@ -12,7 +12,13 @@ public class WeaponController : MonoBehaviour
     private bool stallSword = false;
     [SerializeField]
     private Animator animator;
+
     [SerializeField]
+    private AudioSource swingSoundEffect;
+
+    [SerializeField]
+    private AudioSource swingMissSoundEffect;
+
     
     // Update is called once per frame
     void Update()
@@ -56,6 +62,9 @@ public class WeaponController : MonoBehaviour
             return;
         }
         animator.SetTrigger("Attack");
+        swingSoundEffect.Play();
+        //IF THE ATTACK MISSES
+        swingMissSoundEffect.Play();
         attackDebounce = true;
     }
 
