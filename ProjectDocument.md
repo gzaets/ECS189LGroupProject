@@ -36,7 +36,7 @@ When designing the user interface, I wanted to follow a design pattern where the
 
 *Building Purchases Popups* - Whenever a player wants to make building purchases, there will be a pop-up UI that provides only the necessary details related to purchasing the building. These pop-ups were designed to be informative yet unobtrusive, ensuring that players can easily continue their gameplay after making their decisions. [Image of the UI element.](https://imgur.com/a/QpFgE2e) [Code for the implementation.](https://github.com/gzaets/ECS189LGroupProject/blob/95fb360e1d161850f159c9be5be817f74850d85c/Sovereign%20Saga/Assets/Scripts/BuildingItem.cs#L99-L100)
 
-*Game Over/Main Menu* - I also designed the game over menu, and main menu, providing players with options to exit or enter the game without disrupting the flow of the game. [Images of the UI elements.](https://imgur.com/a/8BAxONR) [Code for the implementation.](example.com)
+*Game Over/Main Menu* - I also designed the game over menu, and main menu, providing players with options to exit or enter the game without disrupting the flow of the game. [Images of the UI elements.](https://imgur.com/a/8BAxONR) [Code for swapping scenes between the main menu and the game world.](https://github.com/gzaets/ECS189LGroupProject/blob/8064c282ef477012e9b929734c1cb52955400d0c/Sovereign%20Saga/Assets/Scripts/SceneSwitcher.cs#L1-L14)
 
 ## Movement/Physics (@j-p-ecs, Personal Name Hidden for Privacy Reasons)
 
