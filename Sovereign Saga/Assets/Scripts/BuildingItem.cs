@@ -35,8 +35,15 @@ public class BuildingItem : MonoBehaviour
     [SerializeField]
     private Button purchaseNoButton;
 
+    [SerializeField]
+    private AudioClip purchaseBuildingSoundEffect;
+
+    private AudioSource audioMusicSource;
+
     void Start()
     {
+        audioMusicSource = gameObject.AddComponent<AudioSource>();
+        audioMusicSource.volume = 1f;
         // Formula to calculate how much building produces in correlation to cost of building (Can change later)
         buildingProductionRate = buildingCost / 1000;
         buildingCost = buildingCost;
@@ -105,6 +112,8 @@ public class BuildingItem : MonoBehaviour
                     this.isPurchased = true;
                     playerController.numBuildingsPurchased++;
                     buildingPurchaseUI.SetActive(false);
+                    audioMusicSource.clip = purchaseBuildingSoundEffect;
+                    audioMusicSource.Play();
                 });
                 purchaseNoButton.onClick.AddListener(() => {
                     buildingPurchaseUI.SetActive(false);
