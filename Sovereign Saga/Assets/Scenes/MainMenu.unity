@@ -1038,16 +1038,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Become a rich ruler of the island. You start off with very limited money.
-    The island is divided into different regions. Choose from multiple approaches
-    to generate money, shaping your path to rulership. Participate in thrilling battles
-    in the caves, or even become early businessmen to generate passive income by
-    obtaining all eleven land properties on the islands. The world is filled with
-    varieties of magic that can be acquired by you to use in combat. As you generate
-    wealth, you will be able to invest  resources in upgrading  character\u2019s
-    abilities and unlocking new skills. \n\r\nCONTROL SCHEME:\r\nMOVEMENT: W A S
-    D   OR   ARROW KEYS\r\nCOMBAT: LEFT MOUSE CLICK\r\nDASH: SPACE\r\nMAGIC: Z =
-    Fireball; X = Rock; C = Tornado; Q = Vortex\r\n \r\n"
+  m_text: "Immerse yourself in the breathtaking world of Sovereign Saga, an immersive
+    RPG ripe with adventure. Venture through the challenges and opportunities found
+    within a diverse island, each step taking you closer to becoming its ruler. Make
+    your way through the diverse terrains, where your tactical prowess will be tested
+    against an army of slimes. Employ combat strategies and economic ventures, using
+    your wealth to ascend in power. In Sovereign Saga, your destiny is in your hands.
+    Do you have the mettle to conquer and rule?\nBecome a rich ruler of the island.
+    You start off with very limited money. The island is divided into different regions.
+    Choose from multiple approaches to generate money, shaping your path to rulership.
+    Participate in thrilling battles in the caves, or even become early businessmen
+    to generate passive income by obtaining all eleven land properties on the islands.
+    The world is filled with varieties of magic that can be acquired by you to use
+    in combat. As you generate wealth, you will be able to invest  resources in upgrading 
+    character\u2019s abilities and unlocking new skills. Remember, you have one shot
+    at this game! No healing, so you gotta watch out for those scary slimes! Good
+    luck!\n\r\nCONTROL SCHEME:\r\nMOVEMENT: W A S D   OR   ARROW KEYS\r\nCOMBAT:
+    LEFT MOUSE CLICK\r\nDASH: SPACE\nMAGIC THAT CAN BE FOUND AND USED IN BATTLE:
+    Z = Fireball; X = Rock; C = Tornado; Q = Vortex\r\n \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 47c300eba71c24f6eb4ddade7eb6de60, type: 2}
   m_sharedMaterial: {fileID: -1820946954065351838, guid: 47c300eba71c24f6eb4ddade7eb6de60, type: 2}
@@ -1074,8 +1082,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 31
+  m_fontSizeBase: 31
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1110,7 +1118,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 23.005875}
+  m_margin: {x: 0, y: 20.927185, z: 0, w: 23.005875}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1141,7 +1149,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00012207031, y: 27}
+  m_AnchoredPosition: {x: -0.00012207031, y: -7}
   m_SizeDelta: {x: 1620, y: 405.5612}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1041144593
