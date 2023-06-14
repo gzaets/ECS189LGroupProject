@@ -408,8 +408,10 @@ Developing a rich and immersive game world was a significant aspect of my role. 
 
 *   All Assets Cited
     *   [2D RPG Worlds KIT](https://assetstore.unity.com/packages/2d/environments/2d-rpg-worlds-kit-227621)
-    *   [RPG_Essentials_Free](https://assetstore.unity.com/packages/audio/sound-fx/rpg-essentials-sound-effects-free-227708)
     *   [20 Evolving Fantasy RPG Weapons](https://assetstore.unity.com/packages/2d/textures-materials/20-evolving-fantasy-rpg-weapons-61204)
     *   [25 Fantasy RPG Game Tracks Music Pack](https://assetstore.unity.com/packages/audio/music/25-fantasy-rpg-game-tracks-music-pack-240154)
     *   [Medieval King Pack 2](https://assetstore.unity.com/packages/2d/characters/medieval-king-pack-2-174863) (scrapped, but was originally going to be used for the king)
     *   [Pixel FX - Fire](https://assetstore.unity.com/packages/vfx/pixel-fx-fire-221146)
+    *   [RPG_Essentials_Free](https://assetstore.unity.com/packages/audio/sound-fx/rpg-essentials-sound-effects-free-227708)
+    *   [The Legend of Slim](https://assetstore.unity.com/packages/2d/characters/the-legend-of-slim-245855)
+    *   [Tiny RPG Town Environment](https://assetstore.unity.com/packages/2d/environments/tiny-rpg-town-environment-88293)
