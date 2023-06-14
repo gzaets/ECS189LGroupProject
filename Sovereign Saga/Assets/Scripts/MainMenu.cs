@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class MainMenu : MonoBehaviour
 {
@@ -7,6 +8,9 @@ public class MainMenu : MonoBehaviour
     public GameObject smallTitle;
     public GameObject quitButton;
     public GameObject text;
+    public GameObject loadingScreen;
+
+    public static float transitionTime = 1f;
 
     public static bool isTutorial = false;
 
@@ -16,11 +20,7 @@ public class MainMenu : MonoBehaviour
         smallTitle.SetActive(false);
         text.SetActive(false);
         quitButton.SetActive(true);
-    }
-
-    public void PlayGame()
-    {
-        SceneManager.LoadScene("GameScene");
+        loadingScreen.SetActive(false);
     }
 
     public void ShowHowToPlay()
