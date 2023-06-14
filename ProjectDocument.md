@@ -134,7 +134,7 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 When designing the user interface, I wanted to follow a design pattern where the UI design aesthetic is simple, clean, and intuitive. The aim is to make all crucial information readily available to the player without overwhelming the game screen. The UI is designed to be glanceable, ensuring that important information is accessible but does not obstruct the player's immersion in the game world.
 
-I utilized a combination of unity UI elements, custom made images, custom fonts, and a collection of [SF Symbols](https://developer.apple.com/sf-symbols/) provided by Apple in order to make the user interface.
+I utilized a combination of unity UI elements, custom made images, [custom fonts](https://www.fontspace.com/stay-pixel-font-f66634), and a collection of [SF Symbols](https://developer.apple.com/sf-symbols/) provided by Apple in order to make the user interface.
 
 *Player Stat Display* - On the top left of the screen, I implemented a UI panel that shows the player's stats. This includes health, stamina, intelligence, strength, and money. This information is critical for players as they navigate the island, strategize their growth, and make decisions on resource allocation and skill upgrades. [Image of the UI element.](https://imgur.com/a/l4uHYS5) [Code for the implementation.](https://github.com/gzaets/ECS189LGroupProject/blob/127c1085e9f14134a3a231ccaae2a65f347e3172/Sovereign%20Saga/Assets/Scripts/PlayerController.cs#L265-L276)
 
