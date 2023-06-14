@@ -152,31 +152,6 @@ I also worked with the logic relating to the game over. In particular, the game 
 
 *Game Over/Main Menu* - I also designed the game over menu, and main menu, providing players with options to exit or enter the game without disrupting the flow of the game. [Images of the UI elements.](https://imgur.com/a/8BAxONR) [Code for swapping scenes between the main menu and the game world.](https://github.com/gzaets/ECS189LGroupProject/blob/8064c282ef477012e9b929734c1cb52955400d0c/Sovereign%20Saga/Assets/Scripts/SceneSwitcher.cs#L1-L14)
 
-## Movement/Physics (@j-p-ecs, Personal Name Hidden for Privacy Reasons)
-
-The following has been written by @j-p-ecs (GitHub username):
-
-Physics has been implemented in part manually and in part using Unity’s physics engine.
-
-Unity’s physics engine is used to handle collisions in situations where trying to handle it manually would be nontrivial or otherwise extremely tedious, especially dealing with irregular polygons such as consecutive tiles of water. 
-
-Building collision physics were, on the other hand, programmed manually and seek to optimize the player experience with no slowdowns resulting from rubbing against walls, etc. This is contrary to water tiles, which incur a slowdown if the player rubs against them because those rely solely on Unity’s physics engine.
-
-Physics were primarily implemented by attaching Collider and Rigidbody components to the desired objects. In cases where we want to control the behavior more precisely, we added tags to some objects to determine whether special behavior should occur. For example, cave doors have a tag that is checked for during a collision and if the tag matches, it will determine which portion of the dungeon the player should be transported to.
-
-Another aspect of physics which I incorporated was knockback with regards to collision with slime objects. My approach here basically involved setting a knockback animation time, which I calibrated to be about a third of a second. During that third of a second, if a collision occurred, and depending on how forceful the collision is, the slime would move back at some multiple of the collision speed. In our testing, it was a decent and smooth implementation. It may not be absolutely perfect by all standards, but I am decently satisfied with the result.
-
-Regarding collisions with cliffs, I had challenges figuring out how to implement this with Unity without defacing a beautiful map design. The strategy I decided to go with was duplicating the design with another attachment, then setting the layer to be a very low number so that the layer would not be seen during gameplay (i.e. layer -99). I then attached a tilemap collider to that component and removed the appropriate tiles from that layer as necessary. If this was not done, this would cause the player to be unable to traverse through significant portions of the map. I did investigate working with Edge Colliders, but I was unable to figure out how to get those working.
-
-Physics has different modes, which was a feature we intended to implement during the beginning of this project. There is a dash effect that gives the player a short boost for a given period of time, and an effect (created by @fdang2000) will appear when that movement has occurred. Originally, the physics had modes depending on the health (i.e., when the health was low, the player would move much slower compared to if the player was at full health), however, this was removed in the final version as a result of feedback from other players, who noticed a difference in traversal but could not understand why.
-
-The following are not directly related to physics but were implemented by @j-p-ecs:
-
-I utilized the base code that was used to implement building purchases (which was done by other teammates, including @payday2021) to implement magic combat ability purchases. This was a relatively trivial implementation that involved creating a script to display the appropriate purchasing UI upon colliding with an NPC in the overworld. After a purchase has occurred with the NPC, then I use the Destroy function to remove the object.
-
-I also created the game win screen, which uses the template created by @mohalibou for the game over screen. The game win screen is equipped with the proper transitions.
-
-I also worked with the logic relating to the game over. In particular, the game has been programmed so the player does not move when a game over has been reached, regardless of any input given.
 
 ## Animation and Visuals (Fred Dang @fdang2000)
 
