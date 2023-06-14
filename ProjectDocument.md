@@ -252,6 +252,7 @@ For gameplay testing, I have done various different playthroughs, focusing on th
 
 * Trailer Choices 
     * For audio choice, I chose to use the Terraria music because I feel like it had a "8bit" feel to the music which matches the style of the game that we chose. 
+        * The source for the music chosen in this trailer is from this [video](https://www.youtube.com/watch?v=w7uOhFTrrq0) and is by ReLogic. 
     * I tried to keep a consistent theme through the trailer by having text followed by examples of it in the game. I feel like this is very direct and achieves the purpose of emphasizing what I want the audience to focus on throughout the trailer. 
     * For the trailer, I chose to preview the core aspects of our game: exploration, combat, and building purchasing. 
         * I chose exploration because of the time George put into this map and wanted to show players the beauty of it. 
