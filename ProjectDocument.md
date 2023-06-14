@@ -94,7 +94,10 @@ I utilized a combination of unity UI elements, custom made images, custom fonts,
 
 *Building Purchases Popups* - Whenever a player wants to make building purchases, there will be a pop-up UI that provides only the necessary details related to purchasing the building. These pop-ups were designed to be informative yet unobtrusive, ensuring that players can easily continue their gameplay after making their decisions. [Image of the UI element.](https://imgur.com/a/QpFgE2e) [Code for the implementation.](https://github.com/gzaets/ECS189LGroupProject/blob/95fb360e1d161850f159c9be5be817f74850d85c/Sovereign%20Saga/Assets/Scripts/BuildingItem.cs#L99-L100)
 
+
 *Game Over/Main Menu* - I also designed the game over menu, and main menu, providing players with options to exit or enter the game without disrupting the flow of the game. [Images of the UI elements.](https://imgur.com/a/WXdIOrW) [Code for swapping scenes between the main menu and the game world.](https://github.com/gzaets/ECS189LGroupProject/blob/8064c282ef477012e9b929734c1cb52955400d0c/Sovereign%20Saga/Assets/Scripts/SceneSwitcher.cs#L1-L14)
+
+*Addition Building Purchase Popups (Payday2021)* - Added additional popup UIs for building purchasing that would prompt the hero whether the building has already been purchased or if the hero does not have enough money to purchase. 
 
 ## Movement/Physics (@j-p-ecs, Personal Name Hidden for Privacy Reasons)
 
@@ -245,6 +248,12 @@ I also worked with the logic relating to the game over. In particular, the game 
     * [How to make an object follow the mouse in Unity (in 2D)](https://gamedevbeginner.com/make-an-object-follow-the-mouse-in-unity-in-2d/)
 
 
+**payday2021 and Navjot (Building Purchasing logic)**
+In conjuction with Mohamed's UI designs for building purchasing, we added functionality for building purchasing in BuildingItem.cs. The purpose of purchasing buildings is to increase your passive income. The more buildings that you own, the more passive income you will generate. 
+
+In BuildingItem.cs, we worked with the physics colliders so that the building could detect when a player has collided with it. If a collision is detected and the building has no been purchased yet, an UI will pop up which will either prompt you to purchase the building if you have enough money, or to inform you that your hero doesn't have enough money to purchase. If the building has already been purchased and a collision with the hero is detected, then a popup UI will inform you that the building has already been purchased. Upon purchasing a building, your passive income will be added by the passive income rate of the building. In the future, we planned on having upgrades to the building, which would increase your passive income rate with each level and even grant special bonuses at higher levels. 
+
+
 # Sub-Roles
 
 ## Cross-Platform
@@ -252,6 +261,11 @@ I also worked with the logic relating to the game over. In particular, the game 
 **Describe the platforms you targeted for your game release. For each, describe the process and unique actions taken for each platform. What obstacles did you overcome? What was easier than expected?**
 
 ## Audio (@payday2021)
+**List your assets including their sources and licenses.**
+
+**Describe the implementation of your audio system.**
+
+**Document the sound style.** 
 
 We added audio for every game interaction that occurred with the hero (ex: purchasing buildings, fighting monsters), and we wanted to keep the sound style to that of a traditional 2d RPG game that invoked simple but satisfying sounds that help contribute to overall game feel. Since these audio clips were played within game interaction with the hero, most of our audio is implemented within the PlayerController.cs file, with an exception to building purchasing, which we handled within the BuildingItem.cs file. 
 
@@ -259,13 +273,17 @@ Within the PlayerController.cs file, we implemented audio for user movement and 
 
 For sword attacks, it was very similar to the audio we implemented when using magic, it was basic sword swing, except we added two possible variations. The first came with the miss of the sword swing, or simply if there wasnt a monster collider detected when we swung the sword. This resulted in a missed sound effect, and the latter variation came from when contact was made with a monster, in which we added a more satisfying and robust audio for the sword swing. 
 
+Within the BuildingItem.cs file, there was one audio file added when the hero decided they wanted to purchase a building (clicking the yes button on the building UI), in which we decided to go with a sound that resembled a hammer striking down on an anvil, to signify the actual "building" aspect of the building.
 
+For these RPG sound FX, all audio files were taken from the Unity Asset Store, where we looked mainly at audio packages for RPG games. 
 
-**List your assets including their sources and licenses.**
+The first asset pack we used was the "Demo Ancient Weapons Pack" from the Unity Asset Store (https://assetstore.unity.com/packages/audio/sound-fx/demo-ancient-weapons-pack-free-173519)
+    -License Agreement: https://unity.com/legal/as-terms
+    -License Type: Extension Asset
 
-**Describe the implementation of your audio system.**
-
-**Document the sound style.** 
+The second asset pack we used was the "RPG_Essentials_Free" from the Unity Asset Store(https://assetstore.unity.com/packages/audio/sound-fx/rpg-essentials-sound-effects-free-227708)
+    -License Agreement: https://unity.com/legal/as-terms
+    -Licesne Type: Extension Asset
 
 ## Gameplay Testing (@j-p-ecs)
 
