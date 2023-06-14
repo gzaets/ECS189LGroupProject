@@ -134,7 +134,7 @@ public class PlayerController : MonoBehaviour
             }
 
             // Dashing
-            if (Input.GetKeyDown(KeyCode.Space) && canDash && movement != Vector2.zero)
+            if (Input.GetKeyDown(KeyCode.Space) && canDash && movement != Vector2.zero && !PauseMenu.GameIsPaused)
             {
                 canDash = false;
                 ghostFX.setGhost(true);
