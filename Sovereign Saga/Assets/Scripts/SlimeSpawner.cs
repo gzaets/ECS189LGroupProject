@@ -30,7 +30,7 @@ public class SlimeSpawner : MonoBehaviour
             playerX = Hero.transform.position.x;
 
             // Check if player is in cave or in combat
-            if (playerX < -59f)
+            if (playerX < -59f && !PauseMenu.pausedGame)
             {
                 GameObject selectedPrefab = slimePrefabs[Random.Range(0, slimePrefabs.Length)];
                 GameObject newSlime = Instantiate(selectedPrefab, transform.position, Quaternion.identity);
