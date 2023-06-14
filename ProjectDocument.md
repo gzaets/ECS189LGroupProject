@@ -50,7 +50,7 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 *   At the start of the project, I was tasked with picking the assets from the Unity store that were were going to use as the foundation of the art style of our game. Our plan was that by looking at and playing with different asset packs, we will get different ideas about what we can do for the actual game. I picked the assets that I thought would be the most useful for our game and that would fit the theme of a medieval RPG. We started development of basic motion and physics by using the *[Tiny RPG Town Environment](https://assetstore.unity.com/packages/2d/environments/tiny-rpg-town-environment-88293)* Asset. We didn't keep the art style of the world, but our Hero Sprites came from that pack. The basics of movement for the Hero were also implemented by me in the *[PlayerController.cs](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scripts/PlayerController.cs)*  for the early stages of the project. 
 
-![Hero](Images/heroCapture.png)
+![Hero](Images/heroCapture.PNG)
 
 *   Details in regards to the Main Island Visuals can be found below.
 
