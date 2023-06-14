@@ -409,7 +409,11 @@ Developing a rich and immersive game world was a significant aspect of my role. 
 
 *   UI Refinement
 
-    *   I added a lot of UI elements to the game to make it more user friendly and to provide more information to the player. I improved the Main Menu's presentation, added an explanation section to help the reader know how to play the game, and added animation transtitions between the menu and game for a smooth/non-choppy experience.
+    *   I added a lot of UI elements to the game to make it more user friendly and to provide more information to the player. I improved the Main Menu's presentation, added an explanation section to help the reader know how to play the game, and added animation transtitions between the menu and game for a smooth/non-choppy experience. I also added a pause menu that the player can access by pressing the escape key. This pause menu allows the player to resume the game, go back to the main menu, or quit the game. I also added a loading screen that appears when the player starts the game, and disappears when the game is loaded. Besides coding all of these elements like described in the Main Role Section, I picked the art designs to fit in the overall theme of the game.
+
+*   Narrative and core
+
+    *   Our narrative team wasn't able to add the necessary NPCs in time to make the world feel lived in, so me, @fdang2000, and @j-p-ecs had to step in to add some narrative variety to the game. We added the element of magic that can be acquired by the player. I perosnally worked on adding the fireball spell (Asset and movement/damage logic) to the game. It doesn't do much for the narrative, but it does make the world feel a little bit more magical and RPG-like. It gives a sense of purpose for the user to actually explore the map, since the narrative wasn't implemented by our team member.
 
 *   References I used for all my parts:
     *   *[Pause Menu](https://www.youtube.com/watch?v=9dYDBomQpBQ)*
