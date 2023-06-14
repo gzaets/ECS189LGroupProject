@@ -1055,13 +1055,14 @@ MonoBehaviour:
     Choose from multiple approaches to generate money, shaping your path to rulership.
     Participate in thrilling battles in the caves, or even become early businessmen
     to generate passive income by obtaining all eleven land properties on the islands.
-    The world is filled with varieties of magic that can be acquired by you to use
-    in combat. As you generate wealth, you will be able to invest  resources in upgrading 
-    character\u2019s abilities and unlocking new skills. Remember, you have one shot
-    at this game! No healing, so you gotta watch out for those scary slimes! Good
-    luck!\n\r\nCONTROL SCHEME:\r\nMOVEMENT: W A S D   OR   ARROW KEYS\r\nCOMBAT:
-    LEFT MOUSE CLICK\r\nDASH: SPACE\nMAGIC THAT CAN BE FOUND AND USED IN BATTLE:
-    Z = Fireball; X = Rock; C = Tornado; Q = Vortex\r\n \r\n"
+    Get stronger by purchasing buildings in order to start mining crystals for extra
+    profit. The world is filled with varieties of magic that can be acquired by you
+    to use in combat. As you generate wealth, you will be able to invest  resources
+    in upgrading  character\u2019s abilities and unlocking new skills. Remember,
+    you have one shot at this game! No healing, so you gotta watch out for those
+    scary slimes! Good luck!\n\r\nCONTROL SCHEME:\r\nMOVEMENT: W A S D   OR   ARROW
+    KEYS\r\nCOMBAT: LEFT MOUSE CLICK\r\nDASH: SPACE\nMAGIC THAT CAN BE FOUND AND
+    USED IN BATTLE: Z = Fireball; X = Rock; C = Tornado; Q = Vortex\r\n \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 47c300eba71c24f6eb4ddade7eb6de60, type: 2}
   m_sharedMaterial: {fileID: -1820946954065351838, guid: 47c300eba71c24f6eb4ddade7eb6de60, type: 2}
