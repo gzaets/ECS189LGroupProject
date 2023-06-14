@@ -8,9 +8,12 @@ public class SlimeController : MonoBehaviour
     public int damage;
     public int health;
     public int coinReward;
+    public AudioClip slimeHitSound;
+    public AudioClip slimeDeathSound;
     private bool stopMoving;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;  // Used to flip the sprite
+    private AudioSource audioSource;
 
     private float knockBackTime = 0.3f;
     private bool collided = false;
@@ -29,6 +32,10 @@ public class SlimeController : MonoBehaviour
     private float collideSpeedX;
     private float collideSpeedY;
 
+    // Used to make the slime stop when taking damage
+    private float damageTakenTime = 0.5f;
+    private bool isStunned = false;
+
     void Start()
     {
         // No existing suck on spawn. 
@@ -37,60 +44,32 @@ public class SlimeController : MonoBehaviour
         // Get the sprite renderer component
         spriteRenderer = GetComponent<SpriteRenderer>();
         
+        audioSource = GetComponent<AudioSource>();
+
         // Depending on the slime type, set the damage, health and coinReward values
         Debug.Log(gameObject.name);
         if(gameObject.name == "Green Slime" || gameObject.name == "Green Slime(Clone)")
         {
             speed = 3f;
             damage = 20;
-            health = 20;
+            health = 40;
             coinReward = 50000;
         }
         if(gameObject.name == "Blue Slime" || gameObject.name == "Blue Slime(Clone)")
         {
             speed = 4f;
             damage = 10;
-            health = 10;
+            health = 30;
             coinReward = 40000;
         }
         if(gameObject.name == "Red Slime" || gameObject.name == "Red Slime(Clone)")
         {
             speed = 5f;
             damage = 20;
-            health = 15;
+            health = 20;
             coinReward = 60000;
         }
-        /*
-        else
-        {
-            speed = 1f;
-            damage = 20;
-            health = 15;
-            coinReward = 30;
-        }
-        */
-        /*
-        switch (gameObject.name)
-        {
-            case "Green Slime":
-                speed = 2f;
-                damage = 20;
-                health = 30;
-                coinReward = 30;
-                break;
-            case "Blue Slime":
-                speed = 4f;
-                damage = 10;
-                health = 20;
-                coinReward = 20;
-                break;
-            case "Red Slime":
-                speed = 1f;
-                damage = 20;
-                health = 15;
-                coinReward = 30;
-                break;
-        }*/
+
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
         playerX = Hero.transform.position.x;
@@ -103,7 +82,7 @@ public class SlimeController : MonoBehaviour
         if (playerX < -59f)
         {
             // Move towards the player
-            if(collided == false)
+            if(collided == false && !isStunned)
             {
             //Vector2 targetPosition = target.position;
             Vector2 targetPosition = Hero.transform.position;
@@ -137,11 +116,23 @@ public class SlimeController : MonoBehaviour
                 }
                 else
                 {
-                    transform.position = new Vector2(transform.position.x + 2 * collideSpeedX, transform.position.y + 2 * collideSpeedY);
+                    transform.position = new Vector2(transform.position.x + 1.2f * collideSpeedX, transform.position.y + 1.2f * collideSpeedY);
                 }
             }
             prevXPos = transform.position.x;
             prevYPos = transform.position.y;
+        }
+
+        // If the slime is stunned, decrement the stun timer
+        if (isStunned)
+        {
+            damageTakenTime -= Time.deltaTime;
+            if (damageTakenTime <= 0f)
+            {
+                // Reset the stun flag and timer after stun duration has passed
+                isStunned = false;
+                damageTakenTime = 0.5f;
+            }
         }
     }
 
@@ -210,13 +201,22 @@ public class SlimeController : MonoBehaviour
     {
         health -= damage;
 
+        // Play the sound
+        audioSource.PlayOneShot(slimeHitSound);
+
         if (health <= 0)
         {
-           // Reward player
-           Hero.GetComponent<PlayerController>().AddIncome(coinReward);
-           
-           // Destroy current GameObject
-           Destroy(gameObject);
+            // Reward player
+            Hero.GetComponent<PlayerController>().AddIncome(coinReward);
+            audioSource.PlayOneShot(slimeDeathSound);
+            
+            // Destroy current GameObject
+            Destroy(gameObject);
+        }
+        else
+        {
+            // After taking damage, the slime gets stunned and cannot move for a while
+            isStunned = true;
         }
     }
 
