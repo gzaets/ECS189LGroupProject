@@ -39,7 +39,7 @@ Transform:
   - {fileID: 2602537086754969537}
   - {fileID: 7400292893392657375}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5374170690049793798
 SpriteRenderer:
@@ -146,6 +146,7 @@ MonoBehaviour:
   intelligence: 0
   numBuildingsPurchased: 0
   ghostFX: {fileID: 0}
+  crystalDestroySound: {fileID: 0}
   currentPassiveIncome: 0
 --- !u!95 &3128457200645823523
 Animator:
@@ -232,6 +233,7 @@ MonoBehaviour:
   rockSoundEffect: {fileID: 8300000, guid: 7c47b20bb9874304a809dc5580d403ba, type: 3}
   tornadoSoundEffect: {fileID: 8300000, guid: c91fcf414acc0344cb03b13996f1bf3b, type: 3}
   fireballSoundEffect: {fileID: 8300000, guid: a652877b012108e41871f867ada9f176, type: 3}
+  suckSoundEffect: {fileID: 0}
 --- !u!114 &6587236919085556839
 MonoBehaviour:
   m_ObjectHideFlags: 0
