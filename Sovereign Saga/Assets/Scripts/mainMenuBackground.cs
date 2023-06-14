@@ -16,6 +16,7 @@ public class mainMenuBackground : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        image.uvRect = new Rect(image.uvRect.position + new Vector2(_x, _y) * Time.deltaTime, image.uvRect.size);
+        if(!MainMenu.isTutorial)
+            image.uvRect = new Rect(image.uvRect.position + new Vector2(_x, _y) * Time.deltaTime, image.uvRect.size);
     }
 }

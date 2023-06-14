@@ -4,11 +4,17 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public GameObject backButton;
+    public GameObject smallTitle;
     public GameObject quitButton;
+    public GameObject text;
+
+    public static bool isTutorial = false;
 
     private void Start()
     {
         backButton.SetActive(false);
+        smallTitle.SetActive(false);
+        text.SetActive(false);
         quitButton.SetActive(true);
     }
 
@@ -19,12 +25,16 @@ public class MainMenu : MonoBehaviour
 
     public void ShowHowToPlay()
     {
-        backButton.SetActive(true);
-        quitButton.SetActive(false);
+        isTutorial = true;
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void Back()
+    {
+        isTutorial = false;
     }
 }
