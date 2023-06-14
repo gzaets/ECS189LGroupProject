@@ -68,11 +68,15 @@ Another aspect of physics which I incorporated was knockback with regards to col
 
 Regarding collisions with cliffs, I had challenges figuring out how to implement this with Unity without defacing a beautiful map design. The strategy I decided to go with was duplicating the design with another attachment, then setting the layer to be a very low number so that the layer would not be seen during gameplay (i.e. layer -99). I then attached a tilemap collider to that component and removed the appropriate tiles from that layer as necessary. If this was not done, this would cause the player to be unable to traverse through significant portions of the map. I did investigate working with Edge Colliders, but I was unable to figure out how to get those working.
 
+Physics has different modes, which was a feature we intended to implement during the beginning of this project. When health is high, the player will move at a relatively high speed compared to when the health is low. When the health is low, the player will move slower and may subsequently struggle to move away from slime enemies. In addition, there is a dash effect that gives the player a short boost for a given period of time, and an effect (created by @fdang2000) will appear when that movement has occurred.
+
 The following are not directly related to physics but were implemented by @j-p-ecs:
 
 I utilized the base code that was used to implement building purchases (which was done by other teammates, including @payday2021) to implement magic combat ability purchases. This was a relatively trivial implementation that involved creating a script to display the appropriate purchasing UI upon colliding with an NPC in the overworld. After a purchase has occurred with the NPC, then I use the Destroy function to remove the object.
 
-I also created the game over screen, which uses the template created by @mohalibou for the title screen. The game over screen is equipped with the proper transitions. In addition, when a game over has occurred, I made sure to disable character movement. As a result, pressing up, down, left, or right will result in no changes to the player position.
+I also created the game win screen, which uses the template created by @mohalibou for the game over screen. The game win screen is equipped with the proper transitions.
+
+I also worked with the logic relating to the game over. In particular, the game has been programmed so the player does not move when a game over has been reached, regardless of any input given.
 
 ## Animation and Visuals
 
@@ -120,6 +124,9 @@ Another less trivial bug that I discovered during testing was a glitch that enab
 
 I also discovered a bug that was preventing damage from affecting certain slime objects. Upon further investigation, I realized that original slime objects and slime object clones have different gameObject names. One just has the ordinary name, while another has the name with Clone appended to the end. By checking for both of these, I was able to resolve a bug where players would otherwise be tediously trying to use a sword against slime enemies with no effect.
 
+During class testing, some people noticed issues that needed resolution. One involved a mysterious collider situated next to a building. @gzaets and I tried to fix it on the fly for the demonstration, but we were unable to pinpoint the issue immediately. I eventually determined where the issue was, and it was an errant 1 tile box collider located just above a building. By removing it, I was able to fix that bug and create a quality of life improvement for players.
+
+Class testing also pointed us to flaws in our implementation with regards to movement during game over. In other words, movement would sometimes be disabled, but other times, it would be possible to break free from the movement. Additionally, it was discovered that income would continue to generate even after a game over had reached, and this was resolved accordingly after it was noticed.
 
 ## Narrative Design
 
