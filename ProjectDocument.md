@@ -11,9 +11,13 @@ Immerse yourself in the breathtaking world of Sovereign Saga, an immersive 2D RP
 The island will be divided into different regions. Players can choose from multiple approaches to generate money, shaping their path to rulership. Players can participate in thrilling battles in the caves, or even become early businessmen to generate passive income by obtaining all the land property on the islands. The world will be filled with varieties of magic that can be acquired by the player to use in combat. As players play and generate some wealth, they will be able to invest their resources in upgrading their character’s abilities and unlocking new skills. Stamina is the character’s overall endurance and energy in physical tasks that allows the player to dash in combat. Strength is combat prowess. Intelligence is used for dwelling into the world of Arcana.
 
 CONTROL SCHEME:
+
 MOVEMENT: WASD OR ARROW KEYS
+
 COMBAT: LEFT MOUSE CLICK
+
 DASH: SPACE
+
 MAGIC: Z = fireball; X = rock; C = tornado; Q = Vortex
 
 
