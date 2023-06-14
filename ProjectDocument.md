@@ -96,7 +96,7 @@ You should replay any **bold text** with your relevant information. Liberally us
 
     *   During each frame update (Update method), the slime tries to move towards the player, unless it has collided with an object or is stunned. The slime's sprite is flipped based on its movement direction to give it a more natural appearance. If the slime has collided with something, it will be knocked back for a specified time. If the slime has taken damage, it is stunned and stops moving for a certain duration.
 
-* *[SlimeSpawner.cs](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scripts/SlimeSpawner.cs)* 
+* *[SlimeSpawner.cs](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scripts/SlimeSpawner.cs)*
 
     *   This script is attached to the object *SlimeSpawner* in the *[MainIsland.unity](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scenes/MainIsland.unity)* scene which serves as the spawn point for the slimes. It manages the spawning of slimes based on the provided conditions.
 
@@ -279,9 +279,11 @@ In BuildingItem.cs, we worked with the physics colliders so that the building co
 
 # Sub-Roles
 
-## Cross-Platform
+## Cross-Platform (Georgy Zaets - gzaets@ucdavis.edu - @gzaets)
 
-**Describe the platforms you targeted for your game release. For each, describe the process and unique actions taken for each platform. What obstacles did you overcome? What was easier than expected?**
+***Describe the platforms you targeted for your game release. For each, describe the process and unique actions taken for each platform. What obstacles did you overcome? What was easier than expected?***
+
+*   For Cross-Platforming, I targeted Windows and Mac builds of the game. I used Unity's built-in build system to create the builds. I did not encounter any obstacles in the process of creating the builds. The process was easier than expected. We had two branches for different types of builds. One branch was for Windows builds and the other was for Mac builds. We used the same code for both branches. The only difference was the build settings. I used the same code for both branches because Unity is a cross-platform game engine. I did not have to change any code to make the game work on both platforms. We only had to change the build settings, and sometimes the screen resolution (was no longer needed in final version of the game).
 
 ## Audio (@payday2021)
 **List your assets including their sources and licenses.**
@@ -364,6 +366,6 @@ For gameplay testing, I have done various different playthroughs, focusing on th
 
 
 
-## Game Feel
+## Game Feel (Georgy Zaets - gzaets@ucdavis.edu - @gzaets)
 
 **Document what you added to and how you tweaked your game to improve its game feel.**
