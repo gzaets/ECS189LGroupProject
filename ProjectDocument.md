@@ -402,7 +402,7 @@ Developing a rich and immersive game world was a significant aspect of my role. 
     
 *   Visual and Audio Feedback
 
-    *   I added visual and audio feedback to player actions and events in the game. This included animations and sound effects for attacking, taking damage, defeating enemies, and collecting rewards. This not only made the game more satisfying to play but also helped players understand the impact of their actions better.
+    *   I added visual and audio feedback to player actions and events in the game.  This not only made the game more satisfying to play but also helped players understand the impact of their actions better.
 
 *   RPG Element Emphasis
 
