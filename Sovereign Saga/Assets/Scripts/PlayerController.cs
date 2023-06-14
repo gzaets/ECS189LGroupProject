@@ -193,6 +193,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isDead", true);
             isDead = true;
+            incomeGenerationRate = 0;
         }
 
         if(health < 70)
@@ -280,8 +281,9 @@ public class PlayerController : MonoBehaviour
             downDisabled = true;
             rightDisabled = true;
             upDisabled = true;
-            //moveHorizontal = 0.0f;
-            //moveVertical = 0.0f;
+            moveHorizontal = 0.0f;
+            moveVertical = 0.0f;
+            currentMovementSpeed = 0.0f;
         }
 
         if(numBuildingsPurchased == 11)
