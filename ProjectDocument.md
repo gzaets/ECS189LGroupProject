@@ -311,7 +311,7 @@ The second asset pack we used was the "RPG_Essentials_Free" from the Unity Asset
     -License Agreement: https://unity.com/legal/as-terms
     -Licesne Type: Extension Asset
 
-## Gameplay Testing (@j-p-ecs)
+## Gameplay Testing (@j-p-ecs) & Mohamed Ali Boutaleb (@mohalibou)
 
 The following portion has been written by @j-p-ecs (GitHub username):
 
