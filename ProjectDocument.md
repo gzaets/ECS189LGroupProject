@@ -276,6 +276,12 @@ In conjuction with Mohamed's UI designs for building purchasing, we added functi
 
 In BuildingItem.cs, we worked with the physics colliders so that the building could detect when a player has collided with it. If a collision is detected and the building has no been purchased yet, an UI will pop up which will either prompt you to purchase the building if you have enough money, or to inform you that your hero doesn't have enough money to purchase. If the building has already been purchased and a collision with the hero is detected, then a popup UI will inform you that the building has already been purchased. Upon purchasing a building, your passive income will be added by the passive income rate of the building. In the future, we planned on having upgrades to the building, which would increase your passive income rate with each level and even grant special bonuses at higher levels. 
 
+**Navjot Singh**
+As a dedicated game logic developer, my primary responsibility was to design and impement the underlying systems and mechanics that drive the gameplay experience in Soveriengn Saga. Working closely with the other developers, my role was pivotal in creating a captivating and immersive gameplay environment for players. In this section, I will outline the key aspects of my role, the challenges faced, and the accomplishments achieved during the development of the game. 
+
+Designing the implementation of core game mechanincs was one of the primary tasks in my role. This involved designing and developing the rules and systems that goverened the interactions between the player and the game world. One such interaction was the player's ability to purchase buildings in order to generate passive income from the buildings. The majority of this work is done in BuildingItem.cs, as payday2021 has outlined above. One of the biggest troubles we ran into when developing this system is determining how and when the player's total income will be updated. If the player has multiple buildings under their name, it may cause issue in logic if each building tried to retrieve and update the total income at the same time. To address this issue we handled the update of the income in one place - PlayerController.cs. This value was updated based on incomeGenerationRate, which is calculated using the following formula:
+
+*incomeGenerationRate = incomeGenerationRate + (buildingProductionRate * buildingLvl)*
 
 # Sub-Roles
 
