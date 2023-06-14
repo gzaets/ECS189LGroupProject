@@ -122,6 +122,9 @@ I also worked with the logic relating to the game over. In particular, the game 
     * Hero BlendTree
     ![HeroAnimator](Images/HeroMovement2.png)
 
+    * Combat System In Play
+    ![Combat System In Play](Images/CombatGif.gif)
+
 ## Input
 
 **Describe the default input configuration.**
@@ -145,6 +148,10 @@ I also worked with the logic relating to the game over. In particular, the game 
     * I also created a dash that increases the player's speed to escape mobs. 
 
     * I also modified SlimeController.cs to handle interactions with the skills such as applying damage to the slimes, deleting the projectiles on impact, or changing their following behavior as seen with Suck. 
+
+* Example of Skills Being Used
+    * Combat System In Play
+    ![Combat System In Play](Images/CombatGif.gif)
 
 * **Resources I Used**
     * [Create Melee Attack / Combat in Unity - P1 - Attack Animation
