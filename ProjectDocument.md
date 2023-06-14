@@ -36,7 +36,7 @@ Here is an example:
 
 You should replay any **bold text** with your relevant information. Liberally use the template when necessary and appropriate.
 
-## Producer
+## Producer (Georgy Zaets - gzaets@ucdavis.edu - @gzaets)
 
 **Describe the steps you took in your role as producer. Typical items include group scheduling mechanism, links to meeting notes, descriptions of team logistics problems with their resolution, project organization tools (e.g., timelines, depedency/task tracking, Gantt charts, etc.), and repository management methodology.**
 
@@ -46,7 +46,42 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 *   The resulting product of the latest build of Sovereign Saga is a representation to our team's hard work and dedication. It offers players an immersive gameplay/speedrunning experience filled with thrilling battles, strategic economic ventures, and a quest for rulership. Players can navigate through diverse terrains, strategize against an army of slimes, and employ magic acquired throughout the game. All this while aiming for one primary goal – becoming the rich ruler of the islands! I believe my role as the producer greatly contributed to the successful completion of Sovereign Saga. The project management skills, combined with my passion for game development, not only helped manage resources efficiently but also ensured a high-quality, immersive gaming experience for our audience.
 
-*Pause Menu/Main Menu* 
+*Pause Menu/Main Menu*  
+*   As a critical part of our game development process, I implemented the main menu and pause menu functionality in the Sovereign Saga game. This involved writing efficient code to control these menus' behavior, providing the player with an intuitive and visually appealing user interface.
+
+* *[MainMenu.cs](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scripts/MainMenu.cs)* 
+
+    
+    *   I re-built the Main Menu logic and UI based on the foundation that @mohalibou made before hand. I changed the visuals, added a moving/scrolling background, added a 'How To Play" section, changed the color/lighting of the letters and button highlights. 
+    
+    *   I developed a MainMenu script that controls the behavior of different elements within the main menu, including the backButton, smallTitle, quitButton, text, and loadingScreen.
+
+    *   In the Start method, I specified which elements should be visible when the menu initially loads. For instance, the backButton, smallTitle, and text are set to inactive, while the quitButton is active.
+
+    ![Main Menu](Images\mainmenu.png)
+
+    *   I also introduced a boolean flag isTutorial to determine if the "How to Play" tutorial should be shown. When the player selects "How to Play", the ShowHowToPlay method sets isTutorial to true. Similarly, when the player clicks the back button, the Back method sets isTutorial to false.
+
+    ![How To Play](Images\settings.png)
+
+    *   To handle the game exit request, the QuitGame method utilizes the Application.Quit() function which is a standard way to quit a game in Unity.
+
+    *   I implemented smooth scene transitions in *[LevelLoader.cs](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scripts/LevelLoader.cs)* and loading animations to enhance the overall player experience. The goal was to create seamless transitions between the main menu and game scenes, and provide visual feedback during the loading of a new scene. Scene transitions were handled using Unity's SceneManager. While SceneManager.LoadScene performs the actual transition, to make it smoother, I introduced a loading screen with an animation. This loading screen serves a dual purpose - it visually indicates that the game is loading a new scene and provides a buffer, masking any potential lag or stuttering during scene transition. When a scene transition is initiated, I activate the loadingScreen before calling SceneManager.LoadScene. This means the loading screen will appear immediately once the player initiates the transition, and remain visible throughout the scene loading process.
+
+    ![Loading Screen](Images\loading.png)
+
+
+* *[PauseMenu.cs](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scripts/PauseMenu.cs)*
+
+    *   I implemented the PauseMenu script to control the pause functionality in the game. This script handles pause menu activation, game pausing and resuming, and quitting the game.
+
+    *   In the Start method, the pauseMenu GameObject is set to inactive, ensuring the pause menu does not appear when the game initially starts.
+
+The Update method checks every frame if the player has pressed the Escape key. Depending on whether the pause menu is already active, it will either pause or resume the game. The game's pausing and resuming is controlled by the PauseGame and ResumeGame methods, respectively. These methods not only toggle the visibility of the pause menu but also adjust the Time.timeScale property to pause and resume game time, and set the boolean pausedGame flag accordingly.
+
+To handle the game exit request from the pause menu, the QuitGame method uses the Application.Quit() function.
+
+Finally, the MainMenu method allows players to return to the main menu from the pause menu. It deactivates the pause menu, resumes game time, and uses SceneManager.LoadScene("MainMenu") to load the main menu scene.
 
 ## User Interface (Mohamed Ali Boutaleb @mohalibou)
 
