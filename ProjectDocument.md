@@ -380,7 +380,12 @@ For gameplay testing, I have done various different playthroughs, focusing on th
 
 *   Immersive Atmosphere
 
-    *   A key element of game feel is the creation of an immersive environment that players can lose themselves in. I worked on fine-tuning the game world, ensuring that each aspect, from background music to environmental design, contributes to a cohesive and immersive RPG atmosphere. Small details, like ambient sound effects and interactive scenery, were added to enhance the depth of the world.
+    *   A key element of game feel is the creation of an immersive environment that players can lose themselves in. I worked on fine-tuning the game world, ensuring that each aspect, from background music to environmental design, contributes to a cohesive and immersive RPG atmosphere. Small details, like ambient sound effects and interactive scenery, were added to enhance the depth of the world. Because the game is 2.5D, I also focused on creating a sense of depth and scale through the use of layer ordering of every object on the map. That means, when the player moves behind a tree, the tree is rendered in front of the player. This is a subtle effect, but it makes a big difference in the overall feel of the game. When the player approcahes a cave, the player is in front of the cave entrance, but when the player enters the cave, the player is behind the cave entrance. This creates a sense of depth and scale that is crucial to the game feel, at least to me. I couldn't get to all little details of the map due to unfortunate lack of time, but the overall effect is still there. 
+
+    ![Bamboo](Images\bambooCapture.png)
+    ![Bridge](Images\bridgeCapture.png)
+    ![Crystal](Images\crystalCapture.png)
+    ![Roof](Images\roofCapture.png)
 
 *   Gameplay Mechanic Refinement
 
