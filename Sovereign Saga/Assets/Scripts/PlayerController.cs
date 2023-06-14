@@ -72,6 +72,10 @@ public class PlayerController : MonoBehaviour
 
     private float updateMoney = 0.0f;
 
+    public AudioClip crystalDestroySound;
+
+    private AudioSource audioSource;
+
     [SerializeField]
     private int currentPassiveIncome = 0;
 
@@ -85,6 +89,7 @@ public class PlayerController : MonoBehaviour
         magicController = GetComponentInChildren<MagicController>();
         animator = GetComponentInChildren<Animator>();
         ghostFX = GetComponent<Ghost>();
+        audioSource = GetComponent<AudioSource>();
         
         // IMPORTANT NEED TO SET THIS WHEN IN DUNGEON!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! we do not have this yet
         inCombat = false;
@@ -400,29 +405,13 @@ public class PlayerController : MonoBehaviour
         }
         if(collision.collider.name == "Water_Right")
         {
-            Debug.Log("hdfgjdfg");
-            /*
-            lastCollisionBuilding = false;
-            Debug.Log("ok");
-            collided = true;
-            Debug.Log(collision.collider.bounds);
-            Debug.Log(collision.contacts[0].point);
-            if(transform.position.x > prevXPos) rightDisabled = true;
-            if(transform.position.x < prevXPos) leftDisabled = true;
-            if(transform.position.y > prevYPos) upDisabled = true;
-            if(transform.position.y < prevYPos) downDisabled = true;
-            Debug.Log("yes");
-            if(state == 0) state = state + 3 - 1;
-            else state = state - 1;
-            Debug.Log(state);
-            LateUpdate();
-            */
+            //Debug.Log("hdfgjdfg");
         }
         else if(collision.collider.tag == "building") {
             lastCollisionBuilding = true;
             collided = true;
-            Debug.Log(collision.collider.bounds);
-            Debug.Log(collision.contacts[0].point);
+            // Debug.Log(collision.collider.bounds);
+            // Debug.Log(collision.contacts[0].point);
             xEdgeLeft = collision.collider.bounds.center.x - collision.collider.bounds.extents.x - 0.01f;
             xEdgeRight = collision.collider.bounds.center.x + collision.collider.bounds.extents.x + 0.01f;
             yEdgeTop = collision.collider.bounds.center.y + collision.collider.bounds.extents.y + 0.01f;
@@ -431,13 +420,22 @@ public class PlayerController : MonoBehaviour
             if(collision.contacts[0].point.x <= xEdgeRight && transform.position.x < prevXPos && prevXPos > xEdgeRight) leftDisabled = true;
             if(collision.contacts[0].point.y >= yEdgeBottom && transform.position.y > prevYPos && prevYPos < yEdgeBottom) upDisabled = true;
             if(collision.contacts[0].point.y <= yEdgeTop && transform.position.y < prevYPos && prevYPos > yEdgeTop) downDisabled = true;
-            Debug.Log("yes");
+            //Debug.Log("yes");
             if(state == 0) state = state + 3 - 1;
             else state = state - 1;
-            Debug.Log(state);
+            //Debug.Log(state);
             LateUpdate();
             //movement = new Vector2(prevXPos - transform.position.x, prevYPos - transform.position.y);
             //rb.velocity = movement * speed;
+        }
+        
+        if(collision.collider.tag == "crystals" && strength > 3) {
+            // if collision is with crystals and strength is greater than 3, destroy crystals
+            Destroy(collision.collider.gameObject);
+            Debug.Log("crystal destroyed");
+            audioSource.PlayOneShot(crystalDestroySound);
+            // increase money by 25000
+            money += 25000;
         }
     }
 
