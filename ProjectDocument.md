@@ -399,6 +399,9 @@ Developing a rich and immersive game world was a significant aspect of my role. 
 
     *   I added visual and audio feedback to player actions and events in the game. Based on the feedback that we got, people wanted there to be some response to hitting the slimes. I picked an applicable set of sounds for slime hit and death from the [RPG_Essentials_Free](https://assetstore.unity.com/packages/audio/sound-fx/rpg-essentials-sound-effects-free-227708) Asset mentioned above in the Audio section. I also stopped the slimes for half a second on hit to let the player know that they did in fact hit the slime (implementation can be found here *[SlimeController.cs](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scripts/SlimeController.cs)*). Same thing goes to crystals. Because they were animated and looked very interactable to people, everyone told me that they want to interact with crystals. I implemented the new logic to destroy/mine crystals based on strength stat of the player in *[PlayerController.cs](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scripts/PlayerController.cs)*. I also added some audio feedback to let the player know if the destroyed the crystal, or simply ran into it (audio file from [RPG_Essentials_Free](https://assetstore.unity.com/packages/audio/sound-fx/rpg-essentials-sound-effects-free-227708)). I also added walking sounds based on different terrain that the player is on, and background music for each section of the map to provide some ambience. Same goes to the main menu where I added a simple looping soundtrack that the players can enjoy. This not only made the game more satisfying to play but also helped players understand the impact of their actions better.
 
-*   RPG Element Emphasis
-
-    *   With my understanding of RPGs, I highlighted traditional elements that fans of the genre enjoy. This involved adding new equipment and ability upgrades, secret areas and treasures, and narrative elements. Players could feel their progression, exploration was rewarded, and there was a story to invest in.
+*   References I used for all my parts:
+    *   *[Pause Menu](https://www.youtube.com/watch?v=9dYDBomQpBQ)*
+    *   *[Loading Screen](https://www.youtube.com/watch?v=CE9VOZivb3I)*
+    *   *[Slime Movement](https://www.youtube.com/watch?v=2SXa10ILJms)*
+    *   *[Tile Map Editing](https://www.youtube.com/watch?v=ryISV_nH8qw)*
+    *   *[Multiple Sound Effects](https://www.youtube.com/watch?v=mvaUho_a-q4&t=91s)*
