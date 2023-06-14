@@ -369,3 +369,25 @@ For gameplay testing, I have done various different playthroughs, focusing on th
 ## Game Feel (Georgy Zaets - gzaets@ucdavis.edu - @gzaets)
 
 **Document what you added to and how you tweaked your game to improve its game feel.**
+
+*Over the course of the project, my focus on game feel was aimed at improving the overall player experience, refining game mechanics, and emphasizing the unique aspects of our game's elements. Here's a summary of the additions and tweaks I made to enhance the game feel:*
+
+*   Immersive Atmosphere
+
+    *   A key element of game feel is the creation of an immersive environment that players can lose themselves in. I worked on fine-tuning the game world, ensuring that each aspect, from background music to environmental design, contributes to a cohesive and immersive RPG atmosphere. Small details, like ambient sound effects and interactive scenery, were added to enhance the depth of the world.
+
+*   Gameplay Mechanic Refinement
+
+    *   Recognizing that a smooth and enjoyable gameplay experience is crucial, I focused on polishing game mechanics. This involved refining player movement and interactions, combat dynamics, and enemy behaviors. Feedback was taken into account to iterate and improve upon these mechanics, ensuring they were satisfying and intuitive.
+
+*   Difficulty Balancing
+
+    *   Understanding the importance of challenge in RPGs, I implemented a dynamic difficulty scaling system. This included balancing enemy spawn rates, enemy health, and player damage output. I adjusted these values over time, considering player progression and maintaining a good balance between challenge and reward.
+    
+*   Visual and Audio Feedback
+
+    *   I added visual and audio feedback to player actions and events in the game. This included animations and sound effects for attacking, taking damage, defeating enemies, and collecting rewards. This not only made the game more satisfying to play but also helped players understand the impact of their actions better.
+
+*   RPG Element Emphasis
+
+    *   With my understanding of RPGs, I highlighted traditional elements that fans of the genre enjoy. This involved adding new equipment and ability upgrades, secret areas and treasures, and narrative elements. Players could feel their progression, exploration was rewarded, and there was a story to invest in.
