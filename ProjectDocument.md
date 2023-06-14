@@ -51,6 +51,7 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 * *[MainMenu.cs](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scripts/MainMenu.cs)* 
 
+    *   Can be found at *[MainMenu.unity](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scenes/MainMenu.unity)*
     
     *   I re-built the Main Menu logic and UI based on the foundation that @mohalibou made before hand. I changed the visuals, added a moving/scrolling background, added a 'How To Play" section, changed the color/lighting of the letters and button highlights. 
     
@@ -73,15 +74,37 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 * *[PauseMenu.cs](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scripts/PauseMenu.cs)*
 
-    *   I implemented the PauseMenu script to control the pause functionality in the game. This script handles pause menu activation, game pausing and resuming, and quitting the game.
+    *   I implemented the PauseMenu script to control the pause functionality in the game. This script handles pause menu activation, game pausing and resuming, and quitting the game. The visual style resembles the style of the Main Menu of the game.
 
     *   In the Start method, the pauseMenu GameObject is set to inactive, ensuring the pause menu does not appear when the game initially starts.
 
-The Update method checks every frame if the player has pressed the Escape key. Depending on whether the pause menu is already active, it will either pause or resume the game. The game's pausing and resuming is controlled by the PauseGame and ResumeGame methods, respectively. These methods not only toggle the visibility of the pause menu but also adjust the Time.timeScale property to pause and resume game time, and set the boolean pausedGame flag accordingly.
+    *   The Update method checks every frame if the player has pressed the Escape key. Depending on whether the pause menu is already active, it will either pause or resume the game. The game's pausing and resuming is controlled by the PauseGame and ResumeGame methods, respectively. These methods not only toggle the visibility of the pause menu but also adjust the Time.timeScale property to pause and resume game time, and set the boolean pausedGame flag accordingly.
 
-To handle the game exit request from the pause menu, the QuitGame method uses the Application.Quit() function.
+    *   Finally, the MainMenu method allows players to return to the main menu from the pause menu. It deactivates the pause menu, resumes game time, and uses SceneManager.LoadScene("MainMenu") to load the main menu scene.
 
-Finally, the MainMenu method allows players to return to the main menu from the pause menu. It deactivates the pause menu, resumes game time, and uses SceneManager.LoadScene("MainMenu") to load the main menu scene.
+    ![Pause Screen](Images\PauseCapture.png)
+
+*Slime Controller and Spawner*  
+
+*   As a crucial part of the game mechanics, I created a spawn system for the enemy, "slime," and provided the slimes with necessary behaviors such as chasing the player, dealing damage, and reacting upon being attacked.
+
+* *[SlimeController.cs](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scripts/SlimeController.cs)* 
+
+    *   This script is attached to each individual slime, giving them their behaviors and properties.
+
+    *   Upon spawning (Start method), the slime is assigned attributes based on its type (Green, Blue, Red). This differentiation allows for a variety of enemy behaviors, presenting varying challenges to the player. The SpriteRenderer and AudioSource components are also retrieved here to manipulate the slime's visual direction and play sounds.
+
+    *   During each frame update (Update method), the slime tries to move towards the player, unless it has collided with an object or is stunned. The slime's sprite is flipped based on its movement direction to give it a more natural appearance. If the slime has collided with something, it will be knocked back for a specified time. If the slime has taken damage, it is stunned and stops moving for a certain duration.
+
+* *[SlimeSpawner.cs](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scripts/SlimeSpawner.cs)* 
+
+    *   This script is attached to the object *SlimeSpawner* in the *[MainIsland.unity](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scenes/MainIsland.unity)* scene which serves as the spawn point for the slimes. It manages the spawning of slimes based on the provided conditions.
+
+    *   At the start, it begins the SpawnSlime coroutine, which runs separately from frame updates, making it suitable for time-delayed actions like spawning. The coroutine is called repeatedly until the game is paused or the player is dead.
+
+    *   In the SpawnSlime coroutine, slimes are spawned infinitely as long as the spawnDelay is above 0.5 seconds. The delay between spawns is gradually decreased to increase the difficulty over time. A slime prefab is selected randomly from an array, and a new slime is instantiated. The Hero instance is assigned to the newly spawned slime to allow it to interact with the player by following and facing it. Slimes only spawn if the player is in the correct area and the game is not paused.
+
+*   By implementing these scripts, I managed to create an engaging enemy system that poses an increasing challenge to the player, enhancing the game's dynamics and overall fun.
 
 ## User Interface (Mohamed Ali Boutaleb @mohalibou)
 
