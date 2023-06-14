@@ -34,10 +34,16 @@ public class BuildingItem : MonoBehaviour
     private GameObject notBuildingPurchaseUI;
 
     [SerializeField]
+    private GameObject alreadyPurchasedUI;
+
+    [SerializeField]
     private Button purchaseYesButton;
 
     [SerializeField]
     private Button purchaseNoButton;
+
+    [SerializeField]
+    private Button closeAPButton;
 
 
 
@@ -142,6 +148,17 @@ public class BuildingItem : MonoBehaviour
                         notBuildingPurchaseUI.SetActive(false);
                     });
                 }
+            }
+
+            else if (this.isPurchased)
+            {
+                alreadyPurchasedUI.SetActive(true);
+                closeAPButton.onClick.AddListener(() => {
+                    alreadyPurchasedUI.SetActive(false);
+                });
+                closeAPButton.onClick.AddListener(() => {
+                    alreadyPurchasedUI.SetActive(false);
+                });
             }
         }
     }
