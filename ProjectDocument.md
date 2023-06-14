@@ -166,7 +166,7 @@ I also created the game win screen, which uses the template created by @mohalibo
 
 I also worked with the logic relating to the game over. In particular, the game has been programmed so the player does not move when a game over has been reached, regardless of any input given.
 
-## Animation and Visuals (Fred Dang @fdang2000)
+## Animation and Visuals (Fred Dang fdang@ucdavis.edu @fdang2000)
 
 **List your assets including their sources and licenses.**
 
@@ -350,7 +350,7 @@ Collaboration was at the heart of my subrole as a narrative designer. Working wi
 
 Developing a rich and immersive game world was a significant aspect of my role. By having different sections of the island, we conveyed to the player that they were not just a character on a game map, but that they were truly part of an entirely new world. By providing minimal instructions from the start of the game, the player is given the freedom to explore this world on their own terms, and figure out a meaning and purpose for themselves. We truly believe that the best stories to tell are the ones that players can relate to on a personal level. Stories that players can relate to personally are always the ones that resonate with them the most. To convey this level of connection was my number one goal in narrative design.
 
-## Press Kit and Trailer (Fred Dang @fdang2000)
+## Press Kit and Trailer (Fred Dang fdang@ucdavis.edu @fdang2000)
 
 [Trailer Link](https://www.youtube.com/watch?v=81yyx-yEx38)
 
