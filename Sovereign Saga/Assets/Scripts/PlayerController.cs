@@ -180,6 +180,10 @@ public class PlayerController : MonoBehaviour
                 canDash = true;
                 dashCounter = 0.0f;
             }
+            else
+            {
+                staminaUI.value = 7.2f * dashCounter / dashCooldown;
+            }
         }
         updateMoney += Time.deltaTime;
         if(updateMoney >= 1.0f)
@@ -255,7 +259,7 @@ public class PlayerController : MonoBehaviour
         healthUI.value = health;
 
         // Stamima Bar changes depending on currentMovementSpeed.
-        staminaUI.value = currentMovementSpeed;
+        staminaUI.value = 15 * (dashLength - dashCounter);
         // Strength value changes depending on strength variable and number of buildings purchased.
         strength = numBuildingsPurchased <= 0 ? 0 : numBuildingsPurchased;
         intelligence = 1 + (canSuck ? 1 : 0) + (canTornado ? 1 : 0) + (canFireball ? 1 : 0) + (canRock ? 1 : 0);
