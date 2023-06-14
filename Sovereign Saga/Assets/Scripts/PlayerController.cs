@@ -73,6 +73,7 @@ public class PlayerController : MonoBehaviour
     private float updateMoney = 0.0f;
 
     public AudioClip crystalDestroySound;
+    public AudioClip crystalHitSound;
 
     private AudioSource audioSource;
 
@@ -81,7 +82,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        money = 200000f;
+        money = 40000f;
         rb = GetComponent<Rigidbody2D>();
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
@@ -429,13 +430,16 @@ public class PlayerController : MonoBehaviour
             //rb.velocity = movement * speed;
         }
         
-        if(collision.collider.tag == "crystals" && strength > 3) {
-            // if collision is with crystals and strength is greater than 3, destroy crystals
+        if(collision.collider.tag == "crystals" && strength > 2) {
+            // if collision is with crystals and strength is greater than 2, destroy crystals
             Destroy(collision.collider.gameObject);
             Debug.Log("crystal destroyed");
             audioSource.PlayOneShot(crystalDestroySound);
             // increase money by 25000
             money += 25000;
+        }
+        else if (collision.collider.tag == "crystals" && strength <= 2) {
+            audioSource.PlayOneShot(crystalHitSound);
         }
     }
 
