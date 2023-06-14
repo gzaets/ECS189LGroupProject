@@ -160,8 +160,11 @@ I also worked with the logic relating to the game over. In particular, the game 
 
 **Describe the default input configuration.**
 
-**Fred Dang (Combat/Movement Inputs)**
+**Fred Dang (Combat/Movement Inputs 1)**
 * In regards to basic movement, I am responsible for binding them to WASD in PlayerController.cs. As for combat, I chose the keybinds of Q,X,C,Z since they were what I am comfortable with when playing games with skills. I binded the slashing attack to Mouse1 because that is almost universal for any game and placed the Dash on Space since that was what I use for games with a dash ability. Sometimes people put it on Shift but Space is what I was comfortable with so I chose that design option. 
+
+* I have only added support for Window for these changes. 
+
 
 **Add an entry for each platform or input style your project supports.**
 
