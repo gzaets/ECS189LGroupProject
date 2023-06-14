@@ -35,9 +35,9 @@ public class PlayerController : MonoBehaviour
     private bool canRock;
     
     // Dashing Variables
-    private float dashSpeed = 8.0f;
+    private float dashSpeed = 13.0f;
     private float dashLength = 0.5f;
-    private float dashCooldown = 10.0f;
+    private float dashCooldown = 8.0f;
     private float dashCounter = 0.0f;
     private bool canDash = true;
 
@@ -195,17 +195,6 @@ public class PlayerController : MonoBehaviour
             isDead = true;
             incomeGenerationRate = 0;
         }
-
-        if(health < 70)
-        {
-            currentMovementSpeed = 5.0f;
-            defaultMovementSpeed = 5.0f;
-        }
-        if(health < 40)
-        {
-            currentMovementSpeed = 4.0f;
-            defaultMovementSpeed = 4.0f;
-        }
     }
 
     void FixedUpdate()
@@ -356,22 +345,7 @@ public class PlayerController : MonoBehaviour
                 transform.position = new Vector2(prevXPos, prevYPos);
             }
         }
-        /*
-        if (!canDash)
-        {   
-            dashCounter += Time.deltaTime;
-            if (dashCounter >= dashLength)
-            {
-                ghostFX.setGhost(false);
-                currentMovementSpeed = defaultMovementSpeed;
-            }
 
-            if (dashCounter >= dashCooldown)
-            {
-                canDash = true;
-                dashCounter = 0.0f;
-            }
-        }*/
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
     }

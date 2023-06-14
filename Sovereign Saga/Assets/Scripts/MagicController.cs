@@ -126,7 +126,7 @@ public class MagicController : MonoBehaviour
 
     private void Fireball()
     {
-        if (!canFireball || !PauseMenu.pausedGame)
+        if (!canFireball)
         {
             return;
         }
@@ -142,7 +142,7 @@ public class MagicController : MonoBehaviour
 
     private void Tornado()
     {
-        if (!canTornado || !PauseMenu.pausedGame)
+        if (!canTornado)
         {
             return;
         }
@@ -158,7 +158,7 @@ public class MagicController : MonoBehaviour
 
     private void Suck()
     {
-        if (!canSuck || !PauseMenu.pausedGame)
+        if (!canSuck)
         {
             return;
         }
@@ -170,7 +170,7 @@ public class MagicController : MonoBehaviour
 
     private void Rock()
     {
-        if (!canRock || !PauseMenu.pausedGame)
+        if (!canRock)
         {
             return;
         }

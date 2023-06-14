@@ -11,7 +11,7 @@ public class SlimeSpawner : MonoBehaviour
 
     private float playerX;
     
-    private float initialSpawnDelay = 5.0f;  // initial delay between spawns
+    private float initialSpawnDelay = 3.5f;  // initial delay between spawns
     private float spawnDelay;                // current delay between spawns
     private float spawnDelayDecrement = 0.05f; // how much we decrease the delay each time
 
