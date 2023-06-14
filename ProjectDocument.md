@@ -117,10 +117,10 @@ I also worked with the logic relating to the game over. In particular, the game 
 * **Images**
 
     * Hero Animator
-    ![HeroAnimator](/Sovereign%20Saga/Images/HeroMovement.png)
+    ![HeroAnimator](Images/HeroMovement.png)
 
     * Hero BlendTree
-    ![HeroAnimator](/Sovereign%20Saga/Images/HeroMovement2.png)
+    ![HeroAnimator](Images/HeroMovement2.png)
 
 ## Input
 
