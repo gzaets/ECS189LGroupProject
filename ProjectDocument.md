@@ -325,7 +325,19 @@ For gameplay testing, I have done various different playthroughs, focusing on th
 
 *Technical Performance* - The game was able to run smoothly. There were no crashes or major bugs. I did run into a few technical glitches, such as improperly displayed stats and screen size related issues. However, the UI now works as expected. We also ran into issues with regards to the Mac build of the game crashing. Unfortunately, we are unsure how the crashes occur. With that being said, the game was still able to run smoothly, and thanks to the game jam, we were able to catch other technical performance issues that were able to be taken care of afterwards.
 
-## Narrative Design
+## Narrative Design (Navjot Singh - navsing@ucdavis.edu - @Nsingh13)
+
+*   Story Through Gameplay
+
+As a dedicated narrative designer, my role in the development of the game was to craft a compelling and immersive storytelling experience. Because our team was limited in development time, we knew from the start that we could not afford to craft a full-blown narrative for the game. Instead, we focused on cultivating a story through the gameplay experience. The player starts out in the game in the middle of the forest, and must advance by fighiting creatures inside caves that are placed throughout the map. How the character got there is a mystery, but it is clear to the player that they must fight their way to survive. 
+
+Through building purchase mechanics, we tell a story of capitalism and control. When the player buys a building, they are able to generate passive income without any additional effort on their part. Once the player buys all buildings, they are assumed to have full control or monopoly over the island.
+
+Collaboration was at the heart of my subrole as a narrative designer. Working with the other developers, I actively participated in brainstorming sessions and story discussions. By aliging the narrayive vision with the game's mechanics and overall design, I ensured a cohesive and immersive experience for players.
+
+*   World-building and Lore
+
+Developing a rich and immersive game world was a significant aspect of my role. By having different sections of the island, we conveyed to the player that they were not just a character on a game map, but that they were truly part of an entirely new world. By providing minimal instructions from the start of the game, the player is given the freedom to explore this world on their own terms, and figure out a meaning and purpose for themselves. We truly believe that the best stories to tell are the ones that players can relate to on a personal level. Stories that players can relate to personally are always the ones that resonate with them the most. To convey this level of connection was my number one goal in narrative design.
 
 **Document how the narrative is present in the game via assets, gameplay systems, and gameplay.** 
 
