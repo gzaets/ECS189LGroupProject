@@ -128,6 +128,16 @@ During class testing, some people noticed issues that needed resolution. One inv
 
 Class testing also pointed us to flaws in our implementation with regards to movement during game over. In other words, movement would sometimes be disabled, but other times, it would be possible to break free from the movement. Additionally, it was discovered that income would continue to generate even after a game over had reached, and this was resolved accordingly after it was noticed.
 
+**This part is written by Mohamed Ali Boutaleb (@mohalibou):**
+
+For gameplay testing, I have done various different playthroughs, focusing on the game mechanics, user interface, and overall game performance. Since I was working on the user interface as my main role, I wanted to understand how the UI design influenced the gameplay experience and looking for areas to improve upon.
+
+*UI Elements* - The player stats and building purchase pop-ups were designed to be clear and intuitive. For the most part, I feel as though this goal was accomplished. Everything is laid out in a simple manner.  However, during gameplay, I felt that it could be of benefit to add a minimap to the game. Unfortunately, due to time constraints, this was not possible. Although it is definitely something that could be added later on.
+
+*Gameplay Balance* - We wanted to implement progression in a non-linear fashion. With that being said, that also meant we had to ensure that all the regions were challenging, but in a way that wasn't disproportionally difficult. This involved a lot of tweaking to the game mechanics, such as prices for building purchases, obtaining magic abilities, etc. 
+
+*Technical Performance* - The game was able to run smoothly. There were no crashes or major bugs. I did run into a few technical glitches, such as improperly displayed stats and screen size related issues. However, the UI now works as expected.
+
 ## Narrative Design
 
 **Document how the narrative is present in the game via assets, gameplay systems, and gameplay.** 
