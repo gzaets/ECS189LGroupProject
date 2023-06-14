@@ -237,7 +237,7 @@ I also worked with the logic relating to the game over. In particular, the game 
 
 **Add an entry for each platform or input style your project supports.**
 
-## Game Logic
+## Game Logic (Navjot Singh - navsing@ucdavis.edu - @Nsingh13)
 
 **Document what game states and game data you managed and what design patterns you used to complete your task.**
 
@@ -277,13 +277,13 @@ I also worked with the logic relating to the game over. In particular, the game 
 
 **Navjot Singh**
 
-*As a dedicated game logic developer, my primary responsibility was to design and impement the underlying systems and mechanics that drive the gameplay experience in Soveriengn Saga. Working closely with the other developers, my role was pivotal in creating a captivating and immersive gameplay environment for players. In this section, I will outline the key aspects of my role, the challenges faced, and the accomplishments achieved during the development of the game. 
+As a dedicated game logic developer, my primary responsibility was to design and impement the underlying systems and mechanics that drive the gameplay experience in Soveriengn Saga. Working closely with the other developers, my role was pivotal in creating a captivating and immersive gameplay environment for players. In this section, I will outline the key aspects of my role, the challenges faced, and the accomplishments achieved during the development of the game. 
 
-*Designing the implementation of core game mechanincs was one of the primary tasks in my role. This involved designing and developing the rules and systems that goverened the interactions between the player and the game world. One such interaction was the player's ability to purchase buildings in order to generate passive income from the buildings. The majority of this work is done in BuildingItem.cs, as payday2021 has outlined above. One of the biggest troubles we ran into when developing this system is determining how and when the player's total income will be updated. If the player has multiple buildings under their name, it may cause issue in logic if each building tried to retrieve and update the total income at the same time. To address this issue we handled the update of the income in one place - PlayerController.cs. This value was updated based on incomeGenerationRate, which is calculated using the following formula:
+Designing the implementation of core game mechanincs was one of the primary tasks in my role. This involved designing and developing the rules and systems that goverened the interactions between the player and the game world. One such interaction was the player's ability to purchase buildings in order to generate passive income from the buildings. The majority of this work is done in BuildingItem.cs, as payday2021 has outlined above. One of the biggest troubles we ran into when developing this system is determining how and when the player's total income will be updated. If the player has multiple buildings under their name, it may cause issue in logic if each building tried to retrieve and update the total income at the same time. To address this issue we handled the update of the income in one place - PlayerController.cs. This value was updated based on incomeGenerationRate, which is calculated using the following formula:
 
 *incomeGenerationRate = incomeGenerationRate + (buildingProductionRate * buildingLvl)*
 
-*In addition to feature development, a big part of my role was analyzing code and designs in order to find any potential flaws withiin the game logic. Throughout the development process, I actively participated in bug fixing and optimization efforts. This involved identifying and resolving issues related to gameplay mechanics and system performance. By conducting rigorous testing and collabarting with other developers, I ensured a smooth and enjoyable gaming experience for players.
+In addition to feature development, a big part of my role was analyzing code and designs in order to find any potential flaws withiin the game logic. Throughout the development process, I actively participated in bug fixing and optimization efforts. This involved identifying and resolving issues related to gameplay mechanics and system performance. By conducting rigorous testing and collabarting with other developers, I ensured a smooth and enjoyable gaming experience for players.
 
 # Sub-Roles
 
