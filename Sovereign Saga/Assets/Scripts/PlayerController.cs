@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        money = 40000f;
+        money = 200000f;
         rb = GetComponent<Rigidbody2D>();
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
