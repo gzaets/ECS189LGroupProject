@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public float health = 100f;
     private Rigidbody2D rb;
     public Animator animator;
-    public float money = 200000f;  
+    public float money = 40000f;  
     public Slider healthUI;
     public Slider staminaUI;
     public TextMeshProUGUI moneyUI;
@@ -35,9 +35,9 @@ public class PlayerController : MonoBehaviour
     private bool canRock;
     
     // Dashing Variables
-    private float dashSpeed = 8.0f;
+    private float dashSpeed = 13.0f;
     private float dashLength = 0.5f;
-    private float dashCooldown = 10.0f;
+    private float dashCooldown = 8.0f;
     private float dashCounter = 0.0f;
     private bool canDash = true;
 
@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        money = 200000f;
+        money = 40000f;
         rb = GetComponent<Rigidbody2D>();
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
@@ -134,7 +134,7 @@ public class PlayerController : MonoBehaviour
             }
 
             // Dashing
-            if (Input.GetKeyDown(KeyCode.Space) && canDash && movement != Vector2.zero)
+            if (Input.GetKeyDown(KeyCode.Space) && canDash && movement != Vector2.zero && !PauseMenu.pausedGame)
             {
                 canDash = false;
                 ghostFX.setGhost(true);
@@ -180,6 +180,10 @@ public class PlayerController : MonoBehaviour
                 canDash = true;
                 dashCounter = 0.0f;
             }
+            else
+            {
+                staminaUI.value = 7.2f * dashCounter / dashCooldown;
+            }
         }
         updateMoney += Time.deltaTime;
         if(updateMoney >= 1.0f)
@@ -193,17 +197,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isDead", true);
             isDead = true;
-        }
-
-        if(health < 70)
-        {
-            currentMovementSpeed = 5.0f;
-            defaultMovementSpeed = 5.0f;
-        }
-        if(health < 40)
-        {
-            currentMovementSpeed = 4.0f;
-            defaultMovementSpeed = 4.0f;
+            incomeGenerationRate = 0;
         }
     }
 
@@ -265,8 +259,9 @@ public class PlayerController : MonoBehaviour
         healthUI.value = health;
 
         // Stamima Bar changes depending on currentMovementSpeed.
-        staminaUI.value = currentMovementSpeed;
-        strength = numBuildingsPurchased <= 0 ? 0 : numBuildingsPurchased - 1;
+        staminaUI.value = 15 * (dashLength - dashCounter);
+        // Strength value changes depending on strength variable and number of buildings purchased.
+        strength = numBuildingsPurchased <= 0 ? 0 : numBuildingsPurchased;
         intelligence = 1 + (canSuck ? 1 : 0) + (canTornado ? 1 : 0) + (canFireball ? 1 : 0) + (canRock ? 1 : 0);
         //moneyUI.text = "$" + money;
         // Strength value changes depending on strength variable.
@@ -280,8 +275,9 @@ public class PlayerController : MonoBehaviour
             downDisabled = true;
             rightDisabled = true;
             upDisabled = true;
-            //moveHorizontal = 0.0f;
-            //moveVertical = 0.0f;
+            moveHorizontal = 0.0f;
+            moveVertical = 0.0f;
+            currentMovementSpeed = 0.0f;
         }
 
         if(numBuildingsPurchased == 11)
@@ -353,22 +349,7 @@ public class PlayerController : MonoBehaviour
                 transform.position = new Vector2(prevXPos, prevYPos);
             }
         }
-        /*
-        if (!canDash)
-        {   
-            dashCounter += Time.deltaTime;
-            if (dashCounter >= dashLength)
-            {
-                ghostFX.setGhost(false);
-                currentMovementSpeed = defaultMovementSpeed;
-            }
 
-            if (dashCounter >= dashCooldown)
-            {
-                canDash = true;
-                dashCounter = 0.0f;
-            }
-        }*/
         prevXPos = transform.position.x;
         prevYPos = transform.position.y;
     }

@@ -107,6 +107,10 @@ public class MagicController : MonoBehaviour
 
     public void Execute(string MagicType)
     {
+        if (PauseMenu.pausedGame)
+        {
+            return;
+        }
         switch (MagicType)
         {
             case "Fireball":

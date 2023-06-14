@@ -31,7 +31,7 @@ public class WeaponController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!stallSword)
+        if (!stallSword && !PauseMenu.pausedGame)
         {
             Vector2 direction = (pointerPosition - (Vector2) transform.position).normalized;
             transform.right = direction;
@@ -65,7 +65,7 @@ public class WeaponController : MonoBehaviour
 
     public void Attack()
     {
-        if (attackDebounce)
+        if (attackDebounce || PauseMenu.pausedGame)
         {
             return;
         }
