@@ -2,7 +2,7 @@
 
 ## Summary ##
 
-Sovereign Saga is a 2D RPG game where players navigate the challenges and opportunities of an island with the aim of becoming its ruler. Players start with limitd money, and attempt to rise in status during gameplay. This world contains NPCs, magic abilities, and diverse regions, each with unique attributes. Players embark on a journey to generate wealth in their quest for rulership.
+Immerse yourself in the breathtaking world of Sovereign Saga, an immersive 2D RPG ripe with adventure. Venture through the challenges and opportunities found within a diverse island, each step taking you closer to becoming its ruler. Make your way through the diverse terrains, where your tactical prowess will be tested against an army of slimes. Employ combat strategies and economic ventures, using your wealth to ascend in power. In Sovereign Saga, your destiny is in your hands. Do you have the mettle to conquer and rule?
 
 ## Gameplay Explanation ##
 
