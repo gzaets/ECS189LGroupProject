@@ -2,11 +2,19 @@
 
 ## Summary ##
 
-**A paragraph-length pitch for your game.**
+Sovereign Saga is a 2D RPG game where players navigate the challenges and opportunities of an island with the aim of becoming its ruler. Players start with limitd money, and attempt to rise in status during gameplay. This world contains NPCs, magic abilities, and diverse regions, each with unique attributes. Players embark on a journey to generate wealth in their quest for rulership.
 
 ## Gameplay Explanation ##
 
-**In this section, explain how the game should be played. Treat this as a manual within a game. It is encouraged to explain the button mappings and the most optimal gameplay strategy.**
+2D RPG game where the goal is to become a ruler of the island. You start off with very limited money, and choose an approach to generate income in order to improve your title or standing in the society. The player has starting stats for Stamina, Strength, and Intelligence, and improves them over the course of the game.
+
+The island will be divided into different regions. Players can choose from multiple approaches to generate money, shaping their path to rulership. Players can participate in thrilling battles in the caves, or even become early businessmen to generate passive income by obtaining all the land property on the islands. The world will be filled with varieties of magic that can be acquired by the player to use in combat. As players play and generate some wealth, they will be able to invest their resources in upgrading their character’s abilities and unlocking new skills. Stamina is the character’s overall endurance and energy in physical tasks that allows the player to dash in combat. Strength is combat prowess. Intelligence is used for dwelling into the world of Arcana.
+
+CONTROL SCHEME:
+MOVEMENT: WASD OR ARROW KEYS
+COMBAT: LEFT MOUSE CLICK
+DASH: SPACE
+MAGIC: Z = fireball; X = rock; C = tornado; Q = Vortex
 
 
 **If you did work that should be factored in to your grade that does not fit easily into the proscribed roles, add it here! Please include links to resources and descriptions of game-related material that does not fit into roles here.**
