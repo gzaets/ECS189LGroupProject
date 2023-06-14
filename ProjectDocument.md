@@ -208,7 +208,15 @@ I also worked with the logic relating to the game over. In particular, the game 
 
 **Describe the platforms you targeted for your game release. For each, describe the process and unique actions taken for each platform. What obstacles did you overcome? What was easier than expected?**
 
-## Audio
+## Audio (@payday2021)
+
+We added audio for every game interaction that occurred with the hero (ex: purchasing buildings, fighting monsters), and we wanted to keep the sound style to that of a traditional 2d RPG game that invoked simple but satisfying sounds that help contribute to overall game feel. Since these audio clips were played within game interaction with the hero, most of our audio is implemented within the PlayerController.cs file, with an exception to building purchasing, which we handled within the BuildingItem.cs file. 
+
+Within the PlayerController.cs file, we implemented audio for user movement and combat (split in magic use and attacking with your sword). For the use of magic, there were four different possible spells contained within our MagincController.cs file that our hero could have used; fireball, suck, tornado, and rock. For all four of these spells, we chose some basic RPG sound FX from the Unity Asset store that would fit our simplistic audio style, and each of these audio files were called right after the prefabs for the spells were instantiated. 
+
+For sword attacks, it was very similar to the audio we implemented when using magic, it was basic sword swing, except we added two possible variations. The first came with the miss of the sword swing, or simply if there wasnt a monster collider detected when we swung the sword. This resulted in a missed sound effect, and the latter variation came from when contact was made with a monster, in which we added a more satisfying and robust audio for the sword swing. 
+
+
 
 **List your assets including their sources and licenses.**
 
