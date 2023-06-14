@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -29,11 +29,12 @@ public class BuildingItem : MonoBehaviour
     private GameObject buildingPurchaseUI;
     //public TextMeshProUGUI buildingPurchaseText;
 
+    //UI for cant afford
     [SerializeField]
-    private GameObject buildingCantAffordUI;
+    private GameObject notBuildingPurchaseUI;
 
     [SerializeField]
-    private GameObject buildingAPUI;
+    private GameObject alreadyPurchasedUI;
 
     [SerializeField]
     private Button purchaseYesButton;
@@ -42,10 +43,13 @@ public class BuildingItem : MonoBehaviour
     private Button purchaseNoButton;
 
     [SerializeField]
-    private Button closeButton;
+    private Button closeAPButton;
+
+
+
 
     [SerializeField]
-    private Button closeAPButton;
+    private Button closeButton;
 
     [SerializeField]
     private AudioClip purchaseBuildingSoundEffect;
@@ -57,7 +61,7 @@ public class BuildingItem : MonoBehaviour
         audioMusicSource = gameObject.AddComponent<AudioSource>();
         audioMusicSource.volume = 1f;
         // Formula to calculate how much building produces in correlation to cost of building (Can change later)
-        buildingProductionRate = buildingCost / 2000;
+        buildingProductionRate = buildingCost / 1000;
         buildingCost = buildingCost;
 
         TextMeshProUGUI buildingPurchaseText = buildingPurchaseUI.GetComponentInChildren<TextMeshProUGUI>();
@@ -116,7 +120,9 @@ public class BuildingItem : MonoBehaviour
         //Debug.Log(gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
-            if(playerController.money - buildingCost >= 0 && this.isPurchased == false) {
+            if(playerController.money - buildingCost >= 0) {
+                if (this.isPurchased == false)
+                {
                     buildingPurchaseUI.SetActive(true);
                     purchaseYesButton.onClick.AddListener(() => {
                         this.isPurchased = true;
@@ -128,27 +134,32 @@ public class BuildingItem : MonoBehaviour
                     purchaseNoButton.onClick.AddListener(() => {
                         buildingPurchaseUI.SetActive(false);
                     });
+                }
             }
-            else if (playerController.money - buildingCost < 0 && this.isPurchased == false){
+            else if (playerController.money - buildingCost < 0){
                 //cant afford ui
-                    buildingCantAffordUI.SetActive(true);
+                if(this.isPurchased == false)
+                {
+                    notBuildingPurchaseUI.SetActive(true);
                     closeButton.onClick.AddListener(() => {
-                        buildingCantAffordUI.SetActive(false);
+                        notBuildingPurchaseUI.SetActive(false);
                     });
                     closeButton.onClick.AddListener(() => {
-                        buildingCantAffordUI.SetActive(false);
+                        notBuildingPurchaseUI.SetActive(false);
                     });
+                }
             }
-            else {
-                Debug.Log("we in here");
-                buildingAPUI.SetActive(true);
+
+            else if (this.isPurchased)
+            {
+                alreadyPurchasedUI.SetActive(true);
                 closeAPButton.onClick.AddListener(() => {
-                    buildingAPUI.SetActive(false);
+                    alreadyPurchasedUI.SetActive(false);
                 });
                 closeAPButton.onClick.AddListener(() => {
-                    buildingAPUI.SetActive(false);
+                    alreadyPurchasedUI.SetActive(false);
                 });
             }
         }
     }
-}
+}*/
