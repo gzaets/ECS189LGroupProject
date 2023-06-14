@@ -45,7 +45,7 @@ public class BuildingItem : MonoBehaviour
         audioMusicSource = gameObject.AddComponent<AudioSource>();
         audioMusicSource.volume = 1f;
         // Formula to calculate how much building produces in correlation to cost of building (Can change later)
-        buildingProductionRate = buildingCost / 1000;
+        buildingProductionRate = buildingCost / 2000;
         buildingCost = buildingCost;
 
         TextMeshProUGUI buildingPurchaseText = buildingPurchaseUI.GetComponentInChildren<TextMeshProUGUI>();
@@ -105,20 +105,20 @@ public class BuildingItem : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             if(playerController.money - buildingCost >= 0) {
-            if (this.isPurchased == false)
-            {
-                buildingPurchaseUI.SetActive(true);
-                purchaseYesButton.onClick.AddListener(() => {
-                    this.isPurchased = true;
-                    playerController.numBuildingsPurchased++;
-                    buildingPurchaseUI.SetActive(false);
-                    audioMusicSource.clip = purchaseBuildingSoundEffect;
-                    audioMusicSource.Play();
-                });
-                purchaseNoButton.onClick.AddListener(() => {
-                    buildingPurchaseUI.SetActive(false);
-                });
-            }
+                if (this.isPurchased == false)
+                {
+                    buildingPurchaseUI.SetActive(true);
+                    purchaseYesButton.onClick.AddListener(() => {
+                        this.isPurchased = true;
+                        playerController.numBuildingsPurchased++;
+                        buildingPurchaseUI.SetActive(false);
+                        audioMusicSource.clip = purchaseBuildingSoundEffect;
+                        audioMusicSource.Play();
+                    });
+                    purchaseNoButton.onClick.AddListener(() => {
+                        buildingPurchaseUI.SetActive(false);
+                    });
+                }
             }
         }
     }
