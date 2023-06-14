@@ -86,7 +86,7 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 *Slime Controller and Spawner*  
 
-*   As a crucial part of the game mechanics, I created a spawn system for the enemy, "slime," and provided the slimes with necessary behaviors such as chasing the player, dealing damage, and reacting upon being attacked.
+*   As a crucial part of the game mechanics, I created a spawn system for the enemy, "slime," and provided the slimes with necessary behaviors such as chasing the player, dealing damage, and reacting upon being attacked. Colliders were set by @j-p-ecs and me. I also implemented the slime's movement and attack logic, as well as the slime's health and damage system.
 
 * *[SlimeController.cs](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scripts/SlimeController.cs)* 
 
@@ -105,6 +105,22 @@ You should replay any **bold text** with your relevant information. Liberally us
     *   In the SpawnSlime coroutine, slimes are spawned infinitely as long as the spawnDelay is above 0.5 seconds. The delay between spawns is gradually decreased to increase the difficulty over time. A slime prefab is selected randomly from an array, and a new slime is instantiated. The Hero instance is assigned to the newly spawned slime to allow it to interact with the player by following and facing it. Slimes only spawn if the player is in the correct area and the game is not paused.
 
 *   By implementing these scripts, I managed to create an engaging enemy system that poses an increasing challenge to the player, enhancing the game's dynamics and overall fun.
+
+*Main Island Scene/Map*  
+
+*   Throughout the project, I was in charge of creating and designing the main island open-world map/scene, which serves as the main game scene where the player can explore, gather resources, and fight enemies. I also implemented the main island's background music and various sound effects. Colliders for the map were set by @j-p-ecs and me.
+
+*   The map consists of three Islands Resembling a triangle (Bottom Right, Bottom Left, Top). Each island has a unique design and biome, as well as set of spells, buildings and crystals that the player can interact with. The player can move between the islands by walking on the bridges connecting them, or use the dungeon that connect the bottom islands to the top island. The map is designed to be intuitive and easy to navigate, with clear visual cues and landmarks to help the player orient themselves.
+
+![BottomRight](Images\i1Capture.png)
+![BottomLeft](Images\i2Capture.png)
+![Top](Images\i3Capture.png)
+
+*   The Dungeon underneath the three islands can be accessed through a unique cave entrance that is present on each island. The Dungeon is a simple rectandular room with three exit/entry points where the Slime spawn and constantly attack the player. The player can use the Dungeon to quickly move between the bottom and top islands, but must be careful not to get overwhelmed by the slimes. The Dungeon is designed to be a high-risk, high-reward area that allows the player to quickly move between the  and make money, but at the cost of being attacked by slimes.
+
+![Dungeon](Images\i4Capture.png)
+
+*   The Main Island and Dungeon were designed and implemented through using [2D RPG Worlds KIT](https://assetstore.unity.com/packages/2d/environments/2d-rpg-worlds-kit-227621) (License Agreement: https://unity.com/legal/as-terms | Licesne Type: Extension Asset) Asset that was purchased by me through the Unity store. The asset provided me with a variety of prefabs, sprites, and animations that I used to create the final map. I also used the asset's tilemap system to create the map, and the asset's animations to add a sense of small realism effects in the map.
 
 ## User Interface (Mohamed Ali Boutaleb @mohalibou)
 
