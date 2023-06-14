@@ -280,6 +280,8 @@ public class PlayerController : MonoBehaviour
             downDisabled = true;
             rightDisabled = true;
             upDisabled = true;
+            //moveHorizontal = 0.0f;
+            //moveVertical = 0.0f;
         }
 
         if(numBuildingsPurchased == 11)
