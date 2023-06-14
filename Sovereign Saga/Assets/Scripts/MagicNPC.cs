@@ -32,6 +32,8 @@ public class MagicNPC : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        purchaseYesButton.onClick.RemoveAllListeners();
+        purchaseNoButton.onClick.RemoveAllListeners();
         Debug.Log("magic collision detected");
 
         //purchaseNoButton.onClick.RemoveAllListeners();
