@@ -67,17 +67,17 @@ You should replay any **bold text** with your relevant information. Liberally us
 
     *   In the Start method, I specified which elements should be visible when the menu initially loads. For instance, the backButton, smallTitle, and text are set to inactive, while the quitButton is active.
 
-    ![Main Menu](Images\mainmenu.png)
+    ![Main Menu](Images/mainmenu.PNG)
 
     *   I also introduced a boolean flag isTutorial to determine if the "How to Play" tutorial should be shown. When the player selects "How to Play", the ShowHowToPlay method sets isTutorial to true. Similarly, when the player clicks the back button, the Back method sets isTutorial to false.
 
-    ![How To Play](Images\settings.png)
+    ![How To Play](Images/settings.PNG)
 
     *   To handle the game exit request, the QuitGame method utilizes the Application.Quit() function which is a standard way to quit a game in Unity.
 
     *   I implemented smooth scene transitions in *[LevelLoader.cs](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scripts/LevelLoader.cs)* and loading animations to enhance the overall player experience. The goal was to create seamless transitions between the main menu and game scenes, and provide visual feedback during the loading of a new scene. Scene transitions were handled using Unity's SceneManager. While SceneManager.LoadScene performs the actual transition, to make it smoother, I introduced a loading screen with an animation. This loading screen serves a dual purpose - it visually indicates that the game is loading a new scene and provides a buffer, masking any potential lag or stuttering during scene transition. When a scene transition is initiated, I activate the loadingScreen before calling SceneManager.LoadScene. This means the loading screen will appear immediately once the player initiates the transition, and remain visible throughout the scene loading process.
 
-    ![Loading Screen](Images\loading.png)
+    ![Loading Screen](Images/loading.PNG)
 
 
 * *[PauseMenu.cs](https://github.com/gzaets/ECS189LGroupProject/blob/master/Sovereign%20Saga/Assets/Scripts/PauseMenu.cs)*
@@ -90,7 +90,7 @@ You should replay any **bold text** with your relevant information. Liberally us
 
     *   Finally, the MainMenu method allows players to return to the main menu from the pause menu. It deactivates the pause menu, resumes game time, and uses SceneManager.LoadScene("MainMenu") to load the main menu scene.
 
-    ![Pause Screen](Images\PauseCapture.png)
+    ![Pause Screen](Images/PauseCapture.PNG)
 
 *Slime Controller and Spawner*  
 
@@ -120,13 +120,13 @@ You should replay any **bold text** with your relevant information. Liberally us
 
 *   The map consists of three Islands Resembling a triangle (Bottom Right, Bottom Left, Top). Each island has a unique design and biome, as well as set of spells, buildings and crystals that the player can interact with. The player can move between the islands by walking on the bridges connecting them, or use the dungeon that connect the bottom islands to the top island. The map is designed to be intuitive and easy to navigate, with clear visual cues and landmarks to help the player orient themselves.
 
-![BottomRight](Images\i1Capture.png)
-![BottomLeft](Images\i2Capture.png)
-![Top](Images\i3Capture.png)
+![BottomRight](Images/i1Capture.PNG)
+![BottomLeft](Images/i2Capture.PNG)
+![Top](Images/i3Capture.PNG)
 
 *   The Dungeon underneath the three islands can be accessed through a unique cave entrance that is present on each island. The Dungeon is a simple rectandular room with three exit/entry points where the Slime spawn and constantly attack the player. The player can use the Dungeon to quickly move between the bottom and top islands, but must be careful not to get overwhelmed by the slimes. The Dungeon is designed to be a high-risk, high-reward area that allows the player to quickly move between the  and make money, but at the cost of being attacked by slimes.
 
-![Dungeon](Images\i4Capture.png)
+![Dungeon](Images/i4Capture.PNG)
 
 *   The Main Island and Dungeon were designed and implemented through using [2D RPG Worlds KIT](https://assetstore.unity.com/packages/2d/environments/2d-rpg-worlds-kit-227621) (License Agreement: https://unity.com/legal/as-terms | Licesne Type: Extension Asset) Asset that was purchased by me through the Unity store. The asset provided me with a variety of prefabs, sprites, and animations that I used to create the final map. I also used the asset's tilemap system to create the map, and the asset's animations to add a sense of small realism effects in the map.
 
@@ -390,10 +390,10 @@ Developing a rich and immersive game world was a significant aspect of my role. 
 
     *   A key element of game feel is the creation of an immersive environment that players can lose themselves in. I worked on fine-tuning the game world, ensuring that each aspect, from background music to environmental design, contributes to a cohesive and immersive RPG atmosphere. Small details, like ambient sound effects and interactive scenery, were added to enhance the depth of the world. Because the game is 2.5D, I also focused on creating a sense of depth and scale through the use of layer ordering of every object on the map. That means, when the player moves behind a tree, the tree is rendered in front of the player. This is a subtle effect, but it makes a big difference in the overall feel of the game. When the player approcahes a cave, the player is in front of the cave entrance, but when the player enters the cave, the player is behind the cave entrance. This creates a sense of depth and scale that is crucial to the game feel, at least to me. I couldn't get to all little details of the map due to unfortunate lack of time, but the overall effect is still there. 
 
-    ![Bamboo](Images\bambooCapture.png)
-    ![Bridge](Images\bridgeCapture.png)
-    ![Crystal](Images\crystalCapture.png)
-    ![Roof](Images\roofCapture.png)
+    ![Bamboo](Images/bambooCapture.PNG)
+    ![Bridge](Images/bridgeCapture.PNG)
+    ![Crystal](Images/crystalCapture.PNG)
+    ![Roof](Images/roofCapture.PNG)
 
 *   Gameplay Mechanic Refinement
 
